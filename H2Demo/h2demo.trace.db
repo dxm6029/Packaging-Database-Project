@@ -7,3 +7,6 @@ INSERT INTO person (id, FIRST_NAME, LAST_NAME, MI) VALUES [42001-199]
 2019-03-21 19:34:51 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO PERSON (ID, FIRST_NAME, LAST_NAME, MI) VALUES [*]"; expected "ROW, (, DEFAULT, NOT, EXISTS, INTERSECTS"; SQL statement:
 INSERT INTO person (id, FIRST_NAME, LAST_NAME, MI) VALUES [42001-199]
+2019-03-22 10:16:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" not found; SQL statement:
+INSERT INTO Customer (name, customerID, email, streetNumber, streetName, apptNum, city, state, zip) VALUES [42102-199]
