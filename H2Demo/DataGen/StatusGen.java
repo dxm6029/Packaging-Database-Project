@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Status {
+public class StatusGen {
 	final static String[] header = {"pack_ID", "EDT", "Loc", "spec_tag", "inter/local", "delTime"};
 	static String[][] s_matrix = new String[500][header.length];
 	

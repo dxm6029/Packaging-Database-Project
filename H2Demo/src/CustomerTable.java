@@ -23,7 +23,7 @@ public class CustomerTable {
 	 * @param fileName
 	 * @throws SQLException
 	 */
-	public static void populatePersonTableFromCSV(Connection conn,
+	public static void populateCustomerTableFromCSV(Connection conn,
 			                                      String fileName)
 			                                    		  throws SQLException{
 		/**
@@ -33,13 +33,13 @@ public class CustomerTable {
 		 * You can do the reading and adding to the table in one
 		 * step, I just broke it up for example reasons
 		 */
-		ArrayList<Customer> people = new ArrayList<Customer>();
+		ArrayList<Customer> customers = new ArrayList<Customer>();
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(fileName));
 			String line;
 			while((line = br.readLine()) != null){
 				String[] split = line.split(",");
-				people.add(new Customer(split));
+				customers.add(new Customer(split));
 			}
 			br.close();
 		} catch (IOException e) {
@@ -47,11 +47,11 @@ public class CustomerTable {
 		}
 		
 		/**
-		 * Creates the SQL query to do a bulk add of all people
+		 * Creates the SQL query to do a bulk add of all customers
 		 * that were read in. This is more efficent then adding one
 		 * at a time
 		 */
-		String sql = createPersonInsertSQL(people);
+		String sql = createPersonInsertSQL(customers);
 		
 		/**
 		 * Create and execute an SQL statement

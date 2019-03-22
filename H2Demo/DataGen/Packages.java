@@ -9,26 +9,26 @@ public class Packages {
 	
 	public static void main(String[] args) {
 		init();
-		Status.init();
-		Postal.init();
+		StatusGen.init();
+		PostalGen.init();
 		Trucks.init();
-		Transaction.init();
+		TransactionGen.init();
 		CustomerGen.init();
 		PaymentGen.init();
 		
 		String output = display(header, p_matrix);
 		write(output, "Packages.csv");
 		
-		output = display(Status.header, Status.s_matrix);
+		output = display(StatusGen.header, StatusGen.s_matrix);
 		write(output, "Statuses.csv");
 		
-		output = display(Postal.header, Postal.postal_matrix);
+		output = display(PostalGen.header, PostalGen.postal_matrix);
 		write(output, "Postals.csv");
 		
 		output = display(Trucks.header, Trucks.t_matrix);
 		write(output, "Trucks.csv");
 		
-		output = display(Transaction.header, Transaction.tran_matrix);
+		output = display(TransactionGen.header, TransactionGen.tran_matrix);
 		write(output, "Transactions.csv");
 		
 		output = display(CustomerGen.header, CustomerGen.c_matrix);

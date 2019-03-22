@@ -17,10 +17,11 @@ public class Customer {
 	String apptNum;
 	String city;
 	String state;
+	String country;
 	int zip;
 
 	public Customer(String fname, String lname, int custID, String email, int streetNum, String streetName, String apptNum,
-					String city, String state, int zip){
+					String city, String state, String country, int zip){
 		this.fname = fname;
 		this.lname = lname;
 		this.customerID = custID;
@@ -31,9 +32,10 @@ public class Customer {
 		this.apptNum = apptNum;
 		this.city = city;
 		this.state = state;
+		this.country = country;
 		this.zip = zip;
 	}
-	
+
 	public Customer(String[] data){
 		this.fname = data[0];
 		this.lname = data[1];
@@ -45,7 +47,8 @@ public class Customer {
 		this.apptNum = data[6];
 		this.city = data[7];
 		this.state = data[8];
-		this.zip = Integer.parseInt(data[9]);
+		this.country = data[9];
+		this.zip = Integer.parseInt(data[10]);
 	}
 
 	public String getFnameName() {
@@ -136,4 +139,11 @@ public class Customer {
 		this.zip = zip;
 	}
 
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
 }

@@ -6,8 +6,8 @@ public class Trucks {
 	public static void init() {
 		t_matrix = Packages.genSimpleInt(0, 1, Integer.MAX_VALUE, t_matrix);
 		t_matrix = Packages.genSimpleInt(1, 1, Integer.MAX_VALUE, t_matrix);
-		t_matrix = Status.setColToVal(2,"processing...", t_matrix);
-		t_matrix = Status.setFromArrayRandomly(3, new String[] {"Trucks, Inc.", "International Trucks, Inc.", "Rochester Trucks, Inc."}, t_matrix);
+		t_matrix = StatusGen.setColToVal(2,"processing...", t_matrix);
+		t_matrix = StatusGen.setFromArrayRandomly(3, new String[] {"Trucks, Inc.", "International Trucks, Inc.", "Rochester Trucks, Inc."}, t_matrix);
 	}
 	
 }
