@@ -7,7 +7,8 @@ import java.util.ArrayList;
  */
 public class Customer {
 
-	String name;
+	String fname;
+	String lname;
 	int customerID;
 	String email;
 	ArrayList<Integer> phoneNum;
@@ -18,9 +19,10 @@ public class Customer {
 	String state;
 	int zip;
 
-	public Customer(String name, int custID, String email, int streetNum, String streetName, String apptNum,
+	public Customer(String fname, String lname, int custID, String email, int streetNum, String streetName, String apptNum,
 					String city, String state, int zip){
-		this.name = name;
+		this.fname = fname;
+		this.lname = lname;
 		this.customerID = custID;
 		this.email = email;
 		this.phoneNum = new ArrayList<>();
@@ -33,24 +35,33 @@ public class Customer {
 	}
 	
 	public Customer(String[] data){
-		this.name = data[0];
-		this.customerID = Integer.parseInt(data[1]);
-		this.email = data[2];
+		this.fname = data[0];
+		this.lname = data[1];
+		this.customerID = Integer.parseInt(data[2]);
+		this.email = data[3];
 //		this.phoneNum = ;
-		this.streetNumber = Integer.parseInt(data[3]);
-		this.streetName = data[4];
-		this.apptNum = data[5];
-		this.city = data[6];
-		this.state = data[7];
-		this.zip = Integer.parseInt(data[8]);
+		this.streetNumber = Integer.parseInt(data[4]);
+		this.streetName = data[5];
+		this.apptNum = data[6];
+		this.city = data[7];
+		this.state = data[8];
+		this.zip = Integer.parseInt(data[9]);
 	}
 
-	public String getName() {
-		return name;
+	public String getFnameName() {
+		return fname;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setFnameName(String name) {
+		this.fname = name;
+	}
+
+	public String getLnameName() {
+		return lname;
+	}
+
+	public void setLnameName(String name) {
+		this.lname = name;
 	}
 
 	public int getCustomerID() {

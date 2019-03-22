@@ -69,11 +69,18 @@ public class CustomerTable {
 	 */
 	public static void createPersonTable(Connection conn){
 		try {
-			String query = "CREATE TABLE IF NOT EXISTS person("
-					     + "ID INT PRIMARY KEY,"
-					     + "FIRST_NAME VARCHAR(255),"
-					     + "LAST_NAME VARCHAR(255),"
-					     + "MI VARCHAR(1),"
+			String query = "CREATE TABLE IF NOT EXISTS person("   // have to fix this still!
+					     + "fName VARCHAR(255),"
+					     + "lName VARCHAR(255),"
+					     + "customerID INT PRIMARY KEY,"
+					     + "email VARCHAR(50),"
+						 + "streetNum INT, "
+						 + "streetName VARCHAR(225),"
+						 + "aptNum VARCHAR(50),"
+						 + "city VARCHAR(100)"
+						 + "state VARCHAR(100)"
+						 + "state VARCHAR(100)"
+						 + "zip INT"
 					     + ");" ;
 			
 			/**
@@ -90,15 +97,15 @@ public class CustomerTable {
 	 * Adds a single Customer to the database
 	 *
 	 */
-	public static void addPerson(Connection conn, String name, int custID, String email, int streetNum,
+	public static void addPerson(Connection conn, String fname, String lname, int custID, String email, int streetNum,
 								 String streetName, String apptNum, String city, String state, int zip){
 		
 		/**
 		 * SQL insert statement
 		 */
 		String query = String.format("INSERT INTO Customer "
-						+ "VALUES(\'%s\',%d,\'%s\',%d,\'%s\',\'%s\',\'%s\',\'%s\',%d);",
-						name, custID, email, streetNum, streetName, apptNum, city, state, zip );
+						+ "VALUES(\'%s\', \'%s\',%d,\'%s\',%d,\'%s\',\'%s\',\'%s\',\'%s\',%d);",
+						fname, lname, custID, email, streetNum, streetName, apptNum, city, state, zip );
 		try {
 			/**
 			 * create and execute the query
@@ -127,8 +134,8 @@ public class CustomerTable {
 		 * the order of the data in reference 
 		 * to the columns to ad dit to
 		 */
-		sb.append("INSERT INTO Customer (name, customerID, email, streetNumber, streetName, apptNum, city, state," +
-				" zip) VALUES");
+		sb.append("INSERT INTO Customer (fname, lname, customerID, email, streetNumber, streetName, apptNum, city, " +
+				"state, zip) VALUES");
 		
 		/**
 		 * For each person append a (id, first_name, last_name, MI) tuple
@@ -139,9 +146,9 @@ public class CustomerTable {
 		 */
 		for(int i = 0; i < people.size(); i++){
 			Customer p = people.get(i);
-			sb.append(String.format("(\'%s\',%d,\'%s\',%d,\'%s\',\'%s\',\'%s\',\'%s\',%d)",
-					p.getName(), p.getCustomerID(), p.getEmail(), p.getStreetNumber(), p.getStreetName(),
-					p.getApptNum(), p.getCity(), p.getState(), p.getZip()));
+			sb.append(String.format("(\'%s\', \'%s\', %d,\'%s\',%d,\'%s\',\'%s\',\'%s\',\'%s\',%d)",
+					p.getFnameName(), p.getLnameName(), p.getCustomerID(), p.getEmail(), p.getStreetNumber(),
+					p.getStreetName(), p.getApptNum(), p.getCity(), p.getState(), p.getZip()));
 			if( i != people.size()-1){
 				sb.append(",");
 			}
@@ -242,16 +249,17 @@ public class CustomerTable {
 			ResultSet result = stmt.executeQuery(query);
 			
 			while(result.next()){
-				System.out.printf("Customer %s,%d,%s,%d,%s,%s,%s,%s,%d\n",
+				System.out.printf("Customer %s,%s, %d,%s,%d,%s,%s,%s,%s,%d\n",
 						          result.getString(1),
-						          result.getInt(2),
-						          result.getString(3),
-								  result.getInt(4),
-								  result.getString(5),
+						          result.getString(2),
+						          result.getInt(3),
+						          result.getString(4),
+								  result.getInt(5),
 								  result.getString(6),
 								  result.getString(7),
 								  result.getString(8),
-								  result.getInt(9));
+								  result.getString(9),
+								  result.getInt(10));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
