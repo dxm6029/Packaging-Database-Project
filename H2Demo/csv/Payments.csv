@@ -1,501 +1,501 @@
 Pay_ID,Cost,Type,Total,BillDate,TotPackagingNum,CardHolderName,CCV,ExpDate,isPrepaid
-1437817038,14,Contract,913,2/2/2019,55971,null,null,null,no
-395188062,10,Prepaid,null,null,null,null,null,null,yes
-193950388,10,Prepaid,null,null,null,null,null,null,yes
-1030745464,14,Contract,620,6/30/2019,57153,null,null,null,no
-449687780,1,Contract,446,2/2/2019,88853,null,null,null,no
-465960528,12,Credit Card,null,null,null,Aaron,462,10/9/2020,no
-1854290537,10,Prepaid,null,null,null,null,null,null,yes
-1716326767,4,Credit Card,null,null,null,Josh,986,6/30/2021,no
-1918132814,11,Credit Card,null,null,null,Rick,693,10/9/2020,no
-996558874,13,Prepaid,null,null,null,null,null,null,yes
-33566538,10,Prepaid,null,null,null,null,null,null,yes
-1917433880,17,Credit Card,null,null,null,Rick,617,4/3/2021,no
-922349061,13,Prepaid,null,null,null,null,null,null,yes
-1602325537,11,Prepaid,null,null,null,null,null,null,yes
-215328964,1,Credit Card,null,null,null,Matt,947,4/2/2020,no
-1561113873,15,Contract,662,3/25/2019,57692,null,null,null,no
-1084371993,1,Prepaid,null,null,null,null,null,null,yes
-1075019528,16,Credit Card,null,null,null,Matt,735,7/9/2020,no
-378664351,1,Contract,423,4/20/2019,94730,null,null,null,no
-1477063392,9,Credit Card,null,null,null,Felix,171,1/1/2020,no
-878577822,9,Credit Card,null,null,null,Patrick,983,4/3/2021,no
-765564495,8,Credit Card,null,null,null,Ryan,999,6/30/2021,no
-1765053427,17,Credit Card,null,null,null,Felix,266,6/30/2021,no
-143336551,9,Contract,181,1/1/2019,58907,null,null,null,no
-245034292,14,Credit Card,null,null,null,Ryan,377,3/25/2020,no
-2138506261,1,Credit Card,null,null,null,Isaiah,369,6/30/2021,no
-935571146,8,Prepaid,null,null,null,null,null,null,yes
-1725766518,7,Prepaid,null,null,null,null,null,null,yes
-266377522,20,Prepaid,null,null,null,null,null,null,yes
-459631870,14,Contract,742,6/30/2019,40334,null,null,null,no
-924490580,15,Prepaid,null,null,null,null,null,null,yes
-272086650,5,Credit Card,null,null,null,Ben,521,4/3/2020,no
-942053999,9,Contract,582,1/1/2019,59054,null,null,null,no
-1307040303,12,Credit Card,null,null,null,Ryan,399,12/23/2021,no
-1611706305,1,Credit Card,null,null,null,Patrick,206,6/30/2021,no
-1933965140,11,Credit Card,null,null,null,Josh,400,7/9/2020,no
-1189542060,10,Credit Card,null,null,null,Patrick,248,12/23/2021,no
-580618614,15,Contract,288,6/30/2019,82725,null,null,null,no
-20999615,13,Credit Card,null,null,null,Brian,949,3/3/2020,no
-1184167237,12,Contract,897,3/6/2019,43952,null,null,null,no
-53962145,17,Credit Card,null,null,null,Ben,744,4/3/2020,no
-760896903,20,Contract,260,4/2/2019,43941,null,null,null,no
-1492949648,20,Prepaid,null,null,null,null,null,null,yes
-227441669,16,Credit Card,null,null,null,Ben,1087,12/23/2021,no
-1174479779,17,Contract,164,7/9/2019,33487,null,null,null,no
-771543137,6,Contract,137,2/2/2019,32196,null,null,null,no
-2097184454,14,Contract,375,5/6/2019,41211,null,null,null,no
-591219187,18,Credit Card,null,null,null,Rick,878,1/1/2020,no
-294153454,16,Contract,471,10/9/2019,103937,null,null,null,no
-537225680,5,Prepaid,null,null,null,null,null,null,yes
-247605150,5,Prepaid,null,null,null,null,null,null,yes
-855752550,18,Credit Card,null,null,null,Isaiah,377,10/9/2020,no
-125224341,1,Contract,370,10/9/2019,19037,null,null,null,no
-844487691,15,Credit Card,null,null,null,Allan,564,4/3/2020,no
-1285628919,8,Prepaid,null,null,null,null,null,null,yes
-163115297,4,Credit Card,null,null,null,Josh,823,3/3/2020,no
-1848132099,7,Contract,438,12/23/2019,36325,null,null,null,no
-699271293,8,Contract,424,3/3/2019,93646,null,null,null,no
-1058658029,18,Contract,783,6/30/2019,89191,null,null,null,no
-583348197,7,Credit Card,null,null,null,Ryan,1041,1/1/2020,no
-2108845101,17,Contract,964,3/3/2019,99440,null,null,null,no
-221728417,12,Prepaid,null,null,null,null,null,null,yes
-223156759,18,Contract,576,3/6/2019,93626,null,null,null,no
-1527133985,19,Credit Card,null,null,null,Michael,824,3/6/2021,no
-1973162326,18,Credit Card,null,null,null,Ryan,477,10/9/2020,no
-1793238790,12,Prepaid,null,null,null,null,null,null,yes
-1194166617,18,Prepaid,null,null,null,null,null,null,yes
-826299589,7,Prepaid,null,null,null,null,null,null,yes
-136831614,20,Contract,978,10/9/2019,59757,null,null,null,no
-1611017330,11,Credit Card,null,null,null,Josh,874,3/3/2020,no
-18838118,17,Prepaid,null,null,null,null,null,null,yes
-1255472180,11,Credit Card,null,null,null,Ricky,1032,1/1/2020,no
-67662184,14,Prepaid,null,null,null,null,null,null,yes
-26137891,4,Credit Card,null,null,null,Ryan,933,3/25/2020,no
-1651376597,2,Credit Card,null,null,null,Isaiah,459,4/2/2020,no
-35935832,15,Credit Card,null,null,null,Allan,220,3/3/2020,no
-133346375,4,Prepaid,null,null,null,null,null,null,yes
-1080376880,9,Contract,728,4/3/2019,51482,null,null,null,no
-1833428959,13,Prepaid,null,null,null,null,null,null,yes
-815169743,5,Contract,127,4/20/2019,26847,null,null,null,no
-1970067972,12,Credit Card,null,null,null,Aaron,455,4/2/2020,no
-2121304847,14,Contract,986,12/23/2019,88402,null,null,null,no
-1302286003,16,Prepaid,null,null,null,null,null,null,yes
-574901826,12,Contract,278,5/6/2019,22024,null,null,null,no
-873060654,7,Credit Card,null,null,null,Noah,335,2/2/2021,no
-1561361199,12,Contract,382,4/2/2019,11435,null,null,null,no
-1609342070,7,Credit Card,null,null,null,Brian,593,6/30/2021,no
-262306263,15,Contract,679,7/9/2019,55254,null,null,null,no
-413057919,9,Contract,848,9/10/2019,30099,null,null,null,no
-1192753093,18,Prepaid,null,null,null,null,null,null,yes
-1997609690,1,Prepaid,null,null,null,null,null,null,yes
-261054396,9,Credit Card,null,null,null,Isaiah,940,4/2/2020,no
-193300487,1,Credit Card,null,null,null,Rick,222,9/10/2021,no
-543390629,9,Credit Card,null,null,null,Isaiah,765,12/23/2021,no
-17710682,5,Prepaid,null,null,null,null,null,null,yes
-1490185444,8,Credit Card,null,null,null,Ricky,545,3/6/2021,no
-1045523960,13,Credit Card,null,null,null,Michael,450,4/3/2020,no
-674944838,20,Credit Card,null,null,null,Ben,803,3/6/2021,no
-781707023,2,Credit Card,null,null,null,Isaiah,901,4/2/2020,no
-1453168591,20,Contract,131,4/2/2019,16180,null,null,null,no
-924070413,11,Prepaid,null,null,null,null,null,null,yes
-1742992104,6,Credit Card,null,null,null,Matt,1051,1/1/2020,no
-1431541042,19,Contract,530,4/3/2019,109024,null,null,null,no
-1930712193,17,Contract,653,12/23/2019,39429,null,null,null,no
-169300119,10,Contract,201,9/10/2019,67736,null,null,null,no
-742674641,20,Contract,136,4/2/2019,68671,null,null,null,no
-628894511,8,Contract,301,7/9/2019,63534,null,null,null,no
-174101908,1,Contract,983,4/20/2019,39775,null,null,null,no
-1364960805,4,Prepaid,null,null,null,null,null,null,yes
-441004466,12,Contract,174,4/2/2019,18196,null,null,null,no
-1900115810,9,Prepaid,null,null,null,null,null,null,yes
-1737854057,4,Credit Card,null,null,null,Felix,1070,7/9/2020,no
-468332751,20,Contract,394,4/3/2019,77660,null,null,null,no
-2116705577,9,Prepaid,null,null,null,null,null,null,yes
-3432304,1,Credit Card,null,null,null,Ben,809,4/2/2020,no
-2074671738,6,Credit Card,null,null,null,Matt,116,3/6/2021,no
-1755536415,19,Contract,407,1/1/2019,109969,null,null,null,no
-999927904,18,Contract,228,3/3/2019,34156,null,null,null,no
-117712709,20,Contract,298,3/25/2019,25735,null,null,null,no
-558302667,20,Credit Card,null,null,null,Noah,936,3/25/2020,no
-224846237,8,Prepaid,null,null,null,null,null,null,yes
-951170258,9,Prepaid,null,null,null,null,null,null,yes
-1096740261,5,Credit Card,null,null,null,Felix,1064,9/10/2021,no
-995205759,3,Contract,486,4/3/2019,33987,null,null,null,no
-449112054,18,Prepaid,null,null,null,null,null,null,yes
-420978990,4,Contract,375,4/2/2019,34967,null,null,null,no
-2022643825,20,Credit Card,null,null,null,Noah,640,4/20/2021,no
-110871431,6,Prepaid,null,null,null,null,null,null,yes
-378120904,15,Contract,635,5/6/2019,88298,null,null,null,no
-2120828500,18,Credit Card,null,null,null,Kevin,293,4/20/2021,no
-1863387769,8,Credit Card,null,null,null,Noah,1092,3/25/2020,no
-453092469,16,Contract,188,7/9/2019,106866,null,null,null,no
-1862243597,2,Contract,511,3/3/2019,99171,null,null,null,no
-1154845308,8,Contract,445,4/3/2019,56209,null,null,null,no
-729292024,17,Contract,470,7/9/2019,42157,null,null,null,no
-1333960303,9,Contract,589,9/10/2019,77542,null,null,null,no
-2052610081,17,Contract,909,4/3/2019,78107,null,null,null,no
-382088310,4,Prepaid,null,null,null,null,null,null,yes
-19887792,4,Credit Card,null,null,null,Josh,795,4/20/2021,no
-227940927,14,Prepaid,null,null,null,null,null,null,yes
-132917617,6,Contract,864,1/1/2019,96890,null,null,null,no
-1525410060,20,Contract,488,7/9/2019,87221,null,null,null,no
-1133705891,4,Prepaid,null,null,null,null,null,null,yes
-1488736646,19,Prepaid,null,null,null,null,null,null,yes
-478605506,20,Credit Card,null,null,null,Ben,573,4/3/2020,no
-283729027,4,Contract,136,12/23/2019,66175,null,null,null,no
-1764108395,5,Credit Card,null,null,null,Ryan,321,2/2/2021,no
-2036642065,1,Contract,356,2/2/2019,76930,null,null,null,no
-1919799579,18,Credit Card,null,null,null,Isaiah,832,3/6/2021,no
-1885919809,2,Contract,323,5/6/2019,74930,null,null,null,no
-619866167,8,Contract,946,2/2/2019,87418,null,null,null,no
-1489948228,5,Contract,749,2/2/2019,51720,null,null,null,no
-1438914129,12,Credit Card,null,null,null,Noah,531,3/3/2020,no
-347563144,11,Contract,540,4/2/2019,105578,null,null,null,no
-1492376674,3,Prepaid,null,null,null,null,null,null,yes
-1135083954,16,Credit Card,null,null,null,Kevin,115,1/1/2020,no
-891105581,2,Credit Card,null,null,null,Ryan,865,3/25/2020,no
-372428384,10,Credit Card,null,null,null,Kevin,956,3/3/2020,no
-764637873,15,Credit Card,null,null,null,Patrick,330,3/6/2021,no
-1106696399,18,Prepaid,null,null,null,null,null,null,yes
-1157237819,3,Credit Card,null,null,null,Felix,408,2/2/2021,no
-386683283,12,Contract,205,7/9/2019,14898,null,null,null,no
-1495174953,8,Credit Card,null,null,null,Josh,148,7/9/2020,no
-361148605,10,Credit Card,null,null,null,Felix,616,9/10/2021,no
-1447732018,10,Prepaid,null,null,null,null,null,null,yes
-137839314,6,Credit Card,null,null,null,Patrick,819,4/3/2020,no
-2056800907,12,Prepaid,null,null,null,null,null,null,yes
-1201204290,20,Credit Card,null,null,null,Rick,627,9/10/2021,no
-2020697851,15,Prepaid,null,null,null,null,null,null,yes
-368289269,8,Prepaid,null,null,null,null,null,null,yes
-986046061,4,Prepaid,null,null,null,null,null,null,yes
-407262939,6,Credit Card,null,null,null,Allan,1034,6/30/2021,no
-1431607391,1,Contract,646,3/6/2019,65449,null,null,null,no
-1935574112,9,Credit Card,null,null,null,Allan,235,3/25/2020,no
-1150777590,12,Credit Card,null,null,null,Noah,771,4/3/2020,no
-1825728233,1,Credit Card,null,null,null,Michael,681,5/6/2020,no
-1516397394,8,Contract,275,3/6/2019,62032,null,null,null,no
-1441662849,9,Prepaid,null,null,null,null,null,null,yes
-78139958,2,Contract,104,3/25/2019,69932,null,null,null,no
-660287754,4,Prepaid,null,null,null,null,null,null,yes
-246359254,16,Credit Card,null,null,null,Felix,215,1/1/2020,no
-853375349,19,Credit Card,null,null,null,Michael,565,5/6/2020,no
-1780776224,11,Prepaid,null,null,null,null,null,null,yes
-887881347,15,Prepaid,null,null,null,null,null,null,yes
-1361175950,13,Credit Card,null,null,null,Ben,638,3/25/2020,no
-1366126026,6,Credit Card,null,null,null,Michael,907,4/2/2020,no
-529567269,10,Contract,571,9/10/2019,99531,null,null,null,no
-1009096921,17,Credit Card,null,null,null,Patrick,186,1/1/2020,no
-815379168,1,Prepaid,null,null,null,null,null,null,yes
-2141090911,14,Contract,927,3/6/2019,30138,null,null,null,no
-525783405,14,Prepaid,null,null,null,null,null,null,yes
-93224063,8,Credit Card,null,null,null,Joel,261,3/6/2021,no
-2075599045,12,Credit Card,null,null,null,Ben,583,3/3/2020,no
-667998312,5,Credit Card,null,null,null,Matt,185,4/3/2021,no
-1077897908,3,Credit Card,null,null,null,Allan,1069,7/9/2020,no
-542000297,10,Prepaid,null,null,null,null,null,null,yes
-1226825264,15,Contract,389,3/3/2019,16215,null,null,null,no
-1251609998,16,Prepaid,null,null,null,null,null,null,yes
-1823758528,12,Prepaid,null,null,null,null,null,null,yes
-96125502,14,Prepaid,null,null,null,null,null,null,yes
-1615259160,13,Contract,203,4/2/2019,107401,null,null,null,no
-1497926963,12,Prepaid,null,null,null,null,null,null,yes
-1518859899,4,Contract,848,9/10/2019,31690,null,null,null,no
-1087524845,5,Credit Card,null,null,null,Ricky,624,1/1/2020,no
-211973924,2,Prepaid,null,null,null,null,null,null,yes
-1561920979,10,Credit Card,null,null,null,Joel,1001,5/6/2020,no
-797193137,10,Prepaid,null,null,null,null,null,null,yes
-1134957911,8,Credit Card,null,null,null,Isaiah,315,2/2/2021,no
-1113693170,13,Prepaid,null,null,null,null,null,null,yes
-19652230,15,Prepaid,null,null,null,null,null,null,yes
-1257398118,4,Prepaid,null,null,null,null,null,null,yes
-1290799978,11,Credit Card,null,null,null,Ricky,500,2/2/2021,no
-1053142533,5,Prepaid,null,null,null,null,null,null,yes
-1610100898,18,Prepaid,null,null,null,null,null,null,yes
-690945493,5,Credit Card,null,null,null,Aaron,332,2/2/2021,no
-784053197,2,Contract,830,12/23/2019,59340,null,null,null,no
-736157001,8,Credit Card,null,null,null,Brian,124,4/20/2021,no
-141130109,12,Credit Card,null,null,null,Ryan,440,12/23/2021,no
-1507509249,11,Credit Card,null,null,null,Ricky,1043,4/3/2021,no
-558208375,20,Contract,261,1/1/2019,93585,null,null,null,no
-641820227,1,Prepaid,null,null,null,null,null,null,yes
-354903632,17,Credit Card,null,null,null,Isaiah,875,4/2/2020,no
-1525773050,16,Credit Card,null,null,null,Josh,111,4/3/2020,no
-2049224795,4,Contract,258,4/3/2019,37053,null,null,null,no
-2074198233,8,Prepaid,null,null,null,null,null,null,yes
-1977302070,8,Contract,279,4/20/2019,44979,null,null,null,no
-1151397039,16,Credit Card,null,null,null,Isaiah,968,1/1/2020,no
-1485978174,17,Credit Card,null,null,null,Matt,792,5/6/2020,no
-649114043,16,Credit Card,null,null,null,Ricky,875,5/6/2020,no
-1555856980,17,Credit Card,null,null,null,Josh,936,3/3/2020,no
-1858501738,5,Credit Card,null,null,null,Josh,122,5/6/2020,no
-1196889768,11,Prepaid,null,null,null,null,null,null,yes
-168347757,13,Contract,590,7/9/2019,96401,null,null,null,no
-308712468,12,Contract,398,3/6/2019,20645,null,null,null,no
-387837164,14,Prepaid,null,null,null,null,null,null,yes
-950770680,12,Credit Card,null,null,null,Ryan,1052,4/3/2021,no
-35484659,5,Credit Card,null,null,null,Aaron,322,2/2/2021,no
-286478729,3,Contract,741,7/9/2019,56674,null,null,null,no
-1175299621,19,Credit Card,null,null,null,Isaiah,1063,4/20/2021,no
-122509202,2,Contract,692,4/3/2019,47439,null,null,null,no
-601651224,17,Credit Card,null,null,null,Aaron,424,4/3/2021,no
-183657463,17,Credit Card,null,null,null,Isaiah,1084,1/1/2020,no
-1362406544,5,Prepaid,null,null,null,null,null,null,yes
-324510516,2,Prepaid,null,null,null,null,null,null,yes
-1587883354,4,Prepaid,null,null,null,null,null,null,yes
-1536410730,14,Contract,884,12/23/2019,70541,null,null,null,no
-1913846825,18,Contract,177,5/6/2019,13597,null,null,null,no
-1411841383,17,Contract,286,4/3/2019,56095,null,null,null,no
-1084462453,4,Contract,181,3/3/2019,32876,null,null,null,no
-307982980,19,Contract,192,7/9/2019,88364,null,null,null,no
-435312908,5,Contract,777,7/9/2019,109038,null,null,null,no
-400307985,20,Credit Card,null,null,null,Brian,273,1/1/2020,no
-2067000970,16,Prepaid,null,null,null,null,null,null,yes
-1574361429,10,Contract,862,2/2/2019,37624,null,null,null,no
-1513967531,11,Contract,709,4/3/2019,55010,null,null,null,no
-471050279,9,Contract,39,4/3/2019,67265,null,null,null,no
-1918111468,14,Credit Card,null,null,null,Ben,470,9/10/2021,no
-1102078050,7,Contract,996,4/20/2019,73481,null,null,null,no
-458473132,19,Credit Card,null,null,null,Matt,706,3/3/2020,no
-2067119487,10,Contract,689,3/6/2019,79447,null,null,null,no
-15889288,10,Contract,860,3/6/2019,75188,null,null,null,no
-1761856200,10,Contract,89,4/3/2019,72291,null,null,null,no
-659022941,18,Prepaid,null,null,null,null,null,null,yes
-1367953859,2,Credit Card,null,null,null,Aaron,478,7/9/2020,no
-415206126,1,Credit Card,null,null,null,Ryan,642,3/6/2021,no
-354297466,4,Prepaid,null,null,null,null,null,null,yes
-258247125,17,Contract,883,3/6/2019,57415,null,null,null,no
-1241867138,10,Credit Card,null,null,null,Ricky,1004,3/25/2020,no
-363095808,13,Prepaid,null,null,null,null,null,null,yes
-2136878503,2,Contract,581,2/2/2019,79396,null,null,null,no
-848070056,1,Credit Card,null,null,null,Patrick,905,4/20/2021,no
-1944509024,7,Contract,872,4/3/2019,15084,null,null,null,no
-1674223413,2,Credit Card,null,null,null,Patrick,490,5/6/2020,no
-1746279479,1,Contract,919,4/2/2019,63066,null,null,null,no
-151875654,16,Prepaid,null,null,null,null,null,null,yes
-677916014,1,Credit Card,null,null,null,Isaiah,696,3/25/2020,no
-1037290891,18,Credit Card,null,null,null,Allan,1055,3/3/2020,no
-35527539,20,Prepaid,null,null,null,null,null,null,yes
-872612848,13,Credit Card,null,null,null,Matt,982,9/10/2021,no
-650370197,10,Prepaid,null,null,null,null,null,null,yes
-605794311,5,Contract,956,12/23/2019,45554,null,null,null,no
-995526084,17,Contract,602,4/2/2019,51742,null,null,null,no
-411451992,20,Contract,470,3/6/2019,90359,null,null,null,no
-956813099,17,Contract,490,3/25/2019,77826,null,null,null,no
-1011259626,10,Contract,543,4/3/2019,44929,null,null,null,no
-936076435,6,Prepaid,null,null,null,null,null,null,yes
-960174549,14,Contract,839,4/3/2019,99443,null,null,null,no
-894355880,20,Prepaid,null,null,null,null,null,null,yes
-1385068402,19,Credit Card,null,null,null,Isaiah,270,4/2/2020,no
-1537124944,1,Prepaid,null,null,null,null,null,null,yes
-352379968,5,Prepaid,null,null,null,null,null,null,yes
-1574325362,17,Credit Card,null,null,null,Isaiah,779,2/2/2021,no
-1859871561,9,Credit Card,null,null,null,Noah,812,4/2/2020,no
-1165281935,18,Contract,410,2/2/2019,70976,null,null,null,no
-322287982,9,Prepaid,null,null,null,null,null,null,yes
-1245334996,12,Contract,518,3/6/2019,21439,null,null,null,no
-324613263,20,Credit Card,null,null,null,Aaron,560,12/23/2021,no
-804745804,5,Contract,320,2/2/2019,108052,null,null,null,no
-314715977,6,Contract,733,3/3/2019,62271,null,null,null,no
-33906957,20,Contract,336,3/6/2019,72722,null,null,null,no
-797594239,3,Credit Card,null,null,null,Noah,618,4/20/2021,no
-1195131471,20,Prepaid,null,null,null,null,null,null,yes
-1621279117,5,Contract,215,12/23/2019,84779,null,null,null,no
-1406860421,13,Prepaid,null,null,null,null,null,null,yes
-1248887488,3,Prepaid,null,null,null,null,null,null,yes
-177835434,18,Contract,884,4/3/2019,15412,null,null,null,no
-1585298205,10,Contract,256,4/3/2019,69758,null,null,null,no
-501920026,5,Contract,938,3/25/2019,97955,null,null,null,no
-2061968202,18,Credit Card,null,null,null,Josh,275,4/20/2021,no
-1792097888,16,Contract,556,6/30/2019,99502,null,null,null,no
-631773951,8,Contract,121,4/2/2019,26259,null,null,null,no
-2134262937,11,Prepaid,null,null,null,null,null,null,yes
-458676467,15,Credit Card,null,null,null,Ricky,991,4/2/2020,no
-1335501344,12,Prepaid,null,null,null,null,null,null,yes
-1013550843,5,Contract,527,3/3/2019,106394,null,null,null,no
-715243849,3,Prepaid,null,null,null,null,null,null,yes
-203512981,9,Prepaid,null,null,null,null,null,null,yes
-1217528110,20,Credit Card,null,null,null,Isaiah,288,4/3/2020,no
-32980427,20,Contract,390,3/6/2019,100507,null,null,null,no
-1810082976,13,Contract,124,3/6/2019,43701,null,null,null,no
-1730457822,9,Prepaid,null,null,null,null,null,null,yes
-547815779,14,Credit Card,null,null,null,Joel,266,3/3/2020,no
-589216511,10,Prepaid,null,null,null,null,null,null,yes
-1146926873,2,Contract,666,3/25/2019,67342,null,null,null,no
-1092594356,16,Credit Card,null,null,null,Noah,105,4/3/2021,no
-908916555,10,Prepaid,null,null,null,null,null,null,yes
-160833136,13,Credit Card,null,null,null,Matt,862,7/9/2020,no
-901863197,2,Contract,76,4/2/2019,12115,null,null,null,no
-137778755,6,Credit Card,null,null,null,Ben,730,4/3/2020,no
-2101045100,17,Contract,141,4/2/2019,39567,null,null,null,no
-939252062,3,Credit Card,null,null,null,Felix,884,4/3/2021,no
-1198842142,16,Contract,31,7/9/2019,88197,null,null,null,no
-1878221476,2,Credit Card,null,null,null,Brian,108,12/23/2021,no
-1874532774,3,Credit Card,null,null,null,Felix,726,9/10/2021,no
-207651625,7,Credit Card,null,null,null,Allan,181,10/9/2020,no
-815582915,2,Credit Card,null,null,null,Ricky,127,6/30/2021,no
-730619435,12,Credit Card,null,null,null,Ryan,321,3/6/2021,no
-1792426166,8,Prepaid,null,null,null,null,null,null,yes
-1952348072,1,Prepaid,null,null,null,null,null,null,yes
-1164707645,17,Contract,791,3/3/2019,103525,null,null,null,no
-1635855693,10,Contract,29,6/30/2019,43351,null,null,null,no
-980178900,16,Prepaid,null,null,null,null,null,null,yes
-870760746,9,Prepaid,null,null,null,null,null,null,yes
-890313401,13,Prepaid,null,null,null,null,null,null,yes
-1015793196,14,Contract,158,4/3/2019,107034,null,null,null,no
-1088092285,10,Contract,1001,4/20/2019,101201,null,null,null,no
-279472135,16,Credit Card,null,null,null,Joel,699,4/3/2020,no
-1143964398,3,Credit Card,null,null,null,Matt,994,1/1/2020,no
-1675352769,11,Contract,842,3/6/2019,25776,null,null,null,no
-234818123,1,Credit Card,null,null,null,Matt,813,3/25/2020,no
-1324278241,10,Prepaid,null,null,null,null,null,null,yes
-620436182,12,Prepaid,null,null,null,null,null,null,yes
-1617607589,10,Contract,156,4/20/2019,71273,null,null,null,no
-535154431,13,Credit Card,null,null,null,Isaiah,1089,9/10/2021,no
-463862396,20,Contract,267,4/2/2019,91313,null,null,null,no
-1393434489,14,Contract,266,6/30/2019,72832,null,null,null,no
-1500405116,12,Credit Card,null,null,null,Isaiah,279,9/10/2021,no
-1616604321,5,Contract,253,5/6/2019,69967,null,null,null,no
-1702703159,1,Prepaid,null,null,null,null,null,null,yes
-1493511140,1,Credit Card,null,null,null,Josh,174,5/6/2020,no
-2067204862,11,Prepaid,null,null,null,null,null,null,yes
-1820112830,17,Contract,831,1/1/2019,33244,null,null,null,no
-42606119,16,Contract,193,4/2/2019,41734,null,null,null,no
-502383161,4,Prepaid,null,null,null,null,null,null,yes
-1353837987,4,Contract,405,2/2/2019,18854,null,null,null,no
-1623990225,3,Credit Card,null,null,null,Isaiah,309,2/2/2021,no
-1206463951,10,Credit Card,null,null,null,Ricky,288,10/9/2020,no
-2011894752,3,Contract,458,3/25/2019,96843,null,null,null,no
-688076523,1,Contract,545,4/2/2019,110476,null,null,null,no
-1495646140,11,Credit Card,null,null,null,Felix,722,4/20/2021,no
-1062562429,9,Credit Card,null,null,null,Ben,141,5/6/2020,no
-1217256155,2,Prepaid,null,null,null,null,null,null,yes
-181228615,7,Credit Card,null,null,null,Noah,818,3/25/2020,no
-1181529205,7,Prepaid,null,null,null,null,null,null,yes
-925102148,6,Credit Card,null,null,null,Josh,351,6/30/2021,no
-1261909560,8,Credit Card,null,null,null,Michael,1069,4/3/2020,no
-2053584807,10,Contract,882,4/3/2019,29468,null,null,null,no
-604765118,2,Prepaid,null,null,null,null,null,null,yes
-1763512465,11,Prepaid,null,null,null,null,null,null,yes
-5479327,8,Contract,1004,3/6/2019,56607,null,null,null,no
-1713004193,20,Credit Card,null,null,null,Kevin,939,2/2/2021,no
-1334263052,13,Contract,288,3/25/2019,19125,null,null,null,no
-66381420,5,Prepaid,null,null,null,null,null,null,yes
-2086277131,13,Credit Card,null,null,null,Felix,1034,4/20/2021,no
-471982651,20,Credit Card,null,null,null,Joel,626,4/3/2020,no
-679214729,12,Credit Card,null,null,null,Michael,1070,1/1/2020,no
-2068231245,13,Prepaid,null,null,null,null,null,null,yes
-1562179990,20,Credit Card,null,null,null,Ben,1009,3/25/2020,no
-1680767317,5,Contract,798,2/2/2019,57690,null,null,null,no
-767158325,20,Contract,287,5/6/2019,108726,null,null,null,no
-378668440,2,Credit Card,null,null,null,Ricky,399,3/6/2021,no
-1075641452,20,Contract,473,5/6/2019,14273,null,null,null,no
-1581774774,8,Prepaid,null,null,null,null,null,null,yes
-1151391528,13,Credit Card,null,null,null,Matt,271,9/10/2021,no
-1450061239,4,Prepaid,null,null,null,null,null,null,yes
-1436513506,8,Prepaid,null,null,null,null,null,null,yes
-2040755121,15,Credit Card,null,null,null,Ben,414,4/2/2020,no
-1558029042,3,Credit Card,null,null,null,Rick,303,9/10/2021,no
-932732627,20,Prepaid,null,null,null,null,null,null,yes
-1435582623,16,Credit Card,null,null,null,Noah,153,3/25/2020,no
-1343085683,2,Contract,867,10/9/2019,41497,null,null,null,no
-1477089059,14,Contract,687,4/2/2019,100565,null,null,null,no
-1061827119,5,Prepaid,null,null,null,null,null,null,yes
-1037543672,14,Contract,779,4/20/2019,30333,null,null,null,no
-8219372,12,Contract,879,4/2/2019,89864,null,null,null,no
-1220985574,3,Credit Card,null,null,null,Josh,617,10/9/2020,no
-789191713,5,Credit Card,null,null,null,Ricky,842,3/25/2020,no
-1622958170,3,Credit Card,null,null,null,Ryan,263,4/3/2021,no
-1507391320,20,Contract,908,5/6/2019,78490,null,null,null,no
-1202151624,4,Contract,940,3/3/2019,30602,null,null,null,no
-1971643821,12,Prepaid,null,null,null,null,null,null,yes
-2059314400,15,Contract,182,2/2/2019,28141,null,null,null,no
-78306665,18,Contract,970,4/3/2019,23596,null,null,null,no
-806926487,15,Prepaid,null,null,null,null,null,null,yes
-1570170303,7,Prepaid,null,null,null,null,null,null,yes
-274905605,15,Contract,735,1/1/2019,68856,null,null,null,no
-1743108371,1,Credit Card,null,null,null,Patrick,781,1/1/2020,no
-2146958693,2,Prepaid,null,null,null,null,null,null,yes
-1713198085,5,Contract,871,4/3/2019,49950,null,null,null,no
-1337592691,13,Prepaid,null,null,null,null,null,null,yes
-884729332,6,Prepaid,null,null,null,null,null,null,yes
-1619380652,14,Prepaid,null,null,null,null,null,null,yes
-1477685095,1,Credit Card,null,null,null,Felix,596,2/2/2021,no
-695298810,13,Prepaid,null,null,null,null,null,null,yes
-1416579933,3,Contract,243,3/6/2019,66966,null,null,null,no
-1583938443,17,Contract,882,3/6/2019,101793,null,null,null,no
-2055655972,7,Credit Card,null,null,null,Ryan,620,4/3/2021,no
-1733819292,14,Credit Card,null,null,null,Isaiah,734,6/30/2021,no
-126721793,7,Credit Card,null,null,null,Ryan,392,1/1/2020,no
-989057838,12,Contract,931,3/3/2019,46323,null,null,null,no
-1151790474,20,Contract,599,4/3/2019,107879,null,null,null,no
-27818949,1,Contract,301,3/6/2019,61586,null,null,null,no
-1357244473,8,Credit Card,null,null,null,Kevin,1033,9/10/2021,no
-1054430541,15,Contract,677,2/2/2019,108503,null,null,null,no
-391858001,17,Credit Card,null,null,null,Isaiah,479,3/3/2020,no
-2047328407,19,Credit Card,null,null,null,Rick,976,12/23/2021,no
-575057393,7,Credit Card,null,null,null,Noah,962,4/3/2020,no
-1679758283,5,Contract,348,1/1/2019,14848,null,null,null,no
-1154364053,3,Prepaid,null,null,null,null,null,null,yes
-642143332,19,Contract,193,3/3/2019,83638,null,null,null,no
-308336947,10,Contract,864,7/9/2019,33518,null,null,null,no
-578264702,3,Prepaid,null,null,null,null,null,null,yes
-51732079,11,Contract,467,3/25/2019,64102,null,null,null,no
-983583285,6,Credit Card,null,null,null,Matt,543,4/2/2020,no
-950138446,14,Contract,247,4/3/2019,44561,null,null,null,no
-544472590,16,Credit Card,null,null,null,Josh,446,3/6/2021,no
-386020399,9,Contract,774,1/1/2019,110945,null,null,null,no
-1653962887,15,Prepaid,null,null,null,null,null,null,yes
-2115575458,12,Prepaid,null,null,null,null,null,null,yes
-20888310,11,Prepaid,null,null,null,null,null,null,yes
-652713783,7,Contract,775,1/1/2019,72640,null,null,null,no
-2040884501,3,Contract,26,3/6/2019,107455,null,null,null,no
-69498123,20,Prepaid,null,null,null,null,null,null,yes
-402199208,8,Contract,830,3/25/2019,93132,null,null,null,no
-1314797687,20,Prepaid,null,null,null,null,null,null,yes
-358452176,9,Credit Card,null,null,null,Isaiah,540,3/25/2020,no
-2136588008,18,Prepaid,null,null,null,null,null,null,yes
-1467686093,14,Contract,635,3/3/2019,102133,null,null,null,no
-1768255360,14,Prepaid,null,null,null,null,null,null,yes
-1029499628,8,Credit Card,null,null,null,Aaron,283,5/6/2020,no
-91964359,18,Credit Card,null,null,null,Michael,1030,9/10/2021,no
-557957802,9,Credit Card,null,null,null,Allan,585,10/9/2020,no
-105900871,17,Prepaid,null,null,null,null,null,null,yes
-1129881108,14,Prepaid,null,null,null,null,null,null,yes
-284343726,9,Prepaid,null,null,null,null,null,null,yes
-1692502686,13,Credit Card,null,null,null,Ben,761,7/9/2020,no
-1146289273,18,Contract,149,3/25/2019,61709,null,null,null,no
-1575240382,17,Prepaid,null,null,null,null,null,null,yes
-232702984,5,Credit Card,null,null,null,Allan,886,12/23/2021,no
-948132296,12,Credit Card,null,null,null,Allan,439,4/3/2021,no
-1408539509,16,Credit Card,null,null,null,Ryan,348,3/3/2020,no
-401457048,16,Contract,311,10/9/2019,82767,null,null,null,no
-1490795307,10,Contract,364,2/2/2019,51397,null,null,null,no
-1524657605,1,Credit Card,null,null,null,Allan,273,4/3/2020,no
-747703275,15,Prepaid,null,null,null,null,null,null,yes
-160975138,19,Prepaid,null,null,null,null,null,null,yes
-217576066,15,Prepaid,null,null,null,null,null,null,yes
-1912926359,7,Prepaid,null,null,null,null,null,null,yes
-1718149135,7,Credit Card,null,null,null,Matt,105,10/9/2020,no
-210885973,1,Credit Card,null,null,null,Noah,136,12/23/2021,no
-2102606684,6,Prepaid,null,null,null,null,null,null,yes
-1676978337,11,Prepaid,null,null,null,null,null,null,yes
-1824109945,11,Credit Card,null,null,null,Noah,666,4/3/2020,no
-1866434689,4,Contract,595,7/9/2019,42834,null,null,null,no
-1382343248,19,Credit Card,null,null,null,Matt,196,6/30/2021,no
-88303310,1,Credit Card,null,null,null,Michael,168,4/20/2021,no
-1257219484,12,Contract,897,6/30/2019,29661,null,null,null,no
-978314548,16,Prepaid,null,null,null,null,null,null,yes
-392664394,16,Prepaid,null,null,null,null,null,null,yes
-2112550098,14,Credit Card,null,null,null,Ricky,630,9/10/2021,no
-815989729,8,Prepaid,null,null,null,null,null,null,yes
-680028502,17,Credit Card,null,null,null,Isaiah,728,3/6/2021,no
-1486446647,13,Contract,82,10/9/2019,57697,null,null,null,no
-4351368,7,Prepaid,null,null,null,null,null,null,yes
-561357663,5,Credit Card,null,null,null,Michael,749,6/30/2021,no
-1746481746,10,Prepaid,null,null,null,null,null,null,yes
-1467386441,19,Prepaid,null,null,null,null,null,null,yes
-353814907,8,Contract,991,5/6/2019,18605,null,null,null,no
-832339513,15,Credit Card,null,null,null,Michael,876,4/3/2020,no
-1619796591,14,Credit Card,null,null,null,Felix,1003,3/6/2021,no
+1914787157,12,Credit Card,null,null,null,Joel,719,4/2/2020,no
+815317655,8,Credit Card,null,null,null,Michael,870,4/20/2021,no
+2113365129,3,Contract,18,4/3/2019,91928,null,null,null,no
+246772361,1,Prepaid,null,null,null,null,null,null,yes
+940284845,15,Prepaid,null,null,null,null,null,null,yes
+333392260,5,Credit Card,null,null,null,Ben,125,5/6/2020,no
+1110402053,11,Prepaid,null,null,null,null,null,null,yes
+1459613038,3,Prepaid,null,null,null,null,null,null,yes
+1415533867,16,Contract,500,3/6/2019,27444,null,null,null,no
+1993117220,14,Credit Card,null,null,null,Rick,331,2/2/2021,no
+965740900,4,Prepaid,null,null,null,null,null,null,yes
+1751512007,13,Prepaid,null,null,null,null,null,null,yes
+572177871,12,Credit Card,null,null,null,Kevin,901,10/9/2020,no
+2136442845,7,Prepaid,null,null,null,null,null,null,yes
+1524281363,9,Contract,560,4/3/2019,60579,null,null,null,no
+1010916050,18,Credit Card,null,null,null,Felix,202,9/10/2021,no
+1944020070,2,Prepaid,null,null,null,null,null,null,yes
+1463728685,17,Contract,283,1/1/2019,61218,null,null,null,no
+1467329763,20,Contract,888,3/6/2019,56474,null,null,null,no
+443404117,15,Credit Card,null,null,null,Kevin,174,9/10/2021,no
+520287805,8,Contract,673,12/23/2019,88516,null,null,null,no
+491354991,20,Prepaid,null,null,null,null,null,null,yes
+1476709897,4,Prepaid,null,null,null,null,null,null,yes
+655434358,13,Credit Card,null,null,null,Allan,546,3/3/2020,no
+870044657,7,Credit Card,null,null,null,Isaiah,356,4/2/2020,no
+2033180237,7,Credit Card,null,null,null,Felix,202,7/9/2020,no
+140679487,8,Credit Card,null,null,null,Isaiah,819,3/3/2020,no
+753224250,2,Contract,748,5/6/2019,53113,null,null,null,no
+1479074146,8,Credit Card,null,null,null,Allan,244,7/9/2020,no
+1840883651,5,Credit Card,null,null,null,Felix,1028,10/9/2020,no
+1561594377,16,Credit Card,null,null,null,Ryan,631,3/3/2020,no
+1296543640,12,Prepaid,null,null,null,null,null,null,yes
+163128006,8,Prepaid,null,null,null,null,null,null,yes
+970087371,20,Credit Card,null,null,null,Josh,768,2/2/2021,no
+82489874,10,Prepaid,null,null,null,null,null,null,yes
+1638990905,10,Prepaid,null,null,null,null,null,null,yes
+468637913,16,Prepaid,null,null,null,null,null,null,yes
+1858677419,1,Contract,945,9/10/2019,59997,null,null,null,no
+1034239413,8,Contract,753,4/3/2019,100485,null,null,null,no
+519207375,1,Prepaid,null,null,null,null,null,null,yes
+1266871858,6,Contract,488,4/3/2019,93220,null,null,null,no
+1381378263,2,Prepaid,null,null,null,null,null,null,yes
+941391511,13,Prepaid,null,null,null,null,null,null,yes
+2101925135,11,Prepaid,null,null,null,null,null,null,yes
+2083039153,5,Credit Card,null,null,null,Josh,959,1/1/2020,no
+854252420,16,Credit Card,null,null,null,Noah,223,1/1/2020,no
+403390065,5,Prepaid,null,null,null,null,null,null,yes
+782464588,15,Prepaid,null,null,null,null,null,null,yes
+1618913813,7,Prepaid,null,null,null,null,null,null,yes
+854246346,13,Credit Card,null,null,null,Patrick,607,10/9/2020,no
+2128690155,13,Contract,870,12/23/2019,13162,null,null,null,no
+1711608242,8,Contract,119,4/20/2019,107856,null,null,null,no
+1698268842,2,Credit Card,null,null,null,Kevin,486,4/2/2020,no
+877212276,3,Prepaid,null,null,null,null,null,null,yes
+343266212,16,Prepaid,null,null,null,null,null,null,yes
+423981339,19,Prepaid,null,null,null,null,null,null,yes
+96805151,12,Credit Card,null,null,null,Patrick,1084,12/23/2021,no
+1549028968,12,Contract,433,9/10/2019,35920,null,null,null,no
+1643444046,13,Prepaid,null,null,null,null,null,null,yes
+1834432913,8,Credit Card,null,null,null,Rick,703,1/1/2020,no
+1843224694,4,Credit Card,null,null,null,Josh,229,3/3/2020,no
+197777325,1,Prepaid,null,null,null,null,null,null,yes
+321467639,6,Prepaid,null,null,null,null,null,null,yes
+1915375201,17,Credit Card,null,null,null,Kevin,362,5/6/2020,no
+1173601556,6,Contract,920,7/9/2019,68797,null,null,null,no
+944820510,10,Contract,690,6/30/2019,90329,null,null,null,no
+846180450,10,Prepaid,null,null,null,null,null,null,yes
+1039338456,7,Prepaid,null,null,null,null,null,null,yes
+1052663288,11,Contract,522,1/1/2019,90044,null,null,null,no
+851172010,12,Contract,618,2/2/2019,44684,null,null,null,no
+407834771,11,Contract,66,5/6/2019,47595,null,null,null,no
+967324573,12,Prepaid,null,null,null,null,null,null,yes
+874944264,7,Contract,957,10/9/2019,102337,null,null,null,no
+1537910341,6,Contract,670,5/6/2019,67540,null,null,null,no
+385385322,3,Credit Card,null,null,null,Ben,285,9/10/2021,no
+1703740586,18,Prepaid,null,null,null,null,null,null,yes
+1410841223,8,Contract,654,10/9/2019,38217,null,null,null,no
+1792905583,5,Contract,969,4/3/2019,20610,null,null,null,no
+738859367,18,Prepaid,null,null,null,null,null,null,yes
+2050660585,13,Contract,12,3/3/2019,100120,null,null,null,no
+1871466404,16,Contract,151,4/3/2019,96123,null,null,null,no
+997526879,18,Prepaid,null,null,null,null,null,null,yes
+1641798540,17,Prepaid,null,null,null,null,null,null,yes
+1081295463,10,Credit Card,null,null,null,Felix,965,12/23/2021,no
+46587947,18,Credit Card,null,null,null,Brian,813,7/9/2020,no
+1359421388,7,Contract,414,9/10/2019,86442,null,null,null,no
+831855968,9,Credit Card,null,null,null,Ryan,1017,4/20/2021,no
+1371292215,7,Contract,529,1/1/2019,46624,null,null,null,no
+1845800798,14,Prepaid,null,null,null,null,null,null,yes
+831514199,3,Contract,758,3/3/2019,100799,null,null,null,no
+1985850639,5,Prepaid,null,null,null,null,null,null,yes
+820368102,4,Contract,648,3/25/2019,101865,null,null,null,no
+357288927,11,Credit Card,null,null,null,Aaron,213,7/9/2020,no
+2070324888,12,Prepaid,null,null,null,null,null,null,yes
+1750508463,2,Credit Card,null,null,null,Ryan,596,5/6/2020,no
+1777279126,1,Contract,66,4/2/2019,98475,null,null,null,no
+156962500,19,Contract,829,3/25/2019,47183,null,null,null,no
+858756291,11,Credit Card,null,null,null,Brian,479,12/23/2021,no
+364951453,7,Credit Card,null,null,null,Ricky,614,4/3/2021,no
+62089401,12,Contract,925,9/10/2019,103589,null,null,null,no
+72989133,6,Prepaid,null,null,null,null,null,null,yes
+1423645431,1,Prepaid,null,null,null,null,null,null,yes
+1576145670,18,Contract,368,6/30/2019,78401,null,null,null,no
+891755372,14,Credit Card,null,null,null,Josh,560,4/20/2021,no
+1271760561,7,Credit Card,null,null,null,Michael,978,3/6/2021,no
+1455819555,20,Prepaid,null,null,null,null,null,null,yes
+580636802,19,Prepaid,null,null,null,null,null,null,yes
+792688749,1,Contract,955,5/6/2019,56935,null,null,null,no
+1102649748,9,Prepaid,null,null,null,null,null,null,yes
+731563413,10,Prepaid,null,null,null,null,null,null,yes
+276783066,14,Prepaid,null,null,null,null,null,null,yes
+697090491,12,Prepaid,null,null,null,null,null,null,yes
+2108811414,13,Prepaid,null,null,null,null,null,null,yes
+894041632,12,Contract,461,4/2/2019,28936,null,null,null,no
+1127625962,3,Prepaid,null,null,null,null,null,null,yes
+968277449,2,Credit Card,null,null,null,Ryan,504,3/3/2020,no
+1130089093,6,Contract,420,6/30/2019,87066,null,null,null,no
+569534954,11,Prepaid,null,null,null,null,null,null,yes
+1546797730,6,Credit Card,null,null,null,Aaron,464,4/2/2020,no
+789373790,5,Credit Card,null,null,null,Allan,120,4/20/2021,no
+2133425842,18,Contract,280,7/9/2019,29865,null,null,null,no
+1434009552,3,Credit Card,null,null,null,Felix,1004,2/2/2021,no
+1237574694,9,Contract,818,4/3/2019,18635,null,null,null,no
+114764044,7,Contract,111,5/6/2019,45714,null,null,null,no
+2007277537,19,Contract,330,9/10/2019,47897,null,null,null,no
+1552553334,20,Credit Card,null,null,null,Michael,681,4/3/2020,no
+265942549,20,Prepaid,null,null,null,null,null,null,yes
+27923018,1,Contract,235,7/9/2019,34310,null,null,null,no
+99914842,6,Contract,319,4/20/2019,102105,null,null,null,no
+642990830,6,Contract,830,3/6/2019,104977,null,null,null,no
+1803223527,20,Contract,305,10/9/2019,64928,null,null,null,no
+357577776,16,Credit Card,null,null,null,Kevin,593,2/2/2021,no
+184757532,7,Contract,491,5/6/2019,97978,null,null,null,no
+1782355715,18,Contract,388,4/20/2019,73474,null,null,null,no
+667057520,12,Prepaid,null,null,null,null,null,null,yes
+1803881423,17,Credit Card,null,null,null,Matt,280,1/1/2020,no
+1754711601,3,Credit Card,null,null,null,Rick,628,3/25/2020,no
+413713956,10,Prepaid,null,null,null,null,null,null,yes
+362496129,8,Credit Card,null,null,null,Ben,866,12/23/2021,no
+1331732523,16,Credit Card,null,null,null,Rick,565,2/2/2021,no
+1780800029,4,Credit Card,null,null,null,Brian,273,12/23/2021,no
+1982766568,3,Prepaid,null,null,null,null,null,null,yes
+916484782,3,Contract,657,3/25/2019,33323,null,null,null,no
+1871776215,8,Credit Card,null,null,null,Kevin,369,2/2/2021,no
+891099760,15,Credit Card,null,null,null,Isaiah,811,1/1/2020,no
+641574722,9,Credit Card,null,null,null,Patrick,745,4/20/2021,no
+429937449,8,Credit Card,null,null,null,Matt,331,5/6/2020,no
+32938539,11,Contract,388,3/3/2019,31615,null,null,null,no
+857489275,8,Contract,607,10/9/2019,89115,null,null,null,no
+1567785282,17,Prepaid,null,null,null,null,null,null,yes
+1884314829,9,Contract,284,6/30/2019,31894,null,null,null,no
+1200159779,18,Prepaid,null,null,null,null,null,null,yes
+1794564383,7,Prepaid,null,null,null,null,null,null,yes
+127524485,12,Credit Card,null,null,null,Isaiah,139,1/1/2020,no
+2012768311,1,Prepaid,null,null,null,null,null,null,yes
+1362577623,1,Prepaid,null,null,null,null,null,null,yes
+1392495297,10,Contract,148,12/23/2019,42111,null,null,null,no
+1042657083,18,Prepaid,null,null,null,null,null,null,yes
+441617935,13,Contract,777,6/30/2019,37956,null,null,null,no
+1968875923,11,Contract,374,3/3/2019,101346,null,null,null,no
+1282563161,8,Credit Card,null,null,null,Patrick,1060,4/2/2020,no
+4628947,15,Credit Card,null,null,null,Noah,135,4/20/2021,no
+1119333221,6,Contract,958,3/25/2019,34671,null,null,null,no
+418562450,19,Prepaid,null,null,null,null,null,null,yes
+1554033322,20,Credit Card,null,null,null,Felix,230,3/25/2020,no
+110412869,13,Credit Card,null,null,null,Allan,696,7/9/2020,no
+1510771253,9,Prepaid,null,null,null,null,null,null,yes
+433895772,20,Credit Card,null,null,null,Ryan,141,12/23/2021,no
+1569599628,3,Prepaid,null,null,null,null,null,null,yes
+64270331,20,Credit Card,null,null,null,Aaron,724,3/25/2020,no
+1742852109,3,Credit Card,null,null,null,Rick,727,2/2/2021,no
+321480121,4,Credit Card,null,null,null,Michael,689,1/1/2020,no
+941294437,12,Contract,611,4/3/2019,41197,null,null,null,no
+1871923805,7,Prepaid,null,null,null,null,null,null,yes
+1895363782,16,Contract,859,12/23/2019,104422,null,null,null,no
+1212458064,9,Prepaid,null,null,null,null,null,null,yes
+1257282742,18,Prepaid,null,null,null,null,null,null,yes
+78169080,3,Contract,715,4/20/2019,103322,null,null,null,no
+755147629,4,Credit Card,null,null,null,Ricky,178,4/20/2021,no
+1583851489,6,Credit Card,null,null,null,Aaron,770,10/9/2020,no
+572549841,13,Contract,123,4/3/2019,71485,null,null,null,no
+634658890,3,Prepaid,null,null,null,null,null,null,yes
+1930364742,10,Credit Card,null,null,null,Felix,1049,12/23/2021,no
+661753372,16,Credit Card,null,null,null,Josh,783,3/6/2021,no
+485849769,17,Contract,360,4/2/2019,41365,null,null,null,no
+2830380,2,Contract,598,6/30/2019,44686,null,null,null,no
+1139713766,17,Prepaid,null,null,null,null,null,null,yes
+291322140,20,Contract,738,5/6/2019,71499,null,null,null,no
+217951426,5,Contract,859,5/6/2019,76851,null,null,null,no
+850364636,10,Prepaid,null,null,null,null,null,null,yes
+1674219391,4,Credit Card,null,null,null,Felix,869,4/3/2020,no
+1606485635,20,Credit Card,null,null,null,Isaiah,764,4/3/2020,no
+1206126407,8,Contract,600,4/3/2019,19880,null,null,null,no
+1385669030,18,Contract,603,7/9/2019,53370,null,null,null,no
+581218873,9,Credit Card,null,null,null,Aaron,103,4/20/2021,no
+1890885170,11,Credit Card,null,null,null,Ben,713,7/9/2020,no
+1417467706,2,Credit Card,null,null,null,Ben,873,10/9/2020,no
+1969480239,7,Prepaid,null,null,null,null,null,null,yes
+1784509883,17,Prepaid,null,null,null,null,null,null,yes
+365081253,6,Credit Card,null,null,null,Ricky,713,2/2/2021,no
+1534948037,13,Prepaid,null,null,null,null,null,null,yes
+122293086,16,Credit Card,null,null,null,Kevin,138,3/6/2021,no
+778673608,12,Contract,852,3/6/2019,83004,null,null,null,no
+399518954,9,Prepaid,null,null,null,null,null,null,yes
+1491373744,7,Credit Card,null,null,null,Patrick,883,6/30/2021,no
+847119592,4,Credit Card,null,null,null,Kevin,645,3/3/2020,no
+1974717190,1,Contract,1003,4/20/2019,92004,null,null,null,no
+130014780,8,Prepaid,null,null,null,null,null,null,yes
+1228224748,8,Prepaid,null,null,null,null,null,null,yes
+956676470,13,Prepaid,null,null,null,null,null,null,yes
+1414984923,14,Prepaid,null,null,null,null,null,null,yes
+1957785920,10,Credit Card,null,null,null,Isaiah,561,4/2/2020,no
+2088086092,2,Contract,715,3/6/2019,64433,null,null,null,no
+1740000116,18,Credit Card,null,null,null,Ricky,797,4/3/2021,no
+890462064,7,Contract,660,5/6/2019,82430,null,null,null,no
+1303114971,20,Credit Card,null,null,null,Joel,909,4/2/2020,no
+1904492883,5,Prepaid,null,null,null,null,null,null,yes
+676564088,14,Credit Card,null,null,null,Kevin,105,5/6/2020,no
+1471524823,16,Prepaid,null,null,null,null,null,null,yes
+1525676718,15,Prepaid,null,null,null,null,null,null,yes
+703076392,12,Prepaid,null,null,null,null,null,null,yes
+791626061,20,Prepaid,null,null,null,null,null,null,yes
+977264713,12,Credit Card,null,null,null,Brian,333,3/25/2020,no
+951247663,20,Prepaid,null,null,null,null,null,null,yes
+1709688742,2,Credit Card,null,null,null,Ben,408,4/3/2021,no
+1957977244,12,Credit Card,null,null,null,Brian,251,2/2/2021,no
+1889400456,20,Credit Card,null,null,null,Noah,323,5/6/2020,no
+692359525,17,Contract,557,3/6/2019,81552,null,null,null,no
+2038958480,6,Credit Card,null,null,null,Felix,475,3/3/2020,no
+228784694,8,Credit Card,null,null,null,Ben,912,3/3/2020,no
+1848409699,1,Prepaid,null,null,null,null,null,null,yes
+1631215680,17,Credit Card,null,null,null,Ricky,167,3/3/2020,no
+238881762,20,Prepaid,null,null,null,null,null,null,yes
+1610908928,12,Credit Card,null,null,null,Kevin,474,3/25/2020,no
+1265953368,19,Credit Card,null,null,null,Aaron,792,4/3/2020,no
+147706770,2,Prepaid,null,null,null,null,null,null,yes
+1035233090,15,Credit Card,null,null,null,Patrick,158,6/30/2021,no
+195826044,12,Contract,354,2/2/2019,95176,null,null,null,no
+962862163,19,Contract,45,4/2/2019,90624,null,null,null,no
+399187630,15,Prepaid,null,null,null,null,null,null,yes
+625658517,12,Prepaid,null,null,null,null,null,null,yes
+839751408,19,Contract,562,3/3/2019,39896,null,null,null,no
+335640725,11,Credit Card,null,null,null,Allan,717,5/6/2020,no
+752040604,4,Contract,737,7/9/2019,60047,null,null,null,no
+916426158,9,Prepaid,null,null,null,null,null,null,yes
+1928810805,9,Contract,357,3/3/2019,68071,null,null,null,no
+1567687856,2,Credit Card,null,null,null,Allan,628,4/2/2020,no
+653714933,18,Prepaid,null,null,null,null,null,null,yes
+1231650082,19,Credit Card,null,null,null,Noah,1073,2/2/2021,no
+887305501,15,Prepaid,null,null,null,null,null,null,yes
+1961964718,15,Prepaid,null,null,null,null,null,null,yes
+762021985,12,Contract,368,9/10/2019,62893,null,null,null,no
+1750290743,7,Prepaid,null,null,null,null,null,null,yes
+1959461250,7,Contract,15,9/10/2019,22617,null,null,null,no
+2091722834,19,Contract,312,3/3/2019,96798,null,null,null,no
+569414571,8,Contract,138,4/3/2019,88562,null,null,null,no
+727409147,15,Credit Card,null,null,null,Patrick,802,4/20/2021,no
+1497896679,12,Contract,545,5/6/2019,48120,null,null,null,no
+1455831670,8,Prepaid,null,null,null,null,null,null,yes
+520854654,3,Contract,990,10/9/2019,34738,null,null,null,no
+219761264,18,Credit Card,null,null,null,Ben,1054,5/6/2020,no
+1609621454,7,Prepaid,null,null,null,null,null,null,yes
+839115923,11,Prepaid,null,null,null,null,null,null,yes
+1563100351,15,Prepaid,null,null,null,null,null,null,yes
+914705637,9,Credit Card,null,null,null,Noah,232,3/6/2021,no
+1559770006,11,Prepaid,null,null,null,null,null,null,yes
+793188447,3,Credit Card,null,null,null,Isaiah,225,6/30/2021,no
+1688383878,16,Contract,893,10/9/2019,51617,null,null,null,no
+1636330080,6,Prepaid,null,null,null,null,null,null,yes
+1622130189,12,Contract,560,9/10/2019,94721,null,null,null,no
+1649299857,12,Contract,478,2/2/2019,59965,null,null,null,no
+603186873,19,Prepaid,null,null,null,null,null,null,yes
+1658404663,7,Prepaid,null,null,null,null,null,null,yes
+1263867290,14,Prepaid,null,null,null,null,null,null,yes
+1554629056,11,Credit Card,null,null,null,Felix,593,4/3/2020,no
+1770586695,12,Credit Card,null,null,null,Joel,786,6/30/2021,no
+244897470,11,Contract,75,7/9/2019,55462,null,null,null,no
+237095424,6,Contract,959,4/20/2019,32122,null,null,null,no
+487790697,5,Credit Card,null,null,null,Ben,522,10/9/2020,no
+1201631487,6,Contract,899,10/9/2019,33164,null,null,null,no
+971229210,1,Contract,299,7/9/2019,52408,null,null,null,no
+1670469072,5,Prepaid,null,null,null,null,null,null,yes
+1439861008,1,Credit Card,null,null,null,Isaiah,1078,4/2/2020,no
+1948636938,15,Contract,609,4/2/2019,97194,null,null,null,no
+1094651444,2,Credit Card,null,null,null,Kevin,334,4/2/2020,no
+1154776174,5,Credit Card,null,null,null,Ricky,384,12/23/2021,no
+1922224509,20,Credit Card,null,null,null,Joel,537,12/23/2021,no
+1115293195,18,Credit Card,null,null,null,Ricky,861,4/20/2021,no
+1972186313,14,Contract,47,4/3/2019,39805,null,null,null,no
+1444429501,18,Contract,797,4/2/2019,79295,null,null,null,no
+1797268007,8,Prepaid,null,null,null,null,null,null,yes
+433191634,5,Credit Card,null,null,null,Joel,547,12/23/2021,no
+237982879,3,Contract,379,12/23/2019,55725,null,null,null,no
+2134847594,17,Prepaid,null,null,null,null,null,null,yes
+422177455,13,Prepaid,null,null,null,null,null,null,yes
+1515502775,2,Prepaid,null,null,null,null,null,null,yes
+4151506,18,Credit Card,null,null,null,Isaiah,807,9/10/2021,no
+1703843794,10,Prepaid,null,null,null,null,null,null,yes
+1767746691,17,Credit Card,null,null,null,Josh,306,5/6/2020,no
+136026265,10,Prepaid,null,null,null,null,null,null,yes
+327837517,10,Prepaid,null,null,null,null,null,null,yes
+20800145,15,Contract,560,3/3/2019,23022,null,null,null,no
+338761123,10,Credit Card,null,null,null,Joel,322,4/3/2021,no
+1948373363,12,Credit Card,null,null,null,Rick,551,4/2/2020,no
+54629972,7,Credit Card,null,null,null,Michael,115,2/2/2021,no
+1181325480,5,Credit Card,null,null,null,Noah,330,6/30/2021,no
+714327424,1,Prepaid,null,null,null,null,null,null,yes
+1462796439,13,Prepaid,null,null,null,null,null,null,yes
+1632926013,16,Prepaid,null,null,null,null,null,null,yes
+1146722378,7,Prepaid,null,null,null,null,null,null,yes
+1252343296,2,Credit Card,null,null,null,Felix,1010,4/3/2020,no
+599129995,8,Credit Card,null,null,null,Ryan,705,1/1/2020,no
+423300671,2,Contract,73,4/3/2019,53242,null,null,null,no
+448332867,17,Credit Card,null,null,null,Ryan,608,3/25/2020,no
+2123473567,7,Prepaid,null,null,null,null,null,null,yes
+1825822077,5,Contract,576,4/3/2019,109600,null,null,null,no
+213350242,9,Credit Card,null,null,null,Brian,735,12/23/2021,no
+525725446,8,Contract,336,4/2/2019,37978,null,null,null,no
+469764015,20,Contract,370,6/30/2019,21185,null,null,null,no
+1885586019,3,Credit Card,null,null,null,Michael,727,1/1/2020,no
+669847702,8,Contract,375,4/3/2019,66360,null,null,null,no
+509701201,7,Prepaid,null,null,null,null,null,null,yes
+1462186944,9,Credit Card,null,null,null,Patrick,930,1/1/2020,no
+518267315,2,Credit Card,null,null,null,Felix,200,6/30/2021,no
+1899074784,12,Credit Card,null,null,null,Felix,628,5/6/2020,no
+603935615,11,Credit Card,null,null,null,Matt,1071,6/30/2021,no
+97113370,14,Prepaid,null,null,null,null,null,null,yes
+1220902588,1,Contract,855,4/3/2019,34442,null,null,null,no
+1431708847,7,Prepaid,null,null,null,null,null,null,yes
+44276842,20,Contract,982,9/10/2019,25779,null,null,null,no
+1244220775,20,Contract,164,5/6/2019,84275,null,null,null,no
+1075238048,1,Contract,859,1/1/2019,12400,null,null,null,no
+99688269,4,Prepaid,null,null,null,null,null,null,yes
+586703098,7,Contract,750,4/3/2019,41389,null,null,null,no
+1418614126,8,Prepaid,null,null,null,null,null,null,yes
+900436974,19,Contract,105,3/25/2019,55510,null,null,null,no
+26141041,7,Contract,564,2/2/2019,17102,null,null,null,no
+376319311,20,Prepaid,null,null,null,null,null,null,yes
+1165548282,18,Credit Card,null,null,null,Michael,1053,3/25/2020,no
+288237536,3,Credit Card,null,null,null,Allan,348,2/2/2021,no
+1421777649,15,Prepaid,null,null,null,null,null,null,yes
+768141447,9,Contract,48,3/3/2019,50603,null,null,null,no
+654088921,12,Contract,962,9/10/2019,65039,null,null,null,no
+96687406,20,Contract,237,4/20/2019,101842,null,null,null,no
+668044692,7,Prepaid,null,null,null,null,null,null,yes
+731267116,18,Contract,327,10/9/2019,76841,null,null,null,no
+1063655680,13,Contract,231,1/1/2019,18384,null,null,null,no
+881749132,2,Contract,134,3/3/2019,77268,null,null,null,no
+183904005,15,Credit Card,null,null,null,Aaron,637,2/2/2021,no
+1277108285,13,Contract,675,12/23/2019,91849,null,null,null,no
+974895308,1,Contract,481,9/10/2019,23355,null,null,null,no
+1764485831,8,Credit Card,null,null,null,Noah,1073,3/6/2021,no
+104695780,12,Prepaid,null,null,null,null,null,null,yes
+800350679,1,Contract,513,10/9/2019,61628,null,null,null,no
+1072224099,19,Credit Card,null,null,null,Brian,765,3/3/2020,no
+968343672,7,Contract,501,5/6/2019,44207,null,null,null,no
+1278290423,15,Credit Card,null,null,null,Patrick,299,1/1/2020,no
+1775204992,6,Prepaid,null,null,null,null,null,null,yes
+161278521,10,Credit Card,null,null,null,Aaron,1043,4/2/2020,no
+1171135330,20,Contract,193,6/30/2019,14700,null,null,null,no
+1829205886,6,Contract,488,3/25/2019,106013,null,null,null,no
+704812560,5,Contract,11,4/20/2019,108832,null,null,null,no
+1430700974,1,Prepaid,null,null,null,null,null,null,yes
+566831982,12,Prepaid,null,null,null,null,null,null,yes
+1633764772,4,Contract,47,4/2/2019,86811,null,null,null,no
+1203774781,6,Prepaid,null,null,null,null,null,null,yes
+1198800853,18,Contract,483,4/3/2019,59888,null,null,null,no
+1928068416,2,Credit Card,null,null,null,Rick,334,5/6/2020,no
+451363857,4,Contract,189,4/20/2019,60925,null,null,null,no
+1043892929,15,Contract,83,3/6/2019,63094,null,null,null,no
+1625340752,18,Prepaid,null,null,null,null,null,null,yes
+1574052981,3,Contract,527,4/2/2019,97627,null,null,null,no
+373134236,2,Contract,740,1/1/2019,53124,null,null,null,no
+1921855786,8,Contract,511,4/3/2019,69745,null,null,null,no
+167827031,11,Prepaid,null,null,null,null,null,null,yes
+66948988,3,Prepaid,null,null,null,null,null,null,yes
+364172830,10,Prepaid,null,null,null,null,null,null,yes
+1996682046,4,Contract,565,9/10/2019,63664,null,null,null,no
+654321111,3,Contract,847,1/1/2019,71699,null,null,null,no
+995589902,17,Contract,89,9/10/2019,88391,null,null,null,no
+302197090,6,Prepaid,null,null,null,null,null,null,yes
+1850892552,7,Prepaid,null,null,null,null,null,null,yes
+1345164471,16,Credit Card,null,null,null,Rick,402,1/1/2020,no
+1485781835,15,Contract,561,5/6/2019,105893,null,null,null,no
+2068094776,19,Credit Card,null,null,null,Ryan,974,3/3/2020,no
+1901267843,19,Credit Card,null,null,null,Ryan,478,5/6/2020,no
+782063413,18,Prepaid,null,null,null,null,null,null,yes
+2064695410,16,Credit Card,null,null,null,Kevin,406,7/9/2020,no
+933881001,7,Credit Card,null,null,null,Isaiah,775,4/3/2020,no
+1739038946,9,Prepaid,null,null,null,null,null,null,yes
+521368175,5,Contract,635,5/6/2019,37335,null,null,null,no
+1215774013,18,Prepaid,null,null,null,null,null,null,yes
+1471474244,14,Contract,144,10/9/2019,88283,null,null,null,no
+207831930,9,Prepaid,null,null,null,null,null,null,yes
+1144519166,12,Credit Card,null,null,null,Isaiah,122,12/23/2021,no
+1770183895,8,Contract,730,5/6/2019,90977,null,null,null,no
+483295127,10,Contract,276,12/23/2019,82803,null,null,null,no
+1316824397,5,Credit Card,null,null,null,Kevin,342,3/3/2020,no
+80102845,4,Contract,100,3/3/2019,45970,null,null,null,no
+2035742331,11,Contract,236,9/10/2019,61059,null,null,null,no
+595391418,9,Contract,884,12/23/2019,82373,null,null,null,no
+15602228,7,Contract,669,1/1/2019,19584,null,null,null,no
+1559921063,16,Contract,282,5/6/2019,63170,null,null,null,no
+1086151850,5,Credit Card,null,null,null,Felix,451,1/1/2020,no
+1840442629,8,Credit Card,null,null,null,Joel,631,4/20/2021,no
+1210331816,15,Credit Card,null,null,null,Rick,882,3/3/2020,no
+940906974,11,Credit Card,null,null,null,Rick,921,7/9/2020,no
+872228360,19,Contract,966,4/3/2019,84014,null,null,null,no
+615434721,11,Prepaid,null,null,null,null,null,null,yes
+884207917,20,Contract,758,3/25/2019,97381,null,null,null,no
+629253320,8,Contract,277,1/1/2019,91696,null,null,null,no
+1579084244,2,Credit Card,null,null,null,Michael,480,3/25/2020,no
+534117564,16,Prepaid,null,null,null,null,null,null,yes
+1651608667,7,Prepaid,null,null,null,null,null,null,yes
+1562840404,14,Contract,752,3/6/2019,63412,null,null,null,no
+1843268098,9,Credit Card,null,null,null,Michael,481,3/3/2020,no
+201127190,11,Prepaid,null,null,null,null,null,null,yes
+1175289738,2,Prepaid,null,null,null,null,null,null,yes
+968941403,5,Contract,57,7/9/2019,50858,null,null,null,no
+1856390391,3,Contract,150,2/2/2019,49310,null,null,null,no
+600000441,19,Contract,882,3/3/2019,65420,null,null,null,no
+1652984857,19,Credit Card,null,null,null,Allan,373,2/2/2021,no
+721270817,12,Credit Card,null,null,null,Noah,642,10/9/2020,no
+745957601,17,Credit Card,null,null,null,Allan,795,3/3/2020,no
+1194649605,4,Contract,348,3/25/2019,63047,null,null,null,no
+635882843,4,Credit Card,null,null,null,Ryan,515,1/1/2020,no
+1503460602,4,Prepaid,null,null,null,null,null,null,yes
+536126128,12,Prepaid,null,null,null,null,null,null,yes
+1507615849,2,Contract,437,10/9/2019,27060,null,null,null,no
+1852694815,4,Contract,451,1/1/2019,48651,null,null,null,no
+1174805001,6,Contract,319,1/1/2019,88615,null,null,null,no
+1846444724,4,Prepaid,null,null,null,null,null,null,yes
+671037422,3,Contract,109,4/3/2019,40447,null,null,null,no
+622907099,11,Credit Card,null,null,null,Isaiah,172,12/23/2021,no
+1744153380,1,Credit Card,null,null,null,Brian,582,3/6/2021,no
+600207572,4,Prepaid,null,null,null,null,null,null,yes
+1694261997,12,Credit Card,null,null,null,Noah,468,3/6/2021,no
+693696373,12,Prepaid,null,null,null,null,null,null,yes
+536940755,9,Credit Card,null,null,null,Ryan,822,3/3/2020,no
+1559358056,9,Prepaid,null,null,null,null,null,null,yes
+651599073,8,Prepaid,null,null,null,null,null,null,yes
+485881773,12,Prepaid,null,null,null,null,null,null,yes
+536286072,8,Contract,613,7/9/2019,80644,null,null,null,no
+1732740020,6,Prepaid,null,null,null,null,null,null,yes
+284594519,3,Prepaid,null,null,null,null,null,null,yes
+652937001,2,Prepaid,null,null,null,null,null,null,yes
+229398152,18,Prepaid,null,null,null,null,null,null,yes
+1070679810,7,Prepaid,null,null,null,null,null,null,yes
+927382018,19,Credit Card,null,null,null,Rick,244,5/6/2020,no
+1352597022,8,Contract,179,3/3/2019,30234,null,null,null,no
+783056375,20,Contract,889,4/20/2019,94230,null,null,null,no
+1195879259,7,Prepaid,null,null,null,null,null,null,yes
+1645316075,5,Prepaid,null,null,null,null,null,null,yes
+1520356249,3,Prepaid,null,null,null,null,null,null,yes
+112527282,1,Prepaid,null,null,null,null,null,null,yes
+1537408225,8,Credit Card,null,null,null,Joel,288,6/30/2021,no
+1403235781,14,Prepaid,null,null,null,null,null,null,yes
+1360316008,15,Credit Card,null,null,null,Matt,1077,3/3/2020,no
+1156381510,2,Contract,911,4/2/2019,106735,null,null,null,no
+1173663948,1,Prepaid,null,null,null,null,null,null,yes
+96435550,4,Prepaid,null,null,null,null,null,null,yes
+1559487143,6,Credit Card,null,null,null,Brian,1065,7/9/2020,no
+748466590,4,Prepaid,null,null,null,null,null,null,yes
+1358413567,15,Credit Card,null,null,null,Patrick,561,12/23/2021,no
+462121522,13,Prepaid,null,null,null,null,null,null,yes
+174880234,20,Credit Card,null,null,null,Josh,164,4/3/2021,no
+1071322857,5,Prepaid,null,null,null,null,null,null,yes
+1449048902,8,Prepaid,null,null,null,null,null,null,yes
+1140122394,4,Credit Card,null,null,null,Michael,467,1/1/2020,no
+145806340,1,Credit Card,null,null,null,Matt,451,4/20/2021,no
+1096411290,7,Contract,179,3/6/2019,26939,null,null,null,no
+1750599727,6,Contract,119,4/3/2019,101058,null,null,null,no
+430036257,12,Prepaid,null,null,null,null,null,null,yes
+887795314,10,Prepaid,null,null,null,null,null,null,yes
+877695369,13,Contract,218,3/3/2019,35848,null,null,null,no
+900472194,1,Prepaid,null,null,null,null,null,null,yes
+1000229239,13,Prepaid,null,null,null,null,null,null,yes
+254197863,10,Contract,170,4/3/2019,54171,null,null,null,no
+647849527,16,Prepaid,null,null,null,null,null,null,yes
+1054833758,19,Prepaid,null,null,null,null,null,null,yes
+35172479,8,Prepaid,null,null,null,null,null,null,yes
+713748853,8,Credit Card,null,null,null,Ben,719,12/23/2021,no
+2075075374,13,Credit Card,null,null,null,Kevin,642,7/9/2020,no
+25266929,6,Contract,414,12/23/2019,55396,null,null,null,no
+601263107,11,Contract,903,6/30/2019,85128,null,null,null,no
+855881941,2,Prepaid,null,null,null,null,null,null,yes
+1388621703,10,Prepaid,null,null,null,null,null,null,yes
+1441477075,3,Credit Card,null,null,null,Ben,1044,7/9/2020,no
+2092190343,20,Contract,462,5/6/2019,95636,null,null,null,no
+475540307,5,Credit Card,null,null,null,Matt,525,1/1/2020,no
+1454327174,2,Credit Card,null,null,null,Ryan,809,9/10/2021,no
+1187230976,19,Contract,322,3/25/2019,76746,null,null,null,no
+2124301755,12,Credit Card,null,null,null,Allan,207,4/3/2020,no
+1575009753,4,Credit Card,null,null,null,Josh,373,7/9/2020,no
+1621312351,3,Contract,12,4/20/2019,68694,null,null,null,no
+776987248,14,Credit Card,null,null,null,Felix,765,10/9/2020,no
+1377695242,7,Contract,151,3/25/2019,110086,null,null,null,no
+1368614550,20,Credit Card,null,null,null,Brian,122,3/6/2021,no
+1424360988,19,Credit Card,null,null,null,Ben,472,4/3/2020,no
+595021909,3,Prepaid,null,null,null,null,null,null,yes

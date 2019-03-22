@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Packages {
@@ -8,14 +9,21 @@ public class Packages {
 	static String[][] p_matrix = new String[500][header.length];
 	
 	public static void main(String[] args) {
+		System.out.println("Magic");
 		init();
+		System.out.println(1);
 		StatusGen.init();
+		System.out.println(1);
 		PostalGen.init();
+		System.out.println(1);
 		Trucks.init();
+		System.out.println(1);
 		TransactionGen.init();
+		System.out.println(1);
 		CustomerGen.init();
+		System.out.println(1);
 		PaymentGen.init();
-		
+		System.out.println(1);
 		String output = display(header, p_matrix);
 		write(output, "Packages.csv");
 		
@@ -36,6 +44,7 @@ public class Packages {
 		
 		output = display(PaymentGen.header, PaymentGen.pay_matrix);
 		write(output, "Payments.csv");
+		System.out.println("Done");
 	}
 	
 	public static void write(String output, String filename) {
@@ -106,10 +115,24 @@ public class Packages {
 		return p_matrix;
 	}
 	
+	public static String[][] genComplexInt(int col, int min, int max, String[][] p_matrix){
+		Random rand = new Random();
+		ArrayList<Integer> randInts = new ArrayList<>();
+		for(int i = 0; i < p_matrix.length; i++) {
+			int rint = rand.nextInt(max) + min;
+			while(randInts.contains(rint)){
+				rint = rand.nextInt(max) + min;
+			}
+			randInts.add(rint);
+			p_matrix[i][col] = Integer.toString(rint);
+		}
+		return p_matrix;
+	}
 	public static String[][] genSimpleInt(int col, int min, int max, String[][] p_matrix){
 		Random rand = new Random();
 		for(int i = 0; i < p_matrix.length; i++) {
-			p_matrix[i][col] = Integer.toString(rand.nextInt(max) + min);
+			int rint = rand.nextInt(max) + min;
+			p_matrix[i][col] = Integer.toString(rint);
 		}
 		return p_matrix;
 	}
