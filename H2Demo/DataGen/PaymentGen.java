@@ -11,7 +11,12 @@ public class PaymentGen {
 
     Faker faker = new Faker();
 
-    public PaymentGen(){
+    public PaymentGen(TransactionGen transaction){
+        this.transaction = transaction;
+    }
+
+    public void init(){
+        ArrayList<Integer> transactionIDList = transaction.transactionID;
 
     }
 }
