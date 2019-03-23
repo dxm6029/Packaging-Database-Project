@@ -104,7 +104,6 @@ public class H2Main {
 					                     demo.getConnection(),
 					                     new ArrayList<String>(),
 					                     new ArrayList<String>());
-			System.exit(0);
 			
 			/**
 			 * Iterates the Result set
@@ -117,22 +116,27 @@ public class H2Main {
 			 * you want
 			 */
 			while(results.next()){
-				System.out.printf("\tPerson %d: %s %s %s\n", 
-						          results.getInt(1),
+				System.out.printf("Customer: %s, %s,%d,%s,%d,%s,%s,%s,%s,%d",
+						          results.getString(1),
 						          results.getString(2),
+						          results.getInt(3),
 						          results.getString(4),
-						          results.getString(3));
+						          results.getInt(5),
+									results.getString(6),
+							      results.getString(7),
+							      results.getString(8),
+							      results.getString(9),
+							      results.getInt(10));
+
 			}
-			
 			/**
 			 * A more complex query with columns selected and 
 			 * addition conditions
 			 */
 			System.out.println("\n\nPrint results of SELECT "
-					+ "id, first_name "
-					+ "FROM person "
-					+ "WHERE first_name = \'Corliss\' "
-					+ "AND last_name = \'Walther\'");
+					+ " State, zip, "
+					+ " FROM customer "
+					+ "WHERE zip = \'55961\' ");
 			
 			/**
 			 * This is one way to do this, but not the only
@@ -141,17 +145,14 @@ public class H2Main {
 			 * you can just construct the whole query here 
 			 */
 			ArrayList<String> columns = new ArrayList<String>();
-			columns.add("id");
-			columns.add("first_name");
-			columns.add("last_name");
+			columns.add("state");
+			columns.add("zip");
 			
 			/**
 			 * Conditionals
 			 */
 			ArrayList<String> whereClauses = new ArrayList<String>();
-			whereClauses.add("first_name = \'Corliss\'");
-			whereClauses.add("last_name = \'Walther\'");
-			
+			whereClauses.add("zip = \'55961\'");
 			/**
 			 * query and get the result set
 			 * 
@@ -164,15 +165,16 @@ public class H2Main {
                     demo.getConnection(),
                     columns,
                     whereClauses);
+			System.out.println(results2.toString());
 			while(results2.next()){
-			System.out.printf("\tPerson %d: %s %s\n", 
-				          results2.getInt(1),
-				          results2.getString(2),
-				          results2.getString(3));
+				System.out.printf("Customer: %s, %d",
+					results2.getString(1),
+					results2.getInt(2));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		System.exit(0);
 	}
 
 }
