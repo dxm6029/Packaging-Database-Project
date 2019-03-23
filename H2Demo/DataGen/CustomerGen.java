@@ -62,6 +62,7 @@ public class CustomerGen {
             while(customerID.contains(id)){
                 id = Integer.getInteger(faker.idNumber().valid());
             }
+            customerID.add(id);
         }
     }
 

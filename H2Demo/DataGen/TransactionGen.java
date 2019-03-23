@@ -58,6 +58,7 @@ public class TransactionGen {
             while(transactionID.contains(id)){
                 id = Integer.getInteger(faker.idNumber().valid());
             }
+            transactionID.add(id);
         }
     }
 
