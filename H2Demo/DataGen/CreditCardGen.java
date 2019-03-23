@@ -1,23 +1,27 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-public class ContractGen {
+public class CreditCardGen {
 
-    ArrayList<Integer> paymentID;
-    ArrayList <String> billDate;
-    ArrayList <Integer> totalPackageNum;
+    ArrayList <Integer> paymentID;
+    ArrayList <String> cardHolderName;
+    ArrayList <Integer> cardNum;
+    ArrayList <Integer> cvv;
+    ArrayList <String> expirationDate;
 
     PaymentGen payment;
+    MakesTransactionGen transactions;
 
-    public ContractGen(PaymentGen payment){
+
+    public CreditCardGen(PaymentGen payment){
         this.payment = payment;
-
     }
 
     public void init(){
-        ArrayList<String> paymentTypesList = payment.type;
         ArrayList<Integer> payIDList = payment.paymentID;
-        fillPaymentID(paymentTypesList, payIDList);
+//        ArrayList<Integer>
+//        ArrayList<String> cardHolderNameList = transactions.;
+//        fillPaymentID(paymentTypesList, payIDList);
     }
 
     public void fillPaymentID(ArrayList<String> paymentTypeList, ArrayList<Integer> payIDList){
@@ -32,8 +36,8 @@ public class ContractGen {
                     }
                 }
                 paymentID.add(id);
-                totalPackageNum.add(count);
-                billDate.add(rand.nextInt(12)+1 + "/1");
+//                totalPackageNum.add(count);
+//                billDate.add(rand.nextInt(12)+1 + "/1");
             }
         }
     }
