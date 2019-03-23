@@ -7,19 +7,19 @@ public class Package {
     String deliveryType;
     int packageID;
     ArrayList<String> location;
-    String expectedDelivery;
+    String startedDelivery;
     String extraInfo;
     String deliveryTime;
     int transactionID;
 
-    public Package(String packageType, double weight, String deliveryType, int packageID, String expectedDelivery,
+    public Package(String packageType, double weight, String deliveryType, int packageID, String startedDelivery,
                    String extraInfo, String deliveryTime, int transactionID){
         this.packageType = packageType;
         this.weight = weight;
         this.deliveryType = deliveryType;
         this.packageID = packageID;
         this.location = new ArrayList<>();
-        this.expectedDelivery = expectedDelivery;
+        this.startedDelivery = startedDelivery;
         this.extraInfo = extraInfo;
         this.deliveryTime = deliveryTime;
         this.transactionID = transactionID;
@@ -31,8 +31,7 @@ public class Package {
         this.weight = Double.parseDouble(data[1]);
         this.deliveryType = data[2];
         this.packageID = Integer.parseInt(data[3]);
-//        this.location = ;
-        this.expectedDelivery = data[4];
+        this.startedDelivery = data[4];
         this.extraInfo = data[5];
         this.deliveryTime = data[6];
         this.transactionID = Integer.parseInt(data[7]);
@@ -79,12 +78,12 @@ public class Package {
         this.location = location;
     }
 
-    public String getExpectedDelivery() {
-        return expectedDelivery;
+    public String getStartedDelivery() {
+        return startedDelivery;
     }
 
-    public void setExpectedDelivery(String expectedDelivery) {
-        this.expectedDelivery = expectedDelivery;
+    public void setStartedDelivery(String expectedDelivery) {
+        this.startedDelivery = expectedDelivery;
     }
 
     public String getExtraInfo() {
