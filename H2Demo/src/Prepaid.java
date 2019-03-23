@@ -2,21 +2,18 @@ public class Prepaid {
 
     int paymentID;
     double cost;
-    String type;
     boolean used;
 
-    public Prepaid(int payID, double cost, String type, boolean used){
+    public Prepaid(int payID, double cost, boolean used){
         this.paymentID = payID;
         this.cost = cost;
-        this.type = type;
         this.used = used;
     }
 
     public Prepaid(String[] data){
         this.paymentID = Integer.parseInt(data[0]);
         this.cost = Double.parseDouble(data[1]);
-        this.type = data[2];
-        this.used = Boolean.parseBoolean(data[3]);
+        this.used = Boolean.parseBoolean(data[2]);
     }
 
     public int getPaymentID() {
@@ -33,14 +30,6 @@ public class Prepaid {
 
     public void setCost(double cost) {
         this.cost = cost;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 
     public boolean isUsed() {

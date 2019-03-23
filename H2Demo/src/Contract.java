@@ -2,15 +2,13 @@ public class Contract{
 
     int paymentID;
     double cost;
-    String type;
     double total; // I can also change to float?
     int billDate;
     int totalPackageNum;
 
-    public Contract(int payID, double cost, String type, double total, int billDate, int totalPackageNum){
+    public Contract(int payID, double cost, double total, int billDate, int totalPackageNum){
         this.paymentID = payID;
         this.cost = cost;
-        this.type = type;
         this.total = total;
         this.billDate = billDate;
         this.totalPackageNum = totalPackageNum;
@@ -19,10 +17,9 @@ public class Contract{
     public Contract(String[] data){
         this.paymentID = Integer.parseInt(data[0]);
         this.cost = Double.parseDouble(data[1]);
-        this.type = data[2];
-        this.total = Double.parseDouble(data[3]);
-        this.billDate = Integer.parseInt(data[4]);
-        this.totalPackageNum = Integer.parseInt(data[5]);
+        this.total = Double.parseDouble(data[2]);
+        this.billDate = Integer.parseInt(data[3]);
+        this.totalPackageNum = Integer.parseInt(data[4]);
     }
 
     public int getPaymentID() {
@@ -39,14 +36,6 @@ public class Contract{
 
     public void setCost(double cost) {
         this.cost = cost;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 
     public double getTotal() {
