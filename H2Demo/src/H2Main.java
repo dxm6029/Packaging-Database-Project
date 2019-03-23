@@ -94,6 +94,7 @@ public class H2Main {
 			/**
 			 * Just displays the table
 			 */
+			System.out.println("Customer table initialized!...");
 			CustomerTable.printCustomerTable(demo.getConnection());
 			
 			/**
@@ -116,7 +117,7 @@ public class H2Main {
 			 * you want
 			 */
 			while(results.next()){
-				System.out.printf("Customer: %s, %s,%d,%s,%d,%s,%s,%s,%s,%d",
+				System.out.printf("Customer: %s, %s,%d,%s,%d,%s,%s,%s,%s,%d\n",
 						          results.getString(1),
 						          results.getString(2),
 						          results.getInt(3),
@@ -165,7 +166,6 @@ public class H2Main {
                     demo.getConnection(),
                     columns,
                     whereClauses);
-			System.out.println(results2.toString());
 			while(results2.next()){
 				System.out.printf("Customer: %s, %d",
 					results2.getString(1),
