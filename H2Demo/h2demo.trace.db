@@ -10,3 +10,9 @@ INSERT INTO person (id, FIRST_NAME, LAST_NAME, MI) VALUES [42001-199]
 2019-03-22 10:16:38 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CUSTOMER" not found; SQL statement:
 INSERT INTO Customer (name, customerID, email, streetNumber, streetName, apptNum, city, state, zip) VALUES [42102-199]
+2019-03-23 16:54:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS CUSTOMER(FNAME VARCHAR(255),LNAME VARCHAR(255),CUSTOMERID INT PRIMARY KEY,EMAIL VARCHAR(50),STREETNUM INT, STREETNAME VARCHAR(225),APTNUM VARCHAR(50),CITY VARCHAR(100)STATE[*] VARCHAR(100)STATE VARCHAR(100)ZIP INT); "; expected "FOR, UNSIGNED, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS customer(fName VARCHAR(255),lName VARCHAR(255),customerID INT PRIMARY KEY,email VARCHAR(50),streetNum INT, streetName VARCHAR(225),aptNum VARCHAR(50),city VARCHAR(100)state VARCHAR(100)state VARCHAR(100)zip INT); [42001-197]
+2019-03-23 16:54:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CUSTOMER" not found; SQL statement:
+INSERT INTO customer (fname, lname, customerID, email, streetNumber, streetName, apptNum, city, state, zip) VALUES [42102-197]

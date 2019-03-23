@@ -83,21 +83,21 @@ public class H2DemoMain {
 			 * Creates a sample Person table 
 			 * and populates it from a csv file
 			 */
-			CustomerTable.createPersonTable(demo.getConnection());
+			CustomerTable.createCustomerTable(demo.getConnection());
 			CustomerTable.populateCustomerTableFromCSV(
 					demo.getConnection(),
 					"csv/CustomerEx.csv");
-			
+
 			/**
 			 * Just displays the table
 			 */
-			CustomerTable.printPersonTable(demo.getConnection());
+			CustomerTable.printCustomerTable(demo.getConnection());
 			
 			/**
 			 * Runs a basic query on the table
 			 */
 			System.out.println("\n\nPrint results of SELECT * FROM Customers");
-			ResultSet results = CustomerTable.queryPersonTable(
+			ResultSet results = CustomerTable.queryCustomerTable(
 					                     demo.getConnection(),
 					                     new ArrayList<String>(),
 					                     new ArrayList<String>());
@@ -156,7 +156,7 @@ public class H2DemoMain {
 			 * Notice not all of the columns are here because
 			 * we limited what to show in the query
 			 */
-			ResultSet results2 = CustomerTable.queryPersonTable(
+			ResultSet results2 = CustomerTable.queryCustomerTable(
                     demo.getConnection(),
                     columns,
                     whereClauses);

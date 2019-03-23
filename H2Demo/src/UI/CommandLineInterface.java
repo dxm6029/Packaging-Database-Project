@@ -136,7 +136,7 @@ public class CommandLineInterface {
         return options;
     }
 
-    private void getPackageInfo(String packageId) {
+    private boolean getPackageInfo(String packageId) {
         return false;
     }
 }

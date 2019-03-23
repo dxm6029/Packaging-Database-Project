@@ -51,7 +51,7 @@ public class CustomerTable {
 		 * that were read in. This is more efficent then adding one
 		 * at a time
 		 */
-		String sql = createPersonInsertSQL(customers);
+		String sql = createCustomerInsertSQL(customers);
 		
 		/**
 		 * Create and execute an SQL statement
@@ -67,21 +67,13 @@ public class CustomerTable {
 	 * 
 	 * @param conn: the database connection to work with
 	 */
-	public static void createPersonTable(Connection conn){
+	public static void createCustomerTable(Connection conn){
 		try {
-			String query = "CREATE TABLE IF NOT EXISTS customer("   // have to fix this still!
-					     + "fName VARCHAR(255),"
-					     + "lName VARCHAR(255),"
-					     + "customerID INT PRIMARY KEY,"
-					     + "email VARCHAR(50),"
-						 + "streetNum INT, "
-						 + "streetName VARCHAR(225),"
-						 + "aptNum VARCHAR(50),"
-						 + "city VARCHAR(100)"
-						 + "state VARCHAR(100)"
-						 + "state VARCHAR(100)"
-						 + "zip INT"
-					     + ");" ;
+			//FOR THE LOVE OF GOD UNDO THIS
+			String q = "DROP TABLE IF EXISTS customer";
+			Statement stmtt = conn.createStatement();
+			stmtt.execute(q);
+			String query = "CREATE TABLE IF NOT EXISTS customer(fName VARCHAR(255),lName VARCHAR(255),customerID INT PRIMARY KEY,email VARCHAR(50),streetNumber INT,streetName VARCHAR(225),apptNum VARCHAR(50),city VARCHAR(100), state VARCHAR(100), zip INT)";
 			
 			/**
 			 * Create a query and execute
@@ -97,7 +89,7 @@ public class CustomerTable {
 	 * Adds a single Customer to the database
 	 *
 	 */
-	public static void addPerson(Connection conn, String fname, String lname, int custID, String email, int streetNum,
+	public static void addCustomer(Connection conn, String fname, String lname, int custID, String email, int streetNum,
 								 String streetName, String apptNum, String city, String state, int zip){
 		
 		/**
@@ -125,7 +117,7 @@ public class CustomerTable {
 	 * 
 	 * @return
 	 */
-	public static String createPersonInsertSQL(ArrayList<Customer> people){
+	public static String createCustomerInsertSQL(ArrayList<Customer> people){
 		StringBuilder sb = new StringBuilder();
 		
 		/**
@@ -168,7 +160,7 @@ public class CustomerTable {
 	 * @param whereClauses: conditions to limit query by
 	 * @return
 	 */
-	public static ResultSet queryPersonTable(Connection conn,
+	public static ResultSet queryCustomerTable(Connection conn,
 			                                 ArrayList<String> columns,
 			                                 ArrayList<String> whereClauses){
 		StringBuilder sb = new StringBuilder();
@@ -242,7 +234,7 @@ public class CustomerTable {
 	 * Queries and print the table
 	 * @param conn
 	 */
-	public static void printPersonTable(Connection conn){
+	public static void printCustomerTable(Connection conn){
 		String query = "SELECT * FROM customer;";
 		try {
 			Statement stmt = conn.createStatement();
