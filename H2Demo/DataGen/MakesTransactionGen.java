@@ -12,7 +12,7 @@ public class MakesTransactionGen {
     public MakesTransactionGen(CustomerGen customer, TransactionGen transaction, PaymentGen payment){
         this.customer = customer;
         this.transaction = transaction;
-
+        this.payment = payment;
     }
     
     public void init(){
