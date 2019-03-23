@@ -11,7 +11,6 @@ public class Customer {
 	String lname;
 	int customerID;
 	String email;
-	ArrayList<Integer> phoneNum;
 	int streetNumber;
 	String streetName;
 	String apptNum;
@@ -26,7 +25,6 @@ public class Customer {
 		this.lname = lname;
 		this.customerID = custID;
 		this.email = email;
-		this.phoneNum = new ArrayList<>();
 		this.streetNumber = streetNum;
 		this.streetName = streetName;
 		this.apptNum = apptNum;
@@ -41,7 +39,6 @@ public class Customer {
 		this.lname = data[1];
 		this.customerID = Integer.parseInt(data[2]);
 		this.email = data[3];
-//		this.phoneNum = ;
 		this.streetNumber = Integer.parseInt(data[4]);
 		this.streetName = data[5];
 		this.apptNum = data[6];
@@ -81,14 +78,6 @@ public class Customer {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}
-
-	public ArrayList<Integer> getPhoneNum() {
-		return phoneNum;
-	}
-
-	public void setPhoneNum(ArrayList<Integer> phoneNum) {
-		this.phoneNum = phoneNum;
 	}
 
 	public int getStreetNumber() {

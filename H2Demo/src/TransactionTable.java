@@ -135,14 +135,13 @@ public class TransactionTable {
             /**
              * For each person append a (id, first_name, last_name, MI) tuple
              *
-             * If it is not the last person add a comma to seperate
+             * If it is not the last transaction add a comma to seperate
              *
-             * If it is the last person add a semi-colon to end the statement
+             * If it is the last transaction add a semi-colon to end the statement
              */
             for(int i = 0; i < transactions.size(); i++){
                 Transaction p = transactions.get(i);
                 sb.append(String.format("(\'%s\', \'%s\', %d,\'%s\',%d,\'%s\',\'%s\',\'%s\',\'%s\',%d)",
-                        p.getFnameName(), p.getLnameName(), p.getCustomerID(), p.getEmail(), p.getStreetNumber(),
                         p.getStreetName(), p.getApptNum(), p.getCity(), p.getState(), p.getZip()));
                 if( i != transactions.size()-1){
                     sb.append(",");
@@ -237,7 +236,7 @@ public class TransactionTable {
          * Queries and print the table
          * @param conn
          */
-        public static void printPersonTable(Connection conn){
+        public static void printTransactionTable(Connection conn){
             String query = "SELECT * FROM transaction;";
             try {
                 Statement stmt = conn.createStatement();
