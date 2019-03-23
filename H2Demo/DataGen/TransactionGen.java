@@ -5,7 +5,6 @@ import java.util.Locale;
 
 public class TransactionGen {
     ArrayList<Integer> transactionID;
-    ArrayList<Double> cost;
     ArrayList<String> rfName;
     ArrayList<String> lrName;
     ArrayList<Integer> streetNum;
@@ -19,16 +18,10 @@ public class TransactionGen {
 
     public void init(){
         createNames();
-        createCost();
         createID();
         createAddress();
     }
 
-    private void createCost() {
-        for(int i = 0; i < 750; i++){
-            cost.add(faker.number().randomDouble(2,3, 20));
-        }
-    }
 
     private void createAddress() {
         Faker usFaker = new Faker(new Locale("en-us"));
