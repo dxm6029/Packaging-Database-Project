@@ -1,16 +1,14 @@
 public class CreditCard {
 
     int paymentID;
-    double cost;
     String cardholderName;
     int cardNum;
     int cvv;
     int expirationDate;
 
 
-    public CreditCard(int payID, double cost, String name, int cardNum, int cvv, int expirationDate){
+    public CreditCard(int payID, String name, int cardNum, int cvv, int expirationDate){
         this.paymentID = payID;
-        this.cost = cost;
         this.cardholderName = name;
         this.cardNum = cardNum;
         this.cvv = cvv;
@@ -19,7 +17,6 @@ public class CreditCard {
 
     public CreditCard(String[] data){
         this.paymentID = Integer.parseInt(data[0]);
-        this.cost = Double.parseDouble(data[1]);
         this.cardholderName = data[2];
         this.cardNum = Integer.parseInt(data[3]);
         this.cvv = Integer.parseInt(data[4]);
@@ -32,14 +29,6 @@ public class CreditCard {
 
     public void setPaymentID(int paymentID) {
         this.paymentID = paymentID;
-    }
-
-    public double getCost() {
-        return cost;
-    }
-
-    public void setCost(double cost) {
-        this.cost = cost;
     }
 
     public String getCardholderName() {

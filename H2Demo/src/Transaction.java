@@ -1,7 +1,6 @@
 public class Transaction {
 
     int transactionID;
-    double cost;
     String rfName;
     String lrName;
     int streetNum;
@@ -14,10 +13,9 @@ public class Transaction {
 
 
 
-    public Transaction(int transactionID, double cost, String rfName, String lrName, int streetNum, String streetName,
+    public Transaction(int transactionID, String rfName, String lrName, int streetNum, String streetName,
             String apptNum, String city, String state, String country, int zip){
         this.transactionID = transactionID;
-        this.cost = cost;
         this.rfName = rfName;
         this.lrName = lrName;
         this.streetNum = streetNum;
@@ -31,16 +29,15 @@ public class Transaction {
 
     public Transaction(String[] data){
         this.transactionID = Integer.parseInt(data[0]);
-        this.cost = Integer.parseInt(data[1]);
-        this.rfName = data[2];
-        this.lrName = data[3];
-        this.streetNum = Integer.parseInt(data[4]);
-        this.streetName = data[5];
-        this.apptNum = data[6];
-        this.city = data[7];
-        this.state = data[8];
-        this.country = data[9];
-        this.zip = Integer.parseInt(data[10]);
+        this.rfName = data[1];
+        this.lrName = data[2];
+        this.streetNum = Integer.parseInt(data[3]);
+        this.streetName = data[4];
+        this.apptNum = data[5];
+        this.city = data[6];
+        this.state = data[7];
+        this.country = data[8];
+        this.zip = Integer.parseInt(data[9]);
     }
 
     public int getTransactionID() {
@@ -49,14 +46,6 @@ public class Transaction {
 
     public void setTransactionID(int transactionID) {
         this.transactionID = transactionID;
-    }
-
-    public double getCost() {
-        return cost;
-    }
-
-    public void setCost(double cost) {
-        this.cost = cost;
     }
 
     public String getRfName() {

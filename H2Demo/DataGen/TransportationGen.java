@@ -32,7 +32,6 @@ public class TransportationGen {
         for (int i = 0; i < 10; i++){
             company.add(companies[rand.nextInt(4)]); // random numbers between 0 and 3
         }
-
     }
 
     public void createDriverID(){

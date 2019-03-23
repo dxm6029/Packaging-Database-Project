@@ -19,7 +19,7 @@ public class MakesTransactionGen {
     }
 
     private void createCombos(ArrayList<Integer> customerIDList, ArrayList<Integer> transactionIDList) {
-        for(int i = 5; i < 500; i++){
+        for(int i = 5; i < 500; i++){ // adds customer/transaction ids to this class's customer/transaction id list
             customerID.add(customerIDList.get(i));
             transactionID.add(transactionIDList.get(i-5));
         }
