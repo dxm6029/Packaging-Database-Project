@@ -6,7 +6,10 @@ public class Creator {
         TransactionGen transaction = new TransactionGen();
         transaction.init();
 
-        MakesTransactionGen makesTransaction = new MakesTransactionGen(customer,transaction);
+        PaymentGen payment = new PaymentGen();
+        payment.init();
+
+        MakesTransactionGen makesTransaction = new MakesTransactionGen(customer,transaction, payment);
         makesTransaction.init();
 
         PostalWorkerGen worker = new PostalWorkerGen();
@@ -18,9 +21,8 @@ public class Creator {
         TransportationGen transportation = new TransportationGen();
         transportation.init();
 
-        PaymentGen payment = new PaymentGen();
-        payment.init();
-
+        PackageTransportationGen packageTransportation = new PackageTransportationGen(packages, transportation);
+        packageTransportation.init();
 
     }
 }

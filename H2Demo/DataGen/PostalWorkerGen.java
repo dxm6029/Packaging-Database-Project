@@ -5,7 +5,7 @@ import java.util.Locale;
 
 public class PostalWorkerGen {
 
-    ArrayList<String> name;
+    ArrayList<String> username;
     ArrayList<String> location;
     ArrayList<Integer> workerID;
 
@@ -19,7 +19,11 @@ public class PostalWorkerGen {
     }
 
     private void createName() {
-        name.add(faker.funnyName().name());
+        String usernamegen = faker.name().firstName() + "_" + faker.name().lastName();
+        while(username.contains(usernamegen)){
+            usernamegen = faker.name().firstName() + "_" + faker.name().lastName();
+        }
+        username.add(usernamegen);
     }
 
     private void createLocation() {
