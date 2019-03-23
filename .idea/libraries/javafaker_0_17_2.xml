@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="javafaker-0.17.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/H2Demo/DataGen/javafaker-0.17.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
