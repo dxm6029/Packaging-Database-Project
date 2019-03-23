@@ -3,6 +3,7 @@ import com.github.javafaker.Faker;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 public class PackagesGen {
     ArrayList<String> packageType;
@@ -10,7 +11,7 @@ public class PackagesGen {
     ArrayList<String> deliveryType;
     ArrayList<Integer> packageID;
     ArrayList<String> location;
-    ArrayList<String> expectedDelivery;
+    ArrayList<String> startedDelivery;
     ArrayList<String> extraInfo;
     ArrayList<String> deliveryTime;
     ArrayList<Integer> transactionID;
@@ -33,6 +34,11 @@ public class PackagesGen {
         createLocation();
         createTransID();
         createWeight();
+        createPackageType();
+        createDeliveryType();
+        createExtraInfo();
+        createStartedDelivery();
+        createDeliveryTime();
     }
 
     private void createWeight() {
@@ -60,5 +66,39 @@ public class PackagesGen {
             }
             packageID.add(id);
         }
+    }
+
+    public void createPackageType(){
+        String [] packType = {"Envelope", "Post Card", "Large", "Medium", "Small", "Extra Large", "Extra Small"};
+        Random rand = new Random();
+        for (int i = 0; i < 750; i++){
+            packageType.add(packType[rand.nextInt(7)]);
+        }
+    }
+
+    public void createDeliveryType(){
+        String [] delivType = {"1-Day", "Overnight", "3-5 Day", "7+ Day"};
+        Random rand = new Random();
+        for (int i = 0; i < 750; i++){
+            deliveryType.add(delivType[rand.nextInt(4)]); // random numbers between 0 and 3
+        }
+    }
+
+    public void createExtraInfo(){
+        String [] exInfo = {"1-Day", "Overnight", "3-5 Day", "7+ Day"};
+        Random rand = new Random();
+        for (int i = 0; i < 750; i++){
+            extraInfo.add(exInfo[rand.nextInt(4)]); // random numbers between 0 and 3
+        }
+    }
+
+    public void createStartedDelivery(){
+        for (int i = 0; i < 750; i++)
+            startedDelivery.add(faker.date().past(0, TimeUnit.HOURS).toString());
+    }
+
+    public void createDeliveryTime(){
+        for (int i = 0; i < 750; i++)
+            deliveryTime.add(null);
     }
 }

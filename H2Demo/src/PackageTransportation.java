@@ -1,24 +1,24 @@
 public class PackageTransportation {
 
-    int customerID;
+    int packageID;
     int transportID;
 
     public PackageTransportation(int customerID, int transactionID){
-        this.customerID = customerID;
+        this.packageID = customerID;
         this.transportID = transactionID;
     }
 
     public PackageTransportation(String[] data){
-        this.customerID = Integer.parseInt(data[0]);
+        this.packageID = Integer.parseInt(data[0]);
         this.transportID = Integer.parseInt(data[1]);
     }
 
-    public int getCustomerID() {
-        return customerID;
+    public int getPackageID() {
+        return packageID;
     }
 
-    public void setCustomerID(int customerID) {
-        this.customerID = customerID;
+    public void setPackageID(int customerID) {
+        this.packageID = customerID;
     }
 
     public int getTransportID() {
