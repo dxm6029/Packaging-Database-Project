@@ -86,7 +86,7 @@ public class H2DemoMain {
 			CustomerTable.createPersonTable(demo.getConnection());
 			CustomerTable.populateCustomerTableFromCSV(
 					demo.getConnection(),
-					"csv/Customers.csv");
+					"csv/CustomerEx.csv");
 			
 			/**
 			 * Just displays the table

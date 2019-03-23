@@ -16,6 +16,7 @@ public class TransactionGen {
     ArrayList<String> country;
     ArrayList<Integer> zip;
     Faker faker = new Faker();
+
     public void init(){
         createNames();
         createCost();

@@ -69,7 +69,7 @@ public class CustomerTable {
 	 */
 	public static void createPersonTable(Connection conn){
 		try {
-			String query = "CREATE TABLE IF NOT EXISTS person("   // have to fix this still!
+			String query = "CREATE TABLE IF NOT EXISTS customer("   // have to fix this still!
 					     + "fName VARCHAR(255),"
 					     + "lName VARCHAR(255),"
 					     + "customerID INT PRIMARY KEY,"
@@ -103,7 +103,7 @@ public class CustomerTable {
 		/**
 		 * SQL insert statement
 		 */
-		String query = String.format("INSERT INTO Customer "
+		String query = String.format("INSERT INTO customer "
 						+ "VALUES(\'%s\', \'%s\',%d,\'%s\',%d,\'%s\',\'%s\',\'%s\',\'%s\',%d);",
 						fname, lname, custID, email, streetNum, streetName, apptNum, city, state, zip );
 		try {
@@ -134,7 +134,7 @@ public class CustomerTable {
 		 * the order of the data in reference 
 		 * to the columns to ad dit to
 		 */
-		sb.append("INSERT INTO Customer (fname, lname, customerID, email, streetNumber, streetName, apptNum, city, " +
+		sb.append("INSERT INTO customer (fname, lname, customerID, email, streetNumber, streetName, apptNum, city, " +
 				"state, zip) VALUES");
 		
 		/**
@@ -201,7 +201,7 @@ public class CustomerTable {
 		/**
 		 * Tells it which table to get the data from
 		 */
-		sb.append("FROM Customer ");
+		sb.append("FROM customer ");
 		
 		/**
 		 * If we gave it conditions append them
@@ -243,13 +243,13 @@ public class CustomerTable {
 	 * @param conn
 	 */
 	public static void printPersonTable(Connection conn){
-		String query = "SELECT * FROM Customer;";
+		String query = "SELECT * FROM customer;";
 		try {
 			Statement stmt = conn.createStatement();
 			ResultSet result = stmt.executeQuery(query);
 			
 			while(result.next()){
-				System.out.printf("Customer %s,%s, %d,%s,%d,%s,%s,%s,%s,%d\n",
+				System.out.printf("customer %s,%s, %d,%s,%d,%s,%s,%s,%s,%d\n",
 						          result.getString(1),
 						          result.getString(2),
 						          result.getInt(3),

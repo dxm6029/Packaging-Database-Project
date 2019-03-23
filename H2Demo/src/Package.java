@@ -10,9 +10,10 @@ public class Package {
     String expectedDelivery;
     String extraInfo;
     String deliveryTime;
+    int transactionID;
 
     public Package(String packageType, double weight, String deliveryType, int packageID, String expectedDelivery,
-                   String extraInfo, String deliveryTime){
+                   String extraInfo, String deliveryTime, int transactionID){
         this.packageType = packageType;
         this.weight = weight;
         this.deliveryType = deliveryType;
@@ -21,6 +22,7 @@ public class Package {
         this.expectedDelivery = expectedDelivery;
         this.extraInfo = extraInfo;
         this.deliveryTime = deliveryTime;
+        this.transactionID = transactionID;
 
     }
 
@@ -33,7 +35,9 @@ public class Package {
         this.expectedDelivery = data[4];
         this.extraInfo = data[5];
         this.deliveryTime = data[6];
+        this.transactionID = Integer.parseInt(data[7]);
     }
+
 
     public String getPackageType() {
         return packageType;
@@ -99,4 +103,11 @@ public class Package {
         this.deliveryTime = deliveryTime;
     }
 
+    public int getTransactionID() {
+        return transactionID;
+    }
+
+    public void setTransactionID(int transactionID) {
+        this.transactionID = transactionID;
+    }
 }
