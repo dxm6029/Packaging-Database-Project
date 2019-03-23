@@ -1,0 +1,9 @@
+package UI;
+
+public enum UIState {
+    UNKNOWN_USER_HOME,
+    CUSTOMER_HOME,
+    WORKER_HOME,
+    PACKAGES_LIST,
+    TRANSACTION_LIST
+}
