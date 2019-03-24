@@ -119,7 +119,7 @@ public class H2Main {
 			 * you want
 			 */
 			while(results.next()){
-				System.out.printf("Customer: %s, %s,%d,%s,%s,%s,%s,%s,%s,%s\n",
+				System.out.printf("Customer: %s, %s,%d,%s,%s,%s,%s,%s,%s,%s,%s\n",
 						          results.getString(1),
 						          results.getString(2),
 						          results.getInt(3),
@@ -129,7 +129,8 @@ public class H2Main {
 							      results.getString(7),
 							      results.getString(8),
 							      results.getString(9),
-							      results.getString(10));
+							      results.getString(10),
+						 	      results.getString(11));
 
 			}
 			/**
@@ -137,9 +138,9 @@ public class H2Main {
 			 * addition conditions
 			 */
 			System.out.println("\n\nPrint results of SELECT "
-					+ " State, zip, "
+					+ " fName, lName, Country "
 					+ " FROM customer "
-					+ "WHERE zip = \'55961\' ");
+					+ "WHERE Country NOT = \'United States\' ");
 			
 			/**
 			 * This is one way to do this, but not the only
@@ -148,14 +149,15 @@ public class H2Main {
 			 * you can just construct the whole query here 
 			 */
 			ArrayList<String> columns = new ArrayList<String>();
-			columns.add("state");
-			columns.add("zip");
+			columns.add("fName");
+			columns.add("lName");
+			columns.add("Country");
 			
 			/**
 			 * Conditionals
 			 */
 			ArrayList<String> whereClauses = new ArrayList<String>();
-			whereClauses.add("zip = \'55961\'");
+			whereClauses.add("Country NOT = \'United States\'");
 			/**
 			 * query and get the result set
 			 * 
@@ -169,13 +171,15 @@ public class H2Main {
                     columns,
                     whereClauses);
 			while(results2.next()){
-				System.out.printf("Customer: %s, %s",
+				System.out.printf("Customer: %s %s, %s\n",
 					results2.getString(1),
-					results2.getString(2));
+					results2.getString(2),
+				    results2.getString(3));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		System.out.println(CustomerTable.getPassword("angelena.gulgowski@hotmail.com", demo.getConnection()));
 		System.exit(0);
 	}
 
