@@ -21,7 +21,7 @@ public class User {
             if(H2Main.getPassword(userName).equals(customerID)){
                 System.out.println("Welcome to 4Squared!");
             }else{
-                System.out.println("fuck off");
+                System.out.println("USERNAME AND/OR PASSWORD INVALID");
             }
 
 
