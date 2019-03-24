@@ -18,6 +18,8 @@ public class H2Main {
 
 	//The connection to the database
 	private Connection conn;
+	public static H2Main demo = new H2Main();
+
 	
 	/**
 	 * Create a database connection with the given params
@@ -71,8 +73,7 @@ public class H2Main {
 	 * @param args: not used but you can use them
 	 */
 	public static void main(String[] args) {
-		
-		H2Main demo = new H2Main();
+
 		
 		//Hard drive location of the database
 		String location = "./h2demo/h2demo";
@@ -157,7 +158,7 @@ public class H2Main {
 			 * Conditionals
 			 */
 			ArrayList<String> whereClauses = new ArrayList<String>();
-			whereClauses.add("Country NOT = \'United States\'");
+			whereClauses.add("Country != \'United States\'");
 			/**
 			 * query and get the result set
 			 * 
@@ -181,6 +182,10 @@ public class H2Main {
 		}
 		System.out.println(CustomerTable.getPassword("angelena.gulgowski@hotmail.com", demo.getConnection()));
 		System.exit(0);
+	}
+
+	public static String getPassword(String email){
+		return CustomerTable.getPassword(email, demo.getConnection());
 	}
 
 }

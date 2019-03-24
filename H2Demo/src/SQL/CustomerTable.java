@@ -83,6 +83,7 @@ public class CustomerTable {
 			 * Create a query and execute
 			 */
 			Statement stmt = conn.createStatement();
+			System.out.println(query +"\n\n\n");
 			stmt.execute(query);
 		} catch (SQLException e) {
 			e.printStackTrace();
