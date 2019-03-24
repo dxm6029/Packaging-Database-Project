@@ -9,15 +9,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-/**
- * Class to make and manipulate the transaction table
- * @author scj
- *
- */
-public class TransactionTable {
+public class MakesTransactionTable {
 
     /**
-     * Reads a cvs file for data and adds them to the transaction table
+     * Reads a cvs file for data and adds them to the person table
      *
      * Does not create the table. It must already be created
      *
@@ -25,7 +20,7 @@ public class TransactionTable {
      * @param fileName
      * @throws SQLException
      */
-    public static void populateTransactionTableFromCSV(Connection conn,
+    public static void populateMakesTransactionTableFromCSV(Connection conn,
                                                     String fileName)
             throws SQLException{
         /**
@@ -35,14 +30,14 @@ public class TransactionTable {
          * You can do the reading and adding to the table in one
          * step, I just broke it up for example reasons
          */
-        ArrayList<Transaction> transactions = new ArrayList<Transaction>();
+        ArrayList<MakesTransaction> makesTransactions = new ArrayList<MakesTransaction>();
         try {
             BufferedReader br = new BufferedReader(new FileReader(fileName));
             String line;
             br.readLine();
             while((line = br.readLine()) != null){
                 String[] split = line.split(",");
-                transactions.add(new Transaction(split));
+                makesTransactions.add(new MakesTransaction(split));
             }
             br.close();
         } catch (IOException e) {
@@ -54,7 +49,7 @@ public class TransactionTable {
          * that were read in. This is more efficent then adding one
          * at a time
          */
-        String sql = createTransactionsInsertSQL(transactions);
+        String sql = createMakesTransactionInsertSQL(makesTransactions);
 
         /**
          * Create and execute an SQL statement
@@ -67,19 +62,17 @@ public class TransactionTable {
     }
 
     /**
-     * Create the transaction table with the given attributes
+     * Create the person table with the given attributes
      *
      * @param conn: the database connection to work with
      */
-    public static void createTransactionsTable(Connection conn){
+    public static void createMakesTransactionTable(Connection conn){
         try {
             //FOR THE LOVE OF GOD UNDO THIS
-            String q = "DROP TABLE IF EXISTS transactions";
+            String q = "DROP TABLE IF EXISTS makesTransaction";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS transactions(transactionID INT PRIMARY KEY,rfName VARCHAR(255),"
-                    + "lrName VARCHAR(225),streetNum VARCHAR(50),streetName VARCHAR(255),apptNum VARCHAR(50),city VARCHAR(225),"
-                    + "state VARCHAR(225),country VARCHAR(225),zip VARCHAR(225))";
+            String query = "CREATE TABLE IF NOT EXISTS makesTransaction(customerID INT PRIMARY KEY, transactionID INT PRIMARY KEY , paymentID INT PRIMARY KEY )";
 
             /**
              * Create a query and execute
@@ -92,18 +85,17 @@ public class TransactionTable {
     }
 
     /**
-     * Adds a single transaction to the database
+     * Adds a single Customer to the database
      *
      */
-    public static void addTransaction(Connection conn, int transactionID, String rfName, String lrName, String streetNum,
-                                   String streetName, String apptNum, String city, String state, String country, String zip){
+    public static void addMakeTransaction(Connection conn, int customerID, int transactionID, int paymentID){
 
         /**
          * SQL insert statement
          */
-        String query = String.format("INSERT INTO transactions "
-                        + "VALUES(%d,\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\');",
-                transactionID, rfName, lrName, streetNum, streetName, apptNum, city, state, country, zip );
+        String query = String.format("INSERT INTO makesTransaction "
+                        + "VALUES(%d,%d,%d);",
+                customerID, transactionID, paymentID );
         try {
             /**
              * create and execute the query
@@ -118,13 +110,13 @@ public class TransactionTable {
     }
 
     /**
-     * This creates an sql statement to do a bulk add of transactions
+     * This creates an sql statement to do a bulk add of people
      *
-     * @param transactions: list of Person objects to add
+     * @param makesTransactions: list of Person objects to add
      *
      * @return
      */
-    public static String createTransactionsInsertSQL(ArrayList<Transaction> transactions){
+    public static String createMakesTransactionInsertSQL(ArrayList<MakesTransaction> makesTransactions){
         StringBuilder sb = new StringBuilder();
 
         /**
@@ -133,7 +125,7 @@ public class TransactionTable {
          * the order of the data in reference
          * to the columns to ad dit to
          */
-        sb.append("INSERT INTO transactions (transactionID,rfName,lrName,streetNum,streetName,apptNum,city,state,country,zip) VALUES");
+        sb.append("INSERT INTO makesTransaction (customerID, transactionID, paymentID) VALUES");
 
         /**
          * For each person append a (id, first_name, last_name, MI) tuple
@@ -142,12 +134,11 @@ public class TransactionTable {
          *
          * If it is the last person add a semi-colon to end the statement
          */
-        for(int i = 0; i < transactions.size(); i++){
-            Transaction t = transactions.get(i);
-            sb.append(String.format("(%d,\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\')",
-                    t.getTransactionID(), t.getRfName(), t.getLrName(), t.getStreetNum(), t.getStreetName(), t.getApptNum(),
-                    t.getCity(), t.getState(), t.getCountry(), t.getZip()));
-            if( i != transactions.size()-1){
+        for(int i = 0; i < makesTransactions.size(); i++){
+            MakesTransaction p = makesTransactions.get(i);
+            sb.append(String.format("(%d, %d, %d)",
+                    p.getCustomerID(), p.getTransactionID(), p.getPaymentID()));
+            if( i != makesTransactions.size()-1){
                 sb.append(",");
             }
             else{
@@ -158,7 +149,7 @@ public class TransactionTable {
     }
 
     /**
-     * Makes a query to the transaction table
+     * Makes a query to the person table
      * with given columns and conditions
      *
      * @param conn
@@ -166,7 +157,7 @@ public class TransactionTable {
      * @param whereClauses: conditions to limit query by
      * @return
      */
-    public static ResultSet queryCustomerTable(Connection conn,
+    public static ResultSet queryMakesTransactionTable(Connection conn,
                                                ArrayList<String> columns,
                                                ArrayList<String> whereClauses){
         StringBuilder sb = new StringBuilder();
@@ -199,7 +190,7 @@ public class TransactionTable {
         /**
          * Tells it which table to get the data from
          */
-        sb.append("FROM transactions ");
+        sb.append("FROM makesTransaction ");
 
         /**
          * If we gave it conditions append them
@@ -240,24 +231,17 @@ public class TransactionTable {
      * Queries and print the table
      * @param conn
      */
-    public static void printCustomerTable(Connection conn){
-        String query = "SELECT * FROM transactions;";
+    public static void printMakesTransactionTable(Connection conn){
+        String query = "SELECT * FROM makesTransaction;";
         try {
             Statement stmt = conn.createStatement();
             ResultSet result = stmt.executeQuery(query);
 
             while(result.next()){
-                System.out.printf("transactions %d,%s,%s,%s,%s,%s,%s,%s,%s,%s\n",
+                System.out.printf("makesTransaction %d,%d,%d\n",
                         result.getInt(1),
-                        result.getString(2),
-                        result.getString(3),
-                        result.getString(4),
-                        result.getString(5),
-                        result.getString(6),
-                        result.getString(7),
-                        result.getString(8),
-                        result.getString(9),
-                        result.getString(10));
+                        result.getInt(2),
+                        result.getInt(3));
             }
         } catch (SQLException e) {
             e.printStackTrace();

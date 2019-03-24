@@ -1,751 +1,751 @@
 packageType,weight,deliveryType,packageID,location,startedDelivery,extraInfo,deliveryTime,transactionID
-Large,375.3,3-5 Day,10386,Pourosborough; Oregon,Wed Mar 07 08:41:25 EST 2018,N/A,null,77234
-Large,78.1,Overnight,46621,Hahntown; Indiana,Sat Feb 09 19:17:28 EST 2019,N/A,null,16636
-Extra Small,143.03,1-Day,61476,New Brianna; Washington,Tue Sep 11 03:36:05 EDT 2018,Fragile,null,57357
-Large,255.73,3-5 Day,59186,New Janamouth; Idaho,Wed Dec 05 22:53:46 EST 2018,N/A,null,32457
-Medium,47.36,7+ Day,75774,North Holliside; Illinois,Tue Mar 05 12:03:01 EST 2019,N/A,null,28966
-Extra Large,136.09,1-Day,88540,North Noe; Connecticut,Wed Mar 06 17:37:43 EST 2019,Hazardous,null,33316
-Extra Large,311.27,3-5 Day,67638,North Noe; Connecticut,Fri Sep 07 10:48:33 EDT 2018,Hazardous,null,98886
-Post Card,88.74,7+ Day,20648,North Holliside; Illinois,Fri Jun 29 20:33:56 EDT 2018,Fragile,null,27532
-Medium,422.14,Overnight,91046,North Holliside; Illinois,Wed May 30 14:06:42 EDT 2018,Hazardous,null,38627
-Envelope,129.6,3-5 Day,12029,New Brianna; Washington,Sun Sep 30 09:05:33 EDT 2018,N/A,null,87738
-Extra Large,144.55,Overnight,36411,North Ezekielbury; Virginia,Wed Feb 27 11:56:15 EST 2019,N/A,null,61472
-Small,210.92,7+ Day,39146,North Noe; Connecticut,Mon Dec 10 18:06:44 EST 2018,Fragile,null,19663
-Medium,233.39,3-5 Day,55574,New Janamouth; Idaho,Sun Nov 11 17:13:11 EST 2018,N/A,null,44850
-Small,103.85,Overnight,86533,New Brianna; Washington,Mon Jun 11 11:43:23 EDT 2018,N/A,null,33006
-Large,237.08,Overnight,22530,North Noe; Connecticut,Mon Feb 05 03:38:25 EST 2018,N/A,null,23256
-Envelope,31.63,Overnight,66632,New Janamouth; Idaho,Sat Oct 13 12:16:45 EDT 2018,Hazardous,null,75746
-Post Card,109.6,3-5 Day,98461,Pourosborough; Oregon,Wed Nov 28 00:59:02 EST 2018,N/A,null,50688
-Large,288.6,Overnight,28849,Pourosborough; Oregon,Wed Apr 25 07:54:51 EDT 2018,N/A,null,13003
-Medium,418.43,Overnight,73035,North Ezekielbury; Virginia,Tue Feb 12 06:20:31 EST 2019,Hazardous,null,20272
-Medium,333.88,1-Day,17195,North Noe; Connecticut,Wed Apr 25 08:22:53 EDT 2018,N/A,null,44834
-Extra Large,228.81,Overnight,22615,West Hermafurt; Pennsylvania,Sat Sep 22 13:44:56 EDT 2018,Hazardous,null,20041
-Small,97.98,Overnight,70896,North Noe; Connecticut,Sun Jan 13 06:38:56 EST 2019,N/A,null,11935
-Medium,64.54,7+ Day,50637,North Ezekielbury; Virginia,Sun Jun 03 08:24:30 EDT 2018,N/A,null,73751
-Medium,242.09,7+ Day,32175,Pourosborough; Oregon,Mon Apr 30 22:28:57 EDT 2018,Hazardous,null,36206
-Extra Large,139.01,1-Day,40933,Hahntown; Indiana,Sat May 12 11:15:57 EDT 2018,Fragile,null,80389
-Post Card,349.06,7+ Day,52094,North Noe; Connecticut,Wed Sep 19 00:22:08 EDT 2018,Hazardous,null,93901
-Post Card,357.68,7+ Day,99298,North Holliside; Illinois,Thu Mar 01 18:23:20 EST 2018,Hazardous,null,86030
-Envelope,169.17,7+ Day,98831,West Hermafurt; Pennsylvania,Tue Jan 15 08:58:26 EST 2019,N/A,null,98610
-Envelope,379.29,Overnight,24726,Hahntown; Indiana,Sat Mar 03 10:25:51 EST 2018,Hazardous,null,69690
-Large,416.57,Overnight,98742,North Ezekielbury; Virginia,Mon Apr 23 00:03:20 EDT 2018,N/A,null,11303
-Medium,314.6,1-Day,13008,North Ezekielbury; Virginia,Sun Aug 05 12:06:39 EDT 2018,Hazardous,null,72602
-Small,363.28,7+ Day,96773,North Ezekielbury; Virginia,Thu Jun 21 05:01:27 EDT 2018,Hazardous,null,67474
-Large,270.27,Overnight,91997,North Noe; Connecticut,Mon Sep 24 06:52:56 EDT 2018,Fragile,null,92122
-Medium,341.88,3-5 Day,21468,Hahntown; Indiana,Wed May 02 16:16:04 EDT 2018,Fragile,null,41306
-Envelope,277.34,3-5 Day,37478,Pourosborough; Oregon,Tue Sep 11 19:31:09 EDT 2018,Fragile,null,26673
-Medium,294.88,3-5 Day,29187,Pourosborough; Oregon,Sun Feb 03 18:58:55 EST 2019,Fragile,null,90978
-Large,142.68,7+ Day,98838,North Noe; Connecticut,Tue Mar 12 00:30:18 EDT 2019,N/A,null,78460
-Envelope,49.38,1-Day,24295,West Hermafurt; Pennsylvania,Fri Apr 27 20:11:05 EDT 2018,Hazardous,null,64014
-Small,318.6,7+ Day,72583,New Janamouth; Idaho,Wed Jan 23 10:01:22 EST 2019,Fragile,null,66030
-Medium,466.6,7+ Day,34231,Lovefort; New York,Fri Dec 07 12:43:10 EST 2018,N/A,null,41355
-Large,485.28,1-Day,68814,New Brianna; Washington,Fri Mar 02 10:40:35 EST 2018,N/A,null,62754
-Extra Large,226.55,7+ Day,19760,Nancieburgh; Massachusetts,Tue Jun 05 20:20:37 EDT 2018,Hazardous,null,42526
-Extra Small,230.68,7+ Day,46344,West Hermafurt; Pennsylvania,Mon Dec 17 05:26:56 EST 2018,N/A,null,71129
-Extra Small,371.07,7+ Day,14467,North Holliside; Illinois,Sun Mar 25 10:26:59 EDT 2018,N/A,null,44446
-Medium,260.52,Overnight,76552,Nancieburgh; Massachusetts,Wed Mar 21 00:05:24 EDT 2018,Hazardous,null,79618
-Post Card,271.07,3-5 Day,10865,North Ezekielbury; Virginia,Mon Mar 05 20:30:01 EST 2018,Hazardous,null,85375
-Small,445.28,7+ Day,85603,New Brianna; Washington,Sat Jul 28 04:54:46 EDT 2018,Fragile,null,21741
-Envelope,43.2,7+ Day,25457,New Brianna; Washington,Mon Feb 26 10:10:34 EST 2018,N/A,null,92231
-Post Card,171.77,Overnight,14950,Lovefort; New York,Mon Nov 05 22:40:03 EST 2018,N/A,null,51155
-Envelope,39.4,3-5 Day,26648,North Holliside; Illinois,Sun Aug 12 11:59:55 EDT 2018,N/A,null,59372
-Extra Large,87.49,Overnight,83352,North Noe; Connecticut,Mon Jun 25 03:40:21 EDT 2018,N/A,null,21948
-Large,127.04,Overnight,24643,New Brianna; Washington,Sat Feb 17 04:28:18 EST 2018,N/A,null,43627
-Medium,140.82,7+ Day,58573,North Ezekielbury; Virginia,Sun Sep 09 03:27:39 EDT 2018,Fragile,null,54789
-Extra Large,208.02,Overnight,13415,New Janamouth; Idaho,Thu Jul 26 21:38:56 EDT 2018,N/A,null,24710
-Medium,100.34,Overnight,89121,Hahntown; Indiana,Sun Dec 16 20:42:02 EST 2018,Hazardous,null,12553
-Small,476.19,7+ Day,65389,New Janamouth; Idaho,Tue Feb 06 23:33:41 EST 2018,N/A,null,21691
-Extra Large,29.57,Overnight,60105,North Ezekielbury; Virginia,Fri Sep 14 00:59:29 EDT 2018,Hazardous,null,53562
-Post Card,129.94,3-5 Day,83460,Lovefort; New York,Wed Oct 10 16:56:05 EDT 2018,N/A,null,86194
-Envelope,372.15,Overnight,99217,North Holliside; Illinois,Sat Jul 28 00:28:34 EDT 2018,Hazardous,null,97044
-Envelope,216.24,Overnight,46250,North Noe; Connecticut,Fri Feb 22 09:52:02 EST 2019,Hazardous,null,15201
-Medium,403.89,Overnight,42570,North Holliside; Illinois,Sun Sep 16 00:22:03 EDT 2018,N/A,null,86926
-Envelope,183.22,Overnight,65466,Lovefort; New York,Wed May 30 16:16:39 EDT 2018,N/A,null,42515
-Extra Large,445.03,3-5 Day,44884,North Noe; Connecticut,Thu Apr 19 13:28:20 EDT 2018,Hazardous,null,27441
-Large,36.59,1-Day,59398,North Noe; Connecticut,Wed Oct 03 21:21:57 EDT 2018,Fragile,null,65693
-Small,411.33,7+ Day,12039,Pourosborough; Oregon,Fri Feb 16 10:10:45 EST 2018,N/A,null,62535
-Small,468.75,Overnight,14364,Pourosborough; Oregon,Sun Apr 08 02:11:26 EDT 2018,N/A,null,18056
-Large,231.12,Overnight,82624,North Ezekielbury; Virginia,Sat Oct 27 12:32:41 EDT 2018,N/A,null,91207
-Large,90.36,1-Day,43426,Nancieburgh; Massachusetts,Fri Mar 01 09:21:24 EST 2019,Hazardous,null,89272
-Post Card,304.37,Overnight,69001,North Ezekielbury; Virginia,Tue May 08 19:03:27 EDT 2018,Fragile,null,17926
-Post Card,273.83,Overnight,63693,New Brianna; Washington,Thu Mar 29 21:05:55 EDT 2018,Hazardous,null,50929
-Extra Large,229.13,7+ Day,48404,North Holliside; Illinois,Thu Feb 21 17:30:01 EST 2019,N/A,null,19407
-Large,111.34,1-Day,18006,North Holliside; Illinois,Wed Dec 12 11:03:57 EST 2018,Fragile,null,13926
-Large,107.25,7+ Day,97440,New Janamouth; Idaho,Sat Dec 15 13:50:30 EST 2018,Hazardous,null,17033
-Extra Small,21.22,7+ Day,42100,West Hermafurt; Pennsylvania,Wed Jun 20 00:30:51 EDT 2018,N/A,null,54675
-Small,471.46,7+ Day,69518,Lovefort; New York,Sat Jul 21 01:46:45 EDT 2018,N/A,null,59437
-Envelope,208.59,1-Day,43461,North Holliside; Illinois,Sun Aug 19 22:25:43 EDT 2018,N/A,null,72312
-Large,115.33,7+ Day,16565,New Brianna; Washington,Fri Feb 15 17:16:53 EST 2019,Fragile,null,49867
-Large,347.35,1-Day,87151,Hahntown; Indiana,Sat Oct 13 18:35:53 EDT 2018,N/A,null,72648
-Large,50.99,3-5 Day,62604,New Brianna; Washington,Sun Jan 13 02:49:24 EST 2019,N/A,null,56263
-Extra Small,447.91,Overnight,31497,Lovefort; New York,Fri May 04 08:51:55 EDT 2018,Fragile,null,25904
-Large,365.44,3-5 Day,58285,New Brianna; Washington,Wed Aug 29 22:25:54 EDT 2018,N/A,null,47585
-Post Card,107.22,1-Day,19350,North Holliside; Illinois,Tue Aug 28 10:22:45 EDT 2018,Fragile,null,98003
-Extra Small,110.08,1-Day,36126,New Janamouth; Idaho,Mon Jun 04 00:17:25 EDT 2018,Fragile,null,61050
-Large,216.27,7+ Day,60494,Lovefort; New York,Mon Oct 08 12:17:31 EDT 2018,N/A,null,68501
-Extra Small,19.19,3-5 Day,34713,Pourosborough; Oregon,Sun Oct 21 02:09:41 EDT 2018,Hazardous,null,84996
-Extra Large,68.56,1-Day,13202,North Noe; Connecticut,Tue Feb 06 05:43:11 EST 2018,Hazardous,null,30342
-Small,245.85,3-5 Day,87859,North Holliside; Illinois,Thu Nov 01 22:06:13 EDT 2018,N/A,null,49750
-Envelope,269.84,1-Day,98344,North Holliside; Illinois,Sun Mar 10 10:52:40 EDT 2019,Fragile,null,42254
-Large,488.06,1-Day,67352,Hahntown; Indiana,Sat Dec 15 12:01:03 EST 2018,Fragile,null,95994
-Extra Large,209.22,7+ Day,21149,Hahntown; Indiana,Tue Oct 23 12:03:28 EDT 2018,N/A,null,23977
-Medium,428.79,3-5 Day,88663,New Janamouth; Idaho,Mon Apr 02 06:05:20 EDT 2018,Fragile,null,24904
-Post Card,274.81,7+ Day,34509,North Holliside; Illinois,Fri Apr 06 14:36:05 EDT 2018,N/A,null,79746
-Envelope,252.55,7+ Day,91790,North Noe; Connecticut,Mon Apr 30 09:25:04 EDT 2018,Hazardous,null,69329
-Large,295.73,7+ Day,85971,North Ezekielbury; Virginia,Sat Oct 27 08:06:57 EDT 2018,N/A,null,77033
-Small,477.37,Overnight,21302,Pourosborough; Oregon,Sat Dec 08 18:09:46 EST 2018,N/A,null,68458
-Large,359.81,1-Day,34712,North Ezekielbury; Virginia,Fri Mar 16 14:59:46 EDT 2018,N/A,null,88446
-Extra Small,182.03,7+ Day,58620,Nancieburgh; Massachusetts,Thu Jan 03 23:53:19 EST 2019,N/A,null,46720
-Post Card,290.67,3-5 Day,14628,North Ezekielbury; Virginia,Sun Feb 24 05:42:53 EST 2019,N/A,null,44396
-Large,440.29,Overnight,14772,New Janamouth; Idaho,Wed Jan 02 05:07:44 EST 2019,N/A,null,73402
-Large,460.67,1-Day,91789,North Noe; Connecticut,Wed Jun 20 07:42:16 EDT 2018,N/A,null,41310
-Small,326.82,7+ Day,71141,Hahntown; Indiana,Mon Apr 16 21:53:47 EDT 2018,N/A,null,46710
-Extra Large,359.67,1-Day,17696,Pourosborough; Oregon,Fri Oct 12 00:55:28 EDT 2018,N/A,null,96566
-Small,463.0,7+ Day,62630,Pourosborough; Oregon,Mon Sep 17 12:46:45 EDT 2018,Fragile,null,38893
-Large,179.6,3-5 Day,96388,Lovefort; New York,Fri Jul 20 06:58:17 EDT 2018,Hazardous,null,58409
-Medium,120.08,1-Day,21521,West Hermafurt; Pennsylvania,Wed Jul 11 06:53:31 EDT 2018,Hazardous,null,49396
-Extra Large,119.75,1-Day,80107,Hahntown; Indiana,Thu Mar 08 18:24:16 EST 2018,Hazardous,null,47884
-Large,172.77,Overnight,17541,Pourosborough; Oregon,Mon Mar 11 11:20:43 EDT 2019,Hazardous,null,62507
-Post Card,367.06,1-Day,75161,North Holliside; Illinois,Thu Mar 22 02:01:38 EDT 2018,Hazardous,null,14203
-Large,306.87,Overnight,27433,North Noe; Connecticut,Tue Apr 17 19:20:55 EDT 2018,N/A,null,73780
-Envelope,127.45,1-Day,70712,North Noe; Connecticut,Wed Feb 14 22:39:24 EST 2018,Fragile,null,48638
-Large,392.3,3-5 Day,17479,North Holliside; Illinois,Sat Jun 16 10:40:50 EDT 2018,Fragile,null,87937
-Extra Small,425.26,7+ Day,27296,Nancieburgh; Massachusetts,Sat Jun 16 12:43:45 EDT 2018,N/A,null,73788
-Envelope,142.27,7+ Day,25578,New Brianna; Washington,Tue Nov 27 15:27:38 EST 2018,Fragile,null,96939
-Post Card,77.32,1-Day,93511,North Ezekielbury; Virginia,Sat Apr 28 16:01:20 EDT 2018,N/A,null,52169
-Extra Small,168.14,7+ Day,16259,Pourosborough; Oregon,Tue Feb 27 06:02:39 EST 2018,Hazardous,null,23936
-Extra Large,125.43,Overnight,69502,New Janamouth; Idaho,Tue Oct 23 18:57:36 EDT 2018,Fragile,null,79994
-Large,406.03,7+ Day,41761,New Janamouth; Idaho,Wed Feb 07 06:45:21 EST 2018,N/A,null,98302
-Extra Small,138.12,1-Day,11132,Hahntown; Indiana,Mon Jul 30 02:25:45 EDT 2018,N/A,null,47328
-Envelope,66.42,3-5 Day,35289,North Ezekielbury; Virginia,Thu Sep 20 00:15:13 EDT 2018,Hazardous,null,91660
-Medium,395.69,7+ Day,21621,Nancieburgh; Massachusetts,Sun Mar 10 08:29:07 EDT 2019,N/A,null,81597
-Large,269.54,7+ Day,94397,Pourosborough; Oregon,Fri Nov 30 03:48:47 EST 2018,N/A,null,32683
-Extra Large,176.46,7+ Day,27046,North Noe; Connecticut,Wed Jul 25 18:55:45 EDT 2018,Fragile,null,83953
-Small,466.62,7+ Day,49649,Hahntown; Indiana,Sun Mar 18 13:48:35 EDT 2018,Hazardous,null,56774
-Small,110.61,7+ Day,37740,Pourosborough; Oregon,Sun Oct 21 22:12:29 EDT 2018,N/A,null,69287
-Large,449.89,7+ Day,46756,North Noe; Connecticut,Thu Mar 21 05:08:58 EDT 2019,N/A,null,82099
-Extra Small,447.13,3-5 Day,17955,Lovefort; New York,Sun Mar 10 23:35:56 EDT 2019,N/A,null,95582
-Medium,187.79,3-5 Day,64150,New Brianna; Washington,Fri Aug 24 00:52:23 EDT 2018,Fragile,null,41021
-Medium,394.49,7+ Day,14726,West Hermafurt; Pennsylvania,Thu Nov 15 18:05:53 EST 2018,N/A,null,53302
-Extra Large,184.32,3-5 Day,72252,West Hermafurt; Pennsylvania,Sun Mar 11 00:59:45 EST 2018,Hazardous,null,36799
-Post Card,342.84,7+ Day,29186,Nancieburgh; Massachusetts,Thu Nov 15 03:36:12 EST 2018,Fragile,null,41199
-Small,272.76,3-5 Day,97537,Lovefort; New York,Sun Apr 22 05:50:51 EDT 2018,N/A,null,43658
-Medium,10.74,1-Day,21909,Hahntown; Indiana,Sat May 05 13:01:38 EDT 2018,Hazardous,null,45309
-Large,426.42,Overnight,19977,New Janamouth; Idaho,Fri Oct 05 13:32:45 EDT 2018,Fragile,null,54646
-Medium,424.36,7+ Day,44372,Nancieburgh; Massachusetts,Wed Dec 26 18:46:09 EST 2018,N/A,null,70398
-Small,449.89,7+ Day,77729,Nancieburgh; Massachusetts,Sat Jan 26 20:15:27 EST 2019,N/A,null,15023
-Medium,330.05,1-Day,76784,West Hermafurt; Pennsylvania,Wed Oct 17 22:36:21 EDT 2018,N/A,null,33705
-Large,249.83,1-Day,46205,New Brianna; Washington,Sat Mar 10 10:48:11 EST 2018,Hazardous,null,82254
-Envelope,269.41,Overnight,66027,Hahntown; Indiana,Tue Sep 11 19:48:46 EDT 2018,N/A,null,38100
-Extra Small,56.35,Overnight,37202,Pourosborough; Oregon,Tue Feb 12 22:41:39 EST 2019,Fragile,null,55381
-Extra Large,355.87,3-5 Day,65504,Nancieburgh; Massachusetts,Wed Dec 12 23:06:22 EST 2018,Hazardous,null,76065
-Small,78.47,7+ Day,57915,New Brianna; Washington,Fri Jun 08 13:11:08 EDT 2018,N/A,null,23374
-Small,477.55,7+ Day,66509,Nancieburgh; Massachusetts,Thu Jul 26 22:55:02 EDT 2018,N/A,null,12565
-Extra Small,424.99,1-Day,74276,Hahntown; Indiana,Thu Jan 31 10:16:17 EST 2019,N/A,null,23960
-Large,445.02,7+ Day,91292,Nancieburgh; Massachusetts,Sat Feb 16 19:58:00 EST 2019,Hazardous,null,42759
-Extra Large,437.94,Overnight,81336,Hahntown; Indiana,Tue Feb 12 23:27:35 EST 2019,Hazardous,null,98650
-Post Card,330.69,Overnight,41260,Hahntown; Indiana,Wed Dec 19 20:46:16 EST 2018,Fragile,null,42177
-Extra Small,112.86,3-5 Day,42056,North Holliside; Illinois,Sun Dec 09 10:01:41 EST 2018,N/A,null,52974
-Extra Large,261.76,3-5 Day,64288,New Janamouth; Idaho,Wed Sep 19 15:08:57 EDT 2018,Fragile,null,44312
-Post Card,185.58,1-Day,78774,Pourosborough; Oregon,Fri Aug 10 05:02:27 EDT 2018,N/A,null,60334
-Extra Small,149.99,7+ Day,65954,North Noe; Connecticut,Fri Nov 16 22:53:11 EST 2018,Hazardous,null,60203
-Envelope,491.09,Overnight,93826,New Brianna; Washington,Sun Feb 10 00:29:32 EST 2019,N/A,null,18710
-Extra Large,120.42,7+ Day,88109,Lovefort; New York,Tue Jan 01 15:14:40 EST 2019,Hazardous,null,29682
-Post Card,460.76,3-5 Day,70209,Hahntown; Indiana,Thu May 31 05:36:33 EDT 2018,Fragile,null,85095
-Extra Large,172.78,Overnight,36692,Pourosborough; Oregon,Sun Oct 21 15:19:46 EDT 2018,Hazardous,null,47450
-Envelope,173.86,3-5 Day,33813,North Holliside; Illinois,Sun Mar 03 21:39:22 EST 2019,Hazardous,null,39701
-Envelope,89.58,3-5 Day,63196,Nancieburgh; Massachusetts,Wed Dec 26 06:03:56 EST 2018,Fragile,null,39689
-Large,341.67,3-5 Day,72159,North Ezekielbury; Virginia,Wed Dec 26 19:13:08 EST 2018,N/A,null,37372
-Extra Large,265.76,3-5 Day,56427,New Brianna; Washington,Thu Jan 10 01:01:33 EST 2019,Fragile,null,96161
-Extra Large,16.92,1-Day,65362,Hahntown; Indiana,Mon Apr 30 21:42:28 EDT 2018,N/A,null,71629
-Extra Small,484.46,7+ Day,98069,Nancieburgh; Massachusetts,Sat May 26 13:41:29 EDT 2018,N/A,null,28301
-Small,290.26,1-Day,45934,Pourosborough; Oregon,Sun Aug 12 18:19:04 EDT 2018,N/A,null,57964
-Extra Large,60.63,3-5 Day,26700,North Holliside; Illinois,Sat Nov 03 07:21:41 EDT 2018,Hazardous,null,54844
-Medium,33.88,1-Day,11085,North Noe; Connecticut,Sat Mar 17 11:48:30 EDT 2018,Hazardous,null,51432
-Extra Large,141.96,7+ Day,61702,North Noe; Connecticut,Fri Nov 16 04:28:29 EST 2018,N/A,null,92374
-Medium,75.11,1-Day,72051,Hahntown; Indiana,Mon Feb 26 23:00:57 EST 2018,N/A,null,83951
-Post Card,332.36,7+ Day,32938,New Brianna; Washington,Tue Feb 12 18:16:22 EST 2019,Fragile,null,46010
-Extra Large,210.08,7+ Day,33685,North Ezekielbury; Virginia,Sun Apr 15 10:46:58 EDT 2018,N/A,null,55989
-Large,25.3,Overnight,45024,New Brianna; Washington,Sat Feb 24 19:45:04 EST 2018,N/A,null,16998
-Extra Small,340.27,Overnight,78473,New Janamouth; Idaho,Sun Feb 18 19:00:10 EST 2018,Fragile,null,12785
-Envelope,79.73,1-Day,36331,New Brianna; Washington,Tue Jan 15 03:11:09 EST 2019,Hazardous,null,48667
-Post Card,110.38,7+ Day,72858,Pourosborough; Oregon,Fri May 04 17:02:43 EDT 2018,Fragile,null,88134
-Small,187.18,7+ Day,93370,North Holliside; Illinois,Sat Aug 25 09:58:41 EDT 2018,N/A,null,26597
-Small,239.75,Overnight,42189,New Janamouth; Idaho,Mon May 07 05:33:01 EDT 2018,N/A,null,33198
-Post Card,303.52,7+ Day,43084,North Holliside; Illinois,Tue Aug 21 21:08:04 EDT 2018,Fragile,null,85796
-Post Card,291.83,Overnight,80038,North Noe; Connecticut,Sun Jan 06 07:51:41 EST 2019,N/A,null,97606
-Medium,218.44,3-5 Day,23459,West Hermafurt; Pennsylvania,Mon Jan 14 03:52:11 EST 2019,N/A,null,68984
-Large,338.88,3-5 Day,48947,Hahntown; Indiana,Sun Jun 24 19:53:47 EDT 2018,Fragile,null,23121
-Extra Small,375.02,7+ Day,89229,West Hermafurt; Pennsylvania,Sat Jun 16 22:51:31 EDT 2018,Fragile,null,38616
-Medium,272.55,3-5 Day,29312,Hahntown; Indiana,Tue Oct 23 00:34:39 EDT 2018,N/A,null,14235
-Extra Large,269.2,7+ Day,99471,Hahntown; Indiana,Fri Nov 30 03:28:48 EST 2018,Hazardous,null,59071
-Extra Small,86.39,1-Day,79626,North Ezekielbury; Virginia,Mon Jun 25 07:16:08 EDT 2018,N/A,null,50500
-Post Card,257.74,3-5 Day,69531,New Janamouth; Idaho,Mon Jul 30 19:33:56 EDT 2018,N/A,null,45691
-Extra Large,166.67,3-5 Day,62047,North Ezekielbury; Virginia,Fri Feb 22 17:00:37 EST 2019,N/A,null,15329
-Small,450.01,Overnight,81337,Pourosborough; Oregon,Sun Mar 17 12:24:02 EDT 2019,Fragile,null,21176
-Large,163.94,7+ Day,91679,Hahntown; Indiana,Sat Jul 07 09:29:26 EDT 2018,Fragile,null,85972
-Medium,204.73,7+ Day,49020,Nancieburgh; Massachusetts,Thu Feb 08 00:36:34 EST 2018,N/A,null,90062
-Post Card,368.01,7+ Day,45505,Hahntown; Indiana,Sun Sep 02 12:41:39 EDT 2018,N/A,null,43610
-Extra Small,357.56,3-5 Day,49191,North Ezekielbury; Virginia,Sat Oct 20 19:48:45 EDT 2018,Hazardous,null,22392
-Post Card,256.75,1-Day,36307,North Noe; Connecticut,Thu Feb 21 20:41:34 EST 2019,Hazardous,null,64312
-Envelope,170.41,3-5 Day,73042,Pourosborough; Oregon,Sat Nov 17 11:12:32 EST 2018,N/A,null,75795
-Extra Large,394.81,7+ Day,71607,North Holliside; Illinois,Mon Jul 02 01:56:44 EDT 2018,N/A,null,37411
-Post Card,117.63,Overnight,75316,West Hermafurt; Pennsylvania,Fri Sep 28 23:20:45 EDT 2018,N/A,null,40001
-Small,106.22,7+ Day,78438,Nancieburgh; Massachusetts,Sun Mar 10 04:12:57 EDT 2019,N/A,null,82278
-Extra Small,265.38,1-Day,35909,North Noe; Connecticut,Mon Jan 28 20:14:36 EST 2019,N/A,null,82067
-Medium,112.78,1-Day,90910,New Brianna; Washington,Tue Mar 12 06:04:26 EDT 2019,Hazardous,null,92734
-Envelope,121.74,3-5 Day,54901,Lovefort; New York,Sat Sep 29 22:17:32 EDT 2018,N/A,null,26946
-Extra Large,229.28,7+ Day,84615,North Noe; Connecticut,Tue Jun 05 07:07:39 EDT 2018,N/A,null,63624
-Medium,460.89,7+ Day,22486,New Janamouth; Idaho,Mon Jul 23 09:56:08 EDT 2018,N/A,null,47352
-Medium,193.27,7+ Day,34987,Pourosborough; Oregon,Sat May 12 05:35:32 EDT 2018,Hazardous,null,39033
-Post Card,168.85,7+ Day,29595,New Janamouth; Idaho,Sun Jul 01 22:17:00 EDT 2018,Hazardous,null,14601
-Extra Large,258.71,1-Day,91127,Pourosborough; Oregon,Mon Jun 25 07:10:04 EDT 2018,Hazardous,null,50037
-Large,391.43,3-5 Day,21845,North Ezekielbury; Virginia,Mon Jan 07 16:27:14 EST 2019,N/A,null,88168
-Small,388.83,1-Day,52822,Pourosborough; Oregon,Wed Oct 31 11:57:16 EDT 2018,N/A,null,92865
-Extra Large,404.59,7+ Day,69514,Pourosborough; Oregon,Thu Sep 06 03:10:05 EDT 2018,Hazardous,null,75092
-Large,123.77,1-Day,19034,Hahntown; Indiana,Thu Feb 07 07:34:44 EST 2019,N/A,null,10335
-Medium,108.96,1-Day,58687,Nancieburgh; Massachusetts,Tue Jul 24 05:48:07 EDT 2018,N/A,null,27402
-Extra Large,357.11,7+ Day,23080,West Hermafurt; Pennsylvania,Mon Mar 04 18:06:09 EST 2019,Hazardous,null,95030
-Envelope,156.5,1-Day,56536,New Janamouth; Idaho,Sat Jul 07 08:03:59 EDT 2018,Fragile,null,90573
-Medium,227.09,1-Day,79465,Hahntown; Indiana,Sun Jun 24 01:01:18 EDT 2018,N/A,null,89520
-Medium,369.93,1-Day,51594,North Holliside; Illinois,Thu Apr 19 17:12:35 EDT 2018,N/A,null,36404
-Large,174.47,1-Day,20893,North Holliside; Illinois,Mon Jun 04 23:50:07 EDT 2018,N/A,null,88691
-Envelope,397.22,1-Day,46905,North Holliside; Illinois,Fri Jan 25 22:29:54 EST 2019,N/A,null,62949
-Small,286.25,3-5 Day,76290,Hahntown; Indiana,Mon Feb 04 22:37:03 EST 2019,Hazardous,null,49788
-Extra Large,214.98,7+ Day,20670,Pourosborough; Oregon,Mon Sep 17 21:00:30 EDT 2018,Fragile,null,21650
-Medium,456.54,7+ Day,79174,North Noe; Connecticut,Sun Apr 01 01:39:05 EDT 2018,N/A,null,36449
-Medium,293.88,3-5 Day,65412,New Janamouth; Idaho,Sat Jun 09 13:45:00 EDT 2018,N/A,null,35301
-Large,378.78,1-Day,25612,West Hermafurt; Pennsylvania,Fri Aug 10 13:36:32 EDT 2018,Fragile,null,35118
-Extra Large,418.61,Overnight,50686,North Holliside; Illinois,Wed Oct 31 21:29:46 EDT 2018,Fragile,null,47300
-Post Card,399.72,7+ Day,69765,New Janamouth; Idaho,Sat May 19 05:36:25 EDT 2018,Fragile,null,72300
-Post Card,131.8,1-Day,39030,Pourosborough; Oregon,Fri Mar 16 11:49:59 EDT 2018,N/A,null,13058
-Small,318.24,7+ Day,35602,North Noe; Connecticut,Wed Mar 20 20:29:10 EDT 2019,N/A,null,47316
-Extra Small,13.95,1-Day,50734,North Ezekielbury; Virginia,Fri Apr 06 18:06:57 EDT 2018,N/A,null,86681
-Post Card,440.43,3-5 Day,56670,Nancieburgh; Massachusetts,Wed Aug 22 20:00:43 EDT 2018,N/A,null,13017
-Post Card,32.06,Overnight,11230,West Hermafurt; Pennsylvania,Thu Jun 28 08:41:04 EDT 2018,N/A,null,13824
-Extra Large,487.01,7+ Day,89694,New Brianna; Washington,Wed Jan 09 07:53:27 EST 2019,Hazardous,null,92469
-Extra Small,311.37,Overnight,79560,Hahntown; Indiana,Tue Oct 23 17:04:19 EDT 2018,N/A,null,13604
-Extra Small,61.57,3-5 Day,81724,Pourosborough; Oregon,Sun Dec 30 20:24:17 EST 2018,N/A,null,96823
-Envelope,172.42,1-Day,12389,New Janamouth; Idaho,Tue Mar 13 12:13:43 EDT 2018,Fragile,null,82650
-Extra Small,465.62,Overnight,45310,North Noe; Connecticut,Wed Dec 19 18:56:33 EST 2018,N/A,null,28641
-Extra Small,231.93,1-Day,70520,West Hermafurt; Pennsylvania,Mon Jan 07 20:28:12 EST 2019,N/A,null,49978
-Post Card,89.69,Overnight,25513,Pourosborough; Oregon,Fri Nov 09 17:40:53 EST 2018,N/A,null,26150
-Large,6.37,7+ Day,67280,Nancieburgh; Massachusetts,Wed Feb 14 06:33:48 EST 2018,Hazardous,null,89204
-Small,92.08,3-5 Day,29869,New Brianna; Washington,Thu Feb 07 13:42:28 EST 2019,N/A,null,62922
-Small,378.73,Overnight,76189,New Janamouth; Idaho,Thu Feb 14 11:40:46 EST 2019,N/A,null,44278
-Extra Large,202.4,Overnight,76636,North Holliside; Illinois,Thu Oct 18 07:05:54 EDT 2018,N/A,null,83400
-Large,413.99,Overnight,89899,Nancieburgh; Massachusetts,Sun Jun 03 21:22:39 EDT 2018,N/A,null,91491
-Extra Large,195.73,1-Day,45521,North Holliside; Illinois,Sun Nov 25 01:35:21 EST 2018,Hazardous,null,26690
-Extra Large,125.13,Overnight,28418,Lovefort; New York,Sat Feb 17 06:21:23 EST 2018,Fragile,null,46592
-Small,442.26,1-Day,82277,New Brianna; Washington,Sun Sep 30 14:47:57 EDT 2018,Hazardous,null,97357
-Large,415.64,3-5 Day,21366,North Holliside; Illinois,Fri May 18 20:11:24 EDT 2018,N/A,null,99322
-Extra Large,189.2,1-Day,44789,Hahntown; Indiana,Fri May 04 23:22:00 EDT 2018,Fragile,null,44184
-Post Card,373.8,1-Day,89908,New Janamouth; Idaho,Sun Oct 07 01:07:46 EDT 2018,N/A,null,87834
-Extra Small,282.31,3-5 Day,95923,New Brianna; Washington,Sun Mar 10 16:02:57 EDT 2019,Hazardous,null,60514
-Small,144.57,1-Day,90914,Lovefort; New York,Sun Feb 11 20:10:53 EST 2018,Fragile,null,43029
-Post Card,206.3,Overnight,82824,Nancieburgh; Massachusetts,Tue Jun 05 11:49:21 EDT 2018,N/A,null,99660
-Extra Large,96.49,1-Day,31959,North Holliside; Illinois,Fri Feb 09 03:23:41 EST 2018,N/A,null,93021
-Small,7.65,Overnight,76760,Nancieburgh; Massachusetts,Sun Mar 04 13:52:08 EST 2018,Hazardous,null,48298
-Post Card,22.95,Overnight,28251,Hahntown; Indiana,Thu Dec 27 22:50:10 EST 2018,N/A,null,48576
-Small,490.47,7+ Day,89304,New Janamouth; Idaho,Sun Mar 17 22:56:09 EDT 2019,Hazardous,null,42601
-Medium,213.21,1-Day,65207,Nancieburgh; Massachusetts,Fri Mar 09 10:05:06 EST 2018,Hazardous,null,23938
-Large,270.05,1-Day,57415,West Hermafurt; Pennsylvania,Tue Mar 13 07:29:47 EDT 2018,N/A,null,84345
-Extra Large,298.46,3-5 Day,56445,New Brianna; Washington,Mon Dec 31 17:48:35 EST 2018,N/A,null,55016
-Large,371.63,1-Day,71825,North Holliside; Illinois,Sun Jun 24 00:01:58 EDT 2018,Hazardous,null,60001
-Small,228.84,Overnight,74950,Lovefort; New York,Sun Aug 05 06:06:34 EDT 2018,Hazardous,null,53534
-Extra Small,458.66,7+ Day,22636,New Janamouth; Idaho,Sat Mar 09 20:26:54 EST 2019,N/A,null,20023
-Small,77.79,Overnight,25091,North Noe; Connecticut,Tue Apr 17 01:05:47 EDT 2018,Fragile,null,57604
-Medium,135.57,3-5 Day,50743,New Janamouth; Idaho,Sat Aug 18 17:07:47 EDT 2018,Fragile,null,76426
-Extra Large,147.28,7+ Day,84934,Pourosborough; Oregon,Wed Aug 08 13:43:27 EDT 2018,N/A,null,73442
-Envelope,399.86,7+ Day,19737,North Holliside; Illinois,Tue Aug 28 06:44:14 EDT 2018,N/A,null,56006
-Extra Large,450.07,7+ Day,26655,Lovefort; New York,Wed Mar 13 02:16:45 EDT 2019,Hazardous,null,39040
-Large,428.21,1-Day,29096,West Hermafurt; Pennsylvania,Sun Jul 22 00:05:54 EDT 2018,Fragile,null,51153
-Extra Large,441.65,7+ Day,13912,West Hermafurt; Pennsylvania,Thu Nov 15 19:39:06 EST 2018,N/A,null,67199
-Medium,455.97,1-Day,34489,West Hermafurt; Pennsylvania,Sat Feb 23 18:01:55 EST 2019,Hazardous,null,99576
-Extra Large,147.66,3-5 Day,26989,New Janamouth; Idaho,Sun Mar 18 21:40:32 EDT 2018,Fragile,null,40420
-Large,298.46,3-5 Day,20712,North Holliside; Illinois,Thu Jun 14 21:50:27 EDT 2018,Hazardous,null,58613
-Envelope,102.17,7+ Day,48269,West Hermafurt; Pennsylvania,Sun Feb 11 08:10:22 EST 2018,Fragile,null,73205
-Small,369.76,3-5 Day,93335,Pourosborough; Oregon,Sun Jun 24 03:35:33 EDT 2018,N/A,null,82883
-Extra Large,366.3,7+ Day,24891,North Holliside; Illinois,Wed Jan 30 12:03:26 EST 2019,Fragile,null,21627
-Envelope,238.64,1-Day,28356,Lovefort; New York,Mon Jun 04 01:07:07 EDT 2018,Hazardous,null,34797
-Post Card,183.13,3-5 Day,12447,North Noe; Connecticut,Mon Dec 17 10:50:40 EST 2018,Fragile,null,58771
-Large,133.71,1-Day,78825,Pourosborough; Oregon,Thu Dec 13 05:23:10 EST 2018,Hazardous,null,44086
-Post Card,479.62,1-Day,33354,New Brianna; Washington,Mon May 28 21:00:25 EDT 2018,N/A,null,60966
-Small,257.34,3-5 Day,62931,North Ezekielbury; Virginia,Wed Feb 06 11:55:44 EST 2019,Hazardous,null,50606
-Envelope,37.27,1-Day,34770,North Holliside; Illinois,Fri Nov 23 02:27:59 EST 2018,N/A,null,53324
-Post Card,271.26,7+ Day,37922,Hahntown; Indiana,Sat Feb 17 08:47:58 EST 2018,Fragile,null,86767
-Extra Large,7.85,1-Day,86754,North Holliside; Illinois,Sun Mar 04 18:16:06 EST 2018,N/A,null,93349
-Post Card,360.13,Overnight,12599,Lovefort; New York,Mon Sep 17 20:56:59 EDT 2018,N/A,null,83554
-Small,237.47,7+ Day,69773,New Brianna; Washington,Sat Dec 22 13:17:28 EST 2018,N/A,null,56172
-Extra Small,441.79,Overnight,48912,Hahntown; Indiana,Mon May 28 11:51:28 EDT 2018,Hazardous,null,41799
-Large,1.62,Overnight,87136,Lovefort; New York,Mon Dec 17 02:42:24 EST 2018,Fragile,null,91268
-Post Card,208.17,7+ Day,80292,Lovefort; New York,Mon Oct 29 18:48:46 EDT 2018,N/A,null,12450
-Large,412.92,3-5 Day,30137,North Ezekielbury; Virginia,Fri Sep 14 08:03:56 EDT 2018,Fragile,null,88956
-Large,44.8,7+ Day,71931,Hahntown; Indiana,Tue Sep 25 23:24:13 EDT 2018,N/A,null,95287
-Extra Small,313.87,Overnight,37826,North Holliside; Illinois,Tue Feb 20 09:14:38 EST 2018,N/A,null,96813
-Medium,2.21,3-5 Day,37185,West Hermafurt; Pennsylvania,Wed Oct 17 10:37:51 EDT 2018,Fragile,null,82509
-Extra Small,426.16,7+ Day,60277,Pourosborough; Oregon,Sun Aug 05 08:38:12 EDT 2018,N/A,null,85031
-Extra Small,349.39,3-5 Day,63832,North Noe; Connecticut,Mon Sep 24 04:53:04 EDT 2018,Fragile,null,84121
-Post Card,116.62,Overnight,79763,Nancieburgh; Massachusetts,Tue Mar 27 18:17:05 EDT 2018,Hazardous,null,56935
-Extra Large,88.1,1-Day,74324,West Hermafurt; Pennsylvania,Sat Feb 16 20:45:46 EST 2019,N/A,null,86198
-Envelope,9.68,3-5 Day,79335,North Ezekielbury; Virginia,Thu Jan 24 05:17:17 EST 2019,Hazardous,null,78164
-Envelope,197.36,7+ Day,80532,North Holliside; Illinois,Tue Apr 10 10:55:11 EDT 2018,N/A,null,81930
-Extra Small,157.15,3-5 Day,22031,North Ezekielbury; Virginia,Thu Jul 19 21:09:36 EDT 2018,N/A,null,43649
-Envelope,203.36,1-Day,18446,West Hermafurt; Pennsylvania,Sat Mar 10 18:45:45 EST 2018,N/A,null,24081
-Medium,362.7,7+ Day,92591,North Ezekielbury; Virginia,Wed Oct 03 02:40:12 EDT 2018,Fragile,null,97627
-Post Card,163.64,7+ Day,71392,Lovefort; New York,Thu Dec 13 19:03:55 EST 2018,Hazardous,null,47895
-Extra Small,316.76,Overnight,86749,New Brianna; Washington,Fri Oct 19 03:26:39 EDT 2018,N/A,null,40233
-Small,183.16,7+ Day,18618,North Noe; Connecticut,Sat Jan 26 12:10:57 EST 2019,Hazardous,null,81343
-Post Card,380.86,Overnight,72790,Hahntown; Indiana,Fri Jun 01 23:55:07 EDT 2018,Hazardous,null,86741
-Large,375.7,7+ Day,61510,Nancieburgh; Massachusetts,Thu Sep 13 14:38:10 EDT 2018,N/A,null,62478
-Large,270.2,1-Day,91843,West Hermafurt; Pennsylvania,Thu Nov 08 21:49:38 EST 2018,Fragile,null,25868
-Envelope,286.66,3-5 Day,50996,West Hermafurt; Pennsylvania,Sat Feb 03 15:52:45 EST 2018,Hazardous,null,57905
-Small,412.73,7+ Day,41737,New Brianna; Washington,Tue Jan 01 09:12:28 EST 2019,Fragile,null,59680
-Extra Large,408.68,1-Day,71463,North Ezekielbury; Virginia,Wed Jan 02 17:22:07 EST 2019,Fragile,null,73478
-Post Card,126.36,1-Day,10613,New Janamouth; Idaho,Wed Aug 22 10:32:24 EDT 2018,N/A,null,67317
-Extra Large,381.89,Overnight,37469,North Noe; Connecticut,Mon Apr 23 13:17:41 EDT 2018,Hazardous,null,60838
-Large,284.94,3-5 Day,63123,West Hermafurt; Pennsylvania,Thu Sep 20 22:47:12 EDT 2018,N/A,null,68257
-Large,73.06,7+ Day,74491,Nancieburgh; Massachusetts,Mon Jul 23 05:52:02 EDT 2018,N/A,null,71809
-Envelope,326.26,Overnight,58760,New Janamouth; Idaho,Sun Apr 08 06:52:47 EDT 2018,N/A,null,32146
-Small,338.55,7+ Day,79941,West Hermafurt; Pennsylvania,Sat Jun 16 09:25:27 EDT 2018,Hazardous,null,87676
-Extra Large,256.95,Overnight,88879,Lovefort; New York,Sun Oct 07 21:16:42 EDT 2018,Fragile,null,40945
-Large,364.16,Overnight,70738,Lovefort; New York,Thu Mar 21 16:30:29 EDT 2019,Fragile,null,93667
-Small,191.91,7+ Day,46647,Pourosborough; Oregon,Tue Jul 10 13:33:49 EDT 2018,Hazardous,null,25141
-Medium,364.4,7+ Day,23481,Hahntown; Indiana,Fri Feb 02 07:53:30 EST 2018,N/A,null,20849
-Small,258.31,3-5 Day,63462,New Brianna; Washington,Wed Dec 26 08:37:52 EST 2018,N/A,null,21793
-Post Card,95.32,3-5 Day,78576,New Brianna; Washington,Thu Nov 22 11:32:25 EST 2018,Hazardous,null,18233
-Extra Large,64.93,3-5 Day,88400,North Noe; Connecticut,Wed Apr 25 17:43:45 EDT 2018,Fragile,null,42957
-Large,272.6,3-5 Day,52817,Pourosborough; Oregon,Sat Mar 23 04:14:28 EDT 2019,N/A,null,79403
-Small,451.76,1-Day,48236,North Holliside; Illinois,Sat Sep 08 13:08:42 EDT 2018,Hazardous,null,38266
-Extra Small,406.81,Overnight,46275,North Holliside; Illinois,Wed Feb 20 20:25:32 EST 2019,Fragile,null,94022
-Medium,117.79,1-Day,36076,New Brianna; Washington,Thu Mar 22 06:56:03 EDT 2018,N/A,null,35814
-Small,112.66,7+ Day,13982,West Hermafurt; Pennsylvania,Fri Jun 29 09:52:40 EDT 2018,N/A,null,18291
-Extra Small,295.31,7+ Day,37587,North Ezekielbury; Virginia,Thu Feb 01 02:13:11 EST 2018,N/A,null,44194
-Post Card,241.0,1-Day,24221,North Ezekielbury; Virginia,Mon Aug 27 05:16:52 EDT 2018,N/A,null,94987
-Extra Small,207.13,7+ Day,37563,Nancieburgh; Massachusetts,Tue May 08 22:39:23 EDT 2018,N/A,null,35430
-Envelope,404.11,1-Day,15321,Pourosborough; Oregon,Tue Feb 27 08:51:04 EST 2018,Hazardous,null,51316
-Extra Large,163.1,1-Day,99398,New Janamouth; Idaho,Thu May 24 18:05:07 EDT 2018,N/A,null,67024
-Small,35.42,3-5 Day,61057,New Brianna; Washington,Tue Jan 15 06:46:35 EST 2019,N/A,null,27128
-Extra Small,95.38,1-Day,32365,Hahntown; Indiana,Tue Feb 27 20:11:07 EST 2018,N/A,null,50743
-Medium,16.01,Overnight,22311,North Noe; Connecticut,Sat Sep 15 16:57:34 EDT 2018,Hazardous,null,76699
-Extra Large,296.93,7+ Day,91661,New Janamouth; Idaho,Thu May 17 12:57:33 EDT 2018,N/A,null,38806
-Medium,354.41,Overnight,73224,Hahntown; Indiana,Thu Mar 14 17:01:33 EDT 2019,N/A,null,87960
-Large,467.55,7+ Day,83118,Pourosborough; Oregon,Wed Feb 20 14:55:54 EST 2019,Fragile,null,40873
-Post Card,195.82,7+ Day,42682,New Brianna; Washington,Sat Jan 19 11:49:45 EST 2019,Fragile,null,66284
-Post Card,489.11,3-5 Day,59906,North Noe; Connecticut,Fri Jan 04 07:53:37 EST 2019,N/A,null,22546
-Post Card,33.85,Overnight,42431,New Janamouth; Idaho,Wed Mar 13 09:32:41 EDT 2019,Fragile,null,70962
-Large,283.06,3-5 Day,55219,North Holliside; Illinois,Fri Jul 06 22:33:20 EDT 2018,N/A,null,77420
-Extra Large,225.59,7+ Day,70207,Pourosborough; Oregon,Thu Oct 11 18:25:10 EDT 2018,Hazardous,null,74589
-Post Card,37.9,3-5 Day,57086,Hahntown; Indiana,Thu Feb 22 17:08:43 EST 2018,N/A,null,24335
-Post Card,317.83,3-5 Day,91957,North Noe; Connecticut,Sun Jan 20 01:16:32 EST 2019,Hazardous,null,32286
-Large,59.28,7+ Day,83260,Hahntown; Indiana,Wed May 09 09:45:23 EDT 2018,N/A,null,92205
-Large,412.99,Overnight,99519,Hahntown; Indiana,Mon Feb 26 11:23:00 EST 2018,Hazardous,null,24999
-Extra Small,247.97,Overnight,44629,North Holliside; Illinois,Tue Jul 24 13:27:26 EDT 2018,N/A,null,39105
-Small,161.11,3-5 Day,11382,Hahntown; Indiana,Tue Apr 03 11:24:36 EDT 2018,Hazardous,null,66606
-Small,3.42,Overnight,56327,New Brianna; Washington,Sat Feb 10 12:34:45 EST 2018,N/A,null,25295
-Extra Small,318.82,Overnight,52472,New Janamouth; Idaho,Thu Aug 16 21:55:38 EDT 2018,Hazardous,null,60137
-Medium,316.47,7+ Day,59451,Nancieburgh; Massachusetts,Mon Feb 11 21:24:46 EST 2019,N/A,null,10490
-Small,490.49,1-Day,79101,North Ezekielbury; Virginia,Sat May 26 19:20:00 EDT 2018,Hazardous,null,18954
-Extra Large,389.09,3-5 Day,46378,New Janamouth; Idaho,Wed Apr 18 08:08:06 EDT 2018,Hazardous,null,37463
-Envelope,76.7,3-5 Day,52440,New Brianna; Washington,Tue Apr 03 08:42:14 EDT 2018,Hazardous,null,83558
-Extra Small,35.12,7+ Day,16708,New Brianna; Washington,Tue Jun 26 21:02:48 EDT 2018,Fragile,null,99286
-Small,331.66,1-Day,93464,Hahntown; Indiana,Sun Aug 19 15:48:44 EDT 2018,Fragile,null,57546
-Post Card,298.26,Overnight,19610,New Janamouth; Idaho,Mon Feb 11 11:58:13 EST 2019,N/A,null,39992
-Medium,133.98,7+ Day,11242,New Brianna; Washington,Sat Apr 21 04:33:14 EDT 2018,Fragile,null,96560
-Large,3.69,3-5 Day,85305,Pourosborough; Oregon,Tue May 08 13:00:08 EDT 2018,N/A,null,61847
-Small,170.77,7+ Day,28336,North Holliside; Illinois,Sun Apr 01 07:14:18 EDT 2018,N/A,null,34803
-Small,371.41,1-Day,85005,North Holliside; Illinois,Tue Aug 07 17:20:35 EDT 2018,Fragile,null,98810
-Medium,154.91,Overnight,54822,Hahntown; Indiana,Sun Mar 24 05:06:38 EDT 2019,N/A,null,36911
-Large,286.95,3-5 Day,42206,Hahntown; Indiana,Sun Oct 28 04:13:30 EDT 2018,N/A,null,50946
-Extra Small,115.04,3-5 Day,44881,Nancieburgh; Massachusetts,Fri Mar 09 23:00:00 EST 2018,Fragile,null,79433
-Post Card,113.13,3-5 Day,14296,Lovefort; New York,Sat Jul 07 21:58:01 EDT 2018,Fragile,null,74715
-Envelope,378.62,Overnight,21123,North Ezekielbury; Virginia,Mon Aug 06 05:06:39 EDT 2018,Hazardous,null,57421
-Small,418.45,Overnight,61615,Lovefort; New York,Thu May 17 19:10:14 EDT 2018,N/A,null,69798
-Large,392.04,7+ Day,93125,North Noe; Connecticut,Fri Jul 20 06:50:53 EDT 2018,N/A,null,47520
-Medium,120.61,3-5 Day,44283,New Janamouth; Idaho,Sun Apr 08 22:38:13 EDT 2018,Fragile,null,22029
-Medium,487.92,Overnight,46041,New Janamouth; Idaho,Wed Oct 03 12:22:25 EDT 2018,Hazardous,null,58718
-Small,242.3,3-5 Day,24909,Pourosborough; Oregon,Sun Mar 11 09:58:30 EDT 2018,Hazardous,null,29830
-Extra Large,273.83,7+ Day,56924,West Hermafurt; Pennsylvania,Fri Dec 14 09:51:11 EST 2018,Hazardous,null,46429
-Post Card,61.5,1-Day,76811,Nancieburgh; Massachusetts,Fri Feb 09 04:41:55 EST 2018,N/A,null,10594
-Post Card,230.82,Overnight,35443,North Ezekielbury; Virginia,Thu Feb 28 03:20:30 EST 2019,Fragile,null,85115
-Small,263.24,3-5 Day,22955,North Holliside; Illinois,Fri May 04 03:55:59 EDT 2018,Fragile,null,30722
-Post Card,475.13,3-5 Day,63759,Pourosborough; Oregon,Sun Dec 23 00:05:59 EST 2018,Hazardous,null,21428
-Envelope,434.05,3-5 Day,68991,North Ezekielbury; Virginia,Fri Jun 15 19:00:24 EDT 2018,N/A,null,36805
-Large,257.35,Overnight,14084,Lovefort; New York,Sat Jun 30 21:29:45 EDT 2018,Fragile,null,52459
-Post Card,314.82,7+ Day,38039,North Ezekielbury; Virginia,Wed Sep 05 04:41:30 EDT 2018,N/A,null,65188
-Envelope,386.96,7+ Day,12943,New Brianna; Washington,Thu Oct 04 20:47:13 EDT 2018,Hazardous,null,72102
-Post Card,131.33,3-5 Day,95898,New Janamouth; Idaho,Sat Feb 17 02:07:35 EST 2018,Hazardous,null,50419
-Extra Large,231.91,Overnight,38463,Nancieburgh; Massachusetts,Mon Dec 10 14:40:18 EST 2018,N/A,null,49805
-Post Card,454.41,7+ Day,43483,Pourosborough; Oregon,Fri Sep 14 08:36:47 EDT 2018,Hazardous,null,59481
-Extra Small,187.69,7+ Day,54891,New Janamouth; Idaho,Mon Jul 23 02:36:37 EDT 2018,N/A,null,39403
-Envelope,266.09,7+ Day,25208,Pourosborough; Oregon,Fri Nov 30 06:27:00 EST 2018,Fragile,null,23563
-Small,133.37,3-5 Day,63798,North Ezekielbury; Virginia,Tue Dec 25 07:46:16 EST 2018,Fragile,null,89249
-Large,202.96,Overnight,35030,Nancieburgh; Massachusetts,Sun Mar 17 18:52:15 EDT 2019,N/A,null,94323
-Envelope,164.5,Overnight,48597,Hahntown; Indiana,Wed Aug 08 09:00:58 EDT 2018,N/A,null,42819
-Envelope,123.79,7+ Day,51840,Hahntown; Indiana,Tue Sep 18 09:36:25 EDT 2018,N/A,null,85217
-Post Card,317.91,1-Day,36907,Lovefort; New York,Sat Jun 23 03:48:30 EDT 2018,N/A,null,24773
-Post Card,27.1,7+ Day,91640,Pourosborough; Oregon,Sun Feb 04 21:59:25 EST 2018,Hazardous,null,71937
-Large,373.57,7+ Day,82031,West Hermafurt; Pennsylvania,Wed Feb 06 00:22:42 EST 2019,Fragile,null,47634
-Large,45.14,3-5 Day,92428,New Brianna; Washington,Fri Jun 01 23:52:22 EDT 2018,N/A,null,51585
-Large,124.67,3-5 Day,11334,North Noe; Connecticut,Fri Aug 17 09:07:39 EDT 2018,Fragile,null,58191
-Medium,31.16,1-Day,63528,New Janamouth; Idaho,Fri Mar 02 01:09:53 EST 2018,Fragile,null,13603
-Medium,220.83,7+ Day,67824,North Noe; Connecticut,Wed Nov 07 04:10:24 EST 2018,Hazardous,null,70725
-Large,490.11,3-5 Day,49049,North Ezekielbury; Virginia,Mon Jul 09 22:50:15 EDT 2018,N/A,null,73596
-Extra Small,372.46,7+ Day,54645,New Janamouth; Idaho,Sun Jul 29 09:34:22 EDT 2018,Fragile,null,28138
-Large,13.5,Overnight,51442,West Hermafurt; Pennsylvania,Fri Dec 21 14:35:12 EST 2018,Fragile,null,45854
-Medium,142.1,1-Day,50113,North Noe; Connecticut,Sun Mar 24 09:59:36 EDT 2019,N/A,null,26603
-Large,323.41,1-Day,51121,New Brianna; Washington,Wed Jul 11 03:30:38 EDT 2018,Hazardous,null,24001
-Extra Small,201.23,1-Day,98582,Pourosborough; Oregon,Thu Mar 15 09:43:34 EDT 2018,N/A,null,77668
-Extra Small,445.31,7+ Day,64105,Hahntown; Indiana,Fri Nov 23 13:04:32 EST 2018,Fragile,null,92423
-Extra Small,351.62,Overnight,97503,North Noe; Connecticut,Wed Jul 11 17:02:52 EDT 2018,N/A,null,53081
-Large,25.73,7+ Day,70822,Hahntown; Indiana,Fri Jan 04 04:35:48 EST 2019,N/A,null,98925
-Extra Large,252.15,7+ Day,99107,Hahntown; Indiana,Sun Jul 08 16:12:32 EDT 2018,N/A,null,61293
-Envelope,249.83,3-5 Day,78077,North Ezekielbury; Virginia,Fri Mar 08 02:21:20 EST 2019,Hazardous,null,88151
-Post Card,211.69,1-Day,50300,North Noe; Connecticut,Fri Apr 06 13:05:26 EDT 2018,Hazardous,null,27066
-Medium,14.94,7+ Day,15439,North Noe; Connecticut,Fri Feb 22 22:38:09 EST 2019,Fragile,null,26954
-Post Card,462.14,7+ Day,92781,West Hermafurt; Pennsylvania,Thu Dec 06 01:38:29 EST 2018,N/A,null,14943
-Envelope,65.48,1-Day,92705,New Brianna; Washington,Wed Feb 28 02:13:10 EST 2018,Hazardous,null,44627
-Envelope,106.08,Overnight,29500,New Brianna; Washington,Wed Jun 27 13:27:42 EDT 2018,Fragile,null,49537
-Post Card,38.47,Overnight,15484,New Janamouth; Idaho,Thu Jun 07 11:48:17 EDT 2018,N/A,null,16388
-Medium,278.21,3-5 Day,47634,New Janamouth; Idaho,Sun Mar 04 13:21:56 EST 2018,N/A,null,21720
-Post Card,314.51,7+ Day,42428,Hahntown; Indiana,Sun Feb 25 20:09:29 EST 2018,Hazardous,null,86401
-Post Card,400.95,7+ Day,25840,North Ezekielbury; Virginia,Sun Dec 16 09:12:06 EST 2018,N/A,null,32653
-Large,376.0,7+ Day,60824,West Hermafurt; Pennsylvania,Wed May 23 04:35:32 EDT 2018,Hazardous,null,80618
-Envelope,144.6,3-5 Day,73160,North Noe; Connecticut,Tue Mar 20 07:42:20 EDT 2018,Hazardous,null,95362
-Post Card,448.55,Overnight,76366,North Ezekielbury; Virginia,Fri Oct 26 16:08:44 EDT 2018,N/A,null,36993
-Post Card,79.85,7+ Day,21809,New Brianna; Washington,Fri Feb 15 15:29:28 EST 2019,N/A,null,82389
-Medium,169.26,Overnight,36199,Nancieburgh; Massachusetts,Tue Mar 12 19:22:29 EDT 2019,Hazardous,null,35115
-Small,396.36,3-5 Day,60564,New Janamouth; Idaho,Mon Jul 30 12:38:46 EDT 2018,N/A,null,83006
-Small,252.9,7+ Day,50523,North Holliside; Illinois,Mon Dec 03 23:29:48 EST 2018,N/A,null,22483
-Extra Small,437.0,1-Day,20098,New Brianna; Washington,Fri Sep 28 23:24:07 EDT 2018,Fragile,null,10808
-Large,442.66,1-Day,48761,Pourosborough; Oregon,Tue Aug 14 17:36:53 EDT 2018,N/A,null,20614
-Extra Small,489.16,1-Day,52153,Hahntown; Indiana,Thu Oct 11 01:26:42 EDT 2018,N/A,null,23347
-Post Card,455.62,Overnight,96859,North Holliside; Illinois,Sat Aug 25 08:12:20 EDT 2018,N/A,null,45159
-Post Card,320.58,7+ Day,68440,North Ezekielbury; Virginia,Mon Dec 03 00:54:56 EST 2018,N/A,null,96604
-Post Card,128.38,1-Day,73085,Lovefort; New York,Thu Oct 04 14:31:00 EDT 2018,N/A,null,66160
-Small,249.87,1-Day,96384,West Hermafurt; Pennsylvania,Wed Feb 14 07:58:55 EST 2018,Hazardous,null,90115
-Small,72.05,1-Day,94422,West Hermafurt; Pennsylvania,Thu Jan 03 07:50:23 EST 2019,Fragile,null,53363
-Small,4.48,3-5 Day,55579,North Holliside; Illinois,Fri May 25 22:21:33 EDT 2018,Fragile,null,28689
-Envelope,221.13,1-Day,82919,New Brianna; Washington,Mon Feb 25 08:00:22 EST 2019,Hazardous,null,58135
-Large,124.64,7+ Day,59328,Nancieburgh; Massachusetts,Sat Nov 03 05:35:05 EDT 2018,N/A,null,95727
-Envelope,28.07,1-Day,94449,Lovefort; New York,Sat Sep 08 03:23:54 EDT 2018,N/A,null,23447
-Envelope,459.37,1-Day,32959,Nancieburgh; Massachusetts,Wed Jan 30 21:24:25 EST 2019,N/A,null,86591
-Post Card,433.57,3-5 Day,12073,North Holliside; Illinois,Mon Feb 19 04:56:14 EST 2018,Fragile,null,83169
-Small,310.91,1-Day,73980,North Noe; Connecticut,Thu Nov 15 06:22:36 EST 2018,N/A,null,55179
-Large,473.93,3-5 Day,27267,North Ezekielbury; Virginia,Wed Sep 05 12:34:25 EDT 2018,Hazardous,null,72048
-Envelope,146.07,7+ Day,46523,North Ezekielbury; Virginia,Sat Dec 29 07:43:38 EST 2018,Fragile,null,53194
-Medium,160.33,Overnight,26274,West Hermafurt; Pennsylvania,Tue May 01 14:12:40 EDT 2018,Hazardous,null,94736
-Medium,206.39,1-Day,69461,Hahntown; Indiana,Tue Nov 13 07:32:35 EST 2018,N/A,null,49982
-Large,159.29,7+ Day,54270,North Noe; Connecticut,Mon Oct 22 19:04:48 EDT 2018,Hazardous,null,53229
-Extra Large,60.0,3-5 Day,43171,New Janamouth; Idaho,Thu Jan 03 11:42:33 EST 2019,N/A,null,54753
-Envelope,262.44,1-Day,30927,New Brianna; Washington,Sat Sep 01 14:21:29 EDT 2018,Fragile,null,25268
-Post Card,172.34,1-Day,79867,Hahntown; Indiana,Fri Jun 22 01:50:29 EDT 2018,N/A,null,33172
-Extra Small,281.34,1-Day,78330,West Hermafurt; Pennsylvania,Wed Jun 13 15:33:52 EDT 2018,Fragile,null,74855
-Small,329.47,3-5 Day,93713,North Ezekielbury; Virginia,Thu Sep 20 07:03:19 EDT 2018,N/A,null,29836
-Large,380.22,1-Day,71567,West Hermafurt; Pennsylvania,Sat Sep 29 10:26:24 EDT 2018,Fragile,null,37728
-Extra Large,398.91,3-5 Day,71965,North Ezekielbury; Virginia,Thu Feb 28 12:29:57 EST 2019,Hazardous,null,44932
-Large,368.72,1-Day,58386,North Holliside; Illinois,Mon Nov 12 03:00:50 EST 2018,Hazardous,null,26293
-Post Card,314.22,7+ Day,96004,North Ezekielbury; Virginia,Fri Mar 01 12:27:34 EST 2019,N/A,null,11993
-Small,203.92,Overnight,19285,New Brianna; Washington,Sat Jun 09 01:21:22 EDT 2018,N/A,null,11851
-Medium,399.64,7+ Day,10355,New Brianna; Washington,Mon Jun 25 19:24:04 EDT 2018,N/A,null,85013
-Envelope,195.32,3-5 Day,70115,Nancieburgh; Massachusetts,Fri Jan 18 04:28:32 EST 2019,N/A,null,52658
-Extra Large,82.64,Overnight,27066,Pourosborough; Oregon,Wed Aug 22 23:37:30 EDT 2018,Fragile,null,47750
-Envelope,359.47,1-Day,87662,North Holliside; Illinois,Tue Jan 15 01:34:19 EST 2019,N/A,null,93928
-Small,457.02,7+ Day,42726,New Janamouth; Idaho,Wed Jul 25 11:36:24 EDT 2018,Hazardous,null,90937
-Post Card,122.96,Overnight,30272,New Janamouth; Idaho,Thu Mar 08 05:01:44 EST 2018,Hazardous,null,48653
-Small,392.6,Overnight,69429,Pourosborough; Oregon,Thu Apr 26 19:16:50 EDT 2018,N/A,null,87493
-Extra Large,113.65,7+ Day,15057,West Hermafurt; Pennsylvania,Sun Dec 30 13:11:37 EST 2018,Fragile,null,81591
-Large,314.62,Overnight,11996,New Brianna; Washington,Tue Sep 11 11:40:21 EDT 2018,Hazardous,null,31539
-Post Card,430.66,7+ Day,16661,New Janamouth; Idaho,Wed Sep 26 00:56:08 EDT 2018,Hazardous,null,38652
-Extra Large,160.05,1-Day,48933,North Holliside; Illinois,Sun May 06 05:11:26 EDT 2018,Hazardous,null,68055
-Medium,54.39,1-Day,15922,Pourosborough; Oregon,Sat Feb 23 10:21:34 EST 2019,N/A,null,73828
-Extra Small,491.9,Overnight,24598,New Janamouth; Idaho,Sun Jun 24 18:40:14 EDT 2018,Fragile,null,96342
-Medium,305.74,1-Day,54172,Lovefort; New York,Sat Oct 27 14:47:59 EDT 2018,N/A,null,90754
-Small,189.84,3-5 Day,93285,North Holliside; Illinois,Thu Jul 26 03:14:00 EDT 2018,N/A,null,95753
-Small,14.37,3-5 Day,66737,North Holliside; Illinois,Fri Dec 21 17:27:13 EST 2018,N/A,null,24342
-Envelope,188.24,Overnight,27863,New Brianna; Washington,Sun Jul 15 12:11:51 EDT 2018,N/A,null,88114
-Small,237.62,7+ Day,68593,West Hermafurt; Pennsylvania,Fri Nov 09 16:50:36 EST 2018,Hazardous,null,61987
-Large,391.74,Overnight,84569,New Janamouth; Idaho,Sun Feb 25 13:23:18 EST 2018,Fragile,null,89332
-Large,360.24,1-Day,57997,Lovefort; New York,Fri Apr 27 01:54:13 EDT 2018,Hazardous,null,90415
-Large,402.43,Overnight,95606,Nancieburgh; Massachusetts,Thu Mar 07 12:14:56 EST 2019,Fragile,null,80327
-Extra Large,168.71,7+ Day,85986,North Noe; Connecticut,Sat Dec 29 04:42:59 EST 2018,N/A,null,66834
-Medium,71.31,7+ Day,56338,Pourosborough; Oregon,Fri Jul 27 00:11:23 EDT 2018,N/A,null,71201
-Extra Small,478.45,Overnight,26086,North Noe; Connecticut,Thu Aug 23 11:05:33 EDT 2018,Fragile,null,15568
-Large,124.68,7+ Day,45814,North Holliside; Illinois,Wed Aug 15 23:43:21 EDT 2018,N/A,null,86213
-Small,102.95,3-5 Day,12681,Hahntown; Indiana,Fri Apr 27 07:20:56 EDT 2018,N/A,null,76434
-Extra Small,257.77,7+ Day,83334,New Janamouth; Idaho,Sun Jan 06 06:00:52 EST 2019,Hazardous,null,30074
-Post Card,178.71,3-5 Day,39834,North Holliside; Illinois,Sun Nov 25 13:43:25 EST 2018,Fragile,null,56601
-Large,448.6,Overnight,18003,Lovefort; New York,Fri Nov 02 04:48:01 EDT 2018,N/A,null,87914
-Envelope,49.83,3-5 Day,67131,North Holliside; Illinois,Fri Jan 18 15:53:06 EST 2019,Hazardous,null,15066
-Medium,200.72,3-5 Day,71344,West Hermafurt; Pennsylvania,Fri Sep 21 06:51:21 EDT 2018,N/A,null,67457
-Medium,68.82,Overnight,75018,New Janamouth; Idaho,Sat Oct 27 19:37:48 EDT 2018,N/A,null,35365
-Medium,472.8,1-Day,56480,Lovefort; New York,Sat Dec 01 01:29:39 EST 2018,N/A,null,85033
-Extra Large,230.29,7+ Day,17139,Nancieburgh; Massachusetts,Fri Apr 13 07:12:03 EDT 2018,Hazardous,null,57709
-Large,144.12,3-5 Day,76150,New Janamouth; Idaho,Sun Aug 26 11:39:11 EDT 2018,N/A,null,78840
-Small,154.77,1-Day,75482,Nancieburgh; Massachusetts,Tue May 08 02:01:56 EDT 2018,N/A,null,33712
-Large,96.53,3-5 Day,44337,North Ezekielbury; Virginia,Sat Jan 26 21:34:37 EST 2019,N/A,null,28671
-Extra Small,63.85,Overnight,46428,North Holliside; Illinois,Fri Feb 02 10:32:48 EST 2018,Fragile,null,48957
-Medium,18.76,Overnight,43354,New Janamouth; Idaho,Thu May 10 14:28:28 EDT 2018,N/A,null,97079
-Post Card,147.46,Overnight,86659,Pourosborough; Oregon,Sun Apr 29 08:23:31 EDT 2018,N/A,null,42604
-Extra Small,23.47,1-Day,43051,New Brianna; Washington,Tue Mar 05 08:58:12 EST 2019,N/A,null,19179
-Extra Small,24.47,Overnight,61739,Pourosborough; Oregon,Sat Jul 28 22:13:50 EDT 2018,Fragile,null,49423
-Extra Large,29.62,3-5 Day,48486,New Janamouth; Idaho,Thu Nov 22 16:02:23 EST 2018,N/A,null,69587
-Small,205.01,Overnight,91237,North Noe; Connecticut,Wed Jan 23 16:33:18 EST 2019,N/A,null,54190
-Small,105.57,3-5 Day,83779,North Holliside; Illinois,Wed Mar 21 02:47:55 EDT 2018,Fragile,null,50971
-Extra Small,159.83,3-5 Day,62666,North Holliside; Illinois,Mon Apr 09 20:45:42 EDT 2018,N/A,null,45347
-Medium,139.87,1-Day,90410,Hahntown; Indiana,Wed Feb 21 01:55:20 EST 2018,Hazardous,null,85957
-Small,420.55,3-5 Day,37111,Pourosborough; Oregon,Fri Nov 09 18:15:39 EST 2018,Fragile,null,16075
-Extra Large,246.71,Overnight,83675,West Hermafurt; Pennsylvania,Sun Feb 25 04:21:27 EST 2018,Hazardous,null,41883
-Extra Large,400.31,7+ Day,66463,West Hermafurt; Pennsylvania,Fri Apr 27 03:36:41 EDT 2018,Hazardous,null,88513
-Medium,239.45,3-5 Day,66111,Lovefort; New York,Wed Jan 16 14:39:40 EST 2019,Hazardous,null,28506
-Large,387.05,1-Day,34575,North Holliside; Illinois,Tue Mar 05 09:39:58 EST 2019,N/A,null,94850
-Post Card,295.67,3-5 Day,98348,New Janamouth; Idaho,Mon Dec 24 04:51:34 EST 2018,N/A,null,37757
-Large,15.32,Overnight,47790,Nancieburgh; Massachusetts,Sat Jan 12 06:33:48 EST 2019,Hazardous,null,74740
-Large,133.36,7+ Day,45595,Pourosborough; Oregon,Sat Sep 29 17:58:28 EDT 2018,N/A,null,94788
-Envelope,198.12,3-5 Day,47291,Pourosborough; Oregon,Tue May 01 10:08:47 EDT 2018,Hazardous,null,15449
-Extra Small,54.61,Overnight,69258,North Holliside; Illinois,Sat Jan 19 22:08:40 EST 2019,Fragile,null,59402
-Extra Small,237.47,7+ Day,68467,Hahntown; Indiana,Tue Jun 19 07:10:58 EDT 2018,Fragile,null,78078
-Envelope,188.15,1-Day,23769,West Hermafurt; Pennsylvania,Tue Mar 19 05:21:04 EDT 2019,N/A,null,72431
-Large,474.76,1-Day,48615,Hahntown; Indiana,Thu Apr 26 12:44:27 EDT 2018,Hazardous,null,18747
-Extra Large,110.0,1-Day,26108,Pourosborough; Oregon,Thu Mar 21 05:46:05 EDT 2019,Fragile,null,71653
-Large,364.52,1-Day,12172,Hahntown; Indiana,Fri May 11 07:00:08 EDT 2018,N/A,null,37847
-Envelope,398.0,7+ Day,23265,Hahntown; Indiana,Fri Jun 01 16:04:53 EDT 2018,N/A,null,45797
-Extra Small,487.3,7+ Day,47769,North Holliside; Illinois,Wed Jan 02 15:40:14 EST 2019,Fragile,null,34832
-Extra Large,44.27,7+ Day,16883,Pourosborough; Oregon,Wed Dec 12 07:31:53 EST 2018,N/A,null,89032
-Post Card,261.45,3-5 Day,29888,North Ezekielbury; Virginia,Tue Jun 05 11:05:23 EDT 2018,N/A,null,50299
-Extra Large,350.66,1-Day,60018,Lovefort; New York,Tue Aug 14 19:55:50 EDT 2018,N/A,null,60959
-Extra Small,171.69,7+ Day,14689,New Janamouth; Idaho,Thu Feb 07 10:19:17 EST 2019,N/A,null,29400
-Small,174.47,1-Day,44153,New Brianna; Washington,Mon Jun 18 09:42:11 EDT 2018,Hazardous,null,57582
-Extra Small,387.92,Overnight,63296,Hahntown; Indiana,Thu Aug 30 00:10:22 EDT 2018,N/A,null,99669
-Large,457.09,1-Day,92138,North Holliside; Illinois,Tue May 29 14:52:33 EDT 2018,Hazardous,null,57051
-Extra Small,139.45,3-5 Day,72087,New Brianna; Washington,Sat Jun 02 10:19:32 EDT 2018,Hazardous,null,73254
-Envelope,259.82,Overnight,60417,Nancieburgh; Massachusetts,Fri Mar 02 11:09:59 EST 2018,Hazardous,null,57917
-Extra Small,177.17,7+ Day,82157,Hahntown; Indiana,Tue Mar 19 19:16:39 EDT 2019,N/A,null,86676
-Envelope,458.22,3-5 Day,84999,New Janamouth; Idaho,Fri Mar 09 08:48:49 EST 2018,Fragile,null,61438
-Extra Small,487.44,1-Day,69928,New Brianna; Washington,Fri Apr 27 10:53:12 EDT 2018,N/A,null,58029
-Small,263.68,1-Day,31575,Nancieburgh; Massachusetts,Thu Jun 28 23:47:52 EDT 2018,Fragile,null,27337
-Envelope,20.77,1-Day,75335,North Holliside; Illinois,Wed Jun 27 12:36:54 EDT 2018,Hazardous,null,42371
-Medium,408.79,1-Day,35773,Nancieburgh; Massachusetts,Wed Jul 04 00:20:12 EDT 2018,N/A,null,34205
-Small,470.62,Overnight,84274,Lovefort; New York,Fri Jun 15 06:25:12 EDT 2018,N/A,null,26539
-Envelope,286.15,1-Day,38052,North Ezekielbury; Virginia,Sat Feb 03 02:27:52 EST 2018,Fragile,null,88870
-Medium,414.06,Overnight,19863,New Janamouth; Idaho,Sun Sep 02 16:56:38 EDT 2018,Hazardous,null,13337
-Extra Small,95.84,3-5 Day,42461,New Brianna; Washington,Sat Mar 09 05:48:45 EST 2019,N/A,null,26766
-Post Card,123.06,3-5 Day,70261,North Holliside; Illinois,Sun Jan 20 03:09:24 EST 2019,Hazardous,null,30049
-Envelope,251.92,Overnight,29812,North Holliside; Illinois,Fri Apr 27 12:58:19 EDT 2018,N/A,null,17154
-Large,199.42,1-Day,91837,North Ezekielbury; Virginia,Sun Apr 01 17:01:18 EDT 2018,Fragile,null,51112
-Extra Large,405.33,1-Day,88593,West Hermafurt; Pennsylvania,Sun Mar 24 10:19:39 EDT 2019,N/A,null,30943
-Post Card,138.37,7+ Day,25637,Hahntown; Indiana,Sat Jan 12 03:43:57 EST 2019,N/A,null,49606
-Envelope,456.82,1-Day,62323,West Hermafurt; Pennsylvania,Fri Jan 04 11:20:15 EST 2019,N/A,null,12180
-Extra Small,161.66,Overnight,24012,North Ezekielbury; Virginia,Mon Jun 04 20:53:52 EDT 2018,Hazardous,null,51168
-Large,260.22,7+ Day,32020,New Brianna; Washington,Tue Nov 13 05:08:10 EST 2018,N/A,null,30161
-Large,391.04,1-Day,28430,Nancieburgh; Massachusetts,Sun Aug 19 09:38:01 EDT 2018,N/A,null,98672
-Large,441.54,Overnight,86875,West Hermafurt; Pennsylvania,Wed May 30 10:19:35 EDT 2018,N/A,null,30537
-Envelope,297.34,Overnight,46304,West Hermafurt; Pennsylvania,Mon Jul 23 13:05:03 EDT 2018,Fragile,null,86869
-Post Card,361.11,1-Day,70002,West Hermafurt; Pennsylvania,Mon Apr 23 05:51:18 EDT 2018,N/A,null,70263
-Envelope,435.32,Overnight,41960,North Holliside; Illinois,Sat Mar 02 08:21:03 EST 2019,N/A,null,48663
-Small,166.47,1-Day,40564,West Hermafurt; Pennsylvania,Thu May 03 23:41:24 EDT 2018,Hazardous,null,47248
-Small,240.23,Overnight,29149,New Brianna; Washington,Sat Dec 15 21:27:50 EST 2018,N/A,null,30813
-Medium,327.46,7+ Day,58377,West Hermafurt; Pennsylvania,Wed Nov 07 14:57:46 EST 2018,N/A,null,19042
-Envelope,118.14,1-Day,94106,New Janamouth; Idaho,Fri Jun 01 00:41:50 EDT 2018,N/A,null,39671
-Envelope,118.36,1-Day,72673,North Ezekielbury; Virginia,Sun Mar 17 18:50:34 EDT 2019,Hazardous,null,51985
-Extra Small,21.96,7+ Day,10379,Pourosborough; Oregon,Wed Feb 14 21:56:23 EST 2018,N/A,null,62201
-Large,146.85,3-5 Day,39753,West Hermafurt; Pennsylvania,Fri Apr 13 05:07:34 EDT 2018,Hazardous,null,12942
-Extra Small,370.02,1-Day,53073,Nancieburgh; Massachusetts,Fri Aug 31 04:36:05 EDT 2018,Hazardous,null,40728
-Post Card,89.74,Overnight,41944,Nancieburgh; Massachusetts,Fri Mar 22 13:03:29 EDT 2019,Fragile,null,29195
-Extra Small,139.7,1-Day,68470,North Noe; Connecticut,Tue Mar 19 19:11:42 EDT 2019,N/A,null,21202
-Extra Large,136.1,7+ Day,22367,New Janamouth; Idaho,Mon Aug 06 02:36:22 EDT 2018,N/A,null,77875
-Small,177.42,Overnight,72348,West Hermafurt; Pennsylvania,Mon Jul 09 06:21:56 EDT 2018,N/A,null,90447
-Large,19.08,1-Day,34093,Hahntown; Indiana,Mon Jan 14 11:08:32 EST 2019,N/A,null,52376
-Large,20.09,3-5 Day,92028,New Brianna; Washington,Sun May 20 11:44:49 EDT 2018,Fragile,null,71016
-Small,146.82,7+ Day,90603,New Brianna; Washington,Wed Sep 26 18:48:55 EDT 2018,Hazardous,null,81754
-Medium,489.09,Overnight,15524,Pourosborough; Oregon,Mon Jun 11 21:00:29 EDT 2018,Hazardous,null,98133
-Envelope,141.98,Overnight,61632,New Brianna; Washington,Wed Nov 28 07:49:36 EST 2018,Fragile,null,51900
-Medium,139.26,3-5 Day,67389,North Noe; Connecticut,Wed Apr 25 21:05:16 EDT 2018,Fragile,null,19140
-Extra Large,428.57,7+ Day,13063,North Ezekielbury; Virginia,Wed Feb 21 09:35:18 EST 2018,Fragile,null,46040
-Post Card,304.02,Overnight,42335,Nancieburgh; Massachusetts,Fri Dec 07 17:02:41 EST 2018,N/A,null,72162
-Extra Large,121.83,3-5 Day,14192,New Brianna; Washington,Thu Aug 02 22:26:33 EDT 2018,Fragile,null,73449
-Post Card,175.64,7+ Day,62738,Hahntown; Indiana,Tue Nov 27 03:22:23 EST 2018,N/A,null,80886
-Envelope,470.25,Overnight,35020,New Brianna; Washington,Thu Jun 21 16:08:58 EDT 2018,N/A,null,91865
-Medium,284.26,1-Day,69124,Lovefort; New York,Wed Jun 13 03:50:53 EDT 2018,N/A,null,77667
-Small,6.27,Overnight,73253,West Hermafurt; Pennsylvania,Thu Jun 14 18:11:47 EDT 2018,Fragile,null,15122
-Extra Large,52.59,Overnight,31609,West Hermafurt; Pennsylvania,Sun Oct 07 21:34:07 EDT 2018,Fragile,null,56428
-Extra Small,299.29,1-Day,54215,North Ezekielbury; Virginia,Wed Dec 26 18:00:17 EST 2018,N/A,null,25655
-Medium,268.18,7+ Day,71950,North Holliside; Illinois,Tue Jun 05 06:33:22 EDT 2018,Fragile,null,76176
-Extra Large,164.69,Overnight,75147,Lovefort; New York,Sun Aug 12 23:14:29 EDT 2018,Hazardous,null,54938
-Small,33.77,Overnight,50687,New Janamouth; Idaho,Thu May 17 13:43:03 EDT 2018,Fragile,null,44753
-Envelope,257.72,3-5 Day,27377,New Janamouth; Idaho,Fri Feb 01 01:37:37 EST 2019,Fragile,null,73181
-Post Card,118.78,3-5 Day,87500,New Janamouth; Idaho,Mon Oct 29 20:57:24 EDT 2018,Fragile,null,35700
-Small,70.85,Overnight,13968,New Janamouth; Idaho,Mon Sep 10 01:28:42 EDT 2018,Fragile,null,17134
-Post Card,38.09,Overnight,66140,West Hermafurt; Pennsylvania,Thu Mar 07 04:54:17 EST 2019,Fragile,null,98550
-Envelope,462.01,1-Day,30251,West Hermafurt; Pennsylvania,Wed Mar 28 12:18:58 EDT 2018,N/A,null,78820
-Extra Small,78.26,3-5 Day,20752,North Ezekielbury; Virginia,Thu Mar 29 05:16:07 EDT 2018,N/A,null,68949
-Post Card,66.73,7+ Day,15113,North Noe; Connecticut,Mon Feb 18 05:08:35 EST 2019,N/A,null,33017
-Post Card,357.34,7+ Day,92350,North Ezekielbury; Virginia,Sat Apr 07 07:38:31 EDT 2018,N/A,null,41581
-Extra Small,109.55,7+ Day,58101,North Holliside; Illinois,Sun Mar 25 00:54:59 EDT 2018,N/A,null,72576
-Extra Small,379.7,7+ Day,44019,Lovefort; New York,Mon Jun 11 02:13:38 EDT 2018,Hazardous,null,61943
-Extra Small,40.8,7+ Day,35641,North Noe; Connecticut,Thu Feb 21 18:13:18 EST 2019,Fragile,null,65154
-Extra Large,335.52,Overnight,41520,North Holliside; Illinois,Sun Aug 12 15:42:50 EDT 2018,Fragile,null,16780
-Extra Small,485.9,7+ Day,80896,Lovefort; New York,Fri May 11 01:58:12 EDT 2018,N/A,null,87026
-Envelope,341.4,1-Day,59074,New Brianna; Washington,Tue Jun 19 13:03:36 EDT 2018,Hazardous,null,63086
-Medium,195.51,3-5 Day,13328,West Hermafurt; Pennsylvania,Fri May 11 14:58:32 EDT 2018,N/A,null,90611
-Envelope,421.09,3-5 Day,62475,North Ezekielbury; Virginia,Tue May 22 00:17:56 EDT 2018,Fragile,null,29866
-Large,141.38,7+ Day,88107,West Hermafurt; Pennsylvania,Sat Jan 12 10:21:39 EST 2019,Hazardous,null,24289
-Extra Small,11.92,3-5 Day,50515,Lovefort; New York,Mon Sep 24 17:45:12 EDT 2018,Hazardous,null,65793
-Small,216.35,3-5 Day,47836,Lovefort; New York,Fri Jan 18 12:16:31 EST 2019,Fragile,null,43063
-Extra Small,7.29,7+ Day,72888,North Ezekielbury; Virginia,Sun Dec 02 02:28:55 EST 2018,Fragile,null,76779
-Extra Large,197.83,7+ Day,15570,New Janamouth; Idaho,Fri Jul 13 06:30:39 EDT 2018,N/A,null,77483
-Post Card,23.41,7+ Day,40131,Pourosborough; Oregon,Mon Sep 03 13:04:30 EDT 2018,N/A,null,31471
-Envelope,352.94,1-Day,80843,Lovefort; New York,Mon Aug 20 03:07:30 EDT 2018,Hazardous,null,86059
-Large,123.96,Overnight,63290,Lovefort; New York,Sat Mar 09 20:06:11 EST 2019,N/A,null,85568
-Post Card,424.6,Overnight,23587,North Holliside; Illinois,Fri Mar 16 10:31:46 EDT 2018,N/A,null,16288
-Medium,319.76,7+ Day,62389,Lovefort; New York,Wed Mar 14 03:43:47 EDT 2018,N/A,null,57577
-Extra Large,199.6,7+ Day,93898,Lovefort; New York,Mon Feb 26 20:38:27 EST 2018,N/A,null,67421
-Small,257.79,3-5 Day,30358,Hahntown; Indiana,Tue May 29 12:47:55 EDT 2018,N/A,null,26089
-Extra Small,347.55,7+ Day,86492,North Noe; Connecticut,Thu Feb 22 16:36:37 EST 2018,N/A,null,93150
-Envelope,62.7,7+ Day,40342,Lovefort; New York,Tue Nov 06 18:46:40 EST 2018,Fragile,null,47965
-Envelope,484.14,3-5 Day,70793,New Brianna; Washington,Mon Feb 12 08:52:19 EST 2018,Fragile,null,38408
-Medium,229.28,7+ Day,92579,New Brianna; Washington,Fri Nov 09 16:22:09 EST 2018,Fragile,null,50111
-Extra Small,293.11,7+ Day,44879,Nancieburgh; Massachusetts,Wed Jun 20 22:03:03 EDT 2018,N/A,null,55712
-Medium,354.28,1-Day,17619,Hahntown; Indiana,Wed Feb 14 19:23:56 EST 2018,Fragile,null,94107
-Envelope,267.99,3-5 Day,26667,Hahntown; Indiana,Thu Apr 05 04:50:35 EDT 2018,N/A,null,49322
-Extra Small,256.97,7+ Day,26340,New Janamouth; Idaho,Mon Jul 02 12:46:24 EDT 2018,N/A,null,61573
-Envelope,134.44,Overnight,32471,West Hermafurt; Pennsylvania,Mon Sep 03 18:41:28 EDT 2018,Fragile,null,76397
-Post Card,384.73,7+ Day,39763,Lovefort; New York,Sun Oct 21 06:26:05 EDT 2018,N/A,null,72385
-Envelope,417.5,1-Day,58790,New Janamouth; Idaho,Wed Sep 26 16:47:01 EDT 2018,N/A,null,25449
-Small,408.89,7+ Day,25999,Nancieburgh; Massachusetts,Tue Jul 31 06:18:54 EDT 2018,N/A,null,55119
-Extra Small,325.23,1-Day,43230,Hahntown; Indiana,Thu Oct 25 02:07:29 EDT 2018,Hazardous,null,80144
-Small,427.46,3-5 Day,78171,North Holliside; Illinois,Sat Mar 09 03:48:49 EST 2019,Fragile,null,85792
-Small,109.14,3-5 Day,34370,Lovefort; New York,Mon Sep 10 14:43:06 EDT 2018,N/A,null,95978
-Extra Large,88.41,1-Day,78700,Hahntown; Indiana,Thu Mar 29 12:11:47 EDT 2018,Hazardous,null,19125
-Envelope,117.89,1-Day,91244,North Holliside; Illinois,Tue Feb 26 15:10:28 EST 2019,N/A,null,90696
-Medium,402.73,3-5 Day,37847,Hahntown; Indiana,Thu Oct 04 04:55:14 EDT 2018,Fragile,null,81172
-Extra Small,9.57,7+ Day,77618,North Holliside; Illinois,Tue Jul 31 19:38:53 EDT 2018,Fragile,null,23320
-Post Card,16.84,1-Day,24655,New Brianna; Washington,Thu Feb 15 02:00:05 EST 2018,N/A,null,50253
-Small,444.36,7+ Day,24688,New Janamouth; Idaho,Tue Sep 11 22:56:28 EDT 2018,N/A,null,67564
-Medium,473.39,3-5 Day,86958,Lovefort; New York,Wed Aug 15 02:55:01 EDT 2018,N/A,null,96804
-Large,88.32,1-Day,70884,New Brianna; Washington,Wed Mar 14 14:39:02 EDT 2018,Fragile,null,52012
-Envelope,66.23,7+ Day,35935,Lovefort; New York,Sun Dec 30 06:44:51 EST 2018,Hazardous,null,32401
-Small,68.1,Overnight,85378,New Brianna; Washington,Wed May 23 14:15:27 EDT 2018,N/A,null,48245
-Extra Small,156.58,7+ Day,26964,North Ezekielbury; Virginia,Fri Sep 14 13:54:30 EDT 2018,N/A,null,21193
-Extra Large,398.75,7+ Day,54814,Hahntown; Indiana,Sat Jul 21 08:29:19 EDT 2018,Hazardous,null,36787
-Small,151.82,7+ Day,46513,Lovefort; New York,Sun Jan 20 15:30:45 EST 2019,Hazardous,null,42628
-Medium,2.32,1-Day,26043,New Brianna; Washington,Thu Jan 24 16:54:28 EST 2019,N/A,null,37252
-Extra Small,125.41,Overnight,15101,North Noe; Connecticut,Sat Feb 10 07:09:16 EST 2018,N/A,null,65123
-Extra Small,212.49,7+ Day,32296,Nancieburgh; Massachusetts,Fri Feb 08 01:55:55 EST 2019,Fragile,null,91942
-Post Card,50.59,Overnight,63180,Pourosborough; Oregon,Wed Apr 11 23:25:09 EDT 2018,N/A,null,55569
-Post Card,391.16,7+ Day,47698,North Ezekielbury; Virginia,Wed Aug 15 06:21:09 EDT 2018,Fragile,null,82573
-Post Card,403.18,7+ Day,17397,Lovefort; New York,Sat Jun 23 23:28:04 EDT 2018,N/A,null,12906
-Post Card,391.93,7+ Day,35568,Lovefort; New York,Sun May 27 07:05:52 EDT 2018,Hazardous,null,66928
-Envelope,250.95,7+ Day,93951,Hahntown; Indiana,Sat Mar 31 12:12:39 EDT 2018,Hazardous,null,10980
-Large,12.77,Overnight,63103,Hahntown; Indiana,Sat Jun 16 23:50:10 EDT 2018,N/A,null,46992
-Extra Small,118.25,7+ Day,51345,Pourosborough; Oregon,Fri Dec 14 01:43:46 EST 2018,N/A,null,71401
-Extra Large,85.54,Overnight,88128,Pourosborough; Oregon,Fri Mar 01 08:29:16 EST 2019,N/A,null,84849
-Small,359.17,7+ Day,81455,North Holliside; Illinois,Fri Dec 14 18:00:20 EST 2018,N/A,null,64372
-Medium,147.55,7+ Day,44843,Lovefort; New York,Sun Sep 30 04:55:19 EDT 2018,N/A,null,42415
-Extra Large,329.39,7+ Day,55096,New Janamouth; Idaho,Wed May 02 00:30:42 EDT 2018,N/A,null,54215
-Small,169.98,7+ Day,61220,Hahntown; Indiana,Wed Jan 16 11:36:49 EST 2019,N/A,null,41455
-Large,484.67,3-5 Day,10163,North Noe; Connecticut,Sat Jul 14 07:29:34 EDT 2018,N/A,null,12820
-Extra Small,420.1,7+ Day,67353,Pourosborough; Oregon,Sun Jan 06 00:18:47 EST 2019,Hazardous,null,54400
-Extra Small,447.01,3-5 Day,68928,New Janamouth; Idaho,Fri Aug 17 07:26:27 EDT 2018,Fragile,null,48000
-Envelope,89.58,Overnight,49942,Lovefort; New York,Tue Oct 16 05:28:55 EDT 2018,Fragile,null,78547
-Small,488.07,Overnight,88472,Pourosborough; Oregon,Sun Mar 18 04:00:32 EDT 2018,N/A,null,51562
-Extra Large,96.91,1-Day,10687,Hahntown; Indiana,Sat Mar 16 04:18:19 EDT 2019,N/A,null,33284
-Large,471.18,Overnight,45973,New Janamouth; Idaho,Tue May 29 03:15:00 EDT 2018,N/A,null,19291
-Post Card,193.24,7+ Day,92649,Pourosborough; Oregon,Mon Aug 20 13:41:03 EDT 2018,Hazardous,null,94840
-Small,313.66,1-Day,36160,Pourosborough; Oregon,Thu Mar 07 20:02:59 EST 2019,Fragile,null,47026
-Extra Large,367.27,1-Day,76805,North Noe; Connecticut,Tue Mar 12 02:11:53 EDT 2019,N/A,null,80238
-Envelope,364.97,Overnight,64844,North Ezekielbury; Virginia,Mon Apr 02 11:05:30 EDT 2018,Fragile,null,23974
-Envelope,50.35,3-5 Day,90717,North Ezekielbury; Virginia,Sun Nov 04 10:15:10 EST 2018,Fragile,null,34747
-Small,255.24,1-Day,52590,New Janamouth; Idaho,Mon Dec 17 03:58:00 EST 2018,Hazardous,null,21142
-Extra Large,303.52,3-5 Day,47534,New Janamouth; Idaho,Wed Feb 13 10:02:26 EST 2019,Hazardous,null,95615
-Large,83.25,3-5 Day,10778,North Ezekielbury; Virginia,Sun Dec 16 01:30:37 EST 2018,N/A,null,19678
-Large,299.86,Overnight,40088,New Janamouth; Idaho,Thu Apr 19 01:55:45 EDT 2018,Fragile,null,77585
-Envelope,143.99,1-Day,57910,North Ezekielbury; Virginia,Wed Feb 13 08:40:08 EST 2019,N/A,null,15530
-Extra Large,133.54,1-Day,38300,Nancieburgh; Massachusetts,Wed Oct 03 09:22:56 EDT 2018,Hazardous,null,48062
-Medium,186.72,Overnight,86678,Nancieburgh; Massachusetts,Tue Jun 05 14:41:50 EDT 2018,N/A,null,36708
-Small,267.85,7+ Day,39536,North Holliside; Illinois,Mon May 14 22:47:57 EDT 2018,Hazardous,null,77721
-Post Card,249.98,7+ Day,38387,Hahntown; Indiana,Sat Apr 14 04:37:21 EDT 2018,N/A,null,95878
-Extra Small,176.64,1-Day,97068,Hahntown; Indiana,Mon Sep 10 03:44:18 EDT 2018,Fragile,null,13209
-Small,206.38,3-5 Day,94340,North Holliside; Illinois,Thu Apr 19 08:50:36 EDT 2018,N/A,null,61974
-Large,325.97,Overnight,52806,Pourosborough; Oregon,Sat Mar 03 18:34:59 EST 2018,Hazardous,null,54588
-Medium,60.12,3-5 Day,39475,New Janamouth; Idaho,Wed Dec 26 07:10:40 EST 2018,N/A,null,65041
-Small,419.63,3-5 Day,74326,North Noe; Connecticut,Sat Jan 05 23:12:32 EST 2019,Fragile,null,26057
-Envelope,395.35,1-Day,61781,New Janamouth; Idaho,Thu Dec 20 16:10:02 EST 2018,N/A,null,35601
-Extra Small,8.84,1-Day,27017,Nancieburgh; Massachusetts,Fri Jan 25 18:16:18 EST 2019,N/A,null,37157
-Small,326.65,3-5 Day,15297,Lovefort; New York,Fri Jun 29 08:11:29 EDT 2018,Fragile,null,98028
-Envelope,398.69,7+ Day,89085,Pourosborough; Oregon,Sun Nov 04 20:46:08 EST 2018,N/A,null,48037
-Large,45.98,1-Day,29011,Lovefort; New York,Tue Nov 27 17:53:00 EST 2018,Fragile,null,19195
-Post Card,92.1,Overnight,29933,New Brianna; Washington,Thu Feb 07 17:10:37 EST 2019,N/A,null,96551
-Medium,204.13,7+ Day,40895,North Noe; Connecticut,Sat Feb 02 06:49:38 EST 2019,Hazardous,null,57961
-Extra Small,398.76,1-Day,30406,West Hermafurt; Pennsylvania,Fri May 04 20:15:31 EDT 2018,Hazardous,null,38700
-Large,365.89,7+ Day,47022,New Brianna; Washington,Thu Jan 10 01:42:03 EST 2019,N/A,null,38319
-Post Card,464.34,7+ Day,44749,Hahntown; Indiana,Fri Mar 09 00:04:21 EST 2018,Hazardous,null,47518
-Medium,196.77,Overnight,47577,New Janamouth; Idaho,Sun Mar 03 14:46:20 EST 2019,N/A,null,95926
-Envelope,452.73,Overnight,42860,North Holliside; Illinois,Sat Mar 02 10:47:26 EST 2019,N/A,null,44059
-Extra Large,53.53,3-5 Day,20469,North Holliside; Illinois,Sat Jul 21 05:50:31 EDT 2018,Fragile,null,71698
-Envelope,308.37,7+ Day,64943,New Brianna; Washington,Fri May 04 06:28:14 EDT 2018,N/A,null,36839
-Envelope,153.91,Overnight,94267,Lovefort; New York,Tue Jan 08 10:36:34 EST 2019,Fragile,null,47512
-Small,442.05,3-5 Day,53689,Nancieburgh; Massachusetts,Wed Feb 20 10:29:45 EST 2019,Fragile,null,69976
-Large,22.01,1-Day,22380,New Brianna; Washington,Wed Mar 20 19:40:39 EDT 2019,N/A,null,90584
-Large,232.15,3-5 Day,58980,Lovefort; New York,Sat Jul 14 08:39:15 EDT 2018,Hazardous,null,86298
-Large,142.74,Overnight,83635,North Noe; Connecticut,Sat Nov 03 21:04:49 EDT 2018,N/A,null,82893
-Post Card,226.84,3-5 Day,87112,Nancieburgh; Massachusetts,Mon Mar 05 03:45:15 EST 2018,Hazardous,null,83028
-Medium,419.06,Overnight,59923,Nancieburgh; Massachusetts,Tue May 29 13:42:11 EDT 2018,N/A,null,33722
-Large,344.03,7+ Day,83381,Hahntown; Indiana,Fri Oct 12 17:51:10 EDT 2018,N/A,null,17516
-Extra Large,260.35,Overnight,76464,North Noe; Connecticut,Mon Oct 22 15:41:33 EDT 2018,Fragile,null,81843
-Extra Small,169.78,3-5 Day,39916,New Brianna; Washington,Sat Nov 03 01:49:37 EDT 2018,Hazardous,null,45297
-Extra Large,81.45,3-5 Day,93407,North Noe; Connecticut,Sat Dec 01 08:04:42 EST 2018,N/A,null,80914
-Envelope,469.31,3-5 Day,88900,Hahntown; Indiana,Mon Feb 12 01:57:09 EST 2018,Hazardous,null,94926
-Small,99.54,Overnight,19581,West Hermafurt; Pennsylvania,Mon Feb 26 22:57:56 EST 2018,Fragile,null,32601
-Extra Small,345.26,7+ Day,27301,North Ezekielbury; Virginia,Wed Jul 18 08:00:26 EDT 2018,N/A,null,87561
-Small,302.28,1-Day,59289,New Janamouth; Idaho,Sun Jan 20 02:40:34 EST 2019,N/A,null,32840
-Extra Small,467.49,Overnight,25149,New Janamouth; Idaho,Sun Nov 18 18:14:53 EST 2018,N/A,null,91513
-Envelope,419.75,3-5 Day,37354,North Ezekielbury; Virginia,Wed Nov 07 11:16:10 EST 2018,N/A,null,81541
-Medium,305.75,Overnight,66289,West Hermafurt; Pennsylvania,Tue Oct 09 01:17:20 EDT 2018,N/A,null,83803
-Post Card,29.9,7+ Day,83637,Lovefort; New York,Sat Mar 10 23:26:54 EST 2018,N/A,null,62676
-Medium,358.07,3-5 Day,18984,Pourosborough; Oregon,Tue Aug 28 03:00:53 EDT 2018,Fragile,null,44837
-Post Card,354.61,Overnight,33548,North Holliside; Illinois,Thu Mar 08 20:59:10 EST 2018,Hazardous,null,72628
-Envelope,210.02,3-5 Day,15312,North Noe; Connecticut,Fri Nov 09 19:48:15 EST 2018,N/A,null,98624
-Medium,24.93,3-5 Day,51356,New Janamouth; Idaho,Wed Feb 13 05:57:52 EST 2019,Hazardous,null,96496
-Post Card,481.64,Overnight,30632,West Hermafurt; Pennsylvania,Fri May 25 08:18:07 EDT 2018,N/A,null,11306
-Extra Large,336.15,Overnight,33864,North Holliside; Illinois,Mon Apr 30 22:28:26 EDT 2018,Hazardous,null,67250
-Envelope,237.26,3-5 Day,97715,New Janamouth; Idaho,Fri Mar 15 01:20:06 EDT 2019,Hazardous,null,19778
-Post Card,491.47,3-5 Day,53967,Lovefort; New York,Sat Feb 23 02:36:33 EST 2019,N/A,null,10096
-Post Card,454.64,1-Day,14329,North Ezekielbury; Virginia,Sun Feb 04 10:11:28 EST 2018,Fragile,null,20657
-Medium,191.37,1-Day,20635,New Brianna; Washington,Sat Jul 14 14:56:00 EDT 2018,Fragile,null,59655
-Extra Small,443.19,7+ Day,94184,North Holliside; Illinois,Mon May 07 01:15:57 EDT 2018,N/A,null,83712
-Large,427.75,Overnight,32721,North Ezekielbury; Virginia,Tue Apr 17 11:19:56 EDT 2018,Fragile,null,80448
-Small,15.09,3-5 Day,86591,New Brianna; Washington,Fri Jul 27 14:36:21 EDT 2018,N/A,null,61938
-Small,301.62,Overnight,13635,New Brianna; Washington,Tue Mar 12 23:05:20 EDT 2019,Fragile,null,61303
-Large,338.78,3-5 Day,77750,Pourosborough; Oregon,Wed Nov 28 03:41:47 EST 2018,N/A,null,87161
-Extra Large,490.74,3-5 Day,17872,Hahntown; Indiana,Tue May 22 19:21:57 EDT 2018,N/A,null,72290
-Small,37.37,7+ Day,13346,North Ezekielbury; Virginia,Wed Mar 06 23:23:40 EST 2019,Hazardous,null,48479
-Medium,384.72,Overnight,38718,Pourosborough; Oregon,Wed Jan 23 21:51:54 EST 2019,Hazardous,null,67908
-Medium,426.06,7+ Day,61028,Pourosborough; Oregon,Sat Nov 03 08:55:18 EDT 2018,Fragile,null,72228
-Post Card,50.92,7+ Day,37931,Lovefort; New York,Fri Nov 02 18:25:28 EDT 2018,Hazardous,null,57015
-Post Card,257.07,7+ Day,68289,Nancieburgh; Massachusetts,Wed Mar 06 20:14:25 EST 2019,Hazardous,null,58031
-Medium,428.35,Overnight,43023,North Noe; Connecticut,Sun Dec 23 15:47:21 EST 2018,N/A,null,57235
-Medium,447.94,Overnight,54921,North Ezekielbury; Virginia,Thu Mar 08 13:06:18 EST 2018,Fragile,null,53422
-Extra Large,27.24,Overnight,18107,New Brianna; Washington,Tue Mar 20 07:05:41 EDT 2018,Fragile,null,26604
-Large,304.91,7+ Day,67050,North Holliside; Illinois,Sat Dec 01 08:32:15 EST 2018,N/A,null,25291
-Large,88.32,Overnight,12676,North Ezekielbury; Virginia,Thu Sep 20 21:18:13 EDT 2018,N/A,null,50873
-Extra Large,37.93,Overnight,76972,North Ezekielbury; Virginia,Fri Feb 16 14:23:54 EST 2018,Hazardous,null,24778
-Extra Small,380.04,3-5 Day,27375,West Hermafurt; Pennsylvania,Sat Apr 14 00:25:46 EDT 2018,N/A,null,93114
-Post Card,311.71,7+ Day,81085,New Brianna; Washington,Sun Feb 24 15:48:06 EST 2019,Hazardous,null,99631
-Small,41.36,7+ Day,90299,New Janamouth; Idaho,Tue Mar 13 20:33:38 EDT 2018,Hazardous,null,97794
-Envelope,268.28,Overnight,31650,North Ezekielbury; Virginia,Thu Jul 05 07:53:09 EDT 2018,Hazardous,null,86351
-Medium,88.08,7+ Day,62539,Hahntown; Indiana,Tue Sep 25 18:57:38 EDT 2018,Fragile,null,93733
-Envelope,456.83,7+ Day,47608,North Holliside; Illinois,Sat Jun 23 11:09:52 EDT 2018,N/A,null,66329
-Medium,187.59,Overnight,85899,New Janamouth; Idaho,Sat Feb 24 08:37:50 EST 2018,Fragile,null,72380
-Medium,244.65,3-5 Day,56909,Hahntown; Indiana,Thu Oct 25 02:42:13 EDT 2018,N/A,null,63263
-Extra Small,471.86,Overnight,56791,North Ezekielbury; Virginia,Tue Apr 24 13:32:16 EDT 2018,N/A,null,11045
-Envelope,491.24,Overnight,44464,New Brianna; Washington,Tue Feb 20 18:48:40 EST 2018,N/A,null,22543
-Medium,80.03,1-Day,58392,New Brianna; Washington,Tue Aug 14 07:37:45 EDT 2018,Hazardous,null,75775
-Extra Large,123.96,7+ Day,88849,Hahntown; Indiana,Wed Dec 05 07:06:46 EST 2018,N/A,null,78846
-Small,154.63,Overnight,22761,Hahntown; Indiana,Wed Jan 02 01:23:23 EST 2019,N/A,null,25064
-Extra Small,339.07,7+ Day,12978,North Ezekielbury; Virginia,Sat Aug 04 21:46:54 EDT 2018,Hazardous,null,37187
-Envelope,441.22,1-Day,87702,North Holliside; Illinois,Thu Sep 13 02:51:54 EDT 2018,Fragile,null,17585
-Large,68.34,3-5 Day,56175,Hahntown; Indiana,Fri Dec 07 10:24:11 EST 2018,Hazardous,null,98324
-Post Card,2.93,7+ Day,78728,West Hermafurt; Pennsylvania,Thu Aug 02 01:14:10 EDT 2018,N/A,null,62166
-Post Card,295.53,3-5 Day,15038,New Janamouth; Idaho,Sat May 12 06:45:56 EDT 2018,Hazardous,null,72607
-Extra Large,254.37,Overnight,83220,Lovefort; New York,Fri Apr 20 05:14:18 EDT 2018,N/A,null,53143
+Extra Small,168.84,3-5 Day,59069,Howellfort; Mississippi,Wed Feb 13 10:47:16 EST 2019,Hazardous,null,46217
+Large,110.0,Overnight,66777,New Danilo; Alabama,Wed Dec 05 01:36:41 EST 2018,Fragile,null,94266
+Small,486.17,1-Day,85658,Wuckertview; New Jersey,Mon Aug 13 02:30:28 EDT 2018,N/A,null,55752
+Extra Small,261.2,1-Day,84876,Caryshire; Nebraska,Wed Sep 05 08:12:12 EDT 2018,Fragile,null,85652
+Extra Large,49.67,7+ Day,14452,Willianhaven; Vermont,Fri Apr 06 09:04:57 EDT 2018,N/A,null,61485
+Envelope,431.58,1-Day,30506,Port Troyview; Nevada,Thu May 03 21:24:08 EDT 2018,Hazardous,null,52031
+Medium,446.52,Overnight,53610,Port Stewart; South Dakota,Wed Apr 25 12:22:02 EDT 2018,Fragile,null,11865
+Envelope,389.5,1-Day,49272,Port Troyview; Nevada,Fri Nov 09 08:53:49 EST 2018,Hazardous,null,13965
+Small,197.19,3-5 Day,95838,Howellfort; Mississippi,Wed Apr 18 11:44:58 EDT 2018,N/A,null,64927
+Extra Large,253.56,Overnight,76874,New Danilo; Alabama,Sat Sep 08 03:00:47 EDT 2018,N/A,null,65143
+Medium,406.71,7+ Day,25569,Port Troyview; Nevada,Fri Nov 16 17:58:55 EST 2018,Hazardous,null,85100
+Small,69.6,1-Day,72966,Willianhaven; Vermont,Sun May 20 23:00:02 EDT 2018,N/A,null,39636
+Medium,488.04,3-5 Day,31449,South Lonport; New Jersey,Thu Mar 21 05:59:21 EDT 2019,N/A,null,71041
+Small,182.75,7+ Day,15587,New Danilo; Alabama,Mon Jun 11 22:13:20 EDT 2018,Hazardous,null,88981
+Small,162.79,7+ Day,95022,Port Troyview; Nevada,Sat Nov 03 05:02:11 EDT 2018,Fragile,null,25490
+Medium,159.31,Overnight,26459,Caryshire; Nebraska,Mon Feb 12 10:53:47 EST 2018,Fragile,null,60959
+Post Card,146.55,3-5 Day,73723,New Danilo; Alabama,Mon Aug 27 10:01:36 EDT 2018,N/A,null,12066
+Small,221.54,Overnight,84007,Port Troyview; Nevada,Wed Dec 12 02:00:51 EST 2018,Hazardous,null,55810
+Extra Small,346.98,1-Day,18713,South Lonport; New Jersey,Sat Jan 26 14:50:55 EST 2019,N/A,null,42159
+Post Card,383.95,3-5 Day,91523,Willianhaven; Vermont,Thu Mar 07 06:22:46 EST 2019,Fragile,null,67224
+Post Card,215.58,Overnight,73968,Yostville; Georgia,Thu Oct 04 19:54:58 EDT 2018,Hazardous,null,13581
+Post Card,130.44,1-Day,52270,Wuckertview; New Jersey,Thu May 10 18:18:17 EDT 2018,Hazardous,null,84160
+Post Card,153.41,7+ Day,72242,Howellfort; Mississippi,Sun May 13 21:41:09 EDT 2018,N/A,null,31745
+Extra Small,460.81,3-5 Day,44266,South Lonport; New Jersey,Sun Jul 29 05:44:29 EDT 2018,Fragile,null,22040
+Envelope,6.41,1-Day,47588,Caryshire; Nebraska,Mon Oct 08 08:13:50 EDT 2018,N/A,null,43825
+Post Card,62.22,3-5 Day,65560,South Lonport; New Jersey,Wed Sep 12 15:16:38 EDT 2018,Hazardous,null,68821
+Large,36.55,7+ Day,12748,Caryshire; Nebraska,Mon May 21 16:20:25 EDT 2018,Fragile,null,30189
+Medium,18.97,Overnight,18084,Howellfort; Mississippi,Thu Jun 14 01:52:29 EDT 2018,Fragile,null,13156
+Large,290.65,1-Day,46891,Port Stewart; South Dakota,Sun Apr 22 11:07:12 EDT 2018,Fragile,null,36712
+Post Card,102.78,7+ Day,71126,Port Stewart; South Dakota,Fri Mar 22 10:04:30 EDT 2019,Hazardous,null,14510
+Small,256.52,7+ Day,33202,Yostville; Georgia,Tue Oct 23 05:58:34 EDT 2018,N/A,null,65607
+Medium,420.48,1-Day,97225,Port Stewart; South Dakota,Fri Dec 21 12:50:22 EST 2018,Hazardous,null,43537
+Envelope,45.54,7+ Day,79074,South Lonport; New Jersey,Wed May 23 03:01:45 EDT 2018,Fragile,null,18080
+Small,152.22,1-Day,76782,Port Stewart; South Dakota,Tue Jan 15 12:10:14 EST 2019,Fragile,null,90814
+Extra Large,179.52,7+ Day,78531,Howellfort; Mississippi,Tue Feb 26 17:29:52 EST 2019,N/A,null,37727
+Medium,268.68,1-Day,26236,New Danilo; Alabama,Mon May 28 23:32:59 EDT 2018,Hazardous,null,99665
+Extra Large,107.62,Overnight,71421,Howellfort; Mississippi,Sat Jun 02 21:02:00 EDT 2018,Hazardous,null,54305
+Extra Large,356.17,1-Day,94110,Port Troyview; Nevada,Fri Mar 23 15:27:55 EDT 2018,N/A,null,59810
+Small,387.93,7+ Day,93379,Wuckertview; New Jersey,Tue Mar 27 20:31:22 EDT 2018,N/A,null,13645
+Large,297.13,Overnight,53046,West Williatown; Iowa,Fri Mar 23 20:28:44 EDT 2018,Hazardous,null,13266
+Extra Small,132.79,3-5 Day,94349,Port Troyview; Nevada,Sat Aug 25 22:55:34 EDT 2018,Hazardous,null,23062
+Medium,24.69,Overnight,75873,Howellfort; Mississippi,Sat Dec 29 07:39:36 EST 2018,N/A,null,17201
+Medium,54.59,3-5 Day,10844,Yostville; Georgia,Tue Nov 20 21:58:38 EST 2018,N/A,null,80537
+Envelope,255.15,1-Day,68251,Howellfort; Mississippi,Sat Oct 27 00:37:26 EDT 2018,Hazardous,null,18098
+Extra Small,240.89,7+ Day,56113,Port Troyview; Nevada,Fri May 25 17:37:11 EDT 2018,N/A,null,55407
+Large,40.58,3-5 Day,19209,Howellfort; Mississippi,Tue Aug 21 05:16:53 EDT 2018,Hazardous,null,52543
+Small,113.31,7+ Day,53857,Port Troyview; Nevada,Wed Nov 14 21:01:33 EST 2018,N/A,null,73233
+Envelope,389.51,Overnight,21677,Wuckertview; New Jersey,Sat Oct 13 16:47:40 EDT 2018,Hazardous,null,88037
+Small,343.81,7+ Day,11737,Port Stewart; South Dakota,Thu May 03 16:27:41 EDT 2018,Hazardous,null,39938
+Small,428.35,1-Day,71444,Yostville; Georgia,Wed Mar 06 10:10:25 EST 2019,Fragile,null,33034
+Extra Small,156.65,3-5 Day,21917,Wuckertview; New Jersey,Thu Jan 17 18:40:33 EST 2019,N/A,null,43925
+Extra Large,358.17,3-5 Day,12230,Willianhaven; Vermont,Fri Apr 27 22:28:46 EDT 2018,Fragile,null,26554
+Envelope,303.39,Overnight,55337,Yostville; Georgia,Thu Mar 22 14:30:44 EDT 2018,Fragile,null,64627
+Medium,85.1,1-Day,50364,Wuckertview; New Jersey,Fri May 25 02:10:33 EDT 2018,Hazardous,null,29902
+Extra Small,28.44,1-Day,84356,Yostville; Georgia,Sat Jul 14 09:15:44 EDT 2018,N/A,null,82991
+Post Card,55.54,3-5 Day,36781,New Danilo; Alabama,Sat Oct 13 04:23:55 EDT 2018,N/A,null,89560
+Large,27.96,1-Day,82659,Caryshire; Nebraska,Thu May 03 05:17:10 EDT 2018,N/A,null,33652
+Extra Large,363.22,3-5 Day,78625,West Williatown; Iowa,Fri Jul 27 08:21:33 EDT 2018,N/A,null,66002
+Small,129.4,1-Day,66422,New Danilo; Alabama,Sat May 26 15:57:58 EDT 2018,Hazardous,null,49336
+Extra Large,222.41,Overnight,62830,West Williatown; Iowa,Wed May 30 17:36:45 EDT 2018,Fragile,null,65182
+Extra Small,319.2,Overnight,42838,Port Troyview; Nevada,Sat Sep 29 03:40:47 EDT 2018,N/A,null,38567
+Extra Large,15.95,1-Day,22897,Port Stewart; South Dakota,Tue Oct 23 21:43:03 EDT 2018,N/A,null,17914
+Extra Large,133.69,1-Day,58810,West Williatown; Iowa,Sun Jul 15 02:53:17 EDT 2018,N/A,null,72390
+Post Card,93.68,1-Day,14852,Howellfort; Mississippi,Thu Mar 01 22:46:08 EST 2018,N/A,null,62678
+Small,372.62,3-5 Day,50755,Howellfort; Mississippi,Tue Apr 24 20:49:02 EDT 2018,N/A,null,14678
+Medium,139.46,Overnight,12062,Port Troyview; Nevada,Mon Oct 15 05:50:54 EDT 2018,N/A,null,49607
+Post Card,242.71,3-5 Day,82560,South Lonport; New Jersey,Fri Mar 23 02:50:34 EDT 2018,Fragile,null,91413
+Small,310.84,3-5 Day,71918,Howellfort; Mississippi,Tue Mar 13 05:52:53 EDT 2018,N/A,null,29104
+Extra Small,104.02,1-Day,12848,Caryshire; Nebraska,Wed Feb 21 17:31:43 EST 2018,N/A,null,49434
+Medium,378.72,Overnight,79512,South Lonport; New Jersey,Tue May 08 16:36:02 EDT 2018,N/A,null,25205
+Small,396.29,Overnight,68420,West Williatown; Iowa,Wed Jan 16 13:29:13 EST 2019,N/A,null,52491
+Post Card,120.54,3-5 Day,87841,Port Troyview; Nevada,Sat Sep 01 02:26:12 EDT 2018,N/A,null,43708
+Medium,490.85,Overnight,88212,Willianhaven; Vermont,Sun Aug 19 07:17:44 EDT 2018,N/A,null,75730
+Extra Large,485.19,Overnight,31642,Port Troyview; Nevada,Thu Aug 02 13:10:58 EDT 2018,N/A,null,60369
+Small,15.05,Overnight,23821,South Lonport; New Jersey,Mon Aug 20 00:54:22 EDT 2018,Fragile,null,94042
+Extra Large,1.46,7+ Day,31899,Yostville; Georgia,Tue Sep 25 11:37:13 EDT 2018,Fragile,null,95399
+Large,171.68,1-Day,69282,New Danilo; Alabama,Thu Feb 01 02:55:56 EST 2018,Hazardous,null,95990
+Envelope,98.21,Overnight,63596,New Danilo; Alabama,Tue Aug 07 12:55:14 EDT 2018,N/A,null,32684
+Extra Small,451.34,7+ Day,79240,West Williatown; Iowa,Sun Dec 23 02:19:34 EST 2018,N/A,null,53544
+Small,338.04,Overnight,26325,Port Stewart; South Dakota,Thu Jan 03 21:03:14 EST 2019,N/A,null,77915
+Extra Large,66.86,7+ Day,78080,Howellfort; Mississippi,Wed May 23 21:05:53 EDT 2018,Fragile,null,26185
+Extra Large,283.34,1-Day,55926,Wuckertview; New Jersey,Thu Feb 01 09:53:22 EST 2018,Hazardous,null,83213
+Small,336.12,1-Day,91632,Wuckertview; New Jersey,Wed Jun 20 08:45:35 EDT 2018,N/A,null,33658
+Small,168.43,3-5 Day,21169,West Williatown; Iowa,Sat Jul 28 21:59:45 EDT 2018,N/A,null,60606
+Large,224.01,7+ Day,48090,Wuckertview; New Jersey,Fri Nov 30 00:58:21 EST 2018,Hazardous,null,53485
+Small,380.78,3-5 Day,20096,Yostville; Georgia,Tue Feb 05 22:12:18 EST 2019,N/A,null,13766
+Envelope,60.96,Overnight,76046,Port Troyview; Nevada,Fri Jul 20 03:21:08 EDT 2018,N/A,null,95822
+Medium,262.73,Overnight,23780,Willianhaven; Vermont,Wed Aug 15 13:10:16 EDT 2018,Hazardous,null,13480
+Medium,14.83,Overnight,22184,Yostville; Georgia,Sun Feb 11 19:59:17 EST 2018,Hazardous,null,74568
+Medium,186.45,7+ Day,89501,Yostville; Georgia,Wed Aug 01 05:25:46 EDT 2018,Hazardous,null,93079
+Medium,411.29,1-Day,32084,Caryshire; Nebraska,Fri Nov 23 23:01:20 EST 2018,Fragile,null,33033
+Large,430.1,3-5 Day,51548,West Williatown; Iowa,Thu Feb 07 12:28:22 EST 2019,N/A,null,75995
+Post Card,306.07,3-5 Day,58895,Caryshire; Nebraska,Sun Apr 01 13:39:26 EDT 2018,Fragile,null,78628
+Medium,69.52,1-Day,72205,South Lonport; New Jersey,Mon May 21 02:37:20 EDT 2018,N/A,null,13814
+Post Card,432.15,1-Day,85138,Caryshire; Nebraska,Wed Dec 05 01:36:23 EST 2018,Hazardous,null,44024
+Envelope,191.52,7+ Day,86312,Caryshire; Nebraska,Fri Feb 16 17:18:37 EST 2018,N/A,null,34505
+Large,492.17,1-Day,75431,Willianhaven; Vermont,Fri Mar 15 03:23:17 EDT 2019,Hazardous,null,40746
+Small,281.08,3-5 Day,75629,Wuckertview; New Jersey,Fri Jun 01 15:22:31 EDT 2018,N/A,null,99520
+Extra Large,372.96,1-Day,96345,Howellfort; Mississippi,Sat Sep 15 17:56:15 EDT 2018,Hazardous,null,85531
+Small,54.99,7+ Day,68335,Port Stewart; South Dakota,Wed Feb 13 19:46:09 EST 2019,N/A,null,60653
+Small,281.88,7+ Day,61480,New Danilo; Alabama,Fri Feb 08 10:37:56 EST 2019,N/A,null,35440
+Medium,133.13,Overnight,70309,Wuckertview; New Jersey,Wed Jun 20 06:31:55 EDT 2018,N/A,null,88521
+Extra Large,172.17,3-5 Day,63320,New Danilo; Alabama,Fri Mar 30 15:13:34 EDT 2018,Hazardous,null,59096
+Post Card,121.05,3-5 Day,76679,Port Stewart; South Dakota,Tue Apr 24 15:56:20 EDT 2018,N/A,null,24320
+Small,232.18,1-Day,33220,South Lonport; New Jersey,Wed Dec 19 19:08:21 EST 2018,N/A,null,18180
+Post Card,413.46,7+ Day,89739,Howellfort; Mississippi,Tue Jan 22 19:56:48 EST 2019,Fragile,null,89918
+Small,433.97,1-Day,92854,Port Troyview; Nevada,Tue Sep 11 04:54:42 EDT 2018,Fragile,null,25842
+Large,325.42,7+ Day,38346,Howellfort; Mississippi,Tue Mar 19 09:03:03 EDT 2019,Fragile,null,30237
+Medium,188.36,3-5 Day,60970,Caryshire; Nebraska,Tue Nov 06 13:46:15 EST 2018,N/A,null,28648
+Extra Small,210.79,7+ Day,74452,Caryshire; Nebraska,Fri Feb 16 09:19:46 EST 2018,Hazardous,null,87609
+Large,345.5,1-Day,49222,Wuckertview; New Jersey,Wed Oct 24 04:35:11 EDT 2018,N/A,null,46830
+Extra Small,152.52,3-5 Day,55469,New Danilo; Alabama,Sat Jun 02 22:54:07 EDT 2018,N/A,null,49124
+Extra Small,200.62,7+ Day,69126,South Lonport; New Jersey,Sun Aug 19 14:15:30 EDT 2018,Fragile,null,46190
+Envelope,60.0,Overnight,54902,Wuckertview; New Jersey,Sat Mar 17 11:31:32 EDT 2018,N/A,null,64092
+Extra Small,190.26,1-Day,83098,Yostville; Georgia,Sat Mar 09 08:35:26 EST 2019,N/A,null,43177
+Post Card,37.82,Overnight,77464,Willianhaven; Vermont,Fri Nov 16 15:14:44 EST 2018,Hazardous,null,49441
+Medium,4.52,1-Day,66860,Caryshire; Nebraska,Fri Aug 10 20:48:39 EDT 2018,N/A,null,87860
+Small,225.16,7+ Day,65763,New Danilo; Alabama,Sun Feb 25 00:17:15 EST 2018,Hazardous,null,75076
+Post Card,303.7,1-Day,36193,New Danilo; Alabama,Thu Nov 08 21:58:45 EST 2018,Fragile,null,51290
+Large,472.35,7+ Day,45679,West Williatown; Iowa,Sun Sep 16 13:35:06 EDT 2018,N/A,null,47519
+Extra Large,351.35,Overnight,11607,Yostville; Georgia,Mon Apr 30 07:16:44 EDT 2018,N/A,null,56884
+Extra Small,300.53,1-Day,94244,Port Troyview; Nevada,Mon Dec 24 04:05:48 EST 2018,Hazardous,null,12828
+Envelope,161.8,1-Day,41262,Port Troyview; Nevada,Sun Feb 24 20:37:44 EST 2019,N/A,null,29459
+Envelope,301.4,1-Day,41287,South Lonport; New Jersey,Tue Jan 15 01:28:47 EST 2019,N/A,null,66641
+Envelope,75.35,7+ Day,79433,Wuckertview; New Jersey,Mon Jan 07 12:40:26 EST 2019,N/A,null,79078
+Medium,440.12,7+ Day,45895,Howellfort; Mississippi,Thu May 31 07:59:33 EDT 2018,Hazardous,null,19042
+Large,115.0,7+ Day,29236,New Danilo; Alabama,Mon Nov 19 01:46:50 EST 2018,Fragile,null,11302
+Post Card,115.28,Overnight,80645,Port Stewart; South Dakota,Mon Sep 10 12:00:05 EDT 2018,Fragile,null,66786
+Large,236.69,3-5 Day,96280,West Williatown; Iowa,Sun Feb 04 13:39:30 EST 2018,Fragile,null,97192
+Extra Large,288.02,1-Day,90649,South Lonport; New Jersey,Wed Mar 07 16:14:33 EST 2018,N/A,null,28885
+Post Card,87.49,7+ Day,77186,Howellfort; Mississippi,Wed Jan 23 07:03:32 EST 2019,Fragile,null,34856
+Medium,105.66,3-5 Day,46579,Howellfort; Mississippi,Tue Mar 19 18:13:58 EDT 2019,N/A,null,67640
+Envelope,392.5,7+ Day,65628,Yostville; Georgia,Mon Jan 07 22:42:33 EST 2019,N/A,null,48892
+Envelope,421.25,3-5 Day,47329,Willianhaven; Vermont,Fri Apr 06 05:03:48 EDT 2018,N/A,null,86365
+Small,177.88,Overnight,63519,Port Stewart; South Dakota,Thu Jul 19 00:12:05 EDT 2018,Fragile,null,65169
+Post Card,441.13,1-Day,84875,Wuckertview; New Jersey,Tue Mar 19 12:05:16 EDT 2019,N/A,null,22754
+Medium,244.76,Overnight,39414,Caryshire; Nebraska,Wed Feb 28 00:08:30 EST 2018,Fragile,null,68661
+Envelope,109.92,7+ Day,60406,South Lonport; New Jersey,Wed Aug 15 03:21:13 EDT 2018,N/A,null,64339
+Medium,441.07,1-Day,80669,Yostville; Georgia,Fri May 18 16:59:10 EDT 2018,N/A,null,96219
+Post Card,292.71,1-Day,95212,Yostville; Georgia,Sat Jan 05 13:43:47 EST 2019,Hazardous,null,22194
+Large,172.32,1-Day,45402,Port Stewart; South Dakota,Tue Mar 06 07:41:40 EST 2018,Fragile,null,92517
+Small,216.28,3-5 Day,62797,Port Stewart; South Dakota,Wed Jan 30 19:59:05 EST 2019,N/A,null,56243
+Medium,286.15,3-5 Day,92821,New Danilo; Alabama,Fri Mar 23 06:00:09 EDT 2018,N/A,null,27971
+Post Card,290.49,7+ Day,32830,Yostville; Georgia,Mon May 21 07:32:28 EDT 2018,N/A,null,39112
+Extra Small,168.96,Overnight,57395,Port Stewart; South Dakota,Tue Nov 13 20:59:41 EST 2018,N/A,null,52264
+Extra Small,245.81,Overnight,66836,South Lonport; New Jersey,Sat Mar 03 23:10:39 EST 2018,Fragile,null,62803
+Large,30.94,1-Day,31995,Port Troyview; Nevada,Fri Dec 14 08:17:33 EST 2018,Hazardous,null,43364
+Extra Large,174.85,3-5 Day,10035,Wuckertview; New Jersey,Sun Jul 29 06:13:03 EDT 2018,N/A,null,52744
+Post Card,423.22,7+ Day,92533,Yostville; Georgia,Thu Aug 30 23:26:27 EDT 2018,N/A,null,79713
+Envelope,304.2,3-5 Day,97956,Willianhaven; Vermont,Mon May 28 22:31:15 EDT 2018,N/A,null,86185
+Extra Small,390.34,3-5 Day,95763,Port Stewart; South Dakota,Mon Oct 22 09:19:29 EDT 2018,Fragile,null,73766
+Small,187.6,1-Day,45302,New Danilo; Alabama,Thu Mar 14 18:18:36 EDT 2019,N/A,null,71505
+Extra Small,370.05,7+ Day,43912,Port Troyview; Nevada,Mon Aug 20 06:57:11 EDT 2018,Hazardous,null,26768
+Medium,156.69,1-Day,55062,Howellfort; Mississippi,Tue Apr 17 01:18:41 EDT 2018,N/A,null,57771
+Post Card,149.4,3-5 Day,81800,Port Troyview; Nevada,Mon Jun 04 21:24:00 EDT 2018,Hazardous,null,34553
+Small,256.11,Overnight,55102,Howellfort; Mississippi,Thu Jul 05 15:13:25 EDT 2018,Fragile,null,30529
+Extra Large,466.36,1-Day,22326,Caryshire; Nebraska,Tue Feb 20 09:02:40 EST 2018,Fragile,null,28034
+Extra Small,33.86,Overnight,89489,New Danilo; Alabama,Mon Oct 01 16:17:53 EDT 2018,N/A,null,36876
+Envelope,408.45,1-Day,58263,Howellfort; Mississippi,Thu Oct 18 23:36:45 EDT 2018,N/A,null,24889
+Small,76.33,1-Day,10761,Willianhaven; Vermont,Fri Jan 25 11:12:43 EST 2019,N/A,null,30388
+Large,315.08,1-Day,61911,Yostville; Georgia,Sun Sep 02 08:35:44 EDT 2018,N/A,null,36809
+Extra Small,462.52,Overnight,16670,Port Troyview; Nevada,Sun Mar 24 01:30:30 EDT 2019,Fragile,null,17048
+Large,25.32,3-5 Day,82463,Howellfort; Mississippi,Sun Jan 20 06:43:22 EST 2019,N/A,null,64825
+Extra Small,302.03,7+ Day,60053,Yostville; Georgia,Sat Dec 01 05:39:23 EST 2018,Hazardous,null,90195
+Extra Small,438.92,7+ Day,17653,Caryshire; Nebraska,Tue Apr 17 17:33:22 EDT 2018,Fragile,null,76869
+Extra Small,192.39,Overnight,84760,Caryshire; Nebraska,Wed May 23 22:23:02 EDT 2018,Hazardous,null,19203
+Large,370.46,Overnight,31585,Caryshire; Nebraska,Thu Feb 07 03:53:00 EST 2019,Fragile,null,56149
+Medium,161.3,7+ Day,14876,West Williatown; Iowa,Wed Nov 14 04:30:17 EST 2018,Hazardous,null,82950
+Small,401.43,3-5 Day,30669,South Lonport; New Jersey,Wed Feb 28 02:38:41 EST 2018,N/A,null,56637
+Extra Small,342.19,Overnight,59001,Port Stewart; South Dakota,Fri Mar 08 01:42:06 EST 2019,Fragile,null,25606
+Small,457.0,3-5 Day,43544,West Williatown; Iowa,Tue May 22 15:53:17 EDT 2018,N/A,null,81722
+Small,28.58,Overnight,59245,South Lonport; New Jersey,Sat May 12 13:33:06 EDT 2018,N/A,null,76195
+Large,364.32,1-Day,46096,Caryshire; Nebraska,Sun Jan 06 22:01:04 EST 2019,N/A,null,81323
+Extra Large,355.02,3-5 Day,72092,West Williatown; Iowa,Sat Dec 22 20:40:45 EST 2018,Hazardous,null,96581
+Medium,237.63,Overnight,23111,West Williatown; Iowa,Fri Jul 20 03:38:44 EDT 2018,N/A,null,60423
+Small,464.61,3-5 Day,37616,Port Troyview; Nevada,Fri Mar 16 07:21:59 EDT 2018,Hazardous,null,45000
+Large,487.51,Overnight,25338,Willianhaven; Vermont,Mon Aug 20 07:12:33 EDT 2018,N/A,null,85459
+Extra Small,465.09,7+ Day,23142,Port Stewart; South Dakota,Sun Apr 01 06:48:06 EDT 2018,N/A,null,34222
+Envelope,312.16,3-5 Day,82227,Yostville; Georgia,Tue Oct 02 05:41:43 EDT 2018,N/A,null,98064
+Envelope,143.06,1-Day,17328,Wuckertview; New Jersey,Fri Sep 07 15:17:13 EDT 2018,Hazardous,null,21082
+Large,335.31,3-5 Day,73238,Port Troyview; Nevada,Fri Feb 09 23:40:28 EST 2018,Fragile,null,24570
+Extra Small,275.36,1-Day,65395,Howellfort; Mississippi,Wed May 09 15:30:49 EDT 2018,Fragile,null,39438
+Small,10.87,1-Day,12799,Wuckertview; New Jersey,Mon Aug 27 17:53:54 EDT 2018,N/A,null,94055
+Large,92.26,7+ Day,58626,Port Troyview; Nevada,Tue Feb 05 16:43:43 EST 2019,N/A,null,50230
+Large,122.64,Overnight,35012,Caryshire; Nebraska,Sat Nov 24 03:51:10 EST 2018,Hazardous,null,44053
+Medium,251.69,1-Day,97948,Willianhaven; Vermont,Sun Dec 23 05:07:38 EST 2018,N/A,null,12244
+Small,180.46,1-Day,66933,Yostville; Georgia,Tue Mar 06 07:22:32 EST 2018,Hazardous,null,58325
+Small,486.68,Overnight,52886,New Danilo; Alabama,Sun Dec 09 08:53:30 EST 2018,N/A,null,41889
+Post Card,324.32,3-5 Day,33334,Caryshire; Nebraska,Tue Jul 17 20:36:51 EDT 2018,N/A,null,52455
+Post Card,122.52,1-Day,58125,New Danilo; Alabama,Fri Apr 13 03:35:10 EDT 2018,N/A,null,32897
+Medium,251.07,Overnight,68774,Wuckertview; New Jersey,Tue Dec 25 18:59:42 EST 2018,N/A,null,66236
+Post Card,86.0,1-Day,42775,Port Troyview; Nevada,Tue Sep 11 12:58:17 EDT 2018,N/A,null,95830
+Extra Large,241.53,7+ Day,53360,Wuckertview; New Jersey,Wed Jul 18 09:17:04 EDT 2018,Hazardous,null,65584
+Small,375.26,3-5 Day,40155,Wuckertview; New Jersey,Wed Aug 15 03:31:35 EDT 2018,Fragile,null,93329
+Envelope,322.93,Overnight,48629,Wuckertview; New Jersey,Sat Sep 22 12:02:14 EDT 2018,Hazardous,null,27248
+Extra Small,293.8,7+ Day,29010,Caryshire; Nebraska,Fri Mar 16 05:50:05 EDT 2018,Hazardous,null,66612
+Extra Large,168.44,7+ Day,18645,Wuckertview; New Jersey,Tue Dec 11 19:05:32 EST 2018,N/A,null,47072
+Extra Small,492.25,1-Day,24290,Howellfort; Mississippi,Thu May 24 12:06:10 EDT 2018,N/A,null,92920
+Small,73.91,3-5 Day,93003,Howellfort; Mississippi,Wed Jul 25 09:56:58 EDT 2018,N/A,null,30607
+Small,400.23,7+ Day,82592,Port Stewart; South Dakota,Fri Feb 08 07:45:13 EST 2019,Hazardous,null,89992
+Envelope,79.9,3-5 Day,65478,Port Stewart; South Dakota,Tue Jul 03 07:20:43 EDT 2018,Hazardous,null,65391
+Extra Small,61.69,Overnight,16632,Yostville; Georgia,Tue Sep 04 04:05:15 EDT 2018,N/A,null,28528
+Small,479.62,Overnight,24996,Wuckertview; New Jersey,Thu Apr 26 19:41:10 EDT 2018,N/A,null,49875
+Medium,221.49,7+ Day,79943,Port Troyview; Nevada,Thu Aug 09 15:37:53 EDT 2018,N/A,null,41068
+Extra Large,119.91,1-Day,31152,Yostville; Georgia,Tue Aug 14 19:43:33 EDT 2018,N/A,null,33986
+Post Card,214.95,1-Day,69581,New Danilo; Alabama,Fri Aug 03 23:29:26 EDT 2018,N/A,null,31554
+Envelope,336.99,Overnight,27597,West Williatown; Iowa,Tue Aug 21 15:18:17 EDT 2018,N/A,null,43932
+Extra Small,196.26,3-5 Day,69559,South Lonport; New Jersey,Sun Dec 23 13:41:39 EST 2018,N/A,null,11447
+Small,424.47,Overnight,83818,South Lonport; New Jersey,Wed Feb 06 13:28:14 EST 2019,N/A,null,41275
+Envelope,434.71,3-5 Day,50619,New Danilo; Alabama,Fri Jul 27 19:42:50 EDT 2018,N/A,null,94529
+Extra Small,295.97,Overnight,18012,Wuckertview; New Jersey,Wed Nov 14 07:14:26 EST 2018,Fragile,null,62904
+Extra Large,308.16,3-5 Day,15959,Caryshire; Nebraska,Thu May 31 13:06:11 EDT 2018,Hazardous,null,82263
+Large,141.6,7+ Day,92126,Wuckertview; New Jersey,Sun Jan 06 22:09:39 EST 2019,Hazardous,null,20731
+Medium,371.06,3-5 Day,72766,South Lonport; New Jersey,Fri May 11 02:18:05 EDT 2018,N/A,null,61426
+Small,459.24,3-5 Day,76398,West Williatown; Iowa,Fri Oct 12 21:54:19 EDT 2018,Fragile,null,53399
+Envelope,437.49,7+ Day,77004,South Lonport; New Jersey,Thu Mar 08 06:35:50 EST 2018,N/A,null,83108
+Extra Large,207.59,7+ Day,14628,Port Troyview; Nevada,Sat Jun 09 05:56:25 EDT 2018,Hazardous,null,67049
+Large,179.57,7+ Day,97411,Caryshire; Nebraska,Mon May 14 14:10:46 EDT 2018,N/A,null,29448
+Post Card,177.82,1-Day,93682,Port Troyview; Nevada,Fri Oct 12 09:40:30 EDT 2018,N/A,null,89463
+Small,126.86,1-Day,91205,Yostville; Georgia,Fri Mar 23 22:35:58 EDT 2018,N/A,null,27335
+Small,80.71,7+ Day,25989,Caryshire; Nebraska,Fri Apr 13 11:24:49 EDT 2018,N/A,null,63252
+Post Card,451.87,3-5 Day,56786,South Lonport; New Jersey,Wed Mar 28 08:10:41 EDT 2018,Hazardous,null,95349
+Extra Small,276.33,1-Day,30002,Willianhaven; Vermont,Thu Sep 13 01:17:23 EDT 2018,N/A,null,19686
+Small,263.49,1-Day,86744,New Danilo; Alabama,Thu Dec 27 00:36:44 EST 2018,N/A,null,48549
+Small,240.5,Overnight,98166,Howellfort; Mississippi,Sat Mar 10 07:24:43 EST 2018,Hazardous,null,95605
+Large,111.43,3-5 Day,88123,Yostville; Georgia,Mon Sep 17 01:24:58 EDT 2018,N/A,null,84083
+Extra Large,196.07,1-Day,52584,South Lonport; New Jersey,Sun Mar 10 00:58:00 EST 2019,N/A,null,68517
+Medium,5.43,1-Day,97183,West Williatown; Iowa,Wed May 09 15:41:26 EDT 2018,N/A,null,43205
+Large,218.12,3-5 Day,88313,West Williatown; Iowa,Wed Oct 31 19:47:34 EDT 2018,N/A,null,91529
+Large,481.88,3-5 Day,70233,South Lonport; New Jersey,Wed Sep 05 02:04:42 EDT 2018,Fragile,null,86282
+Extra Small,241.69,1-Day,22059,Port Stewart; South Dakota,Tue Jul 17 05:18:06 EDT 2018,Fragile,null,74960
+Post Card,87.96,1-Day,25032,Port Stewart; South Dakota,Thu Oct 04 18:05:33 EDT 2018,Fragile,null,73867
+Extra Large,335.9,1-Day,76038,Port Troyview; Nevada,Mon Sep 03 23:42:08 EDT 2018,N/A,null,11436
+Extra Small,486.71,1-Day,32294,Willianhaven; Vermont,Sun Feb 03 09:32:45 EST 2019,Fragile,null,79714
+Envelope,469.99,3-5 Day,13868,Port Stewart; South Dakota,Sun Feb 18 20:05:41 EST 2018,N/A,null,93384
+Medium,398.23,7+ Day,61899,Port Troyview; Nevada,Mon Dec 17 15:30:10 EST 2018,Hazardous,null,39001
+Post Card,462.24,7+ Day,68427,Port Stewart; South Dakota,Mon Jan 14 15:59:33 EST 2019,N/A,null,44735
+Large,44.64,1-Day,91723,Caryshire; Nebraska,Sun Nov 04 09:16:29 EST 2018,Fragile,null,89887
+Extra Small,475.89,1-Day,87811,Yostville; Georgia,Mon Mar 11 21:17:02 EDT 2019,N/A,null,91341
+Post Card,173.28,3-5 Day,26350,New Danilo; Alabama,Thu Aug 23 12:38:38 EDT 2018,N/A,null,56404
+Extra Large,397.05,1-Day,18899,Caryshire; Nebraska,Thu Apr 19 18:14:58 EDT 2018,Hazardous,null,33566
+Small,428.25,7+ Day,39085,Willianhaven; Vermont,Wed Feb 13 16:46:38 EST 2019,Hazardous,null,77067
+Post Card,292.66,3-5 Day,74859,South Lonport; New Jersey,Thu Aug 30 23:47:48 EDT 2018,Hazardous,null,46694
+Extra Large,1.37,1-Day,84641,West Williatown; Iowa,Wed Sep 19 14:47:21 EDT 2018,Hazardous,null,40798
+Large,253.47,3-5 Day,64459,Howellfort; Mississippi,Wed Nov 28 20:44:49 EST 2018,Hazardous,null,91080
+Extra Small,321.58,1-Day,54250,Yostville; Georgia,Sun Feb 25 11:41:24 EST 2018,N/A,null,81952
+Extra Small,395.37,Overnight,28304,South Lonport; New Jersey,Sun Mar 04 19:04:12 EST 2018,Hazardous,null,96093
+Extra Small,76.34,3-5 Day,80110,Wuckertview; New Jersey,Thu Nov 01 22:41:12 EDT 2018,Hazardous,null,59941
+Small,480.8,Overnight,11175,New Danilo; Alabama,Wed Apr 18 20:38:30 EDT 2018,Hazardous,null,98350
+Envelope,458.43,7+ Day,24114,South Lonport; New Jersey,Sun Jun 17 16:40:32 EDT 2018,Fragile,null,64315
+Extra Small,53.01,1-Day,26831,Yostville; Georgia,Fri Feb 01 20:50:29 EST 2019,N/A,null,59946
+Small,16.68,7+ Day,76936,Howellfort; Mississippi,Mon Feb 18 00:21:51 EST 2019,N/A,null,24921
+Large,84.21,3-5 Day,69275,Port Stewart; South Dakota,Sun Jun 24 08:49:57 EDT 2018,N/A,null,14499
+Envelope,420.64,3-5 Day,42440,South Lonport; New Jersey,Sat Jul 07 08:28:58 EDT 2018,Fragile,null,39904
+Extra Large,339.28,1-Day,50543,Wuckertview; New Jersey,Sun Apr 15 05:18:54 EDT 2018,Hazardous,null,25286
+Large,272.47,Overnight,46201,South Lonport; New Jersey,Wed Aug 29 21:03:01 EDT 2018,N/A,null,57951
+Extra Small,46.75,7+ Day,69360,Howellfort; Mississippi,Fri Jun 01 20:08:13 EDT 2018,N/A,null,35775
+Medium,265.81,Overnight,38075,Yostville; Georgia,Sun Apr 01 02:34:07 EDT 2018,Fragile,null,82658
+Extra Large,157.58,3-5 Day,73869,New Danilo; Alabama,Wed Nov 28 15:09:00 EST 2018,N/A,null,32914
+Envelope,413.11,1-Day,34426,New Danilo; Alabama,Thu May 24 15:34:31 EDT 2018,N/A,null,34670
+Medium,155.34,3-5 Day,84368,Port Stewart; South Dakota,Sat Mar 31 15:06:48 EDT 2018,Fragile,null,41708
+Medium,247.35,1-Day,38273,Willianhaven; Vermont,Fri Apr 06 10:49:32 EDT 2018,Hazardous,null,60591
+Extra Small,134.55,1-Day,86722,West Williatown; Iowa,Sat Oct 27 09:47:47 EDT 2018,Hazardous,null,36183
+Extra Small,339.3,Overnight,21840,Port Troyview; Nevada,Sun Jul 15 02:27:11 EDT 2018,Hazardous,null,29329
+Extra Large,446.97,3-5 Day,73831,Port Stewart; South Dakota,Tue Apr 17 02:41:32 EDT 2018,Hazardous,null,85825
+Extra Small,428.74,7+ Day,69501,Wuckertview; New Jersey,Sun Oct 07 14:20:44 EDT 2018,Fragile,null,81334
+Extra Small,403.38,3-5 Day,74906,South Lonport; New Jersey,Fri Dec 21 23:27:29 EST 2018,N/A,null,97950
+Extra Small,415.66,7+ Day,49030,South Lonport; New Jersey,Sun Dec 16 18:34:28 EST 2018,Hazardous,null,88305
+Extra Large,179.15,7+ Day,91931,Port Troyview; Nevada,Sat May 12 12:33:38 EDT 2018,Fragile,null,75313
+Envelope,212.35,3-5 Day,17626,Wuckertview; New Jersey,Sun Oct 28 20:21:23 EDT 2018,Hazardous,null,61758
+Small,16.44,Overnight,48087,Yostville; Georgia,Thu Jul 19 20:34:43 EDT 2018,N/A,null,48902
+Medium,212.3,3-5 Day,86669,Wuckertview; New Jersey,Thu Dec 06 22:05:51 EST 2018,Fragile,null,66577
+Small,369.42,7+ Day,68924,Wuckertview; New Jersey,Sun Dec 02 01:03:37 EST 2018,N/A,null,74159
+Medium,288.26,7+ Day,63112,West Williatown; Iowa,Mon Jun 25 12:20:38 EDT 2018,Hazardous,null,61103
+Extra Small,259.67,Overnight,41157,Caryshire; Nebraska,Mon Sep 24 00:06:05 EDT 2018,Fragile,null,13341
+Envelope,463.21,Overnight,93622,Willianhaven; Vermont,Sat May 26 14:12:14 EDT 2018,N/A,null,77959
+Small,294.97,Overnight,59891,West Williatown; Iowa,Fri Aug 24 10:01:16 EDT 2018,N/A,null,95496
+Medium,467.08,3-5 Day,83365,Willianhaven; Vermont,Sun Mar 17 07:53:32 EDT 2019,N/A,null,66083
+Extra Large,296.73,Overnight,31985,West Williatown; Iowa,Mon May 14 04:49:43 EDT 2018,Fragile,null,86791
+Post Card,412.79,3-5 Day,53866,South Lonport; New Jersey,Tue Feb 05 00:55:56 EST 2019,Hazardous,null,64272
+Extra Small,173.57,Overnight,85748,Yostville; Georgia,Mon Feb 26 09:40:02 EST 2018,N/A,null,77747
+Envelope,336.43,1-Day,24907,Caryshire; Nebraska,Sat Feb 02 09:45:40 EST 2019,N/A,null,87264
+Medium,114.63,3-5 Day,87313,Caryshire; Nebraska,Thu Aug 09 10:26:46 EDT 2018,N/A,null,53849
+Medium,218.12,7+ Day,15294,Wuckertview; New Jersey,Sun Nov 18 07:00:18 EST 2018,N/A,null,67604
+Post Card,3.84,7+ Day,75120,Willianhaven; Vermont,Sun Jan 27 04:17:44 EST 2019,Hazardous,null,16538
+Medium,214.93,7+ Day,72367,New Danilo; Alabama,Thu May 17 06:11:34 EDT 2018,N/A,null,86609
+Post Card,282.39,7+ Day,32544,Yostville; Georgia,Mon Apr 09 08:03:15 EDT 2018,N/A,null,81592
+Small,276.74,7+ Day,91385,Wuckertview; New Jersey,Tue Jan 29 20:03:18 EST 2019,N/A,null,91678
+Extra Small,363.62,3-5 Day,25749,Port Troyview; Nevada,Fri Feb 02 15:42:11 EST 2018,Fragile,null,57617
+Post Card,329.59,Overnight,25136,South Lonport; New Jersey,Sun May 13 10:39:55 EDT 2018,Fragile,null,12154
+Post Card,191.88,1-Day,53542,Port Stewart; South Dakota,Mon Feb 19 21:01:33 EST 2018,N/A,null,38022
+Extra Small,367.8,1-Day,67638,South Lonport; New Jersey,Thu Jan 17 15:32:51 EST 2019,Hazardous,null,27244
+Small,472.14,7+ Day,22104,Yostville; Georgia,Thu Dec 06 04:01:43 EST 2018,Hazardous,null,64223
+Small,437.51,1-Day,59493,Willianhaven; Vermont,Fri Sep 07 11:04:33 EDT 2018,N/A,null,85645
+Extra Large,141.46,Overnight,93531,West Williatown; Iowa,Mon Feb 25 06:24:48 EST 2019,N/A,null,70512
+Extra Large,294.0,Overnight,83225,Caryshire; Nebraska,Sun Sep 30 17:24:45 EDT 2018,N/A,null,15651
+Small,197.28,3-5 Day,93309,West Williatown; Iowa,Wed Oct 24 02:59:45 EDT 2018,N/A,null,45861
+Extra Small,375.57,7+ Day,84322,Wuckertview; New Jersey,Tue May 08 21:58:03 EDT 2018,Fragile,null,52972
+Envelope,253.15,7+ Day,70154,Yostville; Georgia,Tue Feb 13 10:24:49 EST 2018,N/A,null,88777
+Envelope,366.47,3-5 Day,84110,Yostville; Georgia,Mon Jun 04 22:34:53 EDT 2018,N/A,null,95170
+Large,6.7,1-Day,58504,Yostville; Georgia,Sun Jul 22 20:32:59 EDT 2018,Hazardous,null,71991
+Envelope,173.53,3-5 Day,55879,West Williatown; Iowa,Tue Feb 12 12:55:47 EST 2019,N/A,null,42956
+Envelope,210.04,Overnight,80051,West Williatown; Iowa,Mon Jan 07 12:32:04 EST 2019,N/A,null,76179
+Post Card,393.1,3-5 Day,29126,Port Troyview; Nevada,Thu Sep 13 07:47:25 EDT 2018,N/A,null,34184
+Extra Small,15.36,1-Day,53108,Willianhaven; Vermont,Sun Apr 01 21:35:34 EDT 2018,Fragile,null,66253
+Envelope,225.55,1-Day,45059,Howellfort; Mississippi,Wed Oct 03 21:52:54 EDT 2018,Fragile,null,62085
+Envelope,388.69,Overnight,66159,South Lonport; New Jersey,Mon Mar 19 14:05:59 EDT 2018,N/A,null,77955
+Medium,281.6,7+ Day,14816,Port Troyview; Nevada,Tue Sep 11 06:59:27 EDT 2018,Fragile,null,89837
+Post Card,225.98,1-Day,99454,New Danilo; Alabama,Wed Aug 08 07:50:51 EDT 2018,Hazardous,null,36259
+Small,166.67,7+ Day,10493,Port Troyview; Nevada,Fri Mar 08 16:06:59 EST 2019,Hazardous,null,78815
+Extra Large,320.16,3-5 Day,10322,West Williatown; Iowa,Fri Nov 30 04:20:13 EST 2018,N/A,null,77615
+Medium,191.99,Overnight,93278,Howellfort; Mississippi,Fri Mar 15 10:18:58 EDT 2019,N/A,null,39347
+Large,356.12,3-5 Day,37906,Willianhaven; Vermont,Thu Feb 21 08:45:38 EST 2019,Fragile,null,34633
+Envelope,110.12,3-5 Day,26759,Willianhaven; Vermont,Fri Aug 17 17:38:55 EDT 2018,N/A,null,57661
+Medium,337.48,7+ Day,53697,Yostville; Georgia,Fri Nov 16 04:35:39 EST 2018,Fragile,null,79356
+Medium,367.53,7+ Day,10074,Port Stewart; South Dakota,Sat May 05 13:47:26 EDT 2018,Hazardous,null,89798
+Extra Small,287.25,3-5 Day,33371,Willianhaven; Vermont,Thu Feb 28 06:15:56 EST 2019,Fragile,null,10791
+Medium,133.18,Overnight,96202,West Williatown; Iowa,Sun Jun 03 19:57:28 EDT 2018,N/A,null,80961
+Extra Large,98.15,1-Day,28780,Howellfort; Mississippi,Sun Feb 10 18:37:12 EST 2019,Hazardous,null,94883
+Post Card,19.52,3-5 Day,48381,Port Stewart; South Dakota,Sun Apr 22 12:33:17 EDT 2018,N/A,null,30366
+Extra Large,300.41,7+ Day,54197,South Lonport; New Jersey,Wed Feb 20 14:45:39 EST 2019,N/A,null,14187
+Medium,293.78,7+ Day,68484,Port Stewart; South Dakota,Sun Aug 19 06:20:04 EDT 2018,N/A,null,54282
+Extra Large,29.33,3-5 Day,16970,Yostville; Georgia,Wed Feb 28 19:04:51 EST 2018,N/A,null,50834
+Extra Large,320.86,7+ Day,51808,West Williatown; Iowa,Tue Mar 27 03:05:24 EDT 2018,Fragile,null,15464
+Post Card,156.66,3-5 Day,57088,Yostville; Georgia,Tue Jan 01 21:50:59 EST 2019,N/A,null,98347
+Small,270.97,7+ Day,29209,Port Troyview; Nevada,Mon Nov 12 13:07:44 EST 2018,Hazardous,null,96203
+Envelope,333.91,Overnight,26378,Wuckertview; New Jersey,Sat Jan 26 10:41:08 EST 2019,N/A,null,90857
+Small,172.24,1-Day,47202,West Williatown; Iowa,Fri May 25 21:21:43 EDT 2018,Fragile,null,49091
+Extra Small,330.69,Overnight,78883,New Danilo; Alabama,Sat Dec 08 11:03:57 EST 2018,Hazardous,null,33204
+Extra Large,140.85,3-5 Day,46014,Howellfort; Mississippi,Thu Jun 07 02:08:03 EDT 2018,N/A,null,35490
+Envelope,354.52,Overnight,30427,Howellfort; Mississippi,Sun Aug 05 12:57:24 EDT 2018,N/A,null,12180
+Medium,484.96,3-5 Day,52712,Port Stewart; South Dakota,Mon May 07 01:01:52 EDT 2018,N/A,null,78828
+Small,88.91,1-Day,71499,Willianhaven; Vermont,Wed Mar 07 07:02:48 EST 2018,Fragile,null,12371
+Post Card,431.71,Overnight,61692,Yostville; Georgia,Thu Dec 20 07:19:41 EST 2018,Fragile,null,65443
+Small,227.47,7+ Day,34703,Port Stewart; South Dakota,Sun Sep 30 18:49:41 EDT 2018,Fragile,null,91367
+Small,204.85,3-5 Day,22688,Port Troyview; Nevada,Thu Apr 19 14:52:02 EDT 2018,N/A,null,77215
+Envelope,489.25,1-Day,66714,Howellfort; Mississippi,Tue Apr 10 15:20:32 EDT 2018,N/A,null,67835
+Post Card,300.5,1-Day,80807,West Williatown; Iowa,Fri Mar 02 02:45:22 EST 2018,N/A,null,42004
+Small,218.4,Overnight,62162,West Williatown; Iowa,Fri Oct 05 16:11:19 EDT 2018,N/A,null,94364
+Extra Small,10.98,1-Day,42040,Wuckertview; New Jersey,Sat Feb 16 04:19:37 EST 2019,Hazardous,null,55605
+Extra Large,348.57,1-Day,54845,Yostville; Georgia,Wed Jul 18 03:51:47 EDT 2018,N/A,null,37060
+Post Card,407.15,1-Day,28617,Wuckertview; New Jersey,Tue Jun 12 22:00:52 EDT 2018,N/A,null,37132
+Extra Large,285.81,1-Day,23088,Caryshire; Nebraska,Sat Jun 02 15:07:51 EDT 2018,N/A,null,72667
+Large,253.49,3-5 Day,34575,Port Stewart; South Dakota,Tue Mar 12 05:22:49 EDT 2019,N/A,null,78674
+Extra Large,123.96,7+ Day,64554,Wuckertview; New Jersey,Sun Jan 20 13:24:06 EST 2019,N/A,null,35511
+Small,47.23,Overnight,15699,Willianhaven; Vermont,Tue Nov 27 00:45:01 EST 2018,Fragile,null,60178
+Small,346.49,7+ Day,92971,Howellfort; Mississippi,Sat Mar 16 21:11:00 EDT 2019,Hazardous,null,55567
+Medium,28.22,7+ Day,15780,Port Stewart; South Dakota,Tue Jun 19 01:00:15 EDT 2018,Hazardous,null,83238
+Envelope,491.59,7+ Day,82387,Yostville; Georgia,Fri Feb 08 02:50:48 EST 2019,Hazardous,null,37371
+Medium,156.82,7+ Day,15864,Port Troyview; Nevada,Sun Feb 11 12:07:35 EST 2018,Fragile,null,56251
+Envelope,181.11,3-5 Day,67546,Caryshire; Nebraska,Wed Jan 09 20:25:44 EST 2019,Fragile,null,48069
+Extra Small,225.84,7+ Day,86950,Caryshire; Nebraska,Wed Oct 24 11:15:16 EDT 2018,Hazardous,null,42199
+Envelope,193.28,3-5 Day,98713,Port Stewart; South Dakota,Mon Jul 09 19:15:40 EDT 2018,N/A,null,60177
+Extra Large,242.25,3-5 Day,95287,New Danilo; Alabama,Mon May 07 12:36:38 EDT 2018,N/A,null,30626
+Extra Small,470.52,3-5 Day,57407,Howellfort; Mississippi,Tue Sep 04 04:50:45 EDT 2018,N/A,null,64162
+Extra Large,264.03,1-Day,18041,Caryshire; Nebraska,Mon May 14 10:53:57 EDT 2018,N/A,null,34726
+Medium,94.84,7+ Day,74238,Willianhaven; Vermont,Thu Feb 01 05:24:51 EST 2018,Hazardous,null,99320
+Extra Large,278.81,Overnight,59908,West Williatown; Iowa,Tue May 22 18:00:56 EDT 2018,N/A,null,98237
+Large,3.05,3-5 Day,48392,Howellfort; Mississippi,Mon Aug 20 22:12:46 EDT 2018,N/A,null,84811
+Extra Small,398.55,Overnight,70619,Willianhaven; Vermont,Sat Nov 24 18:20:52 EST 2018,Fragile,null,72748
+Extra Large,256.18,7+ Day,70400,South Lonport; New Jersey,Tue Jun 26 07:52:24 EDT 2018,N/A,null,55483
+Medium,467.55,Overnight,58457,Port Stewart; South Dakota,Tue Feb 26 13:49:52 EST 2019,N/A,null,88784
+Large,70.48,7+ Day,13504,Howellfort; Mississippi,Mon Mar 11 18:08:15 EDT 2019,Fragile,null,54795
+Large,25.24,1-Day,75231,Caryshire; Nebraska,Wed Jul 11 18:30:57 EDT 2018,N/A,null,38206
+Large,319.12,7+ Day,45474,Port Troyview; Nevada,Thu Jan 17 07:53:23 EST 2019,Hazardous,null,77002
+Post Card,456.19,1-Day,75026,Howellfort; Mississippi,Thu Jun 21 06:29:49 EDT 2018,Hazardous,null,97210
+Large,136.1,Overnight,53002,New Danilo; Alabama,Wed Feb 14 03:38:44 EST 2018,N/A,null,36494
+Post Card,194.31,3-5 Day,69819,West Williatown; Iowa,Fri Dec 21 13:24:40 EST 2018,Fragile,null,54391
+Envelope,433.82,Overnight,51841,West Williatown; Iowa,Fri Feb 02 08:18:35 EST 2018,N/A,null,72086
+Envelope,306.54,1-Day,64695,Yostville; Georgia,Sat Oct 20 19:40:54 EDT 2018,N/A,null,10951
+Large,383.16,Overnight,95800,New Danilo; Alabama,Sat Nov 17 00:39:32 EST 2018,N/A,null,18118
+Extra Large,224.01,3-5 Day,71350,Caryshire; Nebraska,Fri Dec 07 18:01:07 EST 2018,Hazardous,null,86872
+Medium,374.98,Overnight,66701,Caryshire; Nebraska,Tue Apr 24 01:55:52 EDT 2018,N/A,null,74512
+Extra Small,45.25,3-5 Day,29459,Howellfort; Mississippi,Fri Feb 01 17:37:58 EST 2019,N/A,null,97760
+Large,308.91,7+ Day,90040,Willianhaven; Vermont,Thu Mar 29 00:03:44 EDT 2018,Hazardous,null,43033
+Large,443.62,1-Day,26935,Willianhaven; Vermont,Sun Aug 05 21:39:15 EDT 2018,N/A,null,13684
+Extra Large,22.01,Overnight,51431,Caryshire; Nebraska,Mon Mar 18 08:25:05 EDT 2019,N/A,null,26513
+Large,448.87,Overnight,84743,Port Stewart; South Dakota,Fri Apr 27 16:11:27 EDT 2018,N/A,null,31954
+Post Card,204.86,7+ Day,89824,Yostville; Georgia,Mon Jun 04 04:16:02 EDT 2018,Fragile,null,60008
+Extra Small,3.53,1-Day,17563,Willianhaven; Vermont,Wed Jan 16 00:29:43 EST 2019,Hazardous,null,43440
+Extra Small,295.05,7+ Day,32418,Caryshire; Nebraska,Sun Aug 12 20:31:58 EDT 2018,N/A,null,10690
+Extra Small,459.21,7+ Day,67087,New Danilo; Alabama,Fri Feb 09 06:14:46 EST 2018,N/A,null,71737
+Envelope,150.21,Overnight,17736,Port Stewart; South Dakota,Thu Oct 04 13:16:02 EDT 2018,N/A,null,75097
+Extra Small,118.09,7+ Day,99166,New Danilo; Alabama,Tue Jul 24 15:13:10 EDT 2018,Hazardous,null,96176
+Post Card,382.93,7+ Day,20836,South Lonport; New Jersey,Tue Feb 19 02:22:11 EST 2019,Fragile,null,33036
+Extra Small,168.15,1-Day,28538,Port Troyview; Nevada,Mon Apr 16 00:06:13 EDT 2018,Hazardous,null,92499
+Small,466.14,Overnight,69381,Yostville; Georgia,Sat Mar 17 19:09:26 EDT 2018,N/A,null,71746
+Large,216.02,3-5 Day,66999,Willianhaven; Vermont,Tue Feb 27 07:08:24 EST 2018,Fragile,null,13244
+Small,217.4,3-5 Day,11914,Port Troyview; Nevada,Sat Feb 17 03:37:39 EST 2018,N/A,null,94456
+Post Card,43.56,3-5 Day,16777,Willianhaven; Vermont,Wed Oct 24 11:38:23 EDT 2018,Fragile,null,85096
+Post Card,368.96,7+ Day,59227,Wuckertview; New Jersey,Wed Sep 26 16:28:06 EDT 2018,Fragile,null,90961
+Extra Large,256.61,1-Day,59696,Howellfort; Mississippi,Wed Jun 13 02:42:21 EDT 2018,Hazardous,null,83322
+Medium,220.91,1-Day,16934,Wuckertview; New Jersey,Sat Mar 17 13:53:00 EDT 2018,N/A,null,28305
+Extra Small,275.47,Overnight,29789,Port Troyview; Nevada,Sat Jun 30 15:51:01 EDT 2018,Fragile,null,40549
+Extra Small,344.69,1-Day,77807,Port Troyview; Nevada,Tue Oct 16 06:43:16 EDT 2018,N/A,null,27092
+Small,450.69,7+ Day,19332,West Williatown; Iowa,Sat Aug 25 15:10:06 EDT 2018,N/A,null,80194
+Extra Large,212.2,3-5 Day,55768,Yostville; Georgia,Tue Jan 01 07:46:56 EST 2019,N/A,null,52686
+Medium,307.81,7+ Day,80230,South Lonport; New Jersey,Sun Dec 30 21:36:45 EST 2018,Fragile,null,39742
+Small,347.8,7+ Day,28049,Willianhaven; Vermont,Tue Jun 05 20:40:41 EDT 2018,Fragile,null,91331
+Extra Small,17.46,1-Day,35513,Howellfort; Mississippi,Mon Dec 24 05:23:42 EST 2018,Hazardous,null,80727
+Post Card,7.3,1-Day,80712,Yostville; Georgia,Thu Feb 07 16:51:56 EST 2019,Hazardous,null,79391
+Medium,457.67,1-Day,97152,Port Stewart; South Dakota,Sun Mar 11 04:58:02 EDT 2018,Fragile,null,16176
+Extra Small,430.13,1-Day,28419,Wuckertview; New Jersey,Tue May 29 10:47:26 EDT 2018,N/A,null,83800
+Extra Large,322.76,3-5 Day,76271,Willianhaven; Vermont,Fri Nov 30 19:23:24 EST 2018,N/A,null,21647
+Extra Small,327.52,3-5 Day,66497,Caryshire; Nebraska,Sat Sep 15 03:11:48 EDT 2018,N/A,null,75062
+Small,471.47,Overnight,37509,West Williatown; Iowa,Mon Jul 02 06:00:47 EDT 2018,N/A,null,49534
+Envelope,24.18,1-Day,79698,Wuckertview; New Jersey,Thu Sep 13 05:19:12 EDT 2018,Fragile,null,71700
+Envelope,370.13,7+ Day,47628,West Williatown; Iowa,Wed Nov 14 14:18:26 EST 2018,N/A,null,24686
+Extra Small,219.09,3-5 Day,21690,Port Stewart; South Dakota,Wed Jul 25 18:07:05 EDT 2018,N/A,null,22697
+Large,13.92,7+ Day,10834,Yostville; Georgia,Fri May 18 17:18:48 EDT 2018,Fragile,null,87950
+Extra Large,152.26,Overnight,60433,Caryshire; Nebraska,Fri Nov 23 07:50:22 EST 2018,Fragile,null,61340
+Extra Large,366.14,7+ Day,63553,Willianhaven; Vermont,Sun Oct 21 20:45:32 EDT 2018,N/A,null,70953
+Medium,240.29,3-5 Day,16391,West Williatown; Iowa,Thu Oct 11 02:26:19 EDT 2018,N/A,null,43466
+Envelope,261.44,7+ Day,70867,Wuckertview; New Jersey,Sat Mar 02 14:17:40 EST 2019,N/A,null,35793
+Extra Large,307.09,3-5 Day,17030,South Lonport; New Jersey,Thu Apr 26 18:36:28 EDT 2018,Hazardous,null,57468
+Extra Small,382.18,1-Day,89950,Port Troyview; Nevada,Thu Nov 01 16:38:46 EDT 2018,N/A,null,25865
+Large,394.36,1-Day,61114,West Williatown; Iowa,Wed Jun 20 12:41:07 EDT 2018,Hazardous,null,26266
+Small,281.78,3-5 Day,51284,Howellfort; Mississippi,Sun Jun 03 03:21:55 EDT 2018,N/A,null,24506
+Extra Large,183.71,Overnight,76081,South Lonport; New Jersey,Fri Jan 18 17:33:36 EST 2019,Fragile,null,93166
+Small,61.19,1-Day,27432,Port Stewart; South Dakota,Mon Jul 23 15:57:15 EDT 2018,Fragile,null,11313
+Extra Large,198.61,7+ Day,27595,South Lonport; New Jersey,Thu May 24 05:29:57 EDT 2018,N/A,null,39157
+Post Card,160.05,1-Day,24942,Howellfort; Mississippi,Fri Dec 21 22:32:51 EST 2018,N/A,null,90162
+Medium,230.94,1-Day,80939,Caryshire; Nebraska,Mon Dec 17 01:32:32 EST 2018,N/A,null,83092
+Post Card,341.58,3-5 Day,35358,Caryshire; Nebraska,Wed Mar 07 08:08:52 EST 2018,N/A,null,52674
+Extra Large,65.61,7+ Day,27666,West Williatown; Iowa,Wed Oct 17 02:33:55 EDT 2018,Fragile,null,23960
+Envelope,163.5,7+ Day,83938,South Lonport; New Jersey,Fri Feb 01 06:57:48 EST 2019,Hazardous,null,93932
+Extra Small,468.69,7+ Day,68889,Wuckertview; New Jersey,Tue Jun 12 18:41:08 EDT 2018,N/A,null,32078
+Envelope,246.61,3-5 Day,58769,Wuckertview; New Jersey,Sun Jun 17 11:54:25 EDT 2018,N/A,null,58897
+Extra Small,251.17,Overnight,30491,Yostville; Georgia,Sat Feb 24 01:57:00 EST 2018,N/A,null,87586
+Large,410.67,3-5 Day,65371,Willianhaven; Vermont,Fri Feb 02 18:16:21 EST 2018,Fragile,null,11069
+Envelope,307.17,3-5 Day,12273,Port Stewart; South Dakota,Fri Mar 23 23:48:34 EDT 2018,Fragile,null,11906
+Extra Large,244.04,3-5 Day,66324,Willianhaven; Vermont,Sat Apr 14 10:08:37 EDT 2018,Hazardous,null,41685
+Large,152.57,1-Day,74049,Caryshire; Nebraska,Sat Feb 24 07:52:48 EST 2018,Fragile,null,34652
+Extra Large,467.77,Overnight,10332,Caryshire; Nebraska,Sun Aug 26 04:47:01 EDT 2018,Fragile,null,66951
+Medium,121.17,1-Day,45068,Port Troyview; Nevada,Mon Jun 04 15:06:23 EDT 2018,Fragile,null,11537
+Large,209.19,1-Day,10235,Wuckertview; New Jersey,Wed Oct 17 13:08:08 EDT 2018,Fragile,null,29598
+Post Card,433.11,3-5 Day,78419,Port Troyview; Nevada,Mon Jan 14 01:07:12 EST 2019,Hazardous,null,22692
+Small,132.29,7+ Day,88162,Howellfort; Mississippi,Fri Sep 28 04:23:43 EDT 2018,N/A,null,12851
+Extra Small,245.19,1-Day,79929,Wuckertview; New Jersey,Thu Aug 09 18:04:38 EDT 2018,N/A,null,24531
+Small,22.77,1-Day,17143,Port Stewart; South Dakota,Mon May 14 12:30:27 EDT 2018,N/A,null,31866
+Envelope,424.86,3-5 Day,57686,New Danilo; Alabama,Tue Jul 03 14:00:20 EDT 2018,N/A,null,36617
+Medium,33.75,Overnight,28170,New Danilo; Alabama,Wed Jan 23 20:17:47 EST 2019,Hazardous,null,79272
+Post Card,186.71,7+ Day,78748,New Danilo; Alabama,Sat Aug 18 17:54:20 EDT 2018,N/A,null,41830
+Extra Large,229.83,3-5 Day,69794,Howellfort; Mississippi,Thu Oct 25 07:36:07 EDT 2018,Fragile,null,72935
+Envelope,422.79,3-5 Day,24994,Port Stewart; South Dakota,Sun Aug 19 05:20:17 EDT 2018,Fragile,null,23774
+Extra Large,307.07,3-5 Day,50180,Port Stewart; South Dakota,Thu Jul 26 12:39:58 EDT 2018,Hazardous,null,28338
+Medium,190.31,Overnight,92777,Howellfort; Mississippi,Wed May 16 16:39:53 EDT 2018,N/A,null,71063
+Small,213.94,7+ Day,95703,Wuckertview; New Jersey,Sun Nov 04 00:54:39 EDT 2018,Hazardous,null,14140
+Small,439.82,1-Day,31594,Wuckertview; New Jersey,Tue May 22 03:19:06 EDT 2018,N/A,null,81999
+Extra Small,45.09,3-5 Day,61170,West Williatown; Iowa,Wed Sep 19 23:37:39 EDT 2018,N/A,null,41248
+Small,388.33,Overnight,69835,Yostville; Georgia,Sat Feb 24 13:45:57 EST 2018,N/A,null,10261
+Envelope,147.86,Overnight,98709,Wuckertview; New Jersey,Sun Feb 11 16:18:30 EST 2018,N/A,null,92317
+Extra Small,132.71,7+ Day,20973,Howellfort; Mississippi,Tue May 08 00:15:58 EDT 2018,Fragile,null,93713
+Small,86.07,3-5 Day,13101,Port Troyview; Nevada,Mon Jan 21 12:43:52 EST 2019,Fragile,null,55405
+Envelope,329.75,7+ Day,84378,Willianhaven; Vermont,Sun Mar 17 15:51:58 EDT 2019,N/A,null,52185
+Extra Small,209.69,7+ Day,41070,Wuckertview; New Jersey,Thu Jul 26 09:11:48 EDT 2018,Fragile,null,43439
+Envelope,414.78,7+ Day,49472,Willianhaven; Vermont,Tue Feb 19 22:50:12 EST 2019,N/A,null,50097
+Medium,349.54,Overnight,11261,Willianhaven; Vermont,Mon May 07 17:13:08 EDT 2018,Fragile,null,74712
+Extra Small,456.06,Overnight,37118,Howellfort; Mississippi,Mon Jun 04 02:17:19 EDT 2018,N/A,null,98698
+Small,8.48,7+ Day,44833,Wuckertview; New Jersey,Tue Jul 24 13:25:28 EDT 2018,Fragile,null,16239
+Envelope,128.77,1-Day,78507,Caryshire; Nebraska,Wed Dec 19 08:17:56 EST 2018,Fragile,null,94534
+Medium,296.36,7+ Day,93874,West Williatown; Iowa,Fri Mar 08 01:28:45 EST 2019,N/A,null,24207
+Extra Small,195.64,7+ Day,60616,Wuckertview; New Jersey,Tue Apr 10 01:29:48 EDT 2018,N/A,null,82637
+Extra Large,230.52,1-Day,43710,Willianhaven; Vermont,Thu Mar 01 23:48:21 EST 2018,Fragile,null,41491
+Small,414.27,7+ Day,90969,Port Troyview; Nevada,Sat Aug 11 09:41:28 EDT 2018,N/A,null,18627
+Small,260.5,7+ Day,18749,Yostville; Georgia,Sun Mar 24 06:24:30 EDT 2019,Fragile,null,89105
+Post Card,310.31,1-Day,26979,Wuckertview; New Jersey,Sun Oct 07 16:00:10 EDT 2018,Hazardous,null,98307
+Post Card,235.56,3-5 Day,54012,West Williatown; Iowa,Mon Dec 10 14:38:59 EST 2018,Hazardous,null,51037
+Medium,146.68,7+ Day,31053,West Williatown; Iowa,Mon Feb 19 21:05:31 EST 2018,Fragile,null,90333
+Post Card,489.63,Overnight,41352,Wuckertview; New Jersey,Wed Sep 19 07:10:52 EDT 2018,N/A,null,52116
+Envelope,267.66,1-Day,50034,West Williatown; Iowa,Wed Nov 07 16:20:10 EST 2018,Fragile,null,85070
+Post Card,36.45,1-Day,54129,Port Troyview; Nevada,Mon Mar 12 21:00:11 EDT 2018,Hazardous,null,38673
+Extra Small,476.9,Overnight,64061,Howellfort; Mississippi,Wed Feb 27 08:51:20 EST 2019,N/A,null,30744
+Extra Small,277.09,7+ Day,22945,New Danilo; Alabama,Sat Jul 28 03:22:42 EDT 2018,Fragile,null,62465
+Envelope,316.56,Overnight,41073,West Williatown; Iowa,Sun Apr 29 05:36:50 EDT 2018,Hazardous,null,82075
+Extra Large,335.83,3-5 Day,10679,South Lonport; New Jersey,Mon Aug 27 03:58:00 EDT 2018,Hazardous,null,46561
+Small,72.65,Overnight,95761,Willianhaven; Vermont,Fri Apr 06 03:23:50 EDT 2018,N/A,null,33673
+Medium,243.6,7+ Day,44831,Caryshire; Nebraska,Thu Oct 11 16:03:17 EDT 2018,Fragile,null,69931
+Small,301.77,1-Day,84084,West Williatown; Iowa,Sun Sep 30 19:57:08 EDT 2018,N/A,null,80259
+Extra Large,396.96,1-Day,20443,Willianhaven; Vermont,Fri Aug 10 23:37:48 EDT 2018,Fragile,null,89008
+Medium,308.18,7+ Day,50603,Port Troyview; Nevada,Thu Aug 30 06:46:59 EDT 2018,N/A,null,31241
+Small,132.62,7+ Day,41165,New Danilo; Alabama,Sun Jul 29 00:33:13 EDT 2018,N/A,null,24474
+Post Card,259.81,7+ Day,75202,Willianhaven; Vermont,Fri Oct 12 08:27:47 EDT 2018,N/A,null,55715
+Post Card,300.52,Overnight,60862,Howellfort; Mississippi,Thu May 17 22:46:09 EDT 2018,N/A,null,13937
+Extra Small,339.15,7+ Day,44726,Port Troyview; Nevada,Sun Mar 11 06:14:31 EDT 2018,Fragile,null,40481
+Medium,80.91,1-Day,12559,Port Stewart; South Dakota,Wed Jun 13 08:26:41 EDT 2018,N/A,null,24016
+Medium,3.16,Overnight,91268,Howellfort; Mississippi,Wed Oct 03 08:05:56 EDT 2018,N/A,null,69314
+Small,160.43,7+ Day,11370,Yostville; Georgia,Sat Aug 25 18:02:25 EDT 2018,Hazardous,null,46434
+Extra Small,158.71,Overnight,91102,Port Stewart; South Dakota,Wed Feb 28 19:09:16 EST 2018,N/A,null,80879
+Small,419.96,1-Day,88971,Port Stewart; South Dakota,Sun Mar 03 00:53:43 EST 2019,Fragile,null,76610
+Extra Small,21.11,1-Day,67656,New Danilo; Alabama,Thu Nov 01 22:44:24 EDT 2018,N/A,null,23519
+Medium,136.2,1-Day,27080,Yostville; Georgia,Fri Mar 22 13:55:19 EDT 2019,Fragile,null,89762
+Medium,71.65,Overnight,32318,Caryshire; Nebraska,Sat Mar 16 13:20:32 EDT 2019,Hazardous,null,52449
+Post Card,95.67,7+ Day,55454,Willianhaven; Vermont,Tue Jan 22 13:19:38 EST 2019,Fragile,null,69399
+Small,401.53,1-Day,54816,Port Stewart; South Dakota,Sat Dec 08 23:50:35 EST 2018,N/A,null,38127
+Extra Large,304.38,1-Day,71758,West Williatown; Iowa,Wed Jun 13 02:23:56 EDT 2018,Fragile,null,48464
+Extra Small,330.05,7+ Day,43458,Wuckertview; New Jersey,Mon May 14 00:55:58 EDT 2018,N/A,null,78891
+Post Card,120.81,1-Day,82011,Yostville; Georgia,Sat Mar 31 19:37:57 EDT 2018,N/A,null,11847
+Medium,68.41,1-Day,48755,Port Stewart; South Dakota,Sun Jul 08 20:44:19 EDT 2018,Fragile,null,31936
+Extra Large,440.08,3-5 Day,73549,Howellfort; Mississippi,Fri Apr 20 10:06:41 EDT 2018,Hazardous,null,53089
+Extra Large,167.93,3-5 Day,60471,Yostville; Georgia,Sat Mar 03 06:08:26 EST 2018,N/A,null,39987
+Small,409.04,Overnight,37786,Wuckertview; New Jersey,Sat Jun 02 06:36:50 EDT 2018,Hazardous,null,74012
+Post Card,64.94,Overnight,61133,Port Stewart; South Dakota,Thu Jun 21 16:26:07 EDT 2018,Fragile,null,23529
+Medium,480.12,Overnight,33423,New Danilo; Alabama,Tue Apr 24 14:59:39 EDT 2018,Hazardous,null,12927
+Large,190.65,7+ Day,83423,Port Troyview; Nevada,Sun Oct 28 11:02:43 EDT 2018,N/A,null,32843
+Medium,437.1,Overnight,17182,Port Stewart; South Dakota,Fri Feb 01 03:18:13 EST 2019,Hazardous,null,93813
+Extra Small,321.06,Overnight,72954,South Lonport; New Jersey,Tue Jul 24 07:10:47 EDT 2018,Fragile,null,89143
+Small,76.92,3-5 Day,98584,West Williatown; Iowa,Sat Feb 16 00:19:08 EST 2019,N/A,null,18082
+Large,308.54,3-5 Day,17658,Yostville; Georgia,Fri Jan 11 11:17:29 EST 2019,N/A,null,18051
+Small,91.94,Overnight,70878,New Danilo; Alabama,Fri Nov 09 21:52:18 EST 2018,N/A,null,90689
+Large,392.87,Overnight,51390,South Lonport; New Jersey,Wed Jun 27 08:12:44 EDT 2018,N/A,null,16712
+Medium,326.67,1-Day,57836,Wuckertview; New Jersey,Mon Jun 18 15:22:57 EDT 2018,Hazardous,null,13562
+Envelope,153.08,Overnight,12137,Caryshire; Nebraska,Sat Sep 01 07:54:02 EDT 2018,N/A,null,87492
+Extra Small,215.11,7+ Day,85598,New Danilo; Alabama,Sat Mar 03 02:29:53 EST 2018,Hazardous,null,68161
+Medium,280.61,7+ Day,86050,Wuckertview; New Jersey,Tue Jan 08 21:55:40 EST 2019,N/A,null,36929
+Small,127.64,7+ Day,33511,Howellfort; Mississippi,Wed Feb 27 21:26:46 EST 2019,Hazardous,null,14409
+Extra Small,274.32,1-Day,65512,Howellfort; Mississippi,Sun Jun 10 16:30:01 EDT 2018,N/A,null,80073
+Small,284.58,3-5 Day,28459,Yostville; Georgia,Thu Jun 14 17:35:23 EDT 2018,Hazardous,null,17061
+Extra Small,6.85,7+ Day,64305,Wuckertview; New Jersey,Mon Jan 28 15:55:49 EST 2019,N/A,null,31454
+Small,114.73,3-5 Day,53472,Willianhaven; Vermont,Wed May 09 10:23:57 EDT 2018,Fragile,null,46446
+Envelope,436.03,3-5 Day,80281,Port Troyview; Nevada,Sat Aug 25 13:34:26 EDT 2018,Fragile,null,13158
+Envelope,218.21,3-5 Day,83452,Wuckertview; New Jersey,Thu Sep 27 16:49:20 EDT 2018,N/A,null,16975
+Envelope,59.5,1-Day,12363,Yostville; Georgia,Mon Jul 09 06:41:58 EDT 2018,N/A,null,24264
+Extra Large,203.75,7+ Day,47846,Wuckertview; New Jersey,Wed Oct 10 08:12:51 EDT 2018,N/A,null,62749
+Post Card,131.86,3-5 Day,91747,Wuckertview; New Jersey,Thu Jan 03 16:02:39 EST 2019,Hazardous,null,42025
+Envelope,42.3,3-5 Day,73691,New Danilo; Alabama,Sun Aug 26 15:55:47 EDT 2018,N/A,null,66224
+Medium,320.12,Overnight,81121,South Lonport; New Jersey,Wed Nov 21 11:07:32 EST 2018,Fragile,null,36869
+Extra Large,418.89,3-5 Day,53762,Wuckertview; New Jersey,Tue Nov 20 06:40:33 EST 2018,N/A,null,55532
+Post Card,129.36,7+ Day,86854,South Lonport; New Jersey,Sat Dec 01 11:05:05 EST 2018,N/A,null,94369
+Small,466.63,Overnight,97053,Yostville; Georgia,Sat Mar 03 10:09:21 EST 2018,N/A,null,60080
+Extra Large,442.27,Overnight,32699,Port Troyview; Nevada,Wed May 02 01:36:30 EDT 2018,Hazardous,null,41509
+Small,385.64,7+ Day,61212,Caryshire; Nebraska,Mon May 07 10:14:00 EDT 2018,N/A,null,13060
+Medium,35.05,Overnight,82480,Port Troyview; Nevada,Wed Mar 14 00:22:19 EDT 2018,N/A,null,33991
+Extra Small,309.75,Overnight,73945,West Williatown; Iowa,Wed Jul 25 17:53:35 EDT 2018,Hazardous,null,28284
+Extra Small,361.28,7+ Day,36591,New Danilo; Alabama,Tue Dec 11 01:43:58 EST 2018,Fragile,null,65216
+Large,137.01,3-5 Day,90937,Caryshire; Nebraska,Wed Feb 13 19:00:12 EST 2019,N/A,null,91324
+Small,58.13,1-Day,39364,Willianhaven; Vermont,Sat Jan 26 01:09:56 EST 2019,Hazardous,null,55905
+Extra Large,305.25,Overnight,73561,West Williatown; Iowa,Sun Oct 28 10:06:14 EDT 2018,N/A,null,47942
+Small,24.73,7+ Day,15202,Wuckertview; New Jersey,Mon Apr 23 06:11:24 EDT 2018,N/A,null,76828
+Extra Large,240.21,7+ Day,12762,Yostville; Georgia,Wed Jan 16 09:14:19 EST 2019,N/A,null,74551
+Small,458.14,7+ Day,88771,Yostville; Georgia,Tue Jan 22 00:03:25 EST 2019,N/A,null,97486
+Small,487.24,3-5 Day,54862,New Danilo; Alabama,Wed Feb 21 17:56:27 EST 2018,N/A,null,37198
+Post Card,386.71,3-5 Day,90532,Howellfort; Mississippi,Mon Feb 19 12:14:30 EST 2018,Hazardous,null,99682
+Extra Small,462.72,1-Day,96836,Port Stewart; South Dakota,Tue Nov 06 00:56:49 EST 2018,Hazardous,null,61318
+Medium,476.81,1-Day,85396,Wuckertview; New Jersey,Fri Mar 30 14:01:51 EDT 2018,Fragile,null,20927
+Large,294.91,3-5 Day,61445,Willianhaven; Vermont,Thu Oct 18 05:18:21 EDT 2018,N/A,null,52496
+Envelope,276.38,7+ Day,79802,Port Stewart; South Dakota,Tue Nov 27 08:15:45 EST 2018,Fragile,null,34029
+Small,267.8,Overnight,23449,New Danilo; Alabama,Wed Oct 31 11:49:25 EDT 2018,N/A,null,32416
+Small,347.2,Overnight,87721,Wuckertview; New Jersey,Fri Jun 08 20:28:47 EDT 2018,N/A,null,71466
+Small,422.57,7+ Day,31185,Willianhaven; Vermont,Fri Jan 04 12:52:02 EST 2019,N/A,null,12521
+Post Card,353.9,Overnight,29166,Caryshire; Nebraska,Tue Oct 02 13:02:12 EDT 2018,Fragile,null,28032
+Extra Large,391.94,3-5 Day,13840,West Williatown; Iowa,Sun Jul 29 03:05:16 EDT 2018,Fragile,null,96960
+Extra Large,418.03,3-5 Day,46730,Port Stewart; South Dakota,Thu Jan 03 13:47:39 EST 2019,N/A,null,33819
+Envelope,465.42,Overnight,94321,New Danilo; Alabama,Fri Mar 02 13:17:54 EST 2018,N/A,null,63637
+Extra Small,353.71,1-Day,39773,South Lonport; New Jersey,Sun Sep 02 15:45:46 EDT 2018,N/A,null,24154
+Medium,294.58,1-Day,84621,Howellfort; Mississippi,Mon Aug 27 12:29:13 EDT 2018,N/A,null,12362
+Medium,260.15,Overnight,17251,West Williatown; Iowa,Thu Jan 03 23:50:16 EST 2019,Hazardous,null,82522
+Large,65.89,3-5 Day,81524,Yostville; Georgia,Mon Mar 04 08:05:43 EST 2019,N/A,null,45088
+Large,236.36,3-5 Day,98055,West Williatown; Iowa,Mon Jun 25 04:11:05 EDT 2018,N/A,null,12356
+Extra Small,483.34,7+ Day,33869,New Danilo; Alabama,Fri Mar 30 17:33:56 EDT 2018,Fragile,null,18391
+Large,337.64,1-Day,52579,Howellfort; Mississippi,Mon Nov 12 16:49:26 EST 2018,Fragile,null,30666
+Extra Large,191.02,1-Day,22366,Port Troyview; Nevada,Tue Aug 14 18:45:03 EDT 2018,N/A,null,90331
+Small,484.67,1-Day,97859,Caryshire; Nebraska,Sun May 06 00:56:40 EDT 2018,N/A,null,91336
+Extra Small,249.51,Overnight,31967,Wuckertview; New Jersey,Sun Mar 25 01:44:28 EDT 2018,Fragile,null,93701
+Extra Large,364.84,7+ Day,25791,Howellfort; Mississippi,Mon Jun 18 12:21:53 EDT 2018,Fragile,null,31686
+Post Card,417.37,3-5 Day,12678,Port Stewart; South Dakota,Fri Jun 29 00:03:03 EDT 2018,Fragile,null,38392
+Extra Small,471.32,7+ Day,45855,Wuckertview; New Jersey,Wed Feb 20 06:41:44 EST 2019,Hazardous,null,98796
+Large,185.6,1-Day,92204,Port Troyview; Nevada,Wed Mar 28 19:19:08 EDT 2018,Hazardous,null,61015
+Large,360.74,3-5 Day,56570,Howellfort; Mississippi,Sun Jul 08 20:43:20 EDT 2018,Hazardous,null,29231
+Medium,391.86,1-Day,43375,Willianhaven; Vermont,Mon Nov 19 21:52:06 EST 2018,N/A,null,10697
+Large,331.16,7+ Day,79977,Wuckertview; New Jersey,Mon Dec 24 22:27:18 EST 2018,N/A,null,82013
+Medium,165.19,7+ Day,97951,Wuckertview; New Jersey,Fri Nov 16 15:10:48 EST 2018,Hazardous,null,10146
+Small,186.56,1-Day,39288,West Williatown; Iowa,Thu Jun 14 04:59:08 EDT 2018,Fragile,null,60722
+Small,216.78,7+ Day,70772,Yostville; Georgia,Sat Jun 09 13:29:56 EDT 2018,Fragile,null,86296
+Large,473.7,1-Day,87002,Willianhaven; Vermont,Tue Jun 19 23:14:57 EDT 2018,Fragile,null,76264
+Small,224.24,3-5 Day,40082,New Danilo; Alabama,Mon Jun 04 22:30:42 EDT 2018,N/A,null,76156
+Extra Large,416.61,7+ Day,70016,Willianhaven; Vermont,Sat Apr 14 06:52:49 EDT 2018,Hazardous,null,72388
+Envelope,254.31,Overnight,89529,Willianhaven; Vermont,Fri May 18 20:28:45 EDT 2018,N/A,null,85595
+Envelope,248.68,1-Day,71341,New Danilo; Alabama,Tue Oct 30 17:40:50 EDT 2018,N/A,null,98906
+Envelope,351.96,3-5 Day,92598,South Lonport; New Jersey,Mon Oct 01 11:50:38 EDT 2018,Fragile,null,92248
+Large,49.27,Overnight,87474,Port Stewart; South Dakota,Sun Jul 08 23:04:18 EDT 2018,Hazardous,null,83429
+Extra Small,471.07,Overnight,47994,Caryshire; Nebraska,Tue Jun 26 10:23:04 EDT 2018,N/A,null,48248
+Extra Large,97.65,3-5 Day,91118,Willianhaven; Vermont,Thu Nov 15 11:35:01 EST 2018,Fragile,null,15133
+Medium,163.56,7+ Day,36597,South Lonport; New Jersey,Sat Feb 24 23:52:51 EST 2018,Fragile,null,32535
+Large,442.27,3-5 Day,69421,Wuckertview; New Jersey,Mon Nov 05 17:32:35 EST 2018,N/A,null,36444
+Large,320.61,1-Day,88427,South Lonport; New Jersey,Tue May 08 05:25:25 EDT 2018,N/A,null,11892
+Post Card,70.72,3-5 Day,94168,Port Troyview; Nevada,Sun Jul 22 13:33:51 EDT 2018,Hazardous,null,39349
+Post Card,237.25,7+ Day,48365,West Williatown; Iowa,Tue Mar 13 21:55:29 EDT 2018,N/A,null,77558
+Medium,356.94,7+ Day,97455,Wuckertview; New Jersey,Wed Feb 21 22:50:34 EST 2018,Fragile,null,75326
+Medium,55.16,3-5 Day,42148,Willianhaven; Vermont,Wed Mar 07 18:41:39 EST 2018,Fragile,null,83423
+Large,482.27,1-Day,83553,Port Troyview; Nevada,Thu Mar 15 02:17:25 EDT 2018,Fragile,null,22635
+Medium,492.16,1-Day,21592,New Danilo; Alabama,Thu Dec 20 02:46:19 EST 2018,Fragile,null,36129
+Medium,464.63,7+ Day,96780,Port Stewart; South Dakota,Sun Feb 25 18:20:24 EST 2018,Hazardous,null,53315
+Small,432.36,Overnight,92311,Wuckertview; New Jersey,Sat Feb 16 09:50:38 EST 2019,N/A,null,78336
+Extra Small,477.42,3-5 Day,32765,Port Troyview; Nevada,Sat Mar 09 14:37:46 EST 2019,N/A,null,98196
+Large,304.63,Overnight,71552,Howellfort; Mississippi,Mon Nov 26 14:35:56 EST 2018,N/A,null,33325
+Medium,66.69,3-5 Day,75008,South Lonport; New Jersey,Fri Feb 02 15:25:22 EST 2018,N/A,null,24153
+Extra Small,21.87,7+ Day,68534,Wuckertview; New Jersey,Sun Sep 30 09:48:38 EDT 2018,N/A,null,27479
+Extra Small,71.05,Overnight,87050,Willianhaven; Vermont,Fri Feb 02 06:46:41 EST 2018,N/A,null,60816
+Medium,397.23,1-Day,76110,New Danilo; Alabama,Thu Nov 29 01:26:00 EST 2018,N/A,null,39560
+Small,326.66,3-5 Day,97166,West Williatown; Iowa,Wed May 16 15:22:35 EDT 2018,Fragile,null,94994
+Extra Small,44.79,3-5 Day,14941,Yostville; Georgia,Fri Oct 19 01:19:06 EDT 2018,N/A,null,92205
+Extra Small,302.98,1-Day,87087,Howellfort; Mississippi,Mon Feb 12 21:49:37 EST 2018,N/A,null,90165
+Medium,464.24,Overnight,66663,Port Troyview; Nevada,Wed Jun 06 11:00:54 EDT 2018,N/A,null,72709
+Post Card,306.8,7+ Day,95385,Port Troyview; Nevada,Tue Mar 27 18:27:56 EDT 2018,N/A,null,77150
+Large,370.04,Overnight,11468,Yostville; Georgia,Sat Feb 10 23:20:37 EST 2018,Hazardous,null,41125
+Post Card,380.7,Overnight,89068,New Danilo; Alabama,Tue Mar 13 15:27:40 EDT 2018,N/A,null,55511
+Post Card,285.84,1-Day,83177,Caryshire; Nebraska,Sun Mar 17 15:57:22 EDT 2019,N/A,null,29265
+Small,141.11,7+ Day,95415,Yostville; Georgia,Mon Sep 24 04:31:28 EDT 2018,Fragile,null,67778
+Envelope,74.07,3-5 Day,48131,Willianhaven; Vermont,Wed Feb 20 05:43:53 EST 2019,Fragile,null,67465
+Small,23.95,3-5 Day,13852,Yostville; Georgia,Wed Oct 31 20:00:54 EDT 2018,Hazardous,null,71871
+Medium,93.16,Overnight,12791,Caryshire; Nebraska,Thu Jun 21 15:32:29 EDT 2018,N/A,null,85947
+Post Card,194.57,Overnight,47892,Yostville; Georgia,Wed Nov 14 15:06:44 EST 2018,Fragile,null,95657
+Post Card,406.4,7+ Day,66341,Port Stewart; South Dakota,Sat Sep 22 05:40:09 EDT 2018,N/A,null,44913
+Small,398.38,7+ Day,17949,Howellfort; Mississippi,Fri Jun 01 19:50:39 EDT 2018,N/A,null,94267
+Extra Small,84.33,7+ Day,88456,Port Troyview; Nevada,Sat Jul 07 01:53:30 EDT 2018,N/A,null,67494
+Large,365.92,1-Day,11373,Port Stewart; South Dakota,Thu Mar 01 23:23:23 EST 2018,N/A,null,52480
+Extra Large,78.79,7+ Day,24510,Willianhaven; Vermont,Fri Dec 07 06:53:19 EST 2018,Hazardous,null,69999
+Extra Large,359.57,3-5 Day,17574,Caryshire; Nebraska,Tue Mar 27 15:48:30 EDT 2018,N/A,null,40689
+Extra Large,404.71,1-Day,53977,New Danilo; Alabama,Fri Sep 21 06:03:44 EDT 2018,Hazardous,null,22117
+Extra Large,77.51,7+ Day,38430,West Williatown; Iowa,Fri Mar 16 18:30:00 EDT 2018,N/A,null,73686
+Large,188.12,3-5 Day,67975,Willianhaven; Vermont,Sat Nov 17 02:06:13 EST 2018,Fragile,null,26543
+Envelope,214.6,7+ Day,25258,Yostville; Georgia,Mon Jan 21 00:35:55 EST 2019,N/A,null,54885
+Extra Large,50.92,3-5 Day,22788,West Williatown; Iowa,Fri Nov 30 18:36:35 EST 2018,Hazardous,null,56682
+Small,328.6,3-5 Day,44013,Willianhaven; Vermont,Wed Sep 26 11:51:50 EDT 2018,Fragile,null,87195
+Large,436.97,1-Day,38324,Wuckertview; New Jersey,Mon Jan 21 19:32:58 EST 2019,Fragile,null,68154
+Post Card,262.22,7+ Day,11358,Port Troyview; Nevada,Wed Mar 21 20:16:54 EDT 2018,N/A,null,78009
+Envelope,65.94,1-Day,51909,South Lonport; New Jersey,Fri Sep 14 20:14:03 EDT 2018,Hazardous,null,38562
+Extra Small,57.05,1-Day,51767,New Danilo; Alabama,Tue Jul 31 22:33:47 EDT 2018,Fragile,null,34019
+Envelope,242.6,7+ Day,26575,Caryshire; Nebraska,Sun May 06 01:22:24 EDT 2018,Fragile,null,38582
+Extra Large,187.05,Overnight,77405,West Williatown; Iowa,Sat Dec 22 13:09:53 EST 2018,N/A,null,44424
+Large,203.41,3-5 Day,12262,Wuckertview; New Jersey,Mon Nov 19 03:06:16 EST 2018,Hazardous,null,17161
+Small,236.92,3-5 Day,13189,New Danilo; Alabama,Fri Oct 19 14:26:13 EDT 2018,N/A,null,87968
+Extra Small,236.89,7+ Day,72045,Yostville; Georgia,Thu Nov 22 22:55:29 EST 2018,Hazardous,null,91750
+Envelope,340.23,3-5 Day,66597,New Danilo; Alabama,Thu Nov 01 02:22:38 EDT 2018,Hazardous,null,27120
+Post Card,471.06,7+ Day,76929,Yostville; Georgia,Sun Jun 03 02:21:54 EDT 2018,N/A,null,72920
+Small,306.49,1-Day,40640,Port Troyview; Nevada,Tue Feb 19 09:58:08 EST 2019,N/A,null,25676
+Post Card,268.2,3-5 Day,71637,Wuckertview; New Jersey,Mon Feb 19 06:27:45 EST 2018,Hazardous,null,87709
+Medium,382.5,3-5 Day,74096,West Williatown; Iowa,Mon Feb 12 22:04:23 EST 2018,Hazardous,null,98406
+Envelope,428.21,7+ Day,13899,Willianhaven; Vermont,Sun Aug 12 12:09:24 EDT 2018,N/A,null,59342
+Envelope,275.82,7+ Day,43760,Yostville; Georgia,Mon May 14 20:23:32 EDT 2018,N/A,null,20905
+Post Card,297.6,1-Day,19002,Port Troyview; Nevada,Mon Aug 13 15:07:13 EDT 2018,N/A,null,95209
+Extra Small,287.26,3-5 Day,21416,Caryshire; Nebraska,Tue Nov 27 00:21:01 EST 2018,N/A,null,21983
+Large,197.55,3-5 Day,11320,Caryshire; Nebraska,Wed Mar 13 20:56:57 EDT 2019,N/A,null,49002
+Envelope,245.43,1-Day,74844,Yostville; Georgia,Mon Nov 12 12:31:30 EST 2018,Fragile,null,60010
+Large,401.14,7+ Day,49658,South Lonport; New Jersey,Sun Dec 30 07:28:22 EST 2018,N/A,null,60263
+Envelope,329.95,Overnight,24999,South Lonport; New Jersey,Thu Jul 19 06:43:22 EDT 2018,Fragile,null,87794
+Extra Small,31.11,1-Day,61869,Caryshire; Nebraska,Mon Jul 23 21:17:51 EDT 2018,N/A,null,14232
+Envelope,242.08,Overnight,56079,Howellfort; Mississippi,Tue Feb 06 09:22:22 EST 2018,Hazardous,null,93679
+Envelope,250.16,7+ Day,88598,South Lonport; New Jersey,Fri Aug 17 16:20:38 EDT 2018,N/A,null,59255
+Medium,68.66,3-5 Day,99004,South Lonport; New Jersey,Sat Jun 02 02:44:41 EDT 2018,N/A,null,55039
+Extra Small,212.74,Overnight,18494,Willianhaven; Vermont,Tue Feb 12 09:40:44 EST 2019,Fragile,null,63881
+Extra Small,44.59,3-5 Day,89654,Caryshire; Nebraska,Wed Sep 26 02:16:34 EDT 2018,N/A,null,52767
+Large,279.38,7+ Day,56487,West Williatown; Iowa,Mon Feb 26 15:05:10 EST 2018,Fragile,null,81725
+Large,12.4,7+ Day,45086,Howellfort; Mississippi,Tue Jun 26 16:05:18 EDT 2018,Hazardous,null,19568
+Large,292.58,3-5 Day,51595,Howellfort; Mississippi,Sun Feb 24 21:02:49 EST 2019,Hazardous,null,14822
+Envelope,129.71,3-5 Day,66985,Wuckertview; New Jersey,Thu Mar 08 09:25:24 EST 2018,N/A,null,18294
+Large,234.74,Overnight,90348,Willianhaven; Vermont,Thu May 17 12:02:39 EDT 2018,N/A,null,92820
+Extra Small,408.57,1-Day,12400,Port Stewart; South Dakota,Fri May 04 14:45:23 EDT 2018,Fragile,null,53905
+Small,27.82,Overnight,32950,West Williatown; Iowa,Thu May 10 12:09:29 EDT 2018,N/A,null,92525
+Medium,227.7,7+ Day,49127,Caryshire; Nebraska,Wed Oct 10 09:39:54 EDT 2018,N/A,null,72880
+Post Card,225.95,7+ Day,75686,West Williatown; Iowa,Sat Aug 11 16:42:55 EDT 2018,Hazardous,null,81197
+Envelope,321.08,7+ Day,18794,Wuckertview; New Jersey,Thu Sep 20 04:40:15 EDT 2018,N/A,null,91472
+Small,321.65,3-5 Day,62399,West Williatown; Iowa,Mon May 14 17:30:55 EDT 2018,Hazardous,null,18821
+Envelope,270.13,Overnight,83153,Howellfort; Mississippi,Wed Nov 21 11:04:35 EST 2018,Hazardous,null,10438
+Small,456.05,1-Day,70994,Caryshire; Nebraska,Thu Feb 01 15:29:36 EST 2018,N/A,null,97626
+Small,64.45,7+ Day,59862,Willianhaven; Vermont,Sun Oct 21 06:05:51 EDT 2018,N/A,null,90301
+Large,447.36,7+ Day,94844,Port Troyview; Nevada,Sat Feb 16 22:29:27 EST 2019,N/A,null,86751
+Extra Large,96.54,3-5 Day,31838,Wuckertview; New Jersey,Wed Jun 06 08:03:16 EDT 2018,N/A,null,54530
+Extra Large,273.9,1-Day,60442,Willianhaven; Vermont,Thu Dec 20 23:54:51 EST 2018,N/A,null,74519
+Extra Small,369.91,7+ Day,38653,Howellfort; Mississippi,Thu Apr 05 07:03:46 EDT 2018,N/A,null,32466
+Large,114.06,3-5 Day,72234,South Lonport; New Jersey,Wed Aug 29 19:04:12 EDT 2018,Hazardous,null,12249
+Envelope,368.11,Overnight,39056,Port Stewart; South Dakota,Sun Dec 30 02:32:36 EST 2018,Hazardous,null,95687
+Extra Small,127.35,7+ Day,28447,Howellfort; Mississippi,Thu Aug 30 09:38:06 EDT 2018,Hazardous,null,32083
+Medium,64.43,Overnight,67993,Willianhaven; Vermont,Fri Jul 06 21:25:32 EDT 2018,N/A,null,92564
+Small,348.98,7+ Day,52726,Willianhaven; Vermont,Sat Oct 27 12:31:40 EDT 2018,Hazardous,null,62414
+Extra Large,195.13,7+ Day,60999,Willianhaven; Vermont,Sat Mar 23 17:54:34 EDT 2019,N/A,null,51425
+Post Card,350.13,1-Day,77573,Caryshire; Nebraska,Wed Oct 10 10:16:13 EDT 2018,Fragile,null,76880
+Extra Small,214.51,3-5 Day,52235,Wuckertview; New Jersey,Sat Apr 14 06:04:24 EDT 2018,Hazardous,null,61538
+Medium,438.35,1-Day,61859,Yostville; Georgia,Thu Mar 29 21:47:53 EDT 2018,Fragile,null,39972
+Extra Large,437.85,7+ Day,60772,South Lonport; New Jersey,Fri Nov 30 12:00:01 EST 2018,Hazardous,null,66910
+Post Card,147.93,3-5 Day,86903,Yostville; Georgia,Sat Dec 15 03:41:57 EST 2018,N/A,null,26746
+Large,63.35,3-5 Day,64458,Willianhaven; Vermont,Sun Feb 04 21:28:08 EST 2018,Fragile,null,62702
+Extra Small,259.54,7+ Day,66781,New Danilo; Alabama,Mon May 14 02:31:18 EDT 2018,N/A,null,36419
+Small,447.34,3-5 Day,38508,South Lonport; New Jersey,Thu Jan 31 17:43:45 EST 2019,Fragile,null,49466
+Extra Large,378.38,7+ Day,22994,West Williatown; Iowa,Thu Jun 28 08:45:25 EDT 2018,N/A,null,39573
+Extra Small,386.62,Overnight,69977,South Lonport; New Jersey,Thu Jan 24 21:04:37 EST 2019,Hazardous,null,72932
+Post Card,142.04,Overnight,41196,Howellfort; Mississippi,Fri Dec 28 15:48:18 EST 2018,N/A,null,43216
+Post Card,456.2,7+ Day,55318,Port Stewart; South Dakota,Wed Oct 03 16:50:55 EDT 2018,Fragile,null,41117
+Medium,98.21,7+ Day,88090,South Lonport; New Jersey,Tue Jun 26 08:56:16 EDT 2018,Hazardous,null,37699
+Medium,120.22,3-5 Day,56940,Yostville; Georgia,Mon Sep 24 05:33:11 EDT 2018,Hazardous,null,87725
+Envelope,408.28,Overnight,28146,West Williatown; Iowa,Sun Feb 04 09:49:03 EST 2018,N/A,null,26668
+Extra Small,77.47,3-5 Day,35682,Caryshire; Nebraska,Mon Dec 31 00:12:05 EST 2018,N/A,null,36019
+Large,491.18,1-Day,48177,New Danilo; Alabama,Wed Mar 07 21:16:11 EST 2018,N/A,null,28534
+Large,444.48,7+ Day,31615,New Danilo; Alabama,Thu Oct 25 18:33:16 EDT 2018,N/A,null,86030
+Small,315.72,3-5 Day,91630,West Williatown; Iowa,Mon Apr 30 07:28:17 EDT 2018,N/A,null,77801
+Extra Large,129.0,Overnight,44022,Wuckertview; New Jersey,Sun Apr 01 09:37:36 EDT 2018,N/A,null,77507
+Extra Small,18.27,7+ Day,82884,Port Troyview; Nevada,Sun Jul 15 00:21:15 EDT 2018,N/A,null,89803
+Medium,45.04,3-5 Day,31498,Port Stewart; South Dakota,Tue Dec 04 21:48:40 EST 2018,N/A,null,68620
+Small,125.96,3-5 Day,61333,Willianhaven; Vermont,Sat Oct 20 12:50:50 EDT 2018,N/A,null,49130
+Envelope,330.19,7+ Day,71124,Wuckertview; New Jersey,Sun Apr 29 11:34:38 EDT 2018,N/A,null,53276
+Medium,155.66,7+ Day,23770,New Danilo; Alabama,Mon Sep 03 12:00:03 EDT 2018,Hazardous,null,82031
+Large,101.78,3-5 Day,23798,New Danilo; Alabama,Sun Apr 08 13:28:13 EDT 2018,Fragile,null,66448
+Extra Large,404.32,7+ Day,55702,Yostville; Georgia,Sun Apr 22 19:54:33 EDT 2018,Fragile,null,19871
+Small,390.1,7+ Day,65313,Caryshire; Nebraska,Thu Aug 09 11:36:15 EDT 2018,Fragile,null,62867
+Extra Large,435.59,3-5 Day,16459,Wuckertview; New Jersey,Sun Feb 25 15:42:55 EST 2018,Hazardous,null,90552
+Small,257.75,1-Day,43269,Port Troyview; Nevada,Fri Mar 16 14:30:47 EDT 2018,N/A,null,15807
+Extra Large,209.41,1-Day,17418,West Williatown; Iowa,Sat Mar 24 18:07:39 EDT 2018,Hazardous,null,49453
+Large,350.84,3-5 Day,49070,West Williatown; Iowa,Tue Jun 26 16:22:45 EDT 2018,Fragile,null,88228
+Large,290.04,Overnight,73605,West Williatown; Iowa,Fri May 18 21:48:04 EDT 2018,N/A,null,30243
+Large,221.45,Overnight,96615,Port Troyview; Nevada,Fri Mar 30 11:50:21 EDT 2018,N/A,null,93191
+Envelope,171.03,1-Day,17028,Yostville; Georgia,Wed Feb 20 19:26:53 EST 2019,Hazardous,null,24330
+Small,344.93,1-Day,78168,Wuckertview; New Jersey,Mon Feb 12 06:06:37 EST 2018,Fragile,null,70266
+Medium,474.66,1-Day,72605,Port Troyview; Nevada,Sun Mar 17 07:40:05 EDT 2019,N/A,null,10010
+Extra Large,104.87,3-5 Day,74462,West Williatown; Iowa,Thu Jul 05 22:42:36 EDT 2018,Fragile,null,88029
+Large,466.77,1-Day,84242,Wuckertview; New Jersey,Thu Mar 14 00:16:59 EDT 2019,Hazardous,null,30583
+Post Card,489.13,1-Day,74366,Wuckertview; New Jersey,Fri Nov 23 23:46:15 EST 2018,Hazardous,null,46916
+Medium,451.77,3-5 Day,40273,West Williatown; Iowa,Tue Feb 26 20:34:06 EST 2019,N/A,null,37676
+Extra Large,334.4,1-Day,70695,Howellfort; Mississippi,Wed Mar 06 13:43:35 EST 2019,Hazardous,null,98024
+Large,421.56,7+ Day,73019,Willianhaven; Vermont,Sat Jun 02 07:11:40 EDT 2018,Hazardous,null,86782
+Post Card,213.3,7+ Day,57464,Yostville; Georgia,Mon Mar 18 12:54:02 EDT 2019,N/A,null,37995
+Extra Small,1.48,Overnight,75680,Caryshire; Nebraska,Fri Jan 25 07:19:55 EST 2019,N/A,null,94851
+Small,11.44,1-Day,30597,Port Troyview; Nevada,Sun Jul 29 04:54:36 EDT 2018,N/A,null,77837
+Extra Small,205.87,3-5 Day,99679,Port Stewart; South Dakota,Thu Apr 26 03:48:29 EDT 2018,Hazardous,null,27341
+Large,125.88,3-5 Day,28236,Howellfort; Mississippi,Wed Jun 20 09:55:22 EDT 2018,N/A,null,96903
+Envelope,43.86,7+ Day,33986,West Williatown; Iowa,Thu Feb 08 14:22:34 EST 2018,Hazardous,null,43077
+Large,88.59,7+ Day,31627,Port Stewart; South Dakota,Wed Aug 22 13:42:36 EDT 2018,Hazardous,null,74493
+Envelope,42.72,Overnight,40735,New Danilo; Alabama,Fri Jan 11 16:25:29 EST 2019,Hazardous,null,60882
+Large,185.83,Overnight,99284,Wuckertview; New Jersey,Wed Aug 29 06:35:09 EDT 2018,N/A,null,94309
+Large,318.97,Overnight,89034,Wuckertview; New Jersey,Tue Jun 12 21:08:38 EDT 2018,N/A,null,52280
+Envelope,465.23,1-Day,95943,Caryshire; Nebraska,Wed Apr 18 03:27:15 EDT 2018,N/A,null,75393
+Large,157.85,7+ Day,92614,Port Stewart; South Dakota,Wed Nov 28 17:18:32 EST 2018,Fragile,null,72699
+Extra Small,220.12,3-5 Day,42973,Wuckertview; New Jersey,Tue Feb 13 11:09:25 EST 2018,N/A,null,21220
+Medium,132.91,7+ Day,86697,Wuckertview; New Jersey,Fri Sep 28 19:57:59 EDT 2018,N/A,null,59586
+Large,372.83,7+ Day,91346,Caryshire; Nebraska,Thu Jul 05 12:24:19 EDT 2018,N/A,null,54465
+Large,222.74,Overnight,50326,Yostville; Georgia,Fri May 25 10:10:14 EDT 2018,N/A,null,78777
+Extra Large,186.52,Overnight,96843,Willianhaven; Vermont,Fri Aug 10 08:53:44 EDT 2018,N/A,null,56619
+Medium,163.02,1-Day,15261,Port Stewart; South Dakota,Tue Jun 19 12:13:17 EDT 2018,N/A,null,90258
+Large,122.78,3-5 Day,61698,Port Troyview; Nevada,Sun Feb 24 21:51:58 EST 2019,Hazardous,null,56880
+Post Card,463.86,3-5 Day,39387,Wuckertview; New Jersey,Wed Jul 11 21:48:01 EDT 2018,N/A,null,60515
+Extra Large,401.67,7+ Day,62819,Port Stewart; South Dakota,Sat Feb 24 01:50:48 EST 2018,Fragile,null,66137
+Large,416.84,Overnight,60322,Port Troyview; Nevada,Tue May 29 01:49:20 EDT 2018,N/A,null,80381
+Envelope,485.4,7+ Day,50246,Port Stewart; South Dakota,Fri Jan 04 21:42:25 EST 2019,Hazardous,null,54829
+Small,71.57,Overnight,71413,Yostville; Georgia,Wed Jun 27 20:46:37 EDT 2018,N/A,null,41567
+Extra Large,463.39,Overnight,85154,New Danilo; Alabama,Wed Oct 17 06:23:37 EDT 2018,N/A,null,99074
+Extra Large,279.38,7+ Day,20019,Caryshire; Nebraska,Sun Sep 16 11:53:32 EDT 2018,Hazardous,null,94798
+Large,308.57,1-Day,16260,New Danilo; Alabama,Wed Nov 14 00:41:17 EST 2018,N/A,null,32929
+Medium,387.43,Overnight,16048,South Lonport; New Jersey,Tue Mar 13 19:17:56 EDT 2018,Fragile,null,72169
+Small,24.58,3-5 Day,71573,Wuckertview; New Jersey,Mon Oct 08 01:58:39 EDT 2018,N/A,null,87600
+Medium,333.85,1-Day,61211,Yostville; Georgia,Mon Aug 27 03:30:31 EDT 2018,Hazardous,null,16265
