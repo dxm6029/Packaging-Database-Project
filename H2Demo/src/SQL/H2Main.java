@@ -183,7 +183,7 @@ public class H2Main {
 		//System.exit(0);
 	}
 
-	public static String getPassword(String email){
+	public static boolean getPassword(String email, String pass){
 		H2Main demo = new H2Main();
 		String location = "./h2demo/h2demo";
 		String user = "me";
@@ -191,7 +191,7 @@ public class H2Main {
 
 		//Create the database connections, basically makes the database
 		demo.createConnection(location, user, password);
-		return CustomerTable.getPassword(email, demo.getConnection());
+		return CustomerTable.getPassword(email, demo.getConnection()).equals(pass);
 	}
 
 }
