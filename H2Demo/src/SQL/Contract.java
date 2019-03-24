@@ -1,3 +1,5 @@
+package SQL;
+
 public class Contract{
 
     int paymentID;

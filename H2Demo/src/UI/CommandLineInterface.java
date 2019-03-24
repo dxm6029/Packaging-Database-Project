@@ -3,6 +3,7 @@ package UI;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.ArrayList;
+import SQL.*;
 
 public class CommandLineInterface {
     private Scanner kboard;
@@ -11,7 +12,7 @@ public class CommandLineInterface {
 
     public CommandLineInterface() {
         this.kboard = new Scanner(System.in);
-        this.state = UIState.UNKNOWN_USER_HOME;
+        this.state = UIState.CUSTOMER_HOME;
         this.user = new User();
     }
 
@@ -145,11 +146,9 @@ public class CommandLineInterface {
     }
 
     private int inputNumber() {
-        int num = -98765; // Should always be initialized to continue, but Java doesn't believe me
-
-        while (kboard.hasNextInt()) {
+        while (!kboard.hasNextInt()) {
             try {
-                num = kboard.nextInt();
+                kboard.nextInt();
             }
             catch (InputMismatchException e) {
                 System.out.print("Invalid input. Please enter a number: ");
@@ -157,6 +156,7 @@ public class CommandLineInterface {
             }
         }
 
+        int num = kboard.nextInt();
         kboard.nextLine();
 
         return num;
@@ -182,18 +182,18 @@ public class CommandLineInterface {
         int stepNum = 1;
 
         // Package Info
-        double weight;
+        double weight = -1;
 
         // Recipient Info
         String firstName;
         String lastName;
         String streetName;
-        int streetNum;
+        int streetNum = -1;
         String aptNum;
         String city;
         String state;
         String country;
-        int zip;
+        int zip = -1;
 
         // Payment Info
         String paymentType;
@@ -213,13 +213,14 @@ public class CommandLineInterface {
 
                     while (!kboard.hasNextDouble()) {
                         try {
-                            weight = kboard.nextDouble();
+                            kboard.nextDouble();
                         }
                         catch (InputMismatchException e) {
                             System.out.println("Invalid Input. Please enter a number.");
                             kboard.nextLine();
                         }
                     }
+                    weight = kboard.nextDouble();
                     kboard.nextLine(); // Need to consume newline before continuing
 
                     System.out.println("Package Weight Entered");
@@ -297,8 +298,7 @@ public class CommandLineInterface {
             }
         }
 
-        //TODO: Make Transaction
-        //TODO: Make MakesTransaction
+
         //TODO: Make Package
         //TODO: Make Payment
         //TODO: Display Transaction Info
