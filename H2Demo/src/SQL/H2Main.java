@@ -18,7 +18,6 @@ public class H2Main {
 
 	//The connection to the database
 	private Connection conn;
-	public static H2Main demo = new H2Main();
 
 	
 	/**
@@ -74,7 +73,7 @@ public class H2Main {
 	 */
 	public static void main(String[] args) {
 
-		
+		H2Main demo = new H2Main();
 		//Hard drive location of the database
 		String location = "./h2demo/h2demo";
 		String user = "me";
@@ -181,11 +180,18 @@ public class H2Main {
 			e.printStackTrace();
 		}
 		System.out.println(CustomerTable.getPassword("angelena.gulgowski@hotmail.com", demo.getConnection()));
-		System.exit(0);
+		//System.exit(0);
 	}
 
-	public static String getPassword(String email){
-		return CustomerTable.getPassword(email, demo.getConnection());
+	public static boolean getPassword(String email, String pass){
+		H2Main demo = new H2Main();
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
+
+		//Create the database connections, basically makes the database
+		demo.createConnection(location, user, password);
+		return CustomerTable.getPassword(email, demo.getConnection()).equals(pass);
 	}
 
 }

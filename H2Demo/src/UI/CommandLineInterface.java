@@ -17,7 +17,7 @@ public class CommandLineInterface {
 
     public CommandLineInterface() {
         this.kboard = new Scanner(System.in);
-        this.state = UIState.WORKER_HOME;
+        this.state = UIState.UNKNOWN_USER_HOME;
         this.user = new User();
     }
 
@@ -344,9 +344,7 @@ public class CommandLineInterface {
             }
         }
 
-        System.out.println("Weight: " + weight + " lbs.");
-        System.out.println("First Name: " + firstName);
-        System.out.println("Address: " + streetNum + " " + streetName + ", " + city + ", " + state + " " + zip + " " + country);
+
         //TODO: Make Package
         //TODO: Make Payment
         //TODO: Display Transaction Info
