@@ -77,7 +77,7 @@ public class CustomerTable {
 			String q = "DROP TABLE IF EXISTS customer";
 			Statement stmtt = conn.createStatement();
 			stmtt.execute(q);
-			String query = "CREATE TABLE IF NOT EXISTS customer(fName VARCHAR(255),lName VARCHAR(255),customerID INT PRIMARY KEY,email VARCHAR(50),streetNumber VARCHAR(50),streetName VARCHAR(225),apptNum VARCHAR(50),city VARCHAR(100), state VARCHAR(100), zip VARCHAR(100))";
+			String query = "CREATE TABLE IF NOT EXISTS customer(fName VARCHAR(255),lName VARCHAR(255),customerID INT PRIMARY KEY,email VARCHAR(50),streetNumber VARCHAR(50),streetName VARCHAR(225),apptNum VARCHAR(50),city VARCHAR(100), state VARCHAR(100), country VARCHAR(100), zip VARCHAR(100))";
 			
 			/**
 			 * Create a query and execute
@@ -94,14 +94,14 @@ public class CustomerTable {
 	 *
 	 */
 	public static void addCustomer(Connection conn, String fname, String lname, int custID, String email, int streetNum,
-								 String streetName, String apptNum, String city, String state, int zip){
+								 String streetName, String apptNum, String city, String state, String country, String zip){
 		
 		/**
 		 * SQL insert statement
 		 */
 		String query = String.format("INSERT INTO customer "
-						+ "VALUES(\'%s\', \'%s\',%d,\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\');",
-						fname, lname, custID, email, streetNum, streetName, apptNum, city, state, zip );
+						+ "VALUES(\'%s\', \'%s\',%d,\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\', \'%s\', \'%s\');",
+						fname, lname, custID, email, streetNum, streetName, apptNum, city, state, country, zip );
 		try {
 			/**
 			 * create and execute the query
@@ -132,7 +132,7 @@ public class CustomerTable {
 		 * to the columns to ad dit to
 		 */
 		sb.append("INSERT INTO customer (fname, lname, customerID, email, streetNumber, streetName, apptNum, city, " +
-				"state, zip) VALUES");
+				"state, country, zip) VALUES");
 		
 		/**
 		 * For each person append a (id, first_name, last_name, MI) tuple
@@ -143,9 +143,9 @@ public class CustomerTable {
 		 */
 		for(int i = 0; i < people.size(); i++){
 			Customer p = people.get(i);
-			sb.append(String.format("(\'%s\', \'%s\', %d, \'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\')",
+			sb.append(String.format("(\'%s\', \'%s\', %d, \'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\')",
 					p.getFnameName(), p.getLnameName(), p.getCustomerID(), p.getEmail(), p.getStreetNumber(),
-					p.getStreetName(), p.getApptNum(), p.getCity(), p.getState(), p.getZip()));
+					p.getStreetName(), p.getApptNum(), p.getCity(), p.getState(), p.getCountry(), p.getZip()));
 			if( i != people.size()-1){
 				sb.append(",");
 			}
@@ -246,7 +246,7 @@ public class CustomerTable {
 			ResultSet result = stmt.executeQuery(query);
 			
 			while(result.next()){
-				System.out.printf("customer %s,%s,%d,%s,%s,%s,%s,%s,%s,%s\n",
+				System.out.printf("customer %s,%s,%d,%s,%s,%s,%s,%s,%s,%s,%s\n",
 						          result.getString(1),
 						          result.getString(2),
 						          result.getInt(3),
@@ -256,11 +256,38 @@ public class CustomerTable {
 								  result.getString(7),
 								  result.getString(8),
 								  result.getString(9),
-								  result.getString(10));
+								  result.getString(10),
+							      result.getString(11));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
+	}
+	public static String getPassword(String email, Connection conn){
+		String password = "No password found!";
+		ArrayList<String> columns = new ArrayList<String>();
+		columns.add("CustomerID");
+
+		/**
+		 * Conditionals
+		 */
+		ArrayList<String> whereClauses = new ArrayList<String>();
+		whereClauses.add("email = \'" + email +"\'");
+		/**
+		 * query and get the result set
+		 *
+		 * parse the result set and print it
+		 *
+		 * Notice not all of the columns are here because
+		 * we limited what to show in the query
+		 */
+		ResultSet results2 = CustomerTable.queryCustomerTable(
+				conn,
+				columns,
+				whereClauses);
+		try{
+			results2.next();
+		password =  results2.getString(1);}catch(Exception e){System.out.print(e.toString());}
+		return password;
 	}
 }
