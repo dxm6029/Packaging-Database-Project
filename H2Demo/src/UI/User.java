@@ -18,10 +18,11 @@ public class User {
             System.out.print("Password: ");
             customerID = kboard.nextLine();
 
-            if(H2Main.getPassword(userName).equals(customerID)){
+            if(H2Main.getPassword(userName,customerID)){
                 System.out.println("Welcome to 4Squared!");
+                return UIState.CUSTOMER_HOME;
             }else{
-                System.out.println("fuck off");
+                System.out.println("USERNAME AND/OR PASSWORD INVALID");
             }
 
 

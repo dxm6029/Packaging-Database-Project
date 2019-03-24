@@ -17,7 +17,7 @@ public class CommandLineInterface {
 
     public CommandLineInterface() {
         this.kboard = new Scanner(System.in);
-        this.state = UIState.CUSTOMER_HOME;
+        this.state = UIState.UNKNOWN_USER_HOME;
         this.user = new User();
     }
 
