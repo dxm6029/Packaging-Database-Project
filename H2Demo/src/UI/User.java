@@ -1,10 +1,13 @@
 package UI;
 
+import SQL.H2Main;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class User {
     private String userName;
+    private String customerID;
 
     public void setUserName(String userName) {
         this.userName = userName;
@@ -20,7 +23,15 @@ public class User {
             setUserName(kboard.nextLine());
 
             System.out.print("Password: ");
-            String pass = kboard.nextLine();
+            customerID = kboard.nextLine();
+
+            if(H2Main.getPassword(userName).equals(customerID)){
+                System.out.println("Welcome to 4Squared!");
+            }else{
+                System.out.println("fuck off");
+            }
+
+
 
             // TODO: Check login credentials in SQL
 
@@ -29,7 +40,7 @@ public class User {
             loggedIn = true;
         }
 
-        return UIState.CUSTOMER_HOME;
+        return UIState.UNKNOWN_USER_HOME;
     }
 
     public UIState register(Scanner kboard) {
