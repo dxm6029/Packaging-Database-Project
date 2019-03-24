@@ -64,3 +64,8 @@ org.h2.jdbc.JdbcSQLException: No data is available [2000-197]
 org.h2.jdbc.JdbcSQLException: No data is available [2000-197]
 2019-03-24 15:27:30 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLException: No data is available [2000-197]
+2019-03-24 15:46:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT FNAME, LNAME, COUNTRY FROM CUSTOMER WHERE COUNTRY NOT =[*] 'United States'; "; expected "NULL, LIKE, ILIKE, REGEXP, IS, IN, BETWEEN"; SQL statement:
+SELECT fName, lName, Country FROM customer WHERE Country NOT = 'United States'; [42001-199]
+2019-03-24 15:47:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No data is available [2000-199]

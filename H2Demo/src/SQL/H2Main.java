@@ -180,7 +180,7 @@ public class H2Main {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		System.out.println(CustomerTable.getPassword("angelena.gulgowski@hotmail.com", demo.getConnection()));
+		System.out.println(CustomerTable.getPassword("althea.lueilwitz@hotmail.com", demo.getConnection()));
 		System.exit(0);
 	}
 
