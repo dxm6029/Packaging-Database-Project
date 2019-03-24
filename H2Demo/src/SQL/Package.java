@@ -8,19 +8,19 @@ public class Package {
     double weight;
     String deliveryType;
     int packageID;
-    ArrayList<String> location;
+    String location;
     String startedDelivery;
     String extraInfo;
     String deliveryTime;
     int transactionID;
 
-    public Package(String packageType, double weight, String deliveryType, int packageID, String startedDelivery,
+    public Package(String packageType, double weight, String deliveryType, int packageID, String location, String startedDelivery,
                    String extraInfo, String deliveryTime, int transactionID){
         this.packageType = packageType;
         this.weight = weight;
         this.deliveryType = deliveryType;
         this.packageID = packageID;
-        this.location = new ArrayList<>();
+        this.location = location;
         this.startedDelivery = startedDelivery;
         this.extraInfo = extraInfo;
         this.deliveryTime = deliveryTime;
@@ -33,10 +33,11 @@ public class Package {
         this.weight = Double.parseDouble(data[1]);
         this.deliveryType = data[2];
         this.packageID = Integer.parseInt(data[3]);
-        this.startedDelivery = data[4];
-        this.extraInfo = data[5];
-        this.deliveryTime = data[6];
-        this.transactionID = Integer.parseInt(data[7]);
+        this.location = data[4];
+        this.startedDelivery = data[5];
+        this.extraInfo = data[6];
+        this.deliveryTime = data[7];
+        this.transactionID = Integer.parseInt(data[8]);
     }
 
 
@@ -72,11 +73,11 @@ public class Package {
         this.packageID = packageID;
     }
 
-    public ArrayList<String> getLocation() {
+    public String getLocation() {
         return location;
     }
 
-    public void setLocation(ArrayList<String> location) {
+    public void setLocation(String location) {
         this.location = location;
     }
 
