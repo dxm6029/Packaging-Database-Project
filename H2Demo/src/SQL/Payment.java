@@ -1,3 +1,5 @@
+package SQL;
+
 import java.util.ArrayList;
 
 public class Payment {
