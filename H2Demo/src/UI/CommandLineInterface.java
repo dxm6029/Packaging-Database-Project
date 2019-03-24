@@ -24,6 +24,8 @@ public class CommandLineInterface {
     public void runCLI() {
         String option;
 
+        System.out.println("Welcome to Four Squared!");
+
         do {
             ArrayList<String> options = getStateOptions(state);
             printOptions(options);
@@ -83,10 +85,10 @@ public class CommandLineInterface {
                     case "LOGOUT":
                         return user.logout();
                     case "SCAN":
-                        //scanPackage(packageId);
-                        break;
+                        scanPackages();
+                        return UIState.WORKER_HOME;
                     case "DELIVER":
-                        //markDelivered(packageId);
+                        markDelivered();
                 }
                 break;
             case PACKAGES_LIST:
@@ -108,6 +110,45 @@ public class CommandLineInterface {
         }
 
         return state;
+    }
+
+    private void scanPackages() {
+        int packageId;
+
+        System.out.println("Scanning Packages");
+
+        while (true) {
+            System.out.print("Enter PackageID: ");
+            packageId = inputNumber();
+
+            //TODO: Scan package
+
+            System.out.print("Enter 'Y' to scan another package or anything else to stop: ");
+            if (!kboard.nextLine().equalsIgnoreCase("Y")) {
+                break;
+            }
+
+            System.out.println("Scanning another package");
+        }
+    }
+
+    private void markDelivered() {
+        int packageId;
+
+        System.out.println("Marking Packages Deliverd");
+        while (true) {
+            System.out.print("Enter PackageID: ");
+            packageId = inputNumber();
+
+            //TODO: Scan package
+
+            System.out.print("Enter 'Y' to deliver another package or anything else to stop: ");
+            if (!kboard.nextLine().equalsIgnoreCase("Y")) {
+                break;
+            }
+
+            System.out.println("Marking Another Package");
+        }
     }
 
     private ArrayList<String> getStateOptions(UIState state) {
@@ -150,7 +191,7 @@ public class CommandLineInterface {
         //TODO
     }
 
-    private int inputNumber() {
+    public int inputNumber() {
         while (!kboard.hasNextInt()) {
             try {
                 kboard.nextInt();
@@ -190,24 +231,24 @@ public class CommandLineInterface {
         double weight = -1;
 
         // Recipient Info
-        String firstName;
-        String lastName;
-        String streetName;
-        int streetNum = -1;
-        String aptNum;
-        String city;
-        String state;
-        String country;
-        int zip = -1;
+        String firstName = "";
+        String lastName = "";
+        String streetName = "";
+        String streetNum = "";
+        String aptNum = "";
+        String city = "";
+        String state = "";
+        String country = "";
+        String zip = "";
 
         // Payment Info
-        String paymentType;
+        String paymentType = "";
         // If credit card
-        String cardholderName;
-        int cardNumber;
-        int expMonth;
-        int expYear;
-        int cvv;
+        String cardholderName = "";
+        int cardNumber = -1;
+        int expMonth = -1;
+        int expYear = -1;
+        int cvv = -1;
 
         while (stepNum < 4) {
             switch (stepNum) {
@@ -252,11 +293,11 @@ public class CommandLineInterface {
                     System.out.print("Last Name: ");
                     lastName = kboard.nextLine();
 
+                    System.out.print("Street Number: ");
+                    streetNum = kboard.nextLine();
+
                     System.out.print("Street Name: ");
                     streetName = kboard.nextLine();
-
-                    System.out.print("Street Number: ");
-                    streetNum = inputNumber();
 
                     System.out.print("Apt. Number: ");
                     aptNum = kboard.nextLine();
@@ -271,13 +312,13 @@ public class CommandLineInterface {
                     country = kboard.nextLine();
 
                     System.out.print("Zip Code: ");
-                    zip = inputNumber();
+                    zip = kboard.nextLine();
 
                     System.out.println("Recipient Info Entered");
                     stepNum = nextStep(stepNum);
                     break;
                 case 3:
-                    System.out.println("Choose Payment Option (Contract, Credit, Prepaid): ");
+                    System.out.print("Choose Payment Option (Contract, Credit, Prepaid): ");
                     paymentType = kboard.nextLine();
 
                     if (paymentType.equalsIgnoreCase("Credit")) {
