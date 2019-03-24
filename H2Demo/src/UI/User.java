@@ -1,9 +1,12 @@
 package UI;
 
+import SQL.H2Main;
+
 import java.util.Scanner;
 
 public class User {
     private String userName;
+    private String customerID;
 
     public UIState login (Scanner kboard) {
         boolean loggedIn = false;
@@ -13,7 +16,15 @@ public class User {
             userName = kboard.nextLine();
 
             System.out.print("Password: ");
-            String pass = kboard.nextLine();
+            customerID = kboard.nextLine();
+
+            if(H2Main.getPassword(userName).equals(customerID)){
+                System.out.println("Welcome to 4Squared!");
+            }else{
+                System.out.println("fuck off");
+            }
+
+
 
             // TODO: Check login credentials in SQL
 
