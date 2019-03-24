@@ -5,7 +5,7 @@ public class Transaction {
     int transactionID;
     String rfName;
     String lrName;
-    int streetNum;
+    String streetNum;
     String streetName;
     String apptNum;
     String city;
@@ -15,7 +15,7 @@ public class Transaction {
 
 
 
-    public Transaction(int transactionID, String rfName, String lrName, int streetNum, String streetName,
+    public Transaction(int transactionID, String rfName, String lrName, String streetNum, String streetName,
             String apptNum, String city, String state, String country, String zip){
         this.transactionID = transactionID;
         this.rfName = rfName;
@@ -33,7 +33,7 @@ public class Transaction {
         this.transactionID = Integer.parseInt(data[0]);
         this.rfName = data[1];
         this.lrName = data[2];
-        this.streetNum = Integer.parseInt(data[3]);
+        this.streetNum = data[3];
         this.streetName = data[4];
         this.apptNum = data[5];
         this.city = data[6];
@@ -66,11 +66,11 @@ public class Transaction {
         this.lrName = lrName;
     }
 
-    public int getStreetNum() {
+    public String getStreetNum() {
         return streetNum;
     }
 
-    public void setStreetNum(int streetNum) {
+    public void setStreetNum(String streetNum) {
         this.streetNum = streetNum;
     }
 
