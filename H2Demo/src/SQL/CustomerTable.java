@@ -39,6 +39,7 @@ public class CustomerTable {
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(fileName));
 			String line;
+			br.readLine();
 			while((line = br.readLine()) != null){
 				String[] split = line.split(",");
 				customers.add(new Customer(split));
@@ -60,6 +61,7 @@ public class CustomerTable {
 		 * 
 		 * execute only returns if it was successful
 		 */
+		System.out.print(sql);
 		Statement stmt = conn.createStatement();
 	    stmt.execute(sql);
 	}
@@ -75,7 +77,7 @@ public class CustomerTable {
 			String q = "DROP TABLE IF EXISTS customer";
 			Statement stmtt = conn.createStatement();
 			stmtt.execute(q);
-			String query = "CREATE TABLE IF NOT EXISTS customer(fName VARCHAR(255),lName VARCHAR(255),customerID INT PRIMARY KEY,email VARCHAR(50),streetNumber INT,streetName VARCHAR(225),apptNum VARCHAR(50),city VARCHAR(100), state VARCHAR(100), zip INT)";
+			String query = "CREATE TABLE IF NOT EXISTS customer(fName VARCHAR(255),lName VARCHAR(255),customerID INT PRIMARY KEY,email VARCHAR(50),streetNumber VARCHAR(50),streetName VARCHAR(225),apptNum VARCHAR(50),city VARCHAR(100), state VARCHAR(100), zip VARCHAR(100))";
 			
 			/**
 			 * Create a query and execute
@@ -98,12 +100,13 @@ public class CustomerTable {
 		 * SQL insert statement
 		 */
 		String query = String.format("INSERT INTO customer "
-						+ "VALUES(\'%s\', \'%s\',%d,\'%s\',%d,\'%s\',\'%s\',\'%s\',\'%s\',%d);",
+						+ "VALUES(\'%s\', \'%s\',%d,\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\');",
 						fname, lname, custID, email, streetNum, streetName, apptNum, city, state, zip );
 		try {
 			/**
 			 * create and execute the query
 			 */
+			System.out.println(query);
 			Statement stmt = conn.createStatement();
 			stmt.execute(query);
 		} catch (SQLException e) {
@@ -140,7 +143,7 @@ public class CustomerTable {
 		 */
 		for(int i = 0; i < people.size(); i++){
 			Customer p = people.get(i);
-			sb.append(String.format("(\'%s\', \'%s\', %d,\'%s\',%d,\'%s\',\'%s\',\'%s\',\'%s\',%d)",
+			sb.append(String.format("(\'%s\', \'%s\', %d, \'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\')",
 					p.getFnameName(), p.getLnameName(), p.getCustomerID(), p.getEmail(), p.getStreetNumber(),
 					p.getStreetName(), p.getApptNum(), p.getCity(), p.getState(), p.getZip()));
 			if( i != people.size()-1){
@@ -243,17 +246,17 @@ public class CustomerTable {
 			ResultSet result = stmt.executeQuery(query);
 			
 			while(result.next()){
-				System.out.printf("customer %s,%s, %d,%s,%d,%s,%s,%s,%s,%d\n",
+				System.out.printf("customer %s,%s,%d,%s,%s,%s,%s,%s,%s,%s\n",
 						          result.getString(1),
 						          result.getString(2),
 						          result.getInt(3),
 						          result.getString(4),
-								  result.getInt(5),
+								  result.getString(5),
 								  result.getString(6),
 								  result.getString(7),
 								  result.getString(8),
 								  result.getString(9),
-								  result.getInt(10));
+								  result.getString(10));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -13,7 +13,7 @@ public class Customer {
 	String lname;
 	int customerID;
 	String email;
-	int streetNumber;
+	String streetNumber;
 	String streetName;
 	String apptNum;
 	String city;
@@ -21,7 +21,7 @@ public class Customer {
 	String country;
 	String zip;
 
-	public Customer(String fname, String lname, int custID, String email, int streetNum, String streetName, String apptNum,
+	public Customer(String fname, String lname, int custID, String email, String streetNum, String streetName, String apptNum,
 					String city, String state, String country, String zip){
 		this.fname = fname;
 		this.lname = lname;
@@ -41,7 +41,7 @@ public class Customer {
 		this.lname = data[1];
 		this.customerID = Integer.parseInt(data[2]);
 		this.email = data[3];
-		this.streetNumber = Integer.parseInt(data[4]);
+		this.streetNumber = data[4];
 		this.streetName = data[5];
 		this.apptNum = data[6];
 		this.city = data[7];
@@ -82,11 +82,11 @@ public class Customer {
 		this.email = email;
 	}
 
-	public int getStreetNumber() {
+	public String getStreetNumber() {
 		return streetNumber;
 	}
 
-	public void setStreetNumber(int streetNumber) {
+	public void setStreetNumber(String streetNumber) {
 		this.streetNumber = streetNumber;
 	}
 

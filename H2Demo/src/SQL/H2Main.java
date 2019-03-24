@@ -91,7 +91,7 @@ public class H2Main {
 			CustomerTable.createCustomerTable(demo.getConnection());
 			CustomerTable.populateCustomerTableFromCSV(
 					demo.getConnection(),
-					"csv/CustomerEx.csv");
+					"H2Demo/csv/Customer.csv");
 			
 			/**
 			 * Just displays the table
@@ -119,17 +119,17 @@ public class H2Main {
 			 * you want
 			 */
 			while(results.next()){
-				System.out.printf("Customer: %s, %s,%d,%s,%d,%s,%s,%s,%s,%d\n",
+				System.out.printf("Customer: %s, %s,%d,%s,%s,%s,%s,%s,%s,%s\n",
 						          results.getString(1),
 						          results.getString(2),
 						          results.getInt(3),
 						          results.getString(4),
-						          results.getInt(5),
+						          results.getString(5),
 									results.getString(6),
 							      results.getString(7),
 							      results.getString(8),
 							      results.getString(9),
-							      results.getInt(10));
+							      results.getString(10));
 
 			}
 			/**
@@ -169,9 +169,9 @@ public class H2Main {
                     columns,
                     whereClauses);
 			while(results2.next()){
-				System.out.printf("Customer: %s, %d",
+				System.out.printf("Customer: %s, %s",
 					results2.getString(1),
-					results2.getInt(2));
+					results2.getString(2));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
