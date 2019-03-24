@@ -17,10 +17,10 @@ public class Customer {
 	String city;
 	String state;
 	String country;
-	int zip;
+	String zip;
 
 	public Customer(String fname, String lname, int custID, String email, int streetNum, String streetName, String apptNum,
-					String city, String state, String country, int zip){
+					String city, String state, String country, String zip){
 		this.fname = fname;
 		this.lname = lname;
 		this.customerID = custID;
@@ -45,7 +45,7 @@ public class Customer {
 		this.city = data[7];
 		this.state = data[8];
 		this.country = data[9];
-		this.zip = Integer.parseInt(data[10]);
+		this.zip = data[10];
 	}
 
 	public String getFnameName() {
@@ -120,11 +120,11 @@ public class Customer {
 		this.state = state;
 	}
 
-	public int getZip() {
+	public String getZip() {
 		return zip;
 	}
 
-	public void setZip(int zip) {
+	public void setZip(String zip) {
 		this.zip = zip;
 	}
 
