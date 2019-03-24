@@ -1,20 +1,22 @@
+package SQL;
+
 public class Transaction {
 
     int transactionID;
     String rfName;
     String lrName;
-    int streetNum;
+    String streetNum;
     String streetName;
     String apptNum;
     String city;
     String state;
     String country;
-    int zip;
+    String zip;
 
 
 
-    public Transaction(int transactionID, String rfName, String lrName, int streetNum, String streetName,
-            String apptNum, String city, String state, String country, int zip){
+    public Transaction(int transactionID, String rfName, String lrName, String streetNum, String streetName,
+            String apptNum, String city, String state, String country, String zip){
         this.transactionID = transactionID;
         this.rfName = rfName;
         this.lrName = lrName;
@@ -31,13 +33,13 @@ public class Transaction {
         this.transactionID = Integer.parseInt(data[0]);
         this.rfName = data[1];
         this.lrName = data[2];
-        this.streetNum = Integer.parseInt(data[3]);
+        this.streetNum = data[3];
         this.streetName = data[4];
         this.apptNum = data[5];
         this.city = data[6];
         this.state = data[7];
         this.country = data[8];
-        this.zip = Integer.parseInt(data[9]);
+        this.zip = data[9];
     }
 
     public int getTransactionID() {
@@ -64,11 +66,11 @@ public class Transaction {
         this.lrName = lrName;
     }
 
-    public int getStreetNum() {
+    public String getStreetNum() {
         return streetNum;
     }
 
-    public void setStreetNum(int streetNum) {
+    public void setStreetNum(String streetNum) {
         this.streetNum = streetNum;
     }
 
@@ -112,11 +114,11 @@ public class Transaction {
         this.country = country;
     }
 
-    public int getZip() {
+    public String getZip() {
         return zip;
     }
 
-    public void setZip(int zip) {
+    public void setZip(String zip) {
         this.zip = zip;
     }
 }

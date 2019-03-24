@@ -1,7 +1,9 @@
 package UI;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.ArrayList;
+import SQL.*;
 
 public class CommandLineInterface {
     private Scanner kboard;
@@ -10,7 +12,7 @@ public class CommandLineInterface {
 
     public CommandLineInterface() {
         this.kboard = new Scanner(System.in);
-        this.state = UIState.UNKNOWN_USER_HOME;
+        this.state = UIState.CUSTOMER_HOME;
         this.user = new User();
     }
 
@@ -49,8 +51,8 @@ public class CommandLineInterface {
                 switch (option.toUpperCase()) {
                     case "TRACK":
                         System.out.print("Enter PackageID: ");
-                        String packageId = kboard.nextLine();
-                        getPackageInfo(packageId);
+                        int packageId = inputNumber();
+                        displayPackageInfo(packageId);
                         return state;
                     case "LOGIN":
                         return user.login(kboard);
@@ -65,7 +67,8 @@ public class CommandLineInterface {
                     case "PACKAGES":
                         return UIState.PACKAGES_LIST;
                     case "ADD":
-                        break;
+                        addPackage();
+                        return UIState.CUSTOMER_HOME;
                     case "BILLING":
                         return UIState.TRANSACTION_LIST;
                 }
@@ -73,12 +76,12 @@ public class CommandLineInterface {
             case WORKER_HOME:
                 switch (option.toUpperCase()) {
                     case "LOGOUT":
-                        user.logout();
-                        break;
+                        return user.logout();
                     case "SCAN":
+                        //scanPackage(packageId);
                         break;
                     case "DELIVER":
-
+                        //markDelivered(packageId);
                 }
                 break;
             case PACKAGES_LIST:
@@ -86,8 +89,7 @@ public class CommandLineInterface {
                     return UIState.CUSTOMER_HOME;
                 }
                 else {
-                    // displayPackageInfo(option);
-                    // TODO: Display package info
+                    displayPackageInfo(Integer.parseInt(option));
                     return state;
                 }
             case TRANSACTION_LIST:
@@ -95,8 +97,7 @@ public class CommandLineInterface {
                     return UIState.CUSTOMER_HOME;
                 }
                 else {
-                    // displayTransactionInfo(option);
-                    //TODO: Display transaction info
+                    displayTransactionInfo(Integer.parseInt(option));
                     return state;
                 }
         }
@@ -125,7 +126,7 @@ public class CommandLineInterface {
                 options.add("LOGOUT");
                 break;
             case PACKAGES_LIST:
-                // options.addAll(getPackages(user)); //TODO: Add get package IDs method
+                // options.addAll(getPackages()); //TODO: Add get package IDs method
                 options.add("HOME");
                 break;
             case TRANSACTION_LIST:
@@ -136,8 +137,170 @@ public class CommandLineInterface {
         return options;
     }
 
-    private boolean getPackageInfo(String packageId) {
-        return false;
+    private void displayPackageInfo(int packageId) {
+        //TODO
+    }
+
+    private void displayTransactionInfo(int transactionId) {
+        //TODO
+    }
+
+    private int inputNumber() {
+        while (!kboard.hasNextInt()) {
+            try {
+                kboard.nextInt();
+            }
+            catch (InputMismatchException e) {
+                System.out.print("Invalid input. Please enter a number: ");
+                kboard.nextLine();
+            }
+        }
+
+        int num = kboard.nextInt();
+        kboard.nextLine();
+
+        return num;
+    }
+
+    private int nextStep(int currentStep) {
+        System.out.print("Type 'Q' to quit, 'R' to redo, 'B' to go back, or anything else to continue: ");
+        String option = kboard.nextLine();
+
+        switch (option.toUpperCase()) {
+            case "Q":
+                return 0;
+            case "R":
+                return currentStep;
+            case "B":
+                return currentStep - 1;
+            default:
+                return currentStep + 1;
+        }
+    }
+
+    private void addPackage() {
+        int stepNum = 1;
+
+        // Package Info
+        double weight = -1;
+
+        // Recipient Info
+        String firstName;
+        String lastName;
+        String streetName;
+        int streetNum = -1;
+        String aptNum;
+        String city;
+        String state;
+        String country;
+        int zip = -1;
+
+        // Payment Info
+        String paymentType;
+        // If credit card
+        String cardholderName;
+        int cardNumber;
+        int expMonth;
+        int expYear;
+        int cvv;
+
+        while (stepNum < 4) {
+            switch (stepNum) {
+                case 0:
+                    return;
+                case 1:
+                    System.out.print("Enter Package Weight: ");
+
+                    while (!kboard.hasNextDouble()) {
+                        try {
+                            kboard.nextDouble();
+                        }
+                        catch (InputMismatchException e) {
+                            System.out.println("Invalid Input. Please enter a number.");
+                            kboard.nextLine();
+                        }
+                    }
+                    weight = kboard.nextDouble();
+                    kboard.nextLine(); // Need to consume newline before continuing
+
+                    System.out.println("Package Weight Entered");
+                    System.out.print("Type 'Q' to quit, 'R' to redo, 'B' to go back, or anything else to continue: ");
+                    String option = kboard.nextLine();
+
+                    switch (option.toUpperCase()) {
+                        case "Q":
+                            return;
+                        case "R":
+                            break;
+                        case "B":
+                            stepNum = stepNum - 1;
+                            break;
+                        default:
+                            stepNum = stepNum + 1;
+                    }
+                    break;
+                case 2:
+                    System.out.println("Enter Recipient Info:");
+                    System.out.print("First Name: ");
+                    firstName = kboard.nextLine();
+
+                    System.out.print("Last Name: ");
+                    lastName = kboard.nextLine();
+
+                    System.out.print("Street Name: ");
+                    streetName = kboard.nextLine();
+
+                    System.out.print("Street Number: ");
+                    streetNum = inputNumber();
+
+                    System.out.print("Apt. Number: ");
+                    aptNum = kboard.nextLine();
+
+                    System.out.print("City: ");
+                    city = kboard.nextLine();
+
+                    System.out.print("State: ");
+                    state = kboard.nextLine();
+
+                    System.out.print("Country: ");
+                    country = kboard.nextLine();
+
+                    System.out.print("Zip Code: ");
+                    zip = inputNumber();
+
+                    System.out.println("Recipient Info Entered");
+                    stepNum = nextStep(stepNum);
+                    break;
+                case 3:
+                    System.out.println("Choose Payment Option (Contract, Credit, Prepaid): ");
+                    paymentType = kboard.nextLine();
+
+                    if (paymentType.equalsIgnoreCase("Credit")) {
+                        System.out.print("Enter Card Holder Name: ");
+                        cardholderName = kboard.nextLine();
+
+                        System.out.print("Card Number: ");
+                        cardNumber = inputNumber();
+
+                        System.out.print("Expiration Month Number: ");
+                        expMonth = inputNumber();
+
+                        System.out.print("Expiration Year Number: ");
+                        expYear = inputNumber();
+
+                        System.out.print("CVV: ");
+                        cvv = inputNumber();
+                    }
+
+                    System.out.println("Payment Info Entered");
+                    System.out.println("WARNING: Continuing will complete the add package process.");
+                    stepNum = nextStep(stepNum);
+            }
+        }
+
+
+        //TODO: Make Package
+        //TODO: Make Payment
+        //TODO: Display Transaction Info
     }
 }
-

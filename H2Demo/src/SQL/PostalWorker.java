@@ -1,3 +1,5 @@
+package SQL;
+
 public class PostalWorker {
 
     String name;
