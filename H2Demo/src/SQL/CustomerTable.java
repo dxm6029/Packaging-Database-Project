@@ -61,7 +61,7 @@ public class CustomerTable {
 		 * 
 		 * execute only returns if it was successful
 		 */
-		System.out.print(sql);
+		//System.out.print(sql);
 		Statement stmt = conn.createStatement();
 	    stmt.execute(sql);
 	}
@@ -83,7 +83,7 @@ public class CustomerTable {
 			 * Create a query and execute
 			 */
 			Statement stmt = conn.createStatement();
-			System.out.println(query +"\n\n\n");
+			//System.out.println(query +"\n\n\n");
 			stmt.execute(query);
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -107,7 +107,7 @@ public class CustomerTable {
 			/**
 			 * create and execute the query
 			 */
-			System.out.println(query);
+			//System.out.println(query);
 			Statement stmt = conn.createStatement();
 			stmt.execute(query);
 		} catch (SQLException e) {
@@ -223,7 +223,7 @@ public class CustomerTable {
 		sb.append(";");
 		
 		//Print it out to verify it made it right
-		System.out.println("Query: " + sb.toString());
+		//System.out.println("Query: " + sb.toString());
 		try {
 			/**
 			 * Execute the query and return the result set
@@ -287,8 +287,8 @@ public class CustomerTable {
 				columns,
 				whereClauses);
 		try{
-			results2.next();
-		password =  results2.getString(1);}catch(Exception e){System.out.print(e.toString());}
+			if(results2.next())
+				password =  results2.getString(1);}catch(Exception e){System.out.print(e.toString());}
 		return password;
 	}
 }
