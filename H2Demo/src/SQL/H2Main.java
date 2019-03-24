@@ -96,13 +96,13 @@ public class H2Main {
 			/**
 			 * Just displays the table
 			 */
-			System.out.println("Customer table initialized!...");
-			CustomerTable.printCustomerTable(demo.getConnection());
+			//System.out.println("Customer table initialized!...");
+			//CustomerTable.printCustomerTable(demo.getConnection());
 			
 			/**
 			 * Runs a basic query on the table
 			 */
-			System.out.println("\n\nPrint results of SELECT * FROM Customers");
+			//System.out.println("\n\nPrint results of SELECT * FROM Customers");
 			ResultSet results = CustomerTable.queryCustomerTable(
 					                     demo.getConnection(),
 					                     new ArrayList<String>(),
@@ -118,7 +118,7 @@ public class H2Main {
 			 * order you created them. To gaurantee order list the columns
 			 * you want
 			 */
-			while(results.next()){
+			/*while(results.next()){
 				System.out.printf("Customer: %s, %s,%d,%s,%s,%s,%s,%s,%s,%s,%s\n",
 						          results.getString(1),
 						          results.getString(2),
@@ -132,15 +132,15 @@ public class H2Main {
 							      results.getString(10),
 						 	      results.getString(11));
 
-			}
+			}*/
 			/**
 			 * A more complex query with columns selected and 
 			 * addition conditions
 			 */
-			System.out.println("\n\nPrint results of SELECT "
+			/*System.out.println("\n\nPrint results of SELECT "
 					+ " fName, lName, Country "
 					+ " FROM customer "
-					+ "WHERE Country NOT = \'United States\' ");
+					+ "WHERE Country NOT = \'United States\' ");*/
 			
 			/**
 			 * This is one way to do this, but not the only
@@ -170,16 +170,16 @@ public class H2Main {
                     demo.getConnection(),
                     columns,
                     whereClauses);
-			while(results2.next()){
+			/*while(results2.next()){
 				System.out.printf("Customer: %s %s, %s\n",
 					results2.getString(1),
 					results2.getString(2),
 				    results2.getString(3));
-			}
+			}*/
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		System.out.println(CustomerTable.getPassword("angelena.gulgowski@hotmail.com", demo.getConnection()));
+		//System.out.println(CustomerTable.getPassword("von.braun@gmail.com", demo.getConnection()));
 		//System.exit(0);
 	}
 
