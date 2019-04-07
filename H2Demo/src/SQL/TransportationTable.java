@@ -139,7 +139,7 @@ public class TransportationTable {
         for(int i = 0; i < people.size(); i++){
             Transportation p = people.get(i);
             sb.append(String.format("(%d,\'%s\',%d)",
-                    p.getTransportID(),p.getCompany()  p.getDriverID()));
+                    p.getTransportID(),p.getCompany(),  p.getDriverID()));
             if( i != people.size()-1){
                 sb.append(",");
             }
