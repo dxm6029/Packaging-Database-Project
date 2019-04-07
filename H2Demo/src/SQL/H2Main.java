@@ -91,6 +91,7 @@ public class H2Main {
 			e.printStackTrace();
 		}
 		//TODO: prompt for queries
+
 	}
 
 	public static boolean getPassword(String email, String pass){

@@ -25,7 +25,7 @@ public class ContractTable {
      * @param fileName
      * @throws SQLException
      */
-    public static void populateCustomerTableFromCSV(Connection conn,
+    public static void populateContractTableFromCSV(Connection conn,
                                                     String fileName)
             throws SQLException{
         /**
@@ -35,14 +35,14 @@ public class ContractTable {
          * You can do the reading and adding to the table in one
          * step, I just broke it up for example reasons
          */
-        ArrayList<Customer> customers = new ArrayList<Customer>();
+        ArrayList<Contract> contracts = new ArrayList<Contract>();
         try {
             BufferedReader br = new BufferedReader(new FileReader(fileName));
             String line;
             br.readLine();
             while((line = br.readLine()) != null){
                 String[] split = line.split(",");
-                customers.add(new Customer(split));
+                contracts.add(new Contract(split));
             }
             br.close();
         } catch (IOException e) {
@@ -50,11 +50,11 @@ public class ContractTable {
         }
 
         /**
-         * Creates the SQL query to do a bulk add of all customers
+         * Creates the SQL query to do a bulk add of all contracts
          * that were read in. This is more efficent then adding one
          * at a time
          */
-        String sql = createCustomerInsertSQL(customers);
+        String sql = createContractInsertSQL(contracts);
 
         /**
          * Create and execute an SQL statement
@@ -71,19 +71,14 @@ public class ContractTable {
      *
      * @param conn: the database connection to work with
      */
-    public static void createCustomerTable(Connection conn){
+    public static void createContractTable(Connection conn){
         try {
-            //FOR THE LOVE OF GOD UNDO THIS
-            String q = "DROP TABLE IF EXISTS customer";
-            Statement stmtt = conn.createStatement();
-            stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS customer(fName VARCHAR(255),lName VARCHAR(255),customerID INT PRIMARY KEY,email VARCHAR(50),streetNumber VARCHAR(50),streetName VARCHAR(225),apptNum VARCHAR(50),city VARCHAR(100), state VARCHAR(100), country VARCHAR(100), zip VARCHAR(100))";
+            String query = "CREATE TABLE IF NOT EXISTS contract(packageID int primary key, billDate varchar(10), totalPackageNum int)";
 
             /**
              * Create a query and execute
              */
             Statement stmt = conn.createStatement();
-            //System.out.println(query +"\n\n\n");
             stmt.execute(query);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -94,15 +89,14 @@ public class ContractTable {
      * Adds a single Customer to the database
      *
      */
-    public static void addCustomer(Connection conn, String fname, String lname, int custID, String email, int streetNum,
-                                   String streetName, String apptNum, String city, String state, String country, String zip){
+    public static void addContract(Connection conn, int packageID, String billDate, int totalPackageNum){
 
         /**
          * SQL insert statement
          */
         String query = String.format("INSERT INTO customer "
-                        + "VALUES(\'%s\', \'%s\',%d,\'%s\',\'%s\',\'%s\',\'%s\',\'%s\',\'%s\', \'%s\', \'%s\');",
-                fname, lname, custID, email, streetNum, streetName, apptNum, city, state, country, zip );
+                        + "VALUES(%d,\'%s\',%d);",
+                packageID, billDate, totalPackageNum );
         try {
             /**
              * create and execute the query
@@ -119,11 +113,11 @@ public class ContractTable {
     /**
      * This creates an sql statement to do a bulk add of people
      *
-     * @param people: list of Person objects to add
+     * @param contracts: list of Person objects to add
      *
      * @return
      */
-    public static String createCustomerInsertSQL(ArrayList<Customer> people){
+    public static String createContractInsertSQL(ArrayList<Contract> contracts){
         StringBuilder sb = new StringBuilder();
 
         /**
@@ -142,12 +136,11 @@ public class ContractTable {
          *
          * If it is the last person add a semi-colon to end the statement
          */
-        for(int i = 0; i < people.size(); i++){
-            Customer p = people.get(i);
-            sb.append(String.format("(\'%s\', \'%s\', %d, \'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\')",
-                    p.getFnameName(), p.getLnameName(), p.getCustomerID(), p.getEmail(), p.getStreetNumber(),
-                    p.getStreetName(), p.getApptNum(), p.getCity(), p.getState(), p.getCountry(), p.getZip()));
-            if( i != people.size()-1){
+        for(int i = 0; i < contracts.size(); i++){
+            Contract p = contracts.get(i);
+            sb.append(String.format("(%d,\'%s\',%d)",
+                    p.getPaymentID(), p.getBillDate(), p.getTotalPackageNum()));
+            if( i != contracts.size()-1){
                 sb.append(",");
             }
             else{
@@ -166,7 +159,7 @@ public class ContractTable {
      * @param whereClauses: conditions to limit query by
      * @return
      */
-    public static ResultSet queryCustomerTable(Connection conn,
+    public static ResultSet queryContractTable(Connection conn,
                                                ArrayList<String> columns,
                                                ArrayList<String> whereClauses){
         StringBuilder sb = new StringBuilder();
@@ -199,7 +192,7 @@ public class ContractTable {
         /**
          * Tells it which table to get the data from
          */
-        sb.append("FROM customer ");
+        sb.append("FROM contract ");
 
         /**
          * If we gave it conditions append them
@@ -240,57 +233,20 @@ public class ContractTable {
      * Queries and print the table
      * @param conn
      */
-    public static void printCustomerTable(Connection conn){
-        String query = "SELECT * FROM customer;";
+    public static void printContractTable(Connection conn){
+        String query = "SELECT * FROM contract;";
         try {
             Statement stmt = conn.createStatement();
             ResultSet result = stmt.executeQuery(query);
 
             while(result.next()){
-                System.out.printf("customer %s,%s,%d,%s,%s,%s,%s,%s,%s,%s,%s\n",
-                        result.getString(1),
+                System.out.printf("customer %d,%s,%d\n",
+                        result.getInt(1),
                         result.getString(2),
-                        result.getInt(3),
-                        result.getString(4),
-                        result.getString(5),
-                        result.getString(6),
-                        result.getString(7),
-                        result.getString(8),
-                        result.getString(9),
-                        result.getString(10),
-                        result.getString(11));
+                        result.getInt(3));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-    public static String getPassword(String email, Connection conn){
-        String password = "No password found!";
-        ArrayList<String> columns = new ArrayList<String>();
-        columns.add("CustomerID");
-
-        /**
-         * Conditionals
-         */
-        ArrayList<String> whereClauses = new ArrayList<String>();
-        whereClauses.add("email = \'" + email +"\'");
-        /**
-         * query and get the result set
-         *
-         * parse the result set and print it
-         *
-         * Notice not all of the columns are here because
-         * we limited what to show in the query
-         */
-        ResultSet results2 = SQL.CustomerTable.queryCustomerTable(
-                conn,
-                columns,
-                whereClauses);
-        try{
-            if(results2.next())
-                password =  results2.getString(1);}catch(Exception e){System.out.print(e.toString());}
-        return password;
-    }
-
-
 }
