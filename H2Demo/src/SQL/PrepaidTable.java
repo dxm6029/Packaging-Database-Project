@@ -229,7 +229,7 @@ public class PrepaidTable {
     /**
      * Queries and print the table
      * @param conn
-     * line
+     * line ah
      */
     public static void printPrepaidTable(Connection conn){
         String query = "SELECT * FROM prepaid;";
