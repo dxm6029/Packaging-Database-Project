@@ -99,10 +99,22 @@ public class H2Main {
 					demo.getConnection(), "H2Demo/csv/Contract.csv");
 			CreditCardTable.createCreditTable(demo.getConnection());
 			CreditCardTable.populateCreditFromCSV(
-					demo.getConnection(), "H2Main/csv/CreditCard.csv");
+					demo.getConnection(), "H2Demo/csv/CreditCard.csv");
 			PrepaidTable.createPrepaidTable(demo.getConnection());
 			PrepaidTable.populatePrepaidTableFromCSV(
 					demo.getConnection(), "H2Demo/csv/Prepaid.csv");
+			PostalWorkerTable.createPostalTable(demo.getConnection());
+			PostalWorkerTable.populatePostalTableFromCSV(
+					demo.getConnection(), "H2Demo/csv/PostalWorker.csv");
+			TransportationTable.createTransportationTable(demo.getConnection());
+			TransportationTable.populateTransportationFromCSV(
+					demo.getConnection(), "H2Demo/csv/Transportation.csv");
+			PaymentTable.createPaymentTable(demo.getConnection());
+			PaymentTable.populatePaymentTableFromCSV(
+					demo.getConnection(), "H2Demo/csv/Payment.csv");
+			PackageTransportationTable.createPackageTransportationTable(demo.getConnection());
+			PackageTransportationTable.populatePackageTransportationFromCSV(
+					demo.getConnection(), "H2Demo/csv/PackageTransportation.csv");
 			//TODO: add initialization for all other tables
 		} catch (SQLException e) {
 			e.printStackTrace();

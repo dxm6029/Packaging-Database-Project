@@ -12,7 +12,7 @@ public class Prepaid {
 
     public Prepaid(String[] data){
         this.paymentID = Integer.parseInt(data[0]);
-        this.used = Boolean.parseBoolean(data[2]);
+        this.used = Boolean.parseBoolean(data[1]);
     }
 
     public int getPaymentID() {

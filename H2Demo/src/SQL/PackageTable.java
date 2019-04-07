@@ -61,7 +61,7 @@ public class PackageTable {
          *
          * execute only returns if it was successful
          */
-        System.out.print(sql);
+        //System.out.print(sql);
         Statement stmt = conn.createStatement();
         stmt.execute(sql);
     }

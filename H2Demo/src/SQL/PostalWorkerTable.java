@@ -56,7 +56,7 @@ public class PostalWorkerTable {
          *
          * execute only returns if it was successful
          */
-        System.out.print(sql);
+        //System.out.print(sql);
         Statement stmt = conn.createStatement();
         stmt.execute(sql);
     }
@@ -72,7 +72,7 @@ public class PostalWorkerTable {
             String q = "DROP TABLE IF EXISTS workers";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS workers(name VARCHAR(20), location VARCHAR(20), workerID INT PRIMARY KEY)";
+            String query = "CREATE TABLE IF NOT EXISTS workers(name VARCHAR(50), location VARCHAR(100), workerID INT PRIMARY KEY)";
 
             /**
              * Create a query and execute

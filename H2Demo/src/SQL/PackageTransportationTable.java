@@ -73,7 +73,10 @@ public class PackageTransportationTable {
      */
     public static void createPackageTransportationTable(Connection conn){
         try {
-            String query = "CREATE TABLE IF NOT EXISTS packageTransportation(packageID int primary key, transportID int foreign key)";
+            String q = "DROP TABLE IF EXISTS packageTransportation";
+            Statement stmtt = conn.createStatement();
+            stmtt.execute(q);
+            String query = "CREATE TABLE IF NOT EXISTS packageTransportation(packageID int primary key, transportID int, FOREIGN KEY(transportID) references transportation(transportID))";
 
             /**
              * Create a query and execute
@@ -127,7 +130,7 @@ public class PackageTransportationTable {
          * the order of the data in reference
          * to the columns to ad dit to
          */
-        sb.append("INSERT INTO PackageTransaction (packageID, transactionID) VALUES");
+        sb.append("INSERT INTO packageTransportation (packageID, transportID) VALUES");
 
         /**
          * For each person append a (id, first_name, last_name, MI) tuple

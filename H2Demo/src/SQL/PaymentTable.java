@@ -55,7 +55,7 @@ public class PaymentTable {
          *
          * execute only returns if it was successful
          */
-        System.out.print(sql);
+        //System.out.print(sql);
         Statement stmt = conn.createStatement();
         stmt.execute(sql);
     }
@@ -71,7 +71,7 @@ public class PaymentTable {
             String q = "DROP TABLE IF EXISTS payment";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS payment(paymentID INT PRIMARY KEY, type VARCHAR(10))";
+            String query = "CREATE TABLE IF NOT EXISTS payment(paymentID INT PRIMARY KEY, type VARCHAR(15))";
 
             /**
              * Create a query and execute

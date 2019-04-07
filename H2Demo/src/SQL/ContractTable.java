@@ -76,7 +76,7 @@ public class ContractTable {
             String q = "DROP TABLE IF EXISTS contract";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS contract(packageID int primary key, billDate varchar(10), totalPackageNum int)";
+            String query = "CREATE TABLE IF NOT EXISTS contract(paymentID int primary key, billDate varchar(10), totalPackageNum int)";
 
             /**
              * Create a query and execute

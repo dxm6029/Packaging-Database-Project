@@ -72,7 +72,7 @@ public class CreditCardTable {
             String q = "DROP TABLE IF EXISTS credit";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS credit(paymentID INT PRIMARY KEY, cardholderName VARCHAR(20), cardNum VARCHAR(20), cvv INT, expirationDate VARCHAR(20))";
+            String query = "CREATE TABLE IF NOT EXISTS credit(paymentID INT PRIMARY KEY, cardholderName VARCHAR(50), cardNum VARCHAR(20), cvv INT, expirationDate VARCHAR(20))";
 
             /**
              * Create a query and execute

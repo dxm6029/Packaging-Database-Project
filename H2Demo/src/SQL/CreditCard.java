@@ -19,10 +19,10 @@ public class CreditCard {
 
     public CreditCard(String[] data){
         this.paymentID = Integer.parseInt(data[0]);
-        this.cardholderName = data[2];
-        this.cardNum = data[3];
-        this.cvv = Integer.parseInt(data[4]);
-        this.expirationDate = data[5];
+        this.cardholderName = data[1];
+        this.cardNum = data[2];
+        this.cvv = Integer.parseInt(data[3]);
+        this.expirationDate = data[4];
     }
 
     public int getPaymentID() {

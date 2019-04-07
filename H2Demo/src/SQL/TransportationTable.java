@@ -73,7 +73,10 @@ public class TransportationTable {
      */
     public static void createTransportationTable(Connection conn){
         try {
-            String query = "CREATE TABLE IF NOT EXISTS packageTransportation(transportID int primary key, company varchar(20), packageID int foreign key)";
+            String q = "DROP TABLE IF EXISTS transportation";
+            Statement stmtt = conn.createStatement();
+            stmtt.execute(q);
+            String query = "CREATE TABLE IF NOT EXISTS transportation(transportID int primary key, company varchar(100), driverID int)";
 
             /**
              * Create a query and execute
@@ -90,14 +93,14 @@ public class TransportationTable {
      * Adds a single Customer to the database
      *
      */
-    public static void addTransportation(Connection conn,int transportID, String company, int packageID){
+    public static void addTransportation(Connection conn,int transportID, String company, int driverID){
 
         /**
          * SQL insert statement
          */
         String query = String.format("INSERT INTO transportation "
                         + "VALUES(%d,\'%s\',%d);",
-                transportID, company, packageID);
+                transportID, company, driverID);
         try {
             /**
              * create and execute the query
@@ -127,7 +130,7 @@ public class TransportationTable {
          * the order of the data in reference
          * to the columns to ad dit to
          */
-        sb.append("INSERT INTO transaction (transactionID, company, packageID) VALUES");
+        sb.append("INSERT INTO transportation (transportID, company, driverID) VALUES");
 
         /**
          * For each person append a (id, first_name, last_name, MI) tuple
