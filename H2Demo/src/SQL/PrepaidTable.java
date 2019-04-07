@@ -44,7 +44,7 @@ public class PrepaidTable {
         }
 
         /**
-         * Creates the SQL query to do a bulk add of all customers
+         * Creates the SQL query to do a bulk add of all Prepaid
          * that were read in. This is more efficent then adding one
          * at a time
          */
@@ -61,17 +61,17 @@ public class PrepaidTable {
     }
 
     /**
-     * Create the person table with the given attributes
+     * Create the prepaid table with the given attributes
      *
      * @param conn: the database connection to work with
      */
     public static void createPrepaidTable(Connection conn){
         try {
             //FOR THE LOVE OF GOD UNDO THIS
-            String q = "DROP TABLE IF EXISTS makesTransaction";
+            String q = "DROP TABLE IF EXISTS prepaid";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS makesTransaction(customerID INT PRIMARY KEY, transactionID INT PRIMARY KEY , paymentID INT PRIMARY KEY )";
+            String query = "CREATE TABLE IF NOT EXISTS prepaid(paymentID INT PRIMARY KEY, used INT )";
 
             /**
              * Create a query and execute
@@ -84,17 +84,17 @@ public class PrepaidTable {
     }
 
     /**
-     * Adds a single Customer to the database
+     * Adds a single prepaid to the database
      *
      */
-    public static void addPrepaid(Connection conn, int customerID, int transactionID, int paymentID){
+    public static void addPrepaid(Connection conn, int paymentID, int used){
 
         /**
          * SQL insert statement
          */
-        String query = String.format("INSERT INTO makesTransaction "
-                        + "VALUES(%d,%d,%d);",
-                customerID, transactionID, paymentID );
+        String query = String.format("INSERT INTO prepaid "
+                        + "VALUES(%d, %d);",
+                paymentID, used );
         try {
             /**
              * create and execute the query
@@ -111,11 +111,11 @@ public class PrepaidTable {
     /**
      * This creates an sql statement to do a bulk add of people
      *
-     * @param makesTransactions: list of Person objects to add
+     * @param prepaid: list of prepaid objects to add
      *
      * @return
      */
-    public static String createMakesTransactionInsertSQL(ArrayList<MakesTransaction> makesTransactions){
+    public static String createPrepaidInsertSQL(ArrayList<Prepaid> prepaid){
         StringBuilder sb = new StringBuilder();
 
         /**
@@ -124,20 +124,20 @@ public class PrepaidTable {
          * the order of the data in reference
          * to the columns to ad dit to
          */
-        sb.append("INSERT INTO makesTransaction (customerID, transactionID, paymentID) VALUES");
+        sb.append("INSERT INTO prepaid (paymentID, used) VALUES");
 
         /**
-         * For each person append a (id, first_name, last_name, MI) tuple
+         * For each prepaid append a (id, first_name, last_name, MI) tuple
          *
-         * If it is not the last person add a comma to seperate
+         * If it is not the last prepaid add a comma to seperate
          *
-         * If it is the last person add a semi-colon to end the statement
+         * If it is the last prepaid add a semi-colon to end the statement
          */
-        for(int i = 0; i < makesTransactions.size(); i++){
-            MakesTransaction p = makesTransactions.get(i);
-            sb.append(String.format("(%d, %d, %d)",
-                    p.getCustomerID(), p.getTransactionID(), p.getPaymentID()));
-            if( i != makesTransactions.size()-1){
+        for(int i = 0; i < prepaid.size(); i++){
+            Prepaid p = prepaid.get(i);
+            sb.append(String.format("(%d, %d)",
+                    p.getPaymentID(), p.isUsed()));
+            if( i != prepaid.size()-1){
                 sb.append(",");
             }
             else{
@@ -148,7 +148,7 @@ public class PrepaidTable {
     }
 
     /**
-     * Makes a query to the person table
+     * Makes a query to the prepaid table
      * with given columns and conditions
      *
      * @param conn
@@ -156,7 +156,7 @@ public class PrepaidTable {
      * @param whereClauses: conditions to limit query by
      * @return
      */
-    public static ResultSet queryMakesTransactionTable(Connection conn,
+    public static ResultSet queryPrepaidTable(Connection conn,
                                                        ArrayList<String> columns,
                                                        ArrayList<String> whereClauses){
         StringBuilder sb = new StringBuilder();
@@ -189,7 +189,7 @@ public class PrepaidTable {
         /**
          * Tells it which table to get the data from
          */
-        sb.append("FROM makesTransaction ");
+        sb.append("FROM prepaid ");
 
         /**
          * If we gave it conditions append them
@@ -230,17 +230,16 @@ public class PrepaidTable {
      * Queries and print the table
      * @param conn
      */
-    public static void printMakesTransactionTable(Connection conn){
-        String query = "SELECT * FROM makesTransaction;";
+    public static void printPrepaidTable(Connection conn){
+        String query = "SELECT * FROM prepaid;";
         try {
             Statement stmt = conn.createStatement();
             ResultSet result = stmt.executeQuery(query);
 
             while(result.next()){
-                System.out.printf("makesTransaction %d,%d,%d\n",
+                System.out.printf("prepaid %d,%d\n",
                         result.getInt(1),
-                        result.getInt(2),
-                        result.getInt(3));
+                        result.getInt(2));
             }
         } catch (SQLException e) {
             e.printStackTrace();
