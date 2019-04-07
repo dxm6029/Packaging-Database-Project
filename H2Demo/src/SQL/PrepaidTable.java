@@ -71,7 +71,7 @@ public class PrepaidTable {
             String q = "DROP TABLE IF EXISTS prepaid";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS prepaid(paymentID INT PRIMARY KEY, used INT )";
+            String query = "CREATE TABLE IF NOT EXISTS prepaid(paymentID INT PRIMARY KEY, used VARCHAR(5) )";
 
             /**
              * Create a query and execute
@@ -93,7 +93,7 @@ public class PrepaidTable {
          * SQL insert statement
          */
         String query = String.format("INSERT INTO prepaid "
-                        + "VALUES(%d, %d);",
+                        + "VALUES(%d, %s);",
                 paymentID, used );
         try {
             /**
@@ -135,7 +135,7 @@ public class PrepaidTable {
          */
         for(int i = 0; i < prepaid.size(); i++){
             Prepaid p = prepaid.get(i);
-            sb.append(String.format("(%d, %d)",
+            sb.append(String.format("(%d, %s)",
                     p.getPaymentID(), p.isUsed()));
             if( i != prepaid.size()-1){
                 sb.append(",");
@@ -238,7 +238,7 @@ public class PrepaidTable {
             ResultSet result = stmt.executeQuery(query);
 
             while(result.next()){
-                System.out.printf("prepaid %d,%d\n",
+                System.out.printf("prepaid %d,%s\n",
                         result.getInt(1),
                         result.getInt(2));
             }

@@ -72,7 +72,7 @@ public class MakesTransactionTable {
             String q = "DROP TABLE IF EXISTS makesTransaction";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS makesTransaction(customerID INT PRIMARY KEY, transactionID INT PRIMARY KEY , paymentID INT PRIMARY KEY )";
+            String query = "CREATE TABLE IF NOT EXISTS makesTransaction(customerID INT, transactionID INT , paymentID INT, PRIMARY KEY (customerID, transactionID, paymentID))";
 
             /**
              * Create a query and execute
