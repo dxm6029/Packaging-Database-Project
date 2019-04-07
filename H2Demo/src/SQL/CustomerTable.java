@@ -291,4 +291,35 @@ public class CustomerTable {
 				password =  results2.getString(1);}catch(Exception e){System.out.print(e.toString());}
 		return password;
 	}
+	public static String getName(String customerID, Connection conn){
+		String name = "No name found!";
+		ArrayList<String> columns = new ArrayList<>();
+		columns.add("fname");
+		columns.add("lname");
+
+		/**
+		 * Conditionals
+		 */
+		ArrayList<String> whereClauses = new ArrayList<>();
+		whereClauses.add("customerID = \'" + customerID +"\'");
+		/**
+		 * query and get the result set
+		 *
+		 * parse the result set and print it
+		 *
+		 * Notice not all of the columns are here because
+		 * we limited what to show in the query
+		 */
+		ResultSet results2 = CustomerTable.queryCustomerTable(
+				conn,
+				columns,
+				whereClauses);
+		try{
+			if(results2.next())
+				name =  results2.getString(1);
+				name += " " + results2.getString(2);
+		}
+		catch(Exception e){System.out.print(e.toString());}
+		return name;
+	}
 }

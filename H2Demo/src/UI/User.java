@@ -26,7 +26,8 @@ public class User {
             customerID = kboard.nextLine();
 
             if(H2Main.getPassword(userName,customerID)){
-                System.out.println("Welcome to 4Squared!");
+                String name = H2Main.getName(customerID);
+                System.out.println("Welcome to 4Squared, " + name + "!");
                 return UIState.CUSTOMER_HOME;
             }else{
                 System.out.println("USERNAME AND/OR PASSWORD INVALID");

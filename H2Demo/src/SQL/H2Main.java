@@ -2,7 +2,9 @@ package SQL;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  * This is a sample main program. 
@@ -80,8 +82,8 @@ public class H2Main {
 		demo.createConnection(location, user, password);
 		
 		try {
-			PackageTransportationTable.createPackageTransportationTable(demo.getConnection());
-			PackageTransportationTable.populatePackageTransportationFromCSV(
+			CustomerTable.createCustomerTable(demo.getConnection());
+			CustomerTable.populateCustomerTableFromCSV(
 					demo.getConnection(),
 					"H2Demo/csv/Customer.csv");
 			//TODO: add initialization for all other tables
@@ -100,7 +102,24 @@ public class H2Main {
 
 		//Create the database connections, basically makes the database
 		demo.createConnection(location, user, password);
-		return PackageTransportationTable.getPassword(email, demo.getConnection()).equals(pass);
+		if(CustomerTable.getPassword(email, demo.getConnection()).equals(pass)){
+			return true;
+		}
+		//check if worker
+		else{
+			return false;
+		}
+	}
+
+	public static String getName(String customerID){
+		H2Main demo = new H2Main();
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
+
+		//Create the database connections, basically makes the database
+		demo.createConnection(location, user, password);
+		return CustomerTable.getName(customerID, demo.getConnection());
 	}
 
 }
