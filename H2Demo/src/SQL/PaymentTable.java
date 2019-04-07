@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class PaymentTable {
     /**
-     * Reads a cvs file for data and adds them to the Prepaid table
+     * Reads a cvs file for data and adds them to the payment table
      *
      * Does not create the table. It must already be created
      *
@@ -44,7 +44,7 @@ public class PaymentTable {
         }
 
         /**
-         * Creates the SQL query to do a bulk add of all Prepaid
+         * Creates the SQL query to do a bulk add of all payment
          * that were read in. This is more efficent then adding one
          * at a time
          */
@@ -61,17 +61,17 @@ public class PaymentTable {
     }
 
     /**
-     * Create the prepaid table with the given attributes
+     * Create the payment table with the given attributes
      *
      * @param conn: the database connection to work with
      */
     public static void createPaymentTable(Connection conn){
         try {
             //FOR THE LOVE OF GOD UNDO THIS
-            String q = "DROP TABLE IF EXISTS prepaid";
+            String q = "DROP TABLE IF EXISTS payment";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS prepaid(paymentID INT PRIMARY KEY, used INT )";
+            String query = "CREATE TABLE IF NOT EXISTS payment(paymentID INT PRIMARY KEY, type VARCHAR(10))";
 
             /**
              * Create a query and execute
@@ -84,17 +84,17 @@ public class PaymentTable {
     }
 
     /**
-     * Adds a single prepaid to the database
+     * Adds a single payment to the database
      *
      */
-    public static void addPayment(Connection conn, int paymentID, int used){
+    public static void addPayment(Connection conn, int paymentID, String type){
 
         /**
          * SQL insert statement
          */
-        String query = String.format("INSERT INTO prepaid "
-                        + "VALUES(%d, %d);",
-                paymentID, used );
+        String query = String.format("INSERT INTO payment "
+                        + "VALUES(%d, \'%s\');",
+                paymentID, type);
         try {
             /**
              * create and execute the query
@@ -111,11 +111,11 @@ public class PaymentTable {
     /**
      * This creates an sql statement to do a bulk add of people
      *
-     * @param prepaid: list of prepaid objects to add
+     * @param payments: list of payment objects to add
      *
      * @return
      */
-    public static String createPaymentInsertSQL(ArrayList<Prepaid> prepaid){
+    public static String createPaymentInsertSQL(ArrayList<Payment> payments){
         StringBuilder sb = new StringBuilder();
 
         /**
@@ -124,20 +124,18 @@ public class PaymentTable {
          * the order of the data in reference
          * to the columns to ad dit to
          */
-        sb.append("INSERT INTO prepaid (paymentID, used) VALUES");
+        sb.append("INSERT INTO payment (paymentID, type) VALUES");
 
         /**
-         * For each prepaid append a (id, first_name, last_name, MI) tuple
+         * If it is not the last payment add a comma to seperate
          *
-         * If it is not the last prepaid add a comma to seperate
-         *
-         * If it is the last prepaid add a semi-colon to end the statement
+         * If it is the last payment add a semi-colon to end the statement
          */
-        for(int i = 0; i < prepaid.size(); i++){
-            Prepaid p = prepaid.get(i);
-            sb.append(String.format("(%d, %d)",
-                    p.getPaymentID(), p.isUsed()));
-            if( i != prepaid.size()-1){
+        for(int i = 0; i < payments.size(); i++){
+            Payment p = payments.get(i);
+            sb.append(String.format("(%d, \'%s\')",
+                    p.getPaymentID(), p.getType()));
+            if( i != payments.size()-1){
                 sb.append(",");
             }
             else{
@@ -148,7 +146,7 @@ public class PaymentTable {
     }
 
     /**
-     * Makes a query to the prepaid table
+     * Makes a query to the payment table
      * with given columns and conditions
      *
      * @param conn
@@ -189,7 +187,7 @@ public class PaymentTable {
         /**
          * Tells it which table to get the data from
          */
-        sb.append("FROM prepaid ");
+        sb.append("FROM payment ");
 
         /**
          * If we gave it conditions append them
@@ -231,15 +229,15 @@ public class PaymentTable {
      * @param conn
      */
     public static void printPaymentTable(Connection conn){
-        String query = "SELECT * FROM prepaid;";
+        String query = "SELECT * FROM payment;";
         try {
             Statement stmt = conn.createStatement();
             ResultSet result = stmt.executeQuery(query);
 
             while(result.next()){
-                System.out.printf("prepaid %d,%d\n",
+                System.out.printf("payment %d, %s\n",
                         result.getInt(1),
-                        result.getInt(2));
+                        result.getString(2));
             }
         } catch (SQLException e) {
             e.printStackTrace();

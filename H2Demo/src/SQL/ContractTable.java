@@ -73,13 +73,15 @@ public class ContractTable {
      */
     public static void createContractTable(Connection conn){
         try {
+            String q = "DROP TABLE IF EXISTS contract";
+            Statement stmtt = conn.createStatement();
+            stmtt.execute(q);
             String query = "CREATE TABLE IF NOT EXISTS contract(packageID int primary key, billDate varchar(10), totalPackageNum int)";
 
             /**
              * Create a query and execute
              */
-            Statement stmt = conn.createStatement();
-            stmt.execute(query);
+            stmtt.execute(query);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -94,7 +96,7 @@ public class ContractTable {
         /**
          * SQL insert statement
          */
-        String query = String.format("INSERT INTO customer "
+        String query = String.format("INSERT INTO contract "
                         + "VALUES(%d,\'%s\',%d);",
                 packageID, billDate, totalPackageNum );
         try {
@@ -126,8 +128,7 @@ public class ContractTable {
          * the order of the data in reference
          * to the columns to ad dit to
          */
-        sb.append("INSERT INTO customer (fname, lname, customerID, email, streetNumber, streetName, apptNum, city, " +
-                "state, country, zip) VALUES");
+        sb.append("INSERT INTO contract (paymentID, billDate, totalPackageNum) VALUES");
 
         /**
          * For each person append a (id, first_name, last_name, MI) tuple
