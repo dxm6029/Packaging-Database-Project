@@ -3,10 +3,10 @@ package SQL;
 public class Contract{
 
     int paymentID;
-    int billDate;
+    String billDate;
     int totalPackageNum;
 
-    public Contract(int payID, int billDate, int totalPackageNum){
+    public Contract(int payID, String billDate, int totalPackageNum){
         this.paymentID = payID;
         this.billDate = billDate;
         this.totalPackageNum = totalPackageNum;
@@ -14,7 +14,7 @@ public class Contract{
 
     public Contract(String[] data){
         this.paymentID = Integer.parseInt(data[0]);
-        this.billDate = Integer.parseInt(data[1]);
+        this.billDate = data[1];
         this.totalPackageNum = Integer.parseInt(data[2]);
     }
 
@@ -26,11 +26,11 @@ public class Contract{
         this.paymentID = paymentID;
     }
 
-    public int getBillDate() {
+    public String getBillDate() {
         return billDate;
     }
 
-    public void setBillDate(int billDate) {
+    public void setBillDate(String billDate) {
         this.billDate = billDate;
     }
 
