@@ -72,9 +72,8 @@ public class H2Main {
 	 * @param args: not used but you can use them
 	 */
 	public static void main(String[] args) {
-
 		H2Main demo = new H2Main();
-		//Hard drive location of the database
+
 		String location = "./h2demo/h2demo";
 		String user = "me";
 		String password = "password";
@@ -83,104 +82,15 @@ public class H2Main {
 		demo.createConnection(location, user, password);
 		
 		try {
-			
-			/**
-			 * Creates a sample Person table 
-			 * and populates it from a csv file
-			 */
 			CustomerTable.createCustomerTable(demo.getConnection());
 			CustomerTable.populateCustomerTableFromCSV(
 					demo.getConnection(),
 					"H2Demo/csv/Customer.csv");
-			
-			/**
-			 * Just displays the table
-			 */
-			//System.out.println("Customer table initialized!...");
-			//CustomerTable.printCustomerTable(demo.getConnection());
-			
-			/**
-			 * Runs a basic query on the table
-			 */
-			//System.out.println("\n\nPrint results of SELECT * FROM Customers");
-			ResultSet results = CustomerTable.queryCustomerTable(
-					                     demo.getConnection(),
-					                     new ArrayList<String>(),
-					                     new ArrayList<String>());
-			
-			/**
-			 * Iterates the Result set
-			 * 
-			 * Result Set is what a query in H2 returns
-			 * 
-			 * Note the columns are not 0 indexed
-			 * If you give no columns it will return them in the
-			 * order you created them. To gaurantee order list the columns
-			 * you want
-			 */
-			/*while(results.next()){
-				System.out.printf("Customer: %s, %s,%d,%s,%s,%s,%s,%s,%s,%s,%s\n",
-						          results.getString(1),
-						          results.getString(2),
-						          results.getInt(3),
-						          results.getString(4),
-						          results.getString(5),
-									results.getString(6),
-							      results.getString(7),
-							      results.getString(8),
-							      results.getString(9),
-							      results.getString(10),
-						 	      results.getString(11));
-
-			}*/
-			/**
-			 * A more complex query with columns selected and 
-			 * addition conditions
-			 */
-			/*System.out.println("\n\nPrint results of SELECT "
-					+ " fName, lName, Country "
-					+ " FROM customer "
-					+ "WHERE Country NOT = \'United States\' ");*/
-			
-			/**
-			 * This is one way to do this, but not the only
-			 * 
-			 * Create lists to make the whole thing more generic or
-			 * you can just construct the whole query here 
-			 */
-			ArrayList<String> columns = new ArrayList<String>();
-			columns.add("fName");
-			columns.add("lName");
-			columns.add("Country");
-			
-			/**
-			 * Conditionals
-			 */
-			ArrayList<String> whereClauses = new ArrayList<String>();
-			whereClauses.add("Country != \'United States\'");
-			/**
-			 * query and get the result set
-			 * 
-			 * parse the result set and print it
-			 * 
-			 * Notice not all of the columns are here because
-			 * we limited what to show in the query
-			 */
-			ResultSet results2 = CustomerTable.queryCustomerTable(
-                    demo.getConnection(),
-                    columns,
-                    whereClauses);
-			/*while(results2.next()){
-				System.out.printf("Customer: %s %s, %s\n",
-					results2.getString(1),
-					results2.getString(2),
-				    results2.getString(3));
-			}*/
+			//TODO: add initialization for all other tables
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		//System.out.println(CustomerTable.getPassword("von.braun@gmail.com", demo.getConnection()));
-		//System.exit(0);
+		//TODO: prompt for queries
 	}
 
 	public static boolean getPassword(String email, String pass){
