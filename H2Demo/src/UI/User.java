@@ -13,6 +13,10 @@ public class User {
         this.userName = userName;
     }
 
+    public String getCustomerID() {
+        return customerID;
+    }
+
     public UIState login (Scanner kboard) {
         boolean loggedIn = false;
 

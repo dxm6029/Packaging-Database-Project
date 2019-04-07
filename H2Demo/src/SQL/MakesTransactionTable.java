@@ -213,8 +213,6 @@ public class MakesTransactionTable {
          */
         sb.append(";");
 
-        //Print it out to verify it made it right
-        System.out.println("Query: " + sb.toString());
         try {
             /**
              * Execute the query and return the result set
@@ -246,6 +244,25 @@ public class MakesTransactionTable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
 
+    public static ArrayList<Integer> getCustomerTransactions(int customerId, Connection conn) {
+        ArrayList<Integer> transactionIds = new ArrayList<>();
+
+        ArrayList<String> columns = new ArrayList<>();
+        columns.add("transactionId");
+        ArrayList<String> whereClauses = new ArrayList<>();
+        whereClauses.add("customerId = " + customerId);
+
+        ResultSet resultSet = queryMakesTransactionTable(conn, columns, whereClauses);
+        try {
+            while (resultSet.next()) {
+                transactionIds.add(resultSet.getInt(1));
+            }
+        } catch (Exception e) {
+            System.err.println(e.toString());
+        }
+
+        return transactionIds;
     }
 }

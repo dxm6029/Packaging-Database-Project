@@ -282,7 +282,7 @@ public class CustomerTable {
 		 * Notice not all of the columns are here because
 		 * we limited what to show in the query
 		 */
-		ResultSet results2 = PackageTransportationTable.queryPackageTransportationTable(
+		ResultSet results2 = queryCustomerTable(
 				conn,
 				columns,
 				whereClauses);

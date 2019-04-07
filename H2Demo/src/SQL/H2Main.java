@@ -120,7 +120,6 @@ public class H2Main {
 			e.printStackTrace();
 		}
 		//TODO: prompt for queries
-
 	}
 
 	public static boolean getPassword(String email, String pass){
@@ -149,6 +148,27 @@ public class H2Main {
 		//Create the database connections, basically makes the database
 		demo.createConnection(location, user, password);
 		return CustomerTable.getName(customerID, demo.getConnection());
+	}
+
+	public static ArrayList<Integer> getPackageIds(int customerId) {
+		H2Main demo = new H2Main();
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
+
+		demo.createConnection(location, user, password);
+		return PackageTable.getCustomerPackages(customerId, demo.getConnection());
+	}
+
+	public static ArrayList<Integer> getTransactionIds(int customerId) {
+		H2Main demo = new H2Main();
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
+
+		demo.createConnection(location, user, password);
+
+		return MakesTransactionTable.getCustomerTransactions(customerId, demo.getConnection());
 	}
 
 }

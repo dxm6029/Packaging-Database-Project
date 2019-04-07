@@ -262,6 +262,26 @@ public class PackageTable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
 
+    public static ArrayList<Integer> getCustomerPackages(int customerId, Connection conn) {
+        ArrayList<Integer> packageIds = new ArrayList<>();
+
+        ArrayList<String> columns = new ArrayList<>();
+        String query = "SELECT packageId FROM packages WHERE transactionId IN (SELECT transactionId FROM " +
+                "makesTransaction WHERE customerId = " + customerId + ")";
+
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet results = stmt.executeQuery(query);
+
+            while (results.next()) {
+                packageIds.add(results.getInt(1));
+            }
+        } catch (Exception e) {
+            System.err.println(e.toString());
+        }
+
+        return packageIds;
     }
 }

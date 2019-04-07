@@ -1,5 +1,6 @@
 package UI;
 
+import java.lang.reflect.Array;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -24,9 +25,8 @@ public class CommandLineInterface {
     public void runCLI() {
         String option;
 
-        System.out.println("Welcome to Four Squared!");
-
         do {
+            printStateInfo(state);
             ArrayList<String> options = getStateOptions(state);
             printOptions(options);
             option = kboard.nextLine();
@@ -172,11 +172,17 @@ public class CommandLineInterface {
                 options.add("LOGOUT");
                 break;
             case PACKAGES_LIST:
-                // options.addAll(getPackages()); //TODO: Add get package IDs method
+                ArrayList<Integer> packages = H2Main.getPackageIds(Integer.parseInt(user.getCustomerID()));
+                for (int id: packages) {
+                    options.add(Integer.toString(id));
+                }
                 options.add("HOME");
                 break;
             case TRANSACTION_LIST:
-                // options.addAll(getTransactions()); //TODO: Add get transaction IDs method
+                ArrayList<Integer> transactions = H2Main.getTransactionIds(Integer.parseInt(user.getCustomerID()));
+                for (int id : transactions) {
+                    options.add(Integer.toString(id));
+                }
                 options.add("HOME");
         }
 
@@ -348,5 +354,24 @@ public class CommandLineInterface {
         //TODO: Make Package
         //TODO: Make Payment
         //TODO: Display Transaction Info
+    }
+
+    public void printStateInfo(UIState state) {
+        switch (state) {
+            case UNKNOWN_USER_HOME:
+                System.out.println("Welcome to Four Squared!");
+                break;
+            case CUSTOMER_HOME:
+                break;
+            case WORKER_HOME:
+                break;
+            case TRANSACTION_LIST:
+                System.out.println("Here are the IDs from your previous transactions.\n" +
+                        "Enter an ID to see transaction details.");
+                break;
+            case PACKAGES_LIST:
+                System.out.println("Here are the IDs for your packages.\n" +
+                        "Enter an ID see the package details.");
+        }
     }
 }
