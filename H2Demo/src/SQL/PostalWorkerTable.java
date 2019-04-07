@@ -9,7 +9,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class PrepaidTable {
+public class PostalWorkerTable {
+
     /**
      * Reads a cvs file for data and adds them to the Prepaid table
      *
@@ -19,8 +20,8 @@ public class PrepaidTable {
      * @param fileName
      * @throws SQLException
      */
-    public static void populatePrepaidTableFromCSV(Connection conn,
-                                                            String fileName)
+    public static void populatePostalTableFromCSV(Connection conn,
+                                                   String fileName)
             throws SQLException{
         /**
          * Structure to store the data as you read it in
@@ -29,14 +30,14 @@ public class PrepaidTable {
          * You can do the reading and adding to the table in one
          * step, I just broke it up for example reasons
          */
-        ArrayList<Prepaid> prepaid = new ArrayList<Prepaid>();
+        ArrayList<PostalWorker> workers = new ArrayList<PostalWorker>();
         try {
             BufferedReader br = new BufferedReader(new FileReader(fileName));
             String line;
             br.readLine();
             while((line = br.readLine()) != null){
                 String[] split = line.split(",");
-                prepaid.add(new Prepaid(split));
+                workers.add(new PostalWorker(split));
             }
             br.close();
         } catch (IOException e) {
@@ -48,7 +49,7 @@ public class PrepaidTable {
          * that were read in. This is more efficent then adding one
          * at a time
          */
-        String sql = createPrepaidInsertSQL(prepaid);
+        String sql = createPostalInsertSQL(workers);
 
         /**
          * Create and execute an SQL statement
@@ -65,7 +66,7 @@ public class PrepaidTable {
      *
      * @param conn: the database connection to work with
      */
-    public static void createPrepaidTable(Connection conn){
+    public static void createPostalTable(Connection conn){
         try {
             //FOR THE LOVE OF GOD UNDO THIS
             String q = "DROP TABLE IF EXISTS prepaid";
@@ -87,7 +88,7 @@ public class PrepaidTable {
      * Adds a single prepaid to the database
      *
      */
-    public static void addPrepaid(Connection conn, int paymentID, int used){
+    public static void addPostal(Connection conn, int paymentID, int used){
 
         /**
          * SQL insert statement
@@ -115,7 +116,7 @@ public class PrepaidTable {
      *
      * @return
      */
-    public static String createPrepaidInsertSQL(ArrayList<Prepaid> prepaid){
+    public static String createPostalInsertSQL(ArrayList<Prepaid> prepaid){
         StringBuilder sb = new StringBuilder();
 
         /**
@@ -156,9 +157,9 @@ public class PrepaidTable {
      * @param whereClauses: conditions to limit query by
      * @return
      */
-    public static ResultSet queryPrepaidTable(Connection conn,
-                                                       ArrayList<String> columns,
-                                                       ArrayList<String> whereClauses){
+    public static ResultSet queryPostalTable(Connection conn,
+                                              ArrayList<String> columns,
+                                              ArrayList<String> whereClauses){
         StringBuilder sb = new StringBuilder();
 
         /**
@@ -229,9 +230,8 @@ public class PrepaidTable {
     /**
      * Queries and print the table
      * @param conn
-     * line
      */
-    public static void printPrepaidTable(Connection conn){
+    public static void printPostalTable(Connection conn){
         String query = "SELECT * FROM prepaid;";
         try {
             Statement stmt = conn.createStatement();
