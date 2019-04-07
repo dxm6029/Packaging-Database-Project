@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class PostalWorkerTable {
 
     /**
-     * Reads a cvs file for data and adds them to the Prepaid table
+     * Reads a cvs file for data and adds them to the Worker table
      *
      * Does not create the table. It must already be created
      *
@@ -30,14 +30,14 @@ public class PostalWorkerTable {
          * You can do the reading and adding to the table in one
          * step, I just broke it up for example reasons
          */
-        ArrayList<PostalWorker> workers = new ArrayList<PostalWorker>();
+        ArrayList<PostalWorker> worker = new ArrayList<PostalWorker>();
         try {
             BufferedReader br = new BufferedReader(new FileReader(fileName));
             String line;
             br.readLine();
             while((line = br.readLine()) != null){
                 String[] split = line.split(",");
-                workers.add(new PostalWorker(split));
+                worker.add(new PostalWorker(split));
             }
             br.close();
         } catch (IOException e) {
@@ -45,11 +45,11 @@ public class PostalWorkerTable {
         }
 
         /**
-         * Creates the SQL query to do a bulk add of all Prepaid
+         * Creates the SQL query to do a bulk add of all Worker
          * that were read in. This is more efficent then adding one
          * at a time
          */
-        String sql = createPostalInsertSQL(workers);
+        String sql = createPostalInsertSQL(worker);
 
         /**
          * Create and execute an SQL statement
@@ -62,17 +62,17 @@ public class PostalWorkerTable {
     }
 
     /**
-     * Create the prepaid table with the given attributes
+     * Create the Worker table with the given attributes
      *
      * @param conn: the database connection to work with
      */
     public static void createPostalTable(Connection conn){
         try {
             //FOR THE LOVE OF GOD UNDO THIS
-            String q = "DROP TABLE IF EXISTS prepaid";
+            String q = "DROP TABLE IF EXISTS workers";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS prepaid(paymentID INT PRIMARY KEY, used INT )";
+            String query = "CREATE TABLE IF NOT EXISTS workers(name VARCHAR(20), location VARCHAR(20), workerID INT PRIMARY KEY)";
 
             /**
              * Create a query and execute
@@ -85,17 +85,17 @@ public class PostalWorkerTable {
     }
 
     /**
-     * Adds a single prepaid to the database
+     * Adds a single Worker to the database
      *
      */
-    public static void addPostal(Connection conn, int paymentID, int used){
+    public static void addPostal(Connection conn, String name, String location, int workerID){
 
         /**
          * SQL insert statement
          */
-        String query = String.format("INSERT INTO prepaid "
-                        + "VALUES(%d, %d);",
-                paymentID, used );
+        String query = String.format("INSERT INTO workers "
+                        + "VALUES(\'%s\', \'%s\', %d);",
+                name, location, workerID );
         try {
             /**
              * create and execute the query
@@ -112,11 +112,11 @@ public class PostalWorkerTable {
     /**
      * This creates an sql statement to do a bulk add of people
      *
-     * @param prepaid: list of prepaid objects to add
+     * @param worker: list of Worker objects to add
      *
      * @return
      */
-    public static String createPostalInsertSQL(ArrayList<Prepaid> prepaid){
+    public static String createPostalInsertSQL(ArrayList<PostalWorker> worker){
         StringBuilder sb = new StringBuilder();
 
         /**
@@ -125,20 +125,18 @@ public class PostalWorkerTable {
          * the order of the data in reference
          * to the columns to ad dit to
          */
-        sb.append("INSERT INTO prepaid (paymentID, used) VALUES");
+        sb.append("INSERT INTO workers (name, location, workerID) VALUES");
 
         /**
-         * For each prepaid append a (id, first_name, last_name, MI) tuple
+         * If it is not the last Worker add a comma to seperate
          *
-         * If it is not the last prepaid add a comma to seperate
-         *
-         * If it is the last prepaid add a semi-colon to end the statement
+         * If it is the last Worker add a semi-colon to end the statement
          */
-        for(int i = 0; i < prepaid.size(); i++){
-            Prepaid p = prepaid.get(i);
-            sb.append(String.format("(%d, %d)",
-                    p.getPaymentID(), p.isUsed()));
-            if( i != prepaid.size()-1){
+        for(int i = 0; i < worker.size(); i++){
+            PostalWorker p = worker.get(i);
+            sb.append(String.format("(\'%s\', \'%s\', %d)",
+                    p.getName(), p.getLocation(), p.getWorkerID()));
+            if( i != worker.size()-1){
                 sb.append(",");
             }
             else{
@@ -149,7 +147,7 @@ public class PostalWorkerTable {
     }
 
     /**
-     * Makes a query to the prepaid table
+     * Makes a query to the Worker table
      * with given columns and conditions
      *
      * @param conn
@@ -190,7 +188,7 @@ public class PostalWorkerTable {
         /**
          * Tells it which table to get the data from
          */
-        sb.append("FROM prepaid ");
+        sb.append("FROM workers ");
 
         /**
          * If we gave it conditions append them
@@ -232,15 +230,16 @@ public class PostalWorkerTable {
      * @param conn
      */
     public static void printPostalTable(Connection conn){
-        String query = "SELECT * FROM prepaid;";
+        String query = "SELECT * FROM workers;";
         try {
             Statement stmt = conn.createStatement();
             ResultSet result = stmt.executeQuery(query);
 
             while(result.next()){
-                System.out.printf("prepaid %d,%d\n",
-                        result.getInt(1),
-                        result.getInt(2));
+                System.out.printf("workers %s, %s, %d\n",
+                        result.getString(1),
+                        result.getString(2),
+                        result.getInt(3));
             }
         } catch (SQLException e) {
             e.printStackTrace();
