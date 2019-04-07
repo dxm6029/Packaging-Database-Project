@@ -3,7 +3,7 @@ package SQL;
 public class Prepaid {
 
     int paymentID;
-    boolean used;
+    boolean used; // will need to make a string in the end so it can be inserted and not inserted from table
 
     public Prepaid(int payID, double cost, boolean used){
         this.paymentID = payID;
