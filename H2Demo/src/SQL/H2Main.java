@@ -102,7 +102,24 @@ public class H2Main {
 
 		//Create the database connections, basically makes the database
 		demo.createConnection(location, user, password);
-		return CustomerTable.getPassword(email, demo.getConnection()).equals(pass);
+		if(CustomerTable.getPassword(email, demo.getConnection()).equals(pass)){
+			return true;
+		}
+		//check if worker
+		else{
+			return false;
+		}
+	}
+
+	public static String getName(String customerID){
+		H2Main demo = new H2Main();
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
+
+		//Create the database connections, basically makes the database
+		demo.createConnection(location, user, password);
+		return CustomerTable.getName(customerID, demo.getConnection());
 	}
 
 }
