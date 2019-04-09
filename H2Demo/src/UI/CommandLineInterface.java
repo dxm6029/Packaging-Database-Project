@@ -191,6 +191,7 @@ public class CommandLineInterface {
 
     private void displayPackageInfo(int packageId) {
         //TODO
+
     }
 
     private void displayTransactionInfo(int transactionId) {

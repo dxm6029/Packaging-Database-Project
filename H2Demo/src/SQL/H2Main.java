@@ -171,4 +171,14 @@ public class H2Main {
 		return MakesTransactionTable.getCustomerTransactions(customerId, demo.getConnection());
 	}
 
+	public static Package getPackageInfo(int packageId){
+		H2Main demo = new H2Main();
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
+
+		demo.createConnection(location, user, password);
+		return PackageTable.getPackageInfo(packageId, demo.getConnection());
+	}
+
 }

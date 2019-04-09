@@ -3,11 +3,9 @@ package SQL;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Class to make and manipulate the package table
@@ -262,6 +260,32 @@ public class PackageTable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public static Package getPackageInfo(int packageId, Connection conn){
+        Package pack = null;
+
+        String query = "SELECT * FROM packages WHERE packageID =" + packageId;
+
+        try{
+            Statement stmt = conn.createStatement();
+            ResultSet results = stmt.executeQuery(query);
+
+            while(results.next()){
+                pack =  new Package(results.getString(1),
+                        results.getFloat(2),
+                        results.getString(3),
+                        results.getInt(4),
+                        results.getString(5),
+                        results.getString(6),
+                        results.getString(7),
+                        results.getString(8),
+                        results.getInt(9));
+            }
+        }catch(Exception e){
+            System.err.println(e.toString());
+        }
+        return pack;
     }
 
     public static ArrayList<Integer> getCustomerPackages(int customerId, Connection conn) {

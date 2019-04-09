@@ -55,7 +55,7 @@ public class CustomerTable {
 		 * at a time
 		 */
 		String sql = createCustomerInsertSQL(customers);
-		
+		System.out.println("Running query : " + sql + "...\n");
 		/**
 		 * Create and execute an SQL statement
 		 * 
@@ -82,6 +82,7 @@ public class CustomerTable {
 			/**
 			 * Create a query and execute
 			 */
+			System.out.println("Executing query " + query + "...\n");
 			Statement stmt = conn.createStatement();
 			//System.out.println(query +"\n\n\n");
 			stmt.execute(query);
