@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class H2Main {
 
 	//The connection to the database
-	private Connection conn;
+	private static Connection conn;
 
 	
 	/**
@@ -51,7 +51,7 @@ public class H2Main {
 	 * just returns the connection
 	 * @return: returns class level connection
 	 */
-	public Connection getConnection(){
+	public static Connection getConnection(){ // made static so could call before
 		return conn;
 	}
 	
