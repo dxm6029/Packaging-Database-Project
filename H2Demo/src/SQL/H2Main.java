@@ -181,4 +181,26 @@ public class H2Main {
 		return PackageTable.getPackageInfo(packageId, demo.getConnection());
 	}
 
+	public static void setDelivered(int packageId, int workerId){
+		H2Main demo = new H2Main();
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
+
+		demo.createConnection(location, user, password);
+		PackageTable.setPackageDelivered(packageId, workerId, demo.getConnection());
+	}
+
+    public static void addPackage(String packageType, double weight, String deliveryType, int packageID, String loc,
+                                  String startedDelivery, String extraInfo, String deliveryTime, int transactionID){
+        H2Main demo = new H2Main();
+        String location = "./h2demo/h2demo";
+        String user = "me";
+        String password = "password";
+
+        demo.createConnection(location, user, password);
+        PackageTable.addPackage( demo.getConnection(), packageType, weight,  deliveryType,  packageID,  loc,
+                 startedDelivery,  extraInfo,  deliveryTime,  transactionID);
+    }
+
 }

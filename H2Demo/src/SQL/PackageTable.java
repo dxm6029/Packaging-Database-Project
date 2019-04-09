@@ -308,4 +308,23 @@ public class PackageTable {
 
         return packageIds;
     }
+
+    public static void setPackageDelivered(int packageID, int workerID, Connection conn){
+        //Get worker location
+        String loc = "";
+        String query = "SELECT location FROM workers WHERE workerID = " + workerID;
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet results = stmt.executeQuery(query);
+            while (results.next()) {
+                loc = results.getString(1);
+            }
+            query = "UPDATE packages SET location = "+ loc+
+                    " WHERE packageID = " + packageID;
+            stmt = conn.createStatement();
+            stmt.executeQuery(query);
+        } catch (Exception e) {
+            System.err.println(e.toString());
+        }
+    }
 }
