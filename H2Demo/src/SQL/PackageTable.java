@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.*;
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -321,6 +323,14 @@ public class PackageTable {
             }
             query = "UPDATE packages SET location = "+ loc+
                     " WHERE packageID = " + packageID;
+            stmt = conn.createStatement();
+            stmt.executeQuery(query);
+
+            query = "UPDATE packages SET deliveryTime = " + LocalDate.now(
+                    ZoneId.of( "America/Montreal" )
+            ).atStartOfDay(
+                    ZoneId.of( "America/Montreal" )
+            ) + "WHERE packageID = " + packageID;
             stmt = conn.createStatement();
             stmt.executeQuery(query);
         } catch (Exception e) {
