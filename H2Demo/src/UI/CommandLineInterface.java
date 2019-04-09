@@ -4,6 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.ArrayList;
 import SQL.*;
+import SQL.Package;
 
 public class CommandLineInterface {
     private Scanner kboard;
@@ -201,8 +202,12 @@ public class CommandLineInterface {
     }
 
     private void displayPackageInfo(int packageId) {
-        //TODO
+        Package p = H2Main.getPackageInfo(packageId);
 
+        System.out.println(p.toString());
+
+        System.out.print("\nPress Enter to continue.");
+        kboard.nextLine();
     }
 
     private void displayTransactionInfo(int transactionId) {

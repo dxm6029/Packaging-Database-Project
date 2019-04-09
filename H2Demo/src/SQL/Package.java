@@ -112,4 +112,19 @@ public class Package {
     public void setTransactionID(int transactionID) {
         this.transactionID = transactionID;
     }
+
+    @Override
+    public String toString() {
+        String deliverTime;
+
+        if (deliveryTime.equals("null")) {
+            deliverTime = "Not Yet Delivered";
+        }
+        else {
+            deliverTime = deliveryTime;
+        }
+        return "PackageID: " + packageID + "\nTransactionID: " + transactionID + "\n\nType: " + packageType +
+                " Weight: " + weight + "lbs.\nExtra Info: " + extraInfo + "\n\nStarted Delivery: " + startedDelivery
+                + "\nDelivery Time: " + deliverTime + "\nLocation: " + location;
+    }
 }
