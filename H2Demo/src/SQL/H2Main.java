@@ -1,9 +1,6 @@
 package SQL;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 
 /**
@@ -122,7 +119,7 @@ public class H2Main {
 		//TODO: prompt for queries
 	}
 
-	public static boolean getPassword(String email, String pass){
+	public static boolean getPassword(String username, String pass){
 		H2Main demo = new H2Main();
 		String location = "./h2demo/h2demo";
 		String user = "me";
@@ -130,16 +127,12 @@ public class H2Main {
 
 		//Create the database connections, basically makes the database
 		demo.createConnection(location, user, password);
-		if(CustomerTable.getPassword(email, demo.getConnection()).equals(pass)){
-			return true;
-		}
-		//check if worker
-		else{
-			return false;
-		}
+
+		return CustomerTable.getPassword(username, demo.getConnection()).equals(pass) ||
+				PostalWorkerTable.getPassword(username, demo.getConnection()).equals(pass);
 	}
 
-	public static String getName(String customerID){
+	public static String getCustomerName(String customerID){
 		H2Main demo = new H2Main();
 		String location = "./h2demo/h2demo";
 		String user = "me";
@@ -148,6 +141,16 @@ public class H2Main {
 		//Create the database connections, basically makes the database
 		demo.createConnection(location, user, password);
 		return CustomerTable.getName(customerID, demo.getConnection());
+	}
+
+	public static String getWorkerName(String workerId) {
+		H2Main demo = new H2Main();
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
+
+		demo.createConnection(location, user, password);
+		return PostalWorkerTable.getName(workerId, demo.getConnection());
 	}
 
 	public static ArrayList<Integer> getPackageIds(int customerId) {
@@ -191,5 +194,34 @@ public class H2Main {
 		demo.createConnection(location, user, password);
 
 		return PaymentTable.getTransactionPaymentType(transactionId, demo.getConnection());
+	}
+
+	public static Package getPackageInfo(int packageId){
+		H2Main demo = new H2Main();
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
+
+		demo.createConnection(location, user, password);
+		return PackageTable.getPackageInfo(packageId, demo.getConnection());
+	}
+
+
+	public static void enterAdminStatement(String query) {
+		H2Main demo = new H2Main();
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
+
+		demo.createConnection(location, user, password);
+
+		try {
+			Statement stmt = demo.getConnection().createStatement();
+			ResultSet result = stmt.executeQuery(query);
+
+			System.out.println("Success");
+		} catch (SQLException e) {
+			System.out.println("Invalid SQL Statement: " + query);
+		}
 	}
 }

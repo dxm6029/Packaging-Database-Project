@@ -1,5 +1,6 @@
 package UI;
 
+import SQL.CustomerTable;
 import SQL.H2Main;
 
 import java.util.ArrayList;
@@ -7,47 +8,64 @@ import java.util.Scanner;
 
 public class User {
     private String userName;
-    private String customerID;
+    private String userId;
 
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
-    public String getCustomerID() {
-        return customerID;
+    public String getUserId() {
+        return userId;
     }
 
     public UIState login (Scanner kboard) {
         boolean loggedIn = false;
+        UIState expected = UIState.UNKNOWN_USER_HOME;
 
-        System.out.println("Logging In");
+        System.out.println("Logging In (Leave the 'Username' field empty to cancel)");
 
         while (!loggedIn) {
             System.out.print("Username: ");
             setUserName(kboard.nextLine());
 
-            System.out.print("Password: ");
-            customerID = kboard.nextLine();
-
-            if(H2Main.getPassword(userName,customerID)){
-                String name = H2Main.getName(customerID);
-                System.out.println("Welcome to 4Squared, " + name + "!");
-                return UIState.CUSTOMER_HOME;
-            }else{
-                System.out.println("USERNAME AND/OR PASSWORD INVALID");
+            if (userName.length() == 0) {
+                expected = UIState.UNKNOWN_USER_HOME;
+                break;
+            }
+            else if (userName.equalsIgnoreCase("ADMIN")) {
+                expected = UIState.ADMIN;
+            }
+            else if (userName.contains("@")) {
+                expected = UIState.CUSTOMER_HOME;
+            }
+            else {
+                expected = UIState.WORKER_HOME;
             }
 
+            System.out.print("Password: ");
+            userId = kboard.nextLine();
 
+            if (expected == UIState.ADMIN && userId.equals("ADMIN")) {
+                System.out.println("Welcome Database Admin!");
+                loggedIn = true;
+            }
+            else if (H2Main.getPassword(userName, userId)){
+                if (expected == UIState.CUSTOMER_HOME) {
+                    System.out.println("Welcome to Four Squared, " + H2Main.getCustomerName(userId));
+                }
+                else {
+                    System.out.println("Welcome to Four Squared, " + H2Main.getWorkerName(userId));
+                }
 
-            // TODO: Check login credentials in SQL
-
-            // TODO: implement way to cancel
-
-            loggedIn = true;
+                loggedIn = true;
+            } else{
+                System.out.println("USERNAME AND/OR PASSWORD INVALID");
+            }
         }
 
-        return UIState.UNKNOWN_USER_HOME;
+        return expected;
     }
+
 
     public UIState register(Scanner kboard) {
         String firstName;
@@ -97,7 +115,7 @@ public class User {
             phoneNumbers.add(kboard.nextLine());
 
             System.out.print("Add another phone number? (Y/N): ");
-            switch (kboard.nextLine()) {
+            switch (kboard.nextLine().toUpperCase()) {
                 case "Y":
                     System.out.println("Adding another phone number.");
                     continue;

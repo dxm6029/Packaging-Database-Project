@@ -211,8 +211,6 @@ public class PostalWorkerTable {
          */
         sb.append(";");
 
-        //Print it out to verify it made it right
-        System.out.println("Query: " + sb.toString());
         try {
             /**
              * Execute the query and return the result set
@@ -244,7 +242,51 @@ public class PostalWorkerTable {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
 
+    public static String getPassword(String username, Connection conn) {
+        String password = "tempstring";
+
+        ArrayList<String> columns = new ArrayList<>();
+        columns.add("workerId");
+        ArrayList<String> whereClauses = new ArrayList<>();
+        whereClauses.add("name = '" + username + "'");
+
+        ResultSet result = queryPostalTable(conn, columns, whereClauses);
+
+        try {
+            if (result.next()) {
+                password = result.getString(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return password;
+    }
+
+    public static String getName(String id, Connection conn) {
+        String[] names;
+        String fName = "";
+        String lName = "";
+
+        ArrayList<String> columns = new ArrayList<>();
+        columns.add("name");
+        ArrayList<String> whereClauses = new ArrayList<>();
+        whereClauses.add("workerId = " + id);
+
+        ResultSet resultSet = queryPostalTable(conn, columns, whereClauses);
+
+        try {
+            if (resultSet.next()) {
+                names = resultSet.getString(1).split("_");
+                fName = names[0];
+                lName = names[1];
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return fName + " " + lName;
+    }
 }

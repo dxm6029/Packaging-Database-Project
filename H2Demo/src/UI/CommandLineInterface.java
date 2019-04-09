@@ -1,6 +1,5 @@
 package UI;
 
-import java.lang.reflect.Array;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -107,6 +106,14 @@ public class CommandLineInterface {
                     displayTransactionInfo(Integer.parseInt(option));
                     return state;
                 }
+            case ADMIN:
+                if (option.equalsIgnoreCase("SQL")) {
+                    enterSqlStatements();
+                    return state;
+                }
+                else if (option.equalsIgnoreCase("LOGOUT")) {
+                    return UIState.UNKNOWN_USER_HOME;
+                }
         }
 
         return state;
@@ -172,18 +179,22 @@ public class CommandLineInterface {
                 options.add("LOGOUT");
                 break;
             case PACKAGES_LIST:
-                ArrayList<Integer> packages = H2Main.getPackageIds(Integer.parseInt(user.getCustomerID()));
+                ArrayList<Integer> packages = H2Main.getPackageIds(Integer.parseInt(user.getUserId()));
                 for (int id: packages) {
                     options.add(Integer.toString(id));
                 }
                 options.add("HOME");
                 break;
             case TRANSACTION_LIST:
-                ArrayList<Integer> transactions = H2Main.getTransactionIds(Integer.parseInt(user.getCustomerID()));
+                ArrayList<Integer> transactions = H2Main.getTransactionIds(Integer.parseInt(user.getUserId()));
                 for (int id : transactions) {
                     options.add(Integer.toString(id));
                 }
                 options.add("HOME");
+                break;
+            case ADMIN:
+                options.add("SQL");
+                options.add("LOGOUT");
         }
 
         return options;
@@ -191,6 +202,7 @@ public class CommandLineInterface {
 
     private void displayPackageInfo(int packageId) {
         //TODO
+
     }
 
     private void displayTransactionInfo(int transactionId) {
@@ -368,10 +380,6 @@ public class CommandLineInterface {
             case UNKNOWN_USER_HOME:
                 System.out.println("Welcome to Four Squared!");
                 break;
-            case CUSTOMER_HOME:
-                break;
-            case WORKER_HOME:
-                break;
             case TRANSACTION_LIST:
                 System.out.println("Here are the IDs from your previous transactions.\n" +
                         "Enter an ID to see transaction details.");
@@ -379,6 +387,23 @@ public class CommandLineInterface {
             case PACKAGES_LIST:
                 System.out.println("Here are the IDs for your packages.\n" +
                         "Enter an ID see the package details.");
+        }
+    }
+
+    private void enterSqlStatements() {
+        boolean enteringStatements = true;
+        String statement;
+
+        while (enteringStatements) {
+            System.out.print("Enter a SQL Statement or 'QUIT' to quit: ");
+            statement = kboard.nextLine();
+
+            if (statement.equalsIgnoreCase("QUIT")) {
+                enteringStatements = false;
+            }
+            else {
+                H2Main.enterAdminStatement(statement);
+            }
         }
     }
 }

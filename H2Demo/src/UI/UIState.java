@@ -5,5 +5,6 @@ public enum UIState {
     CUSTOMER_HOME,
     WORKER_HOME,
     PACKAGES_LIST,
-    TRANSACTION_LIST
+    TRANSACTION_LIST,
+    ADMIN
 }
