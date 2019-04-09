@@ -168,6 +168,7 @@ public class User {
 
 
 
+
         System.out.println("New User Registered. Welcome!");
         System.out.println("Your password is: '" + password + "' Don't Forget This!");
 
