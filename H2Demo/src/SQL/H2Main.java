@@ -181,4 +181,15 @@ public class H2Main {
 		return PackageTable.getPackageInfo(packageId, demo.getConnection());
 	}
 
+	public static void setDelivered(int packageId, int workerId){
+		H2Main demo = new H2Main();
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
+
+		demo.createConnection(location, user, password);
+		PackageTable.setPackageDelivered(packageId, workerId, demo.getConnection());
+	}
+
+
 }
