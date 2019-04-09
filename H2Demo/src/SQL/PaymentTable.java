@@ -1,5 +1,6 @@
 package SQL;
 
+import javax.swing.plaf.nimbus.State;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -245,5 +246,23 @@ public class PaymentTable {
 
     }
 
+    public static String getTransactionPaymentType(int transactionId, Connection conn) {
+        String paymentType = "";
 
+        String query = "SELECT type FROM payment WHERE paymentId IN " +
+                "(SELECT paymentId FROM makesTransaction WHERE transactionId = " + transactionId + ");";
+
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet result = stmt.executeQuery(query);
+
+            if (result.next()) {
+                paymentType = result.getString(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return paymentType;
+    }
 }

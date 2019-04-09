@@ -194,7 +194,14 @@ public class CommandLineInterface {
     }
 
     private void displayTransactionInfo(int transactionId) {
-        //TODO
+        Transaction t = H2Main.getTransactionInfo(transactionId);
+        String paymentType = H2Main.getTransactionPaymentType(transactionId);
+
+        System.out.println("\n" + t.toString());
+        System.out.println("Payment Type Used: " + paymentType + "\n");
+
+        System.out.print("Press Enter to continue.");
+        kboard.nextLine();
     }
 
     public int inputNumber() {

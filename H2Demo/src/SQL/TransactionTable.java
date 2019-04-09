@@ -222,8 +222,6 @@ public class TransactionTable {
          */
         sb.append(";");
 
-        //Print it out to verify it made it right
-        System.out.println("Query: " + sb.toString());
         try {
             /**
              * Execute the query and return the result set
@@ -263,5 +261,44 @@ public class TransactionTable {
             e.printStackTrace();
         }
 
+    }
+
+    public static Transaction getTransactionInfo(int transactionId, Connection conn) {
+        int id = 0;
+        String rfName = "";
+        String rlName = "";
+        String streetNum = "";
+        String streetName = "";
+        String aptNum = "";
+        String city = "";
+        String state = "";
+        String country = "";
+        String zip = "";
+
+        ArrayList<String> columns = new ArrayList<>();
+        columns.add("*");
+        ArrayList<String> whereClauses = new ArrayList<>();
+        whereClauses.add("transactionId = " + transactionId);
+
+        ResultSet result = TransactionTable.queryCustomerTable(conn, columns, whereClauses);
+
+        try {
+            if (result.next()) {
+                id = result.getInt(1);
+                rfName = result.getString(2);
+                rlName = result.getString(3);
+                streetNum = result.getString(4);
+                streetName = result.getString(5);
+                aptNum = result.getString(6);
+                city = result.getString(7);
+                state = result.getString(8);
+                country = result.getString(9);
+                zip = result.getString(10);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return new Transaction(id, rfName, rlName, streetNum, streetName, aptNum, city, state, country, zip);
     }
 }

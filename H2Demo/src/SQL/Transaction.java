@@ -121,4 +121,13 @@ public class Transaction {
     public void setZip(String zip) {
         this.zip = zip;
     }
+
+    @Override
+    public String toString() {
+        return "TrnasactionID: " + transactionID + "\n" +
+                "Recipient Information\n" +
+                "Name: " + rfName + " " + lrName + "\n" +
+                "Address: " + streetNum + " " + streetName + ", " + city + ", "
+                + state + ", " + country + " " + zip;
+    }
 }
