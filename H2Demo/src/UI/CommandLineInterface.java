@@ -45,7 +45,7 @@ public class CommandLineInterface {
     }
 
     private void printOptions(ArrayList<String> options) {
-        System.out.println("Possible Commands: ");
+        System.out.println("Possible Commands: (Or type 'QUIT' at anytime to exit)");
 
         for  (String option : options) {
             System.out.println("\t\t" + option);
@@ -203,8 +203,12 @@ public class CommandLineInterface {
 
     private void displayPackageInfo(int packageId) {
         Package p = H2Main.getPackageInfo(packageId);
-
-        System.out.println(p.toString());
+        if (p == null) {
+            System.out.println("Invalid Package ID");
+        }
+        else {
+            System.out.println(p.toString());
+        }
 
         System.out.print("\nPress Enter to continue.");
         kboard.nextLine();
