@@ -114,6 +114,8 @@ public class CustomerTable {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+
+
 		
 	}
 	
