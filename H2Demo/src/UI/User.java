@@ -1,13 +1,19 @@
 package UI;
 
 import SQL.CustomerTable;
+import SQL.Customer;
 import SQL.H2Main;
 
+import java.sql.*;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
+import SQL.CustomerTable;
 
 public class User {
     private String userName;
+    private H2Main main = new H2Main();
+    private CustomerTable cT = new CustomerTable();
     private String userId;
 
     public void setUserName(String userName) {
@@ -76,8 +82,10 @@ public class User {
         String city;
         String state;
         String zip;
+        String country;
         String email;
-        String password;
+
+        int password; // also acts as customer ID
 
         ArrayList<String> phoneNumbers = new ArrayList<>();
 
@@ -107,6 +115,9 @@ public class User {
         System.out.print("Zip Code: ");
         zip = kboard.nextLine();
 
+        System.out.print("Country: ");
+        country = kboard.nextLine();
+
         System.out.print("Email: ");
         email = kboard.nextLine();
 
@@ -127,8 +138,55 @@ public class User {
             break;
         }
 
-        //TODO: Register in DB
-        password = ""; //TODO: Get customer id
+        Random rand = new Random();
+
+        password = rand.nextInt(49999) + 50000; // needs to be a random num not in the DB, will act as the password - 5 digits
+
+        String query = String.format("SELECT * FROM customer WHERE customerID = %d;", password);
+
+        try {
+            /**
+             * create and execute the query
+             */
+
+            Connection conn;
+
+            String location = "./h2demo/h2demo";
+            String user = "me";
+            String password2 = "password";
+
+            //This needs to be on the front of your location
+            String url = "jdbc:h2:" + location;
+
+            //This tells it to use the h2 driver
+            Class.forName("org.h2.Driver");
+
+            //creates the connection
+            conn = DriverManager.getConnection(url,
+                    user,
+                    password2);
+
+            Statement stmt =  conn.createStatement(); // null???
+
+            ResultSet rs = stmt.executeQuery(query);
+
+            while (rs.next()){ // checks if the table is empty, if not enters here
+                password = rand.nextInt(49999) + 50000;
+                query = String.format("SELECT * FROM customer WHERE customerID = %d;", password);
+                rs = stmt.executeQuery(query);
+            }
+
+            cT.addCustomer(conn, firstName, lastName, password, email, Integer.parseInt(streetNum), streetName, aptNum, city, state, country, zip);
+
+        } catch (SQLException | ClassNotFoundException e) {
+            //You should handle this better
+            e.printStackTrace();
+        }
+
+
+
+
+
         System.out.println("New User Registered. Welcome!");
         System.out.println("Your password is: '" + password + "' Don't Forget This!");
 

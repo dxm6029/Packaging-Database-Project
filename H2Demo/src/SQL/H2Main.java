@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class H2Main {
 
 	//The connection to the database
-	private Connection conn;
+	private static Connection conn;
 
 	
 	/**
@@ -48,7 +48,7 @@ public class H2Main {
 	 * just returns the connection
 	 * @return: returns class level connection
 	 */
-	public Connection getConnection(){
+	public static Connection getConnection(){ // made static so could call before
 		return conn;
 	}
 	
@@ -206,8 +206,30 @@ public class H2Main {
 		return PackageTable.getPackageInfo(packageId, demo.getConnection());
 	}
 
+	public static void setDelivered(int packageId, int workerId){
+		H2Main demo = new H2Main();
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
 
-	public static void enterAdminStatement(String query) {
+		demo.createConnection(location, user, password);
+		PackageTable.setPackageDelivered(packageId, workerId, demo.getConnection());
+	}
+
+    public static void addPackage(String packageType, double weight, String deliveryType, int packageID, String loc,
+                                  String startedDelivery, String extraInfo, String deliveryTime, int transactionID){
+        H2Main demo = new H2Main();
+        String location = "./h2demo/h2demo";
+        String user = "me";
+        String password = "password";
+
+        demo.createConnection(location, user, password);
+        PackageTable.addPackage( demo.getConnection(), packageType, weight,  deliveryType,  packageID,  loc,
+                 startedDelivery,  extraInfo,  deliveryTime,  transactionID);
+    }
+
+
+	public static void enterAdminStatement(String statement) {
 		H2Main demo = new H2Main();
 		String location = "./h2demo/h2demo";
 		String user = "me";
@@ -216,12 +238,42 @@ public class H2Main {
 		demo.createConnection(location, user, password);
 
 		try {
+			String statementType = statement.split(" ")[0];
 			Statement stmt = demo.getConnection().createStatement();
-			ResultSet result = stmt.executeQuery(query);
 
-			System.out.println("Success");
+			if (statementType.equals("SELECT")) {
+				ResultSet result = stmt.executeQuery(statement);
+				ResultSetMetaData rsmd = result.getMetaData();
+				int columnCount = rsmd.getColumnCount();
+
+				for (int n = 1; n <= columnCount; n++) {
+					System.out.print(rsmd.getColumnLabel(n));
+
+					if (n != columnCount) {
+						System.out.print(", ");
+					}
+				}
+				System.out.println(); //Add newline
+
+				while (result.next()) {
+					for (int n = 1; n <= columnCount; n++) {
+						System.out.print(result.getString(n));
+
+						if (n != columnCount) {
+							System.out.print(", ");
+						}
+					}
+
+					System.out.println(); //Add newline
+				}
+			}
+			else {
+				stmt.execute(statement);
+
+				System.out.println("Successfully executed Statement: " + statement);
+			}
 		} catch (SQLException e) {
-			System.out.println("Invalid SQL Statement: " + query);
+			e.printStackTrace();
 		}
 	}
 }

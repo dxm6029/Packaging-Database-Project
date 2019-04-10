@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.*;
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -307,5 +309,32 @@ public class PackageTable {
         }
 
         return packageIds;
+    }
+
+    public static void setPackageDelivered(int packageID, int workerID, Connection conn){
+        //Get worker location
+        String loc = "";
+        String query = "SELECT location FROM workers WHERE workerID = " + workerID;
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet results = stmt.executeQuery(query);
+            while (results.next()) {
+                loc = results.getString(1);
+            }
+            query = "UPDATE packages SET location = "+ loc+
+                    " WHERE packageID = " + packageID;
+            stmt = conn.createStatement();
+            stmt.executeQuery(query);
+
+            query = "UPDATE packages SET deliveryTime = " + LocalDate.now(
+                    ZoneId.of( "America/Montreal" )
+            ).atStartOfDay(
+                    ZoneId.of( "America/Montreal" )
+            ) + "WHERE packageID = " + packageID;
+            stmt = conn.createStatement();
+            stmt.executeQuery(query);
+        } catch (Exception e) {
+            System.err.println(e.toString());
+        }
     }
 }

@@ -14,6 +14,7 @@ import java.util.ArrayList;
  * @author scj
  *
  */
+
 public class CustomerTable {
 
 	/**
@@ -114,6 +115,8 @@ public class CustomerTable {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+
+
 		
 	}
 	

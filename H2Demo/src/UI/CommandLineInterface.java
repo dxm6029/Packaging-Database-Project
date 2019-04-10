@@ -45,7 +45,7 @@ public class CommandLineInterface {
     }
 
     private void printOptions(ArrayList<String> options) {
-        System.out.println("Possible Commands: (Or type 'QUIT' at anytime to exit)");
+        System.out.println("Possible Commands: (Or type 'QUIT' to exit)");
 
         for  (String option : options) {
             System.out.println("\t\t" + option);
