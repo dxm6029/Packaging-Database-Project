@@ -1,6 +1,8 @@
 package UI;
 
+import java.sql.*;
 import java.util.InputMismatchException;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.ArrayList;
 import SQL.*;
@@ -143,7 +145,7 @@ public class CommandLineInterface {
     private void markDelivered() {
         int packageId;
 
-        System.out.println("Marking Packages Deliverd");
+        System.out.println("Marking Packages Delivered");
         while (true) {
             System.out.print("Enter PackageID: ");
             packageId = inputNumber();
@@ -263,6 +265,13 @@ public class CommandLineInterface {
 
         // Package Info
         double weight = -1;
+        String packageType = "";
+        String deliveryType = "";
+        int packID = 0;
+        String locate = "";
+        String startedDelivery = "";
+        String extraInfo = "";
+        int transactionID = 0;
 
         // Recipient Info
         String firstName = "";
@@ -379,7 +388,57 @@ public class CommandLineInterface {
         }
 
 
-        //TODO: Make Package
+
+        // TODO : PackageTable.addPackage();
+
+        Random rand = new Random();
+
+        packID = rand.nextInt(49999) + 50000; // needs to be a random num not in the DB, will act as the password - 5 digits
+
+        String query = String.format("SELECT * FROM packages WHERE packageID = %d;", packID);
+
+        try {
+            /**
+             * create and execute the query
+             */
+
+            Connection conn;
+
+            String location = "./h2demo/h2demo";
+            String user = "me";
+            String password2 = "password";
+
+            //This needs to be on the front of your location
+            String url = "jdbc:h2:" + location;
+
+            //This tells it to use the h2 driver
+            Class.forName("org.h2.Driver");
+
+            //creates the connection
+            conn = DriverManager.getConnection(url,
+                    user,
+                    password2);
+
+            Statement stmt =  conn.createStatement(); // null???
+
+            ResultSet rs = stmt.executeQuery(query);
+
+            while (rs.next()){ // checks if the table is empty, if not enters here
+                packID = rand.nextInt(49999) + 50000;
+                query = String.format("SELECT * FROM customer WHERE customerID = %d;", packID);
+                rs = stmt.executeQuery(query);
+            }
+
+            // add package type
+            //PackageTable.addPackage(conn, p);
+
+        } catch (SQLException | ClassNotFoundException e) {
+            //You should handle this better
+            e.printStackTrace();
+        }
+
+
+
         //TODO: Make Payment
         //TODO: Display Transaction Info
     }
@@ -392,10 +451,13 @@ public class CommandLineInterface {
             case TRANSACTION_LIST:
                 System.out.println("Here are the IDs from your previous transactions.\n" +
                         "Enter an ID to see transaction details.");
+                //TODO add query for accessing transactions here
+
                 break;
             case PACKAGES_LIST:
                 System.out.println("Here are the IDs for your packages.\n" +
                         "Enter an ID see the package details.");
+                //TODO add query for accessing package lists here
         }
     }
 
