@@ -326,4 +326,23 @@ public class CustomerTable {
 		catch(Exception e){System.out.print(e.toString());}
 		return name;
 	}
+
+	public static boolean checkUniqueEmail(String email, Connection conn) {
+		String query = "SELECT * FROM CUSTOMER WHERE email = '" + email + "'";
+
+		try {
+			Statement stmt = conn.createStatement();
+			ResultSet result = stmt.executeQuery(query);
+
+			if (result.next()) {
+				System.out.println("This email already exists.");
+
+				return false;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return true;
+	}
 }

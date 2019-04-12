@@ -74,57 +74,54 @@ public class User {
 
 
     public UIState register(Scanner kboard) {
-        String firstName;
-        String lastName;
-        String streetName;
-        String streetNum;
-        String aptNum;
-        String city;
-        String state;
-        String zip;
-        String country;
-        String email;
-
-        int password; // also acts as customer ID
-
         ArrayList<String> phoneNumbers = new ArrayList<>();
+        ArrayList<String> inputs = new ArrayList<>();
 
-        System.out.println("Registering New User:");
+        String[] fields = {"First Name: ", "Last Name: ", "Street Number: ", "Street Name: ", "Apt. Number: ",
+                "City: ", "State: ", "Zip Code: ", "Country: ", "Email: "};
+        int n = 0;
+        String current;
 
-        System.out.print("First Name: ");
-        firstName = kboard.nextLine();
+        System.out.println("Registering New User (Enter 'QUIT' to quit):");
+        while (n < fields.length) {
+            System.out.print(fields[n]);
+            current = kboard.nextLine();
 
-        System.out.print("Last Name: ");
-        lastName = kboard.nextLine();
+            if (current.equalsIgnoreCase("QUIT")) {
+                return UIState.UNKNOWN_USER_HOME;
+            }
+            else if (current.length() == 0 && n != 4) {
+                System.out.println("This field must not be empty.");
+                continue;
+            }
+            else if (n == 9) {
+                if (!current.contains("@")) {
+                    System.out.println("Invalid Email");
+                    continue;
+                }
+                if (!CustomerTable.checkUniqueEmail(current, main.getConnection())) {
+                    System.out.println("User with this email already exists.");
+                    continue;
+                }
+            }
 
-        System.out.print("Street Number: ");
-        streetNum = kboard.nextLine();
-
-        System.out.print("Street Name: ");
-        streetName = kboard.nextLine();
-
-        System.out.print("Apt. Number: ");
-        aptNum = kboard.nextLine();
-
-        System.out.print("City: ");
-        city = kboard.nextLine();
-
-        System.out.print("State: ");
-        state = kboard.nextLine();
-
-        System.out.print("Zip Code: ");
-        zip = kboard.nextLine();
-
-        System.out.print("Country: ");
-        country = kboard.nextLine();
-
-        System.out.print("Email: ");
-        email = kboard.nextLine();
+            inputs.add(current);
+            n++;
+        }
 
         while (true) {
-            System.out.print("Phone Number: ");
-            phoneNumbers.add(kboard.nextLine());
+            System.out.print("Phone Number (10-Digits): ");
+            String number = kboard.nextLine();
 
+            if (number.equalsIgnoreCase("QUIT")) {
+                return UIState.UNKNOWN_USER_HOME;
+            }
+            else if (number.length() != 10) {
+                System.out.println("Invalid Phone Number");
+                continue;
+            }
+
+            phoneNumbers.add(number);
             System.out.print("Add another phone number? (Y/N): ");
             switch (kboard.nextLine().toUpperCase()) {
                 case "Y":
@@ -138,8 +135,19 @@ public class User {
             break;
         }
 
-        Random rand = new Random();
+        String firstName = inputs.get(0);
+        String lastName = inputs.get(1);
+        String streetNum = inputs.get(2);
+        String streetName = inputs.get(3);
+        String aptNum = inputs.get(4);
+        String city = inputs.get(5);
+        String state = inputs.get(6);
+        String zip = inputs.get(7);
+        String country = inputs.get(8);
+        String email = inputs.get(9);
 
+        int password; // also acts as customer ID
+        Random rand = new Random();
         password = rand.nextInt(49999) + 50000; // needs to be a random num not in the DB, will act as the password - 5 digits
 
         String query = String.format("SELECT * FROM customer WHERE customerID = %d;", password);
@@ -177,13 +185,10 @@ public class User {
             }
 
             cT.addCustomer(conn, firstName, lastName, password, email, Integer.parseInt(streetNum), streetName, aptNum, city, state, country, zip);
-
         } catch (SQLException | ClassNotFoundException e) {
             //You should handle this better
             e.printStackTrace();
         }
-
-
 
         System.out.println("New User Registered. Welcome!");
         System.out.println("Your password is: '" + password + "' Don't Forget This!");
