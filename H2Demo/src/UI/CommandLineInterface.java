@@ -130,9 +130,13 @@ public class CommandLineInterface {
         System.out.println("Scanning Packages");
 
         while (true) {
-            System.out.print("Enter PackageID: ");
+            System.out.print("Enter PackageID (Or -1 to cancel): ");
             packageId = inputNumber();
+            if (packageId == -1) {
+                break;
+            }
 
+            H2Main.scanPackage(packageId, Integer.parseInt(user.getUserId()));
 
             System.out.print("Enter 'Y' to scan another package or anything else to stop: ");
             if (!kboard.nextLine().equalsIgnoreCase("Y")) {
@@ -148,8 +152,11 @@ public class CommandLineInterface {
 
         System.out.println("Marking Packages Delivered");
         while (true) {
-            System.out.print("Enter PackageID: ");
+            System.out.print("Enter PackageID (Or -1 to cancel): ");
             packageId = inputNumber();
+            if (packageId == -1) {
+                break;
+            }
 
             H2Main.setDelivered(packageId, Integer.parseInt(user.getUserId()));
 

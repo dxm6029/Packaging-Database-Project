@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -313,28 +314,52 @@ public class PackageTable {
 
     public static void setPackageDelivered(int packageID, int workerID, Connection conn){
         //Get worker location
+        String loc = scanPackage(packageID, workerID, conn);
+
+        if (!loc.equals("")) {
+            try {
+                ZonedDateTime now = LocalDate.now(ZoneId.of("America/Montreal"))
+                        .atStartOfDay(ZoneId.of("America/Montreal"));
+
+                String statement = "UPDATE packages SET deliveryTime = '" + now + "' WHERE packageID = " + packageID;
+                Statement stmt = conn.createStatement();
+                stmt.execute(statement);
+
+                System.out.println("and delivered at " + now);
+            } catch (Exception e) {
+                System.err.println(e.toString());
+            }
+        }
+    }
+
+    public static String scanPackage(int packageID, int workerID, Connection conn) {
+        //Get worker location
         String loc = "";
-        String query = "SELECT 'location' FROM workers WHERE workerID = " + workerID;
+        String statement = "SELECT location FROM workers WHERE workerID = " + workerID;
+
         try {
             Statement stmt = conn.createStatement();
-            ResultSet results = stmt.executeQuery(query);
-            while (results.next()) {
-                loc = results.getString(1);
+            ResultSet result = stmt.executeQuery(statement);
+            if (result.next()) {
+                loc = result.getString(1);
             }
-            query = "UPDATE packages SET location = "+ loc+
-                    " WHERE packageID = " + packageID;
-            stmt = conn.createStatement();
-            stmt.execute(query);
 
-            query = "UPDATE packages SET deliveryTime = '" + LocalDate.now(
-                    ZoneId.of( "America/Montreal" )
-            ).atStartOfDay(
-                    ZoneId.of( "America/Montreal" )
-            ) + "' WHERE packageID = " + packageID;
-            stmt = conn.createStatement();
-            stmt.execute(query);
+            statement = "SELECT * FROM packages WHERE packageId = " + packageID;
+            result = stmt.executeQuery(statement);
+            if (!result.next()) {
+                System.out.println("Package with ID: " + packageID + " does not exist.");
+                return "";
+            }
+
+            statement = "UPDATE packages SET location = '" + loc +
+                    "' WHERE packageID = " + packageID;
+            stmt.execute(statement);
+
+            System.out.println("Package with ID: " + packageID + " checked in at " + loc);
         } catch (Exception e) {
-            System.err.println(e.toString());
+            e.printStackTrace();
         }
+
+        return loc;
     }
 }
