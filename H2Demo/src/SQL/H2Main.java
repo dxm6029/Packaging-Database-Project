@@ -16,6 +16,13 @@ public class H2Main {
 	//The connection to the database
 	private static Connection conn;
 
+	public H2Main() {
+		String location = "./h2demo/h2demo";
+		String user = "me";
+		String password = "password";
+
+		createConnection(location, user, password);
+	}
 	
 	/**
 	 * Create a database connection with the given params
