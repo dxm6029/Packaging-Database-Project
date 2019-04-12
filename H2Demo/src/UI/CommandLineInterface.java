@@ -425,8 +425,12 @@ public class CommandLineInterface {
                         }
                     }
 
-                    System.out.println("Enter 'city state' where you are shipping from: ");
-                    locate = kboard.nextLine().toLowerCase();
+                    System.out.println("Enter 'city; state' where you are shipping from: ");
+                    locate = kboard.nextLine();
+                    while (locate.contains(",")){
+                        System.out.println("Please remove comma :)");
+                        locate = kboard.nextLine();
+                    }
 
                     Date wrongDate = new Date();
                     startedDelivery = wrongDate.toString();
