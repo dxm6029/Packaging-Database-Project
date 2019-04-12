@@ -33,6 +33,10 @@ public class CommandLineInterface {
         connect = demo.getConnection(); // should get connection for entire file
     }
 
+    /**
+     * Runs the UI. This method gets the current options based on the state,
+     * then prints them and asks for input. If input valid, it executes the option.
+     */
     public void runCLI() {
         String option;
 
@@ -55,6 +59,9 @@ public class CommandLineInterface {
         while (!option.equalsIgnoreCase("QUIT"));
     }
 
+    /**
+     * Prints the possible commands you can perform for the current state
+     */
     private void printOptions(ArrayList<String> options) {
         System.out.println("Possible Commands: (Or type 'QUIT' to exit)");
 
@@ -63,6 +70,9 @@ public class CommandLineInterface {
         }
     }
 
+    /**
+     * Executes the command associated with the selected option.
+     */
     private UIState executeCommand(String option, UIState state) {
         switch (state) {
             case UNKNOWN_USER_HOME:
@@ -131,6 +141,9 @@ public class CommandLineInterface {
         return state;
     }
 
+    /**
+     * Runs a loop of scanning packages until the user exits.
+     */
     private void scanPackages() {
         int packageId;
 
@@ -154,6 +167,9 @@ public class CommandLineInterface {
         }
     }
 
+    /**
+     * Runs a loop of delivering packages until user exits.
+     */
     private void markDelivered() {
         int packageId;
 
@@ -176,6 +192,9 @@ public class CommandLineInterface {
         }
     }
 
+    /**
+     * Gets the valid options for the current state.
+     */
     private ArrayList<String> getStateOptions(UIState state) {
         ArrayList<String> options = new ArrayList<>();
 
@@ -218,6 +237,9 @@ public class CommandLineInterface {
         return options;
     }
 
+    /**
+     * Displayes info for the selected package
+     */
     private void displayPackageInfo(int packageId) {
         Package p = H2Main.getPackageInfo(packageId);
         if (p == null) {
@@ -231,6 +253,9 @@ public class CommandLineInterface {
         kboard.nextLine();
     }
 
+    /**
+     * Displays info for the selected transaction
+     */
     private void displayTransactionInfo(int transactionId) {
         Transaction t = H2Main.getTransactionInfo(transactionId);
         String paymentType = H2Main.getTransactionPaymentType(transactionId);
@@ -242,6 +267,9 @@ public class CommandLineInterface {
         kboard.nextLine();
     }
 
+    /**
+     * Handles the input of a number, because it's different from a string input
+     */
     public int inputNumber() {
         while (!kboard.hasNextInt()) {
             try {
@@ -259,6 +287,9 @@ public class CommandLineInterface {
         return num;
     }
 
+    /**
+     * Determines which step to go to based on the current step and user input.
+     */
     private int nextStep(int currentStep) {
         System.out.print("Type 'Q' to quit, 'R' to redo, 'B' to go back, or anything else to continue: ");
         String option = kboard.nextLine();
@@ -275,6 +306,9 @@ public class CommandLineInterface {
         }
     }
 
+    /**
+     * Asks for user input in order to add a package
+     */
     private void addPackage() {
         int stepNum = 1;
 
@@ -525,6 +559,10 @@ public class CommandLineInterface {
         //TODO: Display Transaction Info
     }
 
+    /**
+     *  Prints info regarding the current state prior to printing
+     *  the state options so it does not interfere with input.
+     */
     public void printStateInfo(UIState state) {
         switch (state) {
             case UNKNOWN_USER_HOME:
@@ -532,21 +570,17 @@ public class CommandLineInterface {
                 break;
             case TRANSACTION_LIST:
                 System.out.println("Here are the IDs from your previous transactions.\n" +
-                        "Enter an ID to see transaction details."); // bill statement?
-                int inputTransactionID = kboard.nextInt();
-                //TODO add query for accessing transactions here
-
+                        "Enter an ID to see transaction details.");
                 break;
             case PACKAGES_LIST:
-                // need to get list of packageIDs from somewhere
                 System.out.println("Here are the IDs for your packages.\n" +
-                        "Enter an ID see the package details.");  // display package details - where get list of pack ID?
-                int inputPackID = kboard.nextInt();
-                packageTable.getPackageInfo(inputPackID, connect);
-                //TODO add query for accessing package lists here
+                        "Enter an ID see the package details.");
         }
     }
 
+    /**
+     * Goes into a loop for the admin to enter SQL statements
+     */
     private void enterSqlStatements() {
         boolean enteringStatements = true;
         String statement;
