@@ -166,7 +166,7 @@ public class TransactionTable {
      * @param whereClauses: conditions to limit query by
      * @return
      */
-    public static ResultSet queryCustomerTable(Connection conn,
+    public static ResultSet queryTransactionTable(Connection conn,
                                                ArrayList<String> columns,
                                                ArrayList<String> whereClauses){
         StringBuilder sb = new StringBuilder();
@@ -238,7 +238,7 @@ public class TransactionTable {
      * Queries and print the table
      * @param conn
      */
-    public static void printCustomerTable(Connection conn){
+    public static void printTransactionTable(Connection conn){
         String query = "SELECT * FROM transactions;";
         try {
             Statement stmt = conn.createStatement();
@@ -280,7 +280,7 @@ public class TransactionTable {
         ArrayList<String> whereClauses = new ArrayList<>();
         whereClauses.add("transactionId = " + transactionId);
 
-        ResultSet result = TransactionTable.queryCustomerTable(conn, columns, whereClauses);
+        ResultSet result = TransactionTable.queryTransactionTable(conn, columns, whereClauses);
 
         try {
             if (result.next()) {

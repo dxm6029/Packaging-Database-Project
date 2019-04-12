@@ -14,6 +14,11 @@ public class CommandLineInterface {
     private UIState state;
     private User user;
     private PackageTable packageTable;
+    private H2Main demo = new H2Main();
+    private String location = "./h2demo/h2demo";
+    private String use = "me";
+    private String password = "password";
+    private Connection connect;
 
     public static void main(String[] args) {
         CommandLineInterface cli = new CommandLineInterface();
@@ -24,6 +29,8 @@ public class CommandLineInterface {
         this.kboard = new Scanner(System.in);
         this.state = UIState.UNKNOWN_USER_HOME;
         this.user = new User();
+        demo.createConnection(location, use, password);
+        connect = demo.getConnection(); // should get connection for entire file
     }
 
     public void runCLI() {
@@ -518,13 +525,17 @@ public class CommandLineInterface {
                 break;
             case TRANSACTION_LIST:
                 System.out.println("Here are the IDs from your previous transactions.\n" +
-                        "Enter an ID to see transaction details.");
+                        "Enter an ID to see transaction details."); // bill statement?
+                int inputTransactionID = kboard.nextInt();
                 //TODO add query for accessing transactions here
 
                 break;
             case PACKAGES_LIST:
+                // need to get list of packageIDs from somewhere
                 System.out.println("Here are the IDs for your packages.\n" +
-                        "Enter an ID see the package details.");
+                        "Enter an ID see the package details.");  // display package details - where get list of pack ID?
+                int inputPackID = kboard.nextInt();
+                packageTable.getPackageInfo(inputPackID, connect);
                 //TODO add query for accessing package lists here
         }
     }
