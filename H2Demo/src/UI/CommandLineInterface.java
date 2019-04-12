@@ -265,7 +265,62 @@ public class CommandLineInterface {
         String paymentType = H2Main.getTransactionPaymentType(transactionId);
 
         System.out.println("\n" + t.toString());
-        System.out.println("Payment Type Used: " + paymentType + "\n");
+        //System.out.println("Payment Type Used: " + paymentType + "\n");
+
+        switch (paymentType){
+            case "prepaid":
+                String getPaymID = String.format("SELECT paymentID FROM makesTransaction WHERE transactionID = %d", transactionId);
+                try {
+                    Statement stmt = connect.createStatement();
+                    ResultSet r = stmt.executeQuery(getPaymID);
+                    r.next();
+                    int paymentID = r.getInt(1);
+                    System.out.println("PaymentID: " + paymentID);
+
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Prepaid applied");
+                break;
+            case "credit card":
+                String getPayID = String.format("SELECT paymentID FROM makesTransaction WHERE transactionID = %d", transactionId);
+                try {
+                    Statement stmt = connect.createStatement();
+                    ResultSet r = stmt.executeQuery(getPayID);
+                    r.next();
+                    int paymentID = r.getInt(1);
+                    String select = String.format("SELECT * FROM credit WHERE paymentID = %d", paymentID);
+                    r = stmt.executeQuery(select);
+                    r.next();
+                    System.out.println("PaymentID: " + paymentID);
+                    System.out.println("Card Holder Name: " + r.getString(2));
+                    System.out.println("Card Number: " + r.getString(3));
+                    System.out.println("CVV: " + r.getString(4));
+                    System.out.println("Expiration Date: " + r.getString(5));
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+                break;
+            case "contract":
+                String getPaymentID = String.format("SELECT paymentID FROM makesTransaction WHERE transactionID = %d", transactionId);
+                try {
+                    Statement stmt = connect.createStatement();
+                    ResultSet r = stmt.executeQuery(getPaymentID);
+                    r.next();
+                    int paymentID = r.getInt(1);
+                    String select = String.format("SELECT * FROM contract WHERE paymentID = %d", paymentID);
+                    r = stmt.executeQuery(select);
+                    r.next();
+                    System.out.println("PaymentID: " + paymentID);
+                    System.out.println("Bill Date: " + r.getString(2));
+                    System.out.println("Total Number of Packages: " + r.getInt(3));
+
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+                break;
+        }
+
 
         System.out.print("Press Enter to continue.");
         kboard.nextLine();
