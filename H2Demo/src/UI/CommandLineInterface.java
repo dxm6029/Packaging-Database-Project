@@ -1,13 +1,13 @@
 package UI;
 
 import java.sql.*;
+import java.util.*;
 import java.util.Date;
-import java.util.InputMismatchException;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.ArrayList;
+
 import SQL.*;
 import SQL.Package;
+
+import javax.xml.transform.Result;
 
 public class CommandLineInterface {
     private Scanner kboard;
@@ -34,6 +34,7 @@ public class CommandLineInterface {
         this.user = new User();
         demo.createConnection(location, use, password);
         connect = demo.getConnection(); // should get connection for entire file
+        //packageTable = new PackageTable();
     }
 
     /**
@@ -340,11 +341,12 @@ public class CommandLineInterface {
         String paymentType = "";
         // If credit card
         String cardholderName = "";
-        int cardNumber = -1;
+        String cardNumber = "";
         int expMonth = -1;
         int expYear = -1;
         int cvv = -1;
         int payID = 0;
+
 
         while (stepNum < 4) {
             switch (stepNum) {
@@ -478,23 +480,63 @@ public class CommandLineInterface {
                     paymentType = kboard.nextLine();
 
                     if (paymentType.equalsIgnoreCase("Credit")) {
-                        System.out.print("Enter Card Holder Name: ");
-                        cardholderName = kboard.nextLine();
+                        boolean multiTry = false;
+                        while((expYear < Calendar.getInstance().get(Calendar.YEAR)) ||
+                                (expYear == Calendar.getInstance().get(Calendar.YEAR) && expMonth <= Calendar.getInstance().get(Calendar.MONTH))) {
+                            if(multiTry){
+                                System.out.println("ENTER VALID CREDIT CARD PLEASE!");
+                            }
+                            System.out.print("Enter Card Holder Name: ");
+                            cardholderName = kboard.nextLine();
 
-                        System.out.print("Card Number: ");
-                        cardNumber = inputNumber();
+                            System.out.print("Card Number(XXXX-XXXX-XXXX-XXXX): ");
+                            while (!kboard.hasNextLine()) {
+                                cardNumber = kboard.nextLine();
+                                if (!cardNumber.matches("\\d{4}-\\d{4}-\\d{4}-\\d{4}")) {
+                                    System.out.print("Invalid input. Please enter in format XXXX-XXXX-XXXX-XXXX: ");
+                                } else {
+                                    break;
+                                }
+                            }
 
-                        System.out.print("Expiration Month Number: ");
-                        expMonth = inputNumber();
+                            System.out.print("Expiration Month Number: ");
+                            while (!kboard.hasNextLine()) {
+                                expMonth = kboard.nextInt();
+                                if (expMonth > 12 || expMonth <= 0) {
+                                    System.out.print("Invalid input. Please enter in range 1-12: ");
+                                } else {
+                                    break;
+                                }
+                            }
 
-                        System.out.print("Expiration Year Number: ");
-                        expYear = inputNumber();
+                            System.out.print("Expiration Year Number: ");
+                            while (!kboard.hasNextLine()) {
+                                expYear = kboard.nextInt();
+                                if (expYear < 0000) {
+                                    System.out.print("Invalid input. Please enter valid year: ");
+                                } else {
+                                    break;
+                                }
+                            }
 
-                        System.out.print("CVV: ");
-                        cvv = inputNumber();
+                            System.out.print("CVV: ");
+                            while (!kboard.hasNextLine()) {
+                                cvv = kboard.nextInt();
+                                if (cvv < 100 || cvv >= 1000) {
+                                    System.out.print("Invalid input. Please enter valid CVV: ");
+                                } else {
+                                    break;
+                                }
+                            }
+                            multiTry = true;
+                        }
                     }
-
-
+                    else if(paymentType.equalsIgnoreCase("Prepaid")){
+                        System.out.println("Payment Processed");
+                    }
+                    else if(paymentType.equalsIgnoreCase("Contract")){
+                        System.out.println("Added to Contract");
+                    }
                     System.out.println("Payment Info Entered");
                     System.out.println("WARNING: Continuing will complete the add package process.");
                     stepNum = nextStep(stepNum);
@@ -552,20 +594,42 @@ public class CommandLineInterface {
                 transactionQuery = String.format("SELECT * FROM packages WHERE transactionID = %d;", transactionID);
                 rs2 = stmt.executeQuery(transactionQuery);
             }
-
             ResultSet rs3 = stmt.executeQuery(payQuery); // payment query
-            while (rs3.next()){ // checks if the table is empty, if not enters here
-                payID = rand.nextInt(49999) + 50000;
-                transactionQuery = String.format("SELECT * FROM makesTransaction WHERE paymentID = %d;", payID);
-                rs3 = stmt.executeQuery(transactionQuery);
+            if(paymentType.equalsIgnoreCase("Contract")){
+                payQuery = String.format("SELECT * FROM contract where paymentID IN (SELECT paymentID FROM makesTransaction where customerID = %s)", this.user.getUserId());
+                rs3 = stmt.executeQuery(payQuery);
+                if(rs3.next()){
+                    payID = rs3.getInt(1);
+                    payQuery = String.format("UPDATE contract SET totalPackageNum = totalPackageNum + 1 WHERE paymentID = %d", payID);
+                    stmt.executeQuery(payQuery);
+                }
+            }else {
+                while (rs3.next()) { // checks if the table is empty, if not enters here
+                    payID = rand.nextInt(49999) + 50000;
+                    payQuery = String.format("SELECT * FROM makesTransaction WHERE paymentID = %d;", payID);
+                    rs3 = stmt.executeQuery(payQuery);
+                }
+                PaymentTable.addPayment(conn, payID, paymentType);
+                if(paymentType.equalsIgnoreCase("Contract")){
+                    int month = rand.nextInt(12) + 1;
+                    String billDate = month + "/1";
+                    ContractTable.addContract(conn, payID, billDate, 1);
+                }
+                else if(paymentType.equalsIgnoreCase("Prepaid")){
+                    PrepaidTable.addPrepaid(conn, payID, 1);
+                }
+                else if(paymentType.equalsIgnoreCase("CreditCard")){
+                    CreditCardTable.addCredit(conn, payID, cardholderName, cardNumber, cvv, expMonth + "/" + expYear);
+                }
             }
 
+
             // add package type
-            packageTable.addPackage(conn, packageType, weight, deliveryType, packID, locate, startedDelivery, extraInfo, deliveryType, transactionID);
+            PackageTable.addPackage(conn, packageType, weight, deliveryType, packID, locate, startedDelivery, extraInfo, deliveryType, transactionID);
 
-            transactionTable.addTransaction(conn, transactionID, firstName, lastName, streetNum, streetName, aptNum, city, state, country, zip);
+            TransactionTable.addTransaction(conn, transactionID, firstName, lastName, streetNum, streetName, aptNum, city, state, country, zip);
 
-            makesTransactionTable.addMakeTransaction(conn, Integer.parseInt(this.user.getUserId()), transactionID, payID);
+            MakesTransactionTable.addMakeTransaction(conn, Integer.parseInt(this.user.getUserId()), transactionID, payID);
 
             System.out.println("New Package Registered. Welcome!");
             System.out.println("Your package ID is: '" + packID);
