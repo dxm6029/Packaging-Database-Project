@@ -20,6 +20,8 @@ public class CommandLineInterface {
     private String password = "password";
     private Connection connect;
     private TransactionTable transactionTable;
+    private MakesTransactionTable makesTransactionTable;
+
 
     public static void main(String[] args) {
         CommandLineInterface cli = new CommandLineInterface();
@@ -342,6 +344,7 @@ public class CommandLineInterface {
         int expMonth = -1;
         int expYear = -1;
         int cvv = -1;
+        int payID = 0;
 
         while (stepNum < 4) {
             switch (stepNum) {
@@ -502,10 +505,13 @@ public class CommandLineInterface {
 
         packID = rand.nextInt(49999) + 50000; // needs to be a random num not in the DB, will act as the password - 5 digits
         transactionID = rand.nextInt(49999) + 50000;
+        payID = rand.nextInt(49999) + 50000;
 
         String query = String.format("SELECT * FROM packages WHERE packageID = %d;", packID);
 
         String transactionQuery = String.format("SELECT * FROM packages WHERE transactionID = %d", transactionID);
+
+        String payQuery = String.format("SELECT * FROM makesTransaction WHERE paymentID = %d", payID);
 
         try {
             /**
@@ -540,11 +546,18 @@ public class CommandLineInterface {
             }
 
 
-            ResultSet rs2 = stmt.executeQuery(transactionQuery); // transactionIF query
+            ResultSet rs2 = stmt.executeQuery(transactionQuery); // transactionID query
             while (rs2.next()){ // checks if the table is empty, if not enters here
                 transactionID = rand.nextInt(49999) + 50000;
                 transactionQuery = String.format("SELECT * FROM packages WHERE transactionID = %d;", transactionID);
                 rs2 = stmt.executeQuery(transactionQuery);
+            }
+
+            ResultSet rs3 = stmt.executeQuery(payQuery); // payment query
+            while (rs3.next()){ // checks if the table is empty, if not enters here
+                payID = rand.nextInt(49999) + 50000;
+                transactionQuery = String.format("SELECT * FROM makesTransaction WHERE paymentID = %d;", payID);
+                rs3 = stmt.executeQuery(transactionQuery);
             }
 
             // add package type
@@ -552,6 +565,7 @@ public class CommandLineInterface {
 
             transactionTable.addTransaction(conn, transactionID, firstName, lastName, streetNum, streetName, aptNum, city, state, country, zip);
 
+            makesTransactionTable.addMakeTransaction(conn, Integer.parseInt(this.user.getUserId()), transactionID, payID);
 
             System.out.println("New Package Registered. Welcome!");
             System.out.println("Your package ID is: '" + packID);
