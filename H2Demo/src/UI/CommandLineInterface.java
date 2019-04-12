@@ -23,6 +23,7 @@ public class CommandLineInterface {
     private MakesTransactionTable makesTransactionTable;
 
 
+
     public static void main(String[] args) {
         CommandLineInterface cli = new CommandLineInterface();
         cli.runCLI();
