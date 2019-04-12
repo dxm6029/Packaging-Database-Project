@@ -656,7 +656,7 @@ public class CommandLineInterface {
                 if(rs3.next()){
                     payID = rs3.getInt(1);
                     payQuery = String.format("UPDATE contract SET totalPackageNum = totalPackageNum + 1 WHERE paymentID = %d", payID);
-                    stmt.executeQuery(payQuery);
+                    stmt.executeUpdate(payQuery);
                 }
             }else {
                 while (rs3.next()) { // checks if the table is empty, if not enters here
