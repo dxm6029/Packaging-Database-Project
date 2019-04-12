@@ -543,7 +543,7 @@ public class CommandLineInterface {
             }
 
             // add package type
-            packageTable.addPackage(conn, packageType, weight, deliveryType, packID, location, startedDelivery, extraInfo, deliveryType, transactionID);
+            packageTable.addPackage(conn, packageType, weight, deliveryType, packID, locate, startedDelivery, extraInfo, deliveryType, transactionID);
 
             System.out.println("New Package Registered. Welcome!");
             System.out.println("Your package ID is: '" + packID);
