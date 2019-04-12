@@ -252,4 +252,40 @@ public class TransportationTable {
             e.printStackTrace();
         }
     }
+
+    public static String getTransportCompany(int transportId, Connection conn) {
+        String company = "";
+        String query = "SELECT company FROM transportation WHERE transportId = " + transportId;
+
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet result = stmt.executeQuery(query);
+
+            if (result.next()) {
+                company = result.getString(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return company;
+    }
+
+    public static String getPassword(String username, Connection conn) {
+        String password = "tempstring";
+        String query = "SELECT driverId FROM Transportation WHERE transportId = " + username;
+
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet result = stmt.executeQuery(query);
+
+            if (result.next()) {
+                password = result.getString(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return password;
+    }
 }

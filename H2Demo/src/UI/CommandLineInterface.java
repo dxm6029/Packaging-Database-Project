@@ -38,6 +38,10 @@ public class CommandLineInterface {
         //packageTable = new PackageTable();
     }
 
+    public Connection getConnection() {
+        return this.connect;
+    }
+
     /**
      * Runs the UI. This method gets the current options based on the state,
      * then prints them and asks for input. If input valid, it executes the option.
@@ -110,11 +114,11 @@ public class CommandLineInterface {
                 switch (option.toUpperCase()) {
                     case "LOGOUT":
                         return user.logout();
-                    case "SCAN":
-                        scanPackages();
-                        return UIState.WORKER_HOME;
-                    case "DELIVER":
-                        markDelivered();
+                    case "SCANIN":
+                        scanPackagesIn();
+                        return state;
+                    case "SCANOUT":
+                        return state;
                 }
                 break;
             case PACKAGES_LIST:
@@ -141,6 +145,14 @@ public class CommandLineInterface {
                 else if (option.equalsIgnoreCase("LOGOUT")) {
                     return UIState.UNKNOWN_USER_HOME;
                 }
+            case DRIVER_HOME:
+                if (option.equalsIgnoreCase("DELIVER")) {
+                    markDelivered();
+                    return state;
+                }
+                else {
+                    return user.logout();
+                }
         }
 
         return state;
@@ -149,7 +161,7 @@ public class CommandLineInterface {
     /**
      * Runs a loop of scanning packages until the user exits.
      */
-    private void scanPackages() {
+    private void scanPackagesIn() {
         int packageId;
 
         System.out.println("Scanning Packages");
@@ -161,7 +173,7 @@ public class CommandLineInterface {
                 break;
             }
 
-            H2Main.scanPackage(packageId, Integer.parseInt(user.getUserId()));
+            H2Main.scanPackageIn(packageId, Integer.parseInt(user.getUserId()));
 
             System.out.print("Enter 'Y' to scan another package or anything else to stop: ");
             if (!kboard.nextLine().equalsIgnoreCase("Y")) {
@@ -171,6 +183,11 @@ public class CommandLineInterface {
             System.out.println("Scanning another package");
         }
     }
+
+    private void scanPackagesOut() {
+        return;
+    }
+
 
     /**
      * Runs a loop of delivering packages until user exits.
@@ -216,8 +233,8 @@ public class CommandLineInterface {
                 options.add("BILLING");
                 break;
             case WORKER_HOME:
-                options.add("SCAN");
-                options.add("DELIVER");
+                options.add("SCANIN");
+                options.add("SCANOUT");
                 options.add("LOGOUT");
                 break;
             case PACKAGES_LIST:
@@ -237,6 +254,10 @@ public class CommandLineInterface {
             case ADMIN:
                 options.add("SQL");
                 options.add("LOGOUT");
+                break;
+            case DRIVER_HOME:
+                options.add("DELIVER");
+                options.add("LOGOUT");
         }
 
         return options;
@@ -247,13 +268,29 @@ public class CommandLineInterface {
      */
     private void displayPackageInfo(int packageId) {
         Package p = H2Main.getPackageInfo(packageId);
+
         if (p == null) {
             System.out.println("Invalid Package ID");
         }
         else {
-            System.out.println(p.toString());
-        }
+            int transportId = PackageTransportationTable.getTransportId(packageId, connect);
 
+            System.out.println(p.toString());
+            if (transportId == -1) {
+                if (p.getDeliveryTime().equals("null")) {
+                    System.out.println("This package is in a warehouse at it's last check in location.");
+                }
+                else {
+                    System.out.println("This package has been delivered.");
+                }
+            }
+            else {
+                String company = TransportationTable.getTransportCompany(transportId, connect);
+                System.out.println("This package is out for delivery on vehicle: " + transportId +
+                        " from company " + company);
+            }
+        }
+        //TODO Finish this shit
         System.out.print("\nPress Enter to continue.");
         kboard.nextLine();
     }

@@ -12,7 +12,6 @@ import SQL.CustomerTable;
 
 public class User {
     private String userName;
-    private H2Main main = new H2Main();
     private CustomerTable cT = new CustomerTable();
     private String userId;
 
@@ -44,6 +43,9 @@ public class User {
             else if (userName.contains("@")) {
                 expected = UIState.CUSTOMER_HOME;
             }
+            else if (userName.matches("\\d\\d\\d\\d\\d")) {
+                expected = UIState.DRIVER_HOME;
+            }
             else {
                 expected = UIState.WORKER_HOME;
             }
@@ -55,14 +57,14 @@ public class User {
                 System.out.println("Welcome Database Admin!");
                 loggedIn = true;
             }
-            else if (H2Main.getPassword(userName, userId)){
+            else if (H2Main.getPassword(userName, userId)) {
                 if (expected == UIState.CUSTOMER_HOME) {
                     System.out.println("Welcome to Four Squared, " + H2Main.getCustomerName(userId));
-                }
-                else {
+                } else if (expected == UIState.WORKER_HOME) {
                     System.out.println("Welcome to Four Squared, " + H2Main.getWorkerName(userId));
+                } else {
+                    System.out.println("Welcome to Four Squared, Driver of Transport: " + userName);
                 }
-
                 loggedIn = true;
             } else{
                 System.out.println("USERNAME AND/OR PASSWORD INVALID");
@@ -99,7 +101,7 @@ public class User {
                     System.out.println("Invalid Email");
                     continue;
                 }
-                if (!CustomerTable.checkUniqueEmail(current, main.getConnection())) {
+                if (!CustomerTable.checkUniqueEmail(current, H2Main.getConnection())) {
                     System.out.println("User with this email already exists.");
                     continue;
                 }

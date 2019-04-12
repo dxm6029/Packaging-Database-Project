@@ -251,5 +251,52 @@ public class PackageTransportationTable {
             e.printStackTrace();
         }
     }
+
+    public static int getTransportId(int packageId, Connection conn) {
+        int transportId = -1;
+        String query = "SELECT transportId FROM packageTransportation WHERE packageId = " + packageId;
+
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet result = stmt.executeQuery(query);
+
+            if (result.next()) {
+                transportId = result.getInt(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return transportId;
+    }
+
+    public static boolean checkOutForTransport(int packageId, Connection conn) {
+        String query = "SELECT packageId FROM packageTransportation WHERE packageId = " + packageId;
+
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet result = stmt.executeQuery(query);
+
+            if (result.next()) {
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return false;
+    }
+
+    public static void removeFromTransport(int packageId, Connection conn) {
+        String statement = "DELETE FROM packageTransportation WHERE packageId = " + packageId;
+
+        try {
+            Statement stmt = conn.createStatement();
+            stmt.execute(statement);
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
 

@@ -125,6 +125,6 @@ public class Package {
         }
         return "PackageID: " + packageID + "\nTransactionID: " + transactionID + "\n\nType: " + packageType +
                 " Weight: " + weight + "lbs.\nExtra Info: " + extraInfo + "\n\nStarted Delivery: " + startedDelivery
-                + "\nDelivery Time: " + deliverTime + "\nLocation: " + location;
+                + "\nDelivery Time: " + deliverTime + "\nLast Checked In At: " + location;
     }
 }

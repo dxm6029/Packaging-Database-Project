@@ -15,14 +15,6 @@ public class H2Main {
 
 	//The connection to the database
 	private static Connection conn;
-
-	public H2Main() {
-		String location = "./h2demo/h2demo";
-		String user = "me";
-		String password = "password";
-
-		createConnection(location, user, password);
-	}
 	
 	/**
 	 * Create a database connection with the given params
@@ -136,7 +128,8 @@ public class H2Main {
 		demo.createConnection(location, user, password);
 
 		return CustomerTable.getPassword(username, demo.getConnection()).equals(pass) ||
-				PostalWorkerTable.getPassword(username, demo.getConnection()).equals(pass);
+				PostalWorkerTable.getPassword(username, demo.getConnection()).equals(pass) ||
+				TransportationTable.getPassword(username, demo.getConnection()).equals(pass);
 	}
 
 	public static String getCustomerName(String customerID){
@@ -220,17 +213,17 @@ public class H2Main {
 		String password = "password";
 
 		demo.createConnection(location, user, password);
-		PackageTable.setPackageDelivered(packageId, workerId, demo.getConnection());
+		PackageTable.setPackageDelivered(packageId, demo.getConnection());
 	}
 
-	public static void scanPackage(int packageId, int workerId) {
+	public static void scanPackageIn(int packageId, int workerId) {
 		H2Main demo = new H2Main();
 		String location = "./h2demo/h2demo";
 		String user = "me";
 		String password = "password";
 
 		demo.createConnection(location, user, password);
-		PackageTable.scanPackage(packageId, workerId, demo.getConnection());
+		PackageTable.scanPackageIn(packageId, workerId, demo.getConnection());
 	}
 
     public static void addPackage(String packageType, double weight, String deliveryType, int packageID, String loc,
