@@ -265,6 +265,7 @@ public class CommandLineInterface {
         Transaction t = H2Main.getTransactionInfo(transactionId);
         String paymentType = H2Main.getTransactionPaymentType(transactionId);
 
+        paymentType = paymentType.toLowerCase();
         System.out.println("\n" + t.toString());
         //System.out.println("Payment Type Used: " + paymentType + "\n");
 
@@ -449,9 +450,9 @@ public class CommandLineInterface {
                     packageTypes.add("envelope");
                     System.out.println("Package type (Extra Small, Small, Medium, Large, Extra Large, Post Card, Envelope)");
                     packageType = kboard.nextLine().toLowerCase(); // maintain consistency
-                    if (!packageTypes.contains(packageType)){
-                        System.out.println("Package type not recognized, defaulting to Extra Large");
-                        packageType = "extra large";
+                    while (!packageTypes.contains(packageType)){
+                        System.out.println("Package type not recognized, please try again (Extra Small, Small, Medium, Large, Extra Large, Post Card, Envelope)");
+                        packageType = kboard.nextLine().toLowerCase();;
                     }
 
                     ArrayList<String> deliveryTypes = new ArrayList<>();
@@ -461,9 +462,9 @@ public class CommandLineInterface {
                     deliveryTypes.add("7+ day");
                     System.out.println("Delivery Type (1-day, overnight, 3-5 day, 7+ day)");
                     deliveryType = kboard.nextLine().toLowerCase();
-                    if (!deliveryTypes.contains(deliveryType)){
-                        System.out.println("Delivery Type not recognized, defaulting to 7+ day");
-                        deliveryType = "7+ day";
+                    while (!deliveryTypes.contains(deliveryType)){
+                        System.out.println("Delivery Type not recognized, please try again (1-day, overnight, 3-5 day, 7+ day)");
+                        deliveryType = kboard.nextLine().toLowerCase();
                     }
 
                     double price = getPrice(packageType, weight, deliveryType);
@@ -474,12 +475,12 @@ public class CommandLineInterface {
                     extraInformationLst.add("hazardous");
                     System.out.println("Is there any extra information that we should know (fragile, hazardous)? If not, enter to continue");
                     extraInfo = kboard.nextLine().toLowerCase();
-                    if (extraInfo.equals('\n')){
+                    if (extraInfo.equals("")){
                         extraInfo = "n/a";
                     }
                     else if (!extraInformationLst.contains(extraInfo)){
                         System.out.println("Extra Information not recognized, please enter valid extra info input (fragile, hazardous): ");
-                        while (!extraInformationLst.contains(extraInfo) && !extraInfo.equals('\n')){ // loops until valid input, or new line
+                        while (!extraInformationLst.contains(extraInfo) && !extraInfo.equals("")){ // loops until valid input, or new line
                             System.out.println("Extra Information not recognized, please enter valid extra info input (fragile, hazardous): ");
                             extraInfo = kboard.nextLine().toLowerCase();
                         }
