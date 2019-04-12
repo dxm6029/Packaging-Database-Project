@@ -443,8 +443,6 @@ public class CommandLineInterface {
             }
         }
 
-
-
         // TODO : PackageTable.addPackage(); -- DONE?
 
         Random rand = new Random();
@@ -499,8 +497,8 @@ public class CommandLineInterface {
             // add package type
             packageTable.addPackage(conn, packageType, weight, deliveryType, packID, location, startedDelivery, extraInfo, deliveryType, transactionID);
 
-            System.out.println("New package Registered. Welcome!");
-            System.out.println("Your package is: '" + packID);
+            System.out.println("New Package Registered. Welcome!");
+            System.out.println("Your package ID is: '" + packID);
 
         } catch (SQLException | ClassNotFoundException e) {
             //You should handle this better
