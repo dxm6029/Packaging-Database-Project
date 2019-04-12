@@ -395,16 +395,17 @@ public class CommandLineInterface {
                     ArrayList<String> deliveryTypes = new ArrayList<>();
                     deliveryTypes.add("1-day");
                     deliveryTypes.add("overnight");
-                    deliveryTypes.add("Overnight");
-                    deliveryTypes.add("OVERNIGHT");
                     deliveryTypes.add("3-5 day");
                     deliveryTypes.add("7+ day");
                     System.out.println("Delivery Type (1-day, overnight, 3-5 day, 7+ day)");
-                    deliveryType = kboard.nextLine();
+                    deliveryType = kboard.nextLine().toLowerCase();
                     if (!deliveryTypes.contains(deliveryType)){
                         System.out.println("Delivery Type not recognized, defaulting to 7+ day");
                         deliveryType = "7+ day";
                     }
+
+                    double price = getPrice(packageType, weight, deliveryType);
+                    System.out.println("Price for package: " + price);
 
                     ArrayList <String> extraInformationLst = new ArrayList<>();
                     extraInformationLst.add("fragile");
@@ -494,8 +495,6 @@ public class CommandLineInterface {
                     stepNum = nextStep(stepNum);
             }
         }
-
-        // TODO : PackageTable.addPackage(); -- DONE?
 
         Random rand = new Random();
 
@@ -600,5 +599,51 @@ public class CommandLineInterface {
                 H2Main.enterAdminStatement(statement);
             }
         }
+    }
+
+    public double getPrice(String packageType, double weight, String deliveryType){
+        double scaleWeight = weight * 2;
+        packageType = packageType.toLowerCase();
+        deliveryType = deliveryType.toLowerCase();
+        double price = 0;
+        switch (packageType){
+            case "envelope":
+                price = 0.50;
+                break;
+            case "post card":
+                price = 0.50;
+                break;
+            case "extra small":
+                price = scaleWeight + 2;
+                break;
+            case "small":
+                price = scaleWeight + 4;
+                break;
+            case "medium":
+                price = scaleWeight + 6;
+                break;
+            case "large":
+                price = scaleWeight + 8;
+                break;
+            default:
+                price = scaleWeight + 10;
+        }
+
+        switch (deliveryType){
+            case "1-day":
+                price += 10;
+                break;
+            case "overnight":
+                price += 15;
+                break;
+            case "3-5 day":
+                price += 5;
+                break;
+            case "7+ day":
+                price += 0;
+                break;
+        }
+
+        return price;
     }
 }
