@@ -124,7 +124,7 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "TrnasactionID: " + transactionID + "\n" +
+        return "TransactionID: " + transactionID + "\n" +
                 "Recipient Information\n" +
                 "Name: " + rfName + " " + lrName + "\n" +
                 "Address: " + streetNum + " " + streetName + ", " + city + ", "

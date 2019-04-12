@@ -19,6 +19,7 @@ public class CommandLineInterface {
     private String use = "me";
     private String password = "password";
     private Connection connect;
+    private TransactionTable transactionTable;
 
     public static void main(String[] args) {
         CommandLineInterface cli = new CommandLineInterface();
@@ -490,6 +491,7 @@ public class CommandLineInterface {
                         cvv = inputNumber();
                     }
 
+
                     System.out.println("Payment Info Entered");
                     System.out.println("WARNING: Continuing will complete the add package process.");
                     stepNum = nextStep(stepNum);
@@ -547,6 +549,9 @@ public class CommandLineInterface {
 
             // add package type
             packageTable.addPackage(conn, packageType, weight, deliveryType, packID, locate, startedDelivery, extraInfo, deliveryType, transactionID);
+
+            transactionTable.addTransaction(conn, transactionID, firstName, lastName, streetNum, streetName, aptNum, city, state, country, zip);
+
 
             System.out.println("New Package Registered. Welcome!");
             System.out.println("Your package ID is: '" + packID);
