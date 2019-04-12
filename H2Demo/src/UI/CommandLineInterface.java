@@ -601,6 +601,7 @@ public class CommandLineInterface {
         }
     }
 
+
     public double getPrice(String packageType, double weight, String deliveryType){
         double scaleWeight = weight * 2;
         packageType = packageType.toLowerCase();
