@@ -131,7 +131,6 @@ public class CommandLineInterface {
             System.out.print("Enter PackageID: ");
             packageId = inputNumber();
 
-            //TODO: Scan package
 
             System.out.print("Enter 'Y' to scan another package or anything else to stop: ");
             if (!kboard.nextLine().equalsIgnoreCase("Y")) {
@@ -150,7 +149,7 @@ public class CommandLineInterface {
             System.out.print("Enter PackageID: ");
             packageId = inputNumber();
 
-            //TODO: Scan package
+            H2Main.setDelivered(packageId, Integer.parseInt(user.getUserId()));
 
             System.out.print("Enter 'Y' to deliver another package or anything else to stop: ");
             if (!kboard.nextLine().equalsIgnoreCase("Y")) {

@@ -314,7 +314,7 @@ public class PackageTable {
     public static void setPackageDelivered(int packageID, int workerID, Connection conn){
         //Get worker location
         String loc = "";
-        String query = "SELECT location FROM workers WHERE workerID = " + workerID;
+        String query = "SELECT 'location' FROM workers WHERE workerID = " + workerID;
         try {
             Statement stmt = conn.createStatement();
             ResultSet results = stmt.executeQuery(query);
@@ -324,15 +324,15 @@ public class PackageTable {
             query = "UPDATE packages SET location = "+ loc+
                     " WHERE packageID = " + packageID;
             stmt = conn.createStatement();
-            stmt.executeQuery(query);
+            stmt.execute(query);
 
-            query = "UPDATE packages SET deliveryTime = " + LocalDate.now(
+            query = "UPDATE packages SET deliveryTime = '" + LocalDate.now(
                     ZoneId.of( "America/Montreal" )
             ).atStartOfDay(
                     ZoneId.of( "America/Montreal" )
-            ) + "WHERE packageID = " + packageID;
+            ) + "' WHERE packageID = " + packageID;
             stmt = conn.createStatement();
-            stmt.executeQuery(query);
+            stmt.execute(query);
         } catch (Exception e) {
             System.err.println(e.toString());
         }
