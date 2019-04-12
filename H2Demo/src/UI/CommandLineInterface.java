@@ -1,6 +1,7 @@
 package UI;
 
 import java.sql.*;
+import java.util.Date;
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
@@ -12,6 +13,7 @@ public class CommandLineInterface {
     private Scanner kboard;
     private UIState state;
     private User user;
+    private PackageTable packageTable;
 
     public static void main(String[] args) {
         CommandLineInterface cli = new CommandLineInterface();
@@ -265,11 +267,11 @@ public class CommandLineInterface {
         // Package Info
         double weight = -1;
         String packageType = "";
-        String deliveryType = "";
+        String deliveryType = ""; // 1-day, overnight, 3-5 day, 7+ day
         int packID = 0;
         String locate = "";
-        String startedDelivery = "";
-        String extraInfo = "";
+        String startedDelivery = ""; // today's date
+        String extraInfo = ""; // fragile, hazardous, N/A
         int transactionID = 0;
 
         // Recipient Info
@@ -326,6 +328,61 @@ public class CommandLineInterface {
                         default:
                             stepNum = stepNum + 1;
                     }
+
+                    ArrayList<String> packageTypes = new ArrayList<>();
+                    packageTypes.add("extra small");
+                    packageTypes.add("small");
+                    packageTypes.add("medium");
+                    packageTypes.add("large");
+                    packageTypes.add("extra large");
+                    packageTypes.add("post card");
+                    packageTypes.add("envelope");
+                    System.out.println("Package type (Extra Small, Small, Medium, Large, Extra Large, Post Card, Envelope)");
+                    packageType = kboard.nextLine().toLowerCase(); // maintain consistency
+                    if (!packageTypes.contains(packageType)){
+                        System.out.println("Package type not recognized, defaulting to Extra Large");
+                        packageType = "extra large";
+                    }
+
+                    ArrayList<String> deliveryTypes = new ArrayList<>();
+                    deliveryTypes.add("1-day");
+                    deliveryTypes.add("overnight");
+                    deliveryTypes.add("Overnight");
+                    deliveryTypes.add("OVERNIGHT");
+                    deliveryTypes.add("3-5 day");
+                    deliveryTypes.add("7+ day");
+                    System.out.println("Delivery Type (1-day, overnight, 3-5 day, 7+ day)");
+                    deliveryType = kboard.nextLine();
+                    if (!deliveryTypes.contains(deliveryType)){
+                        System.out.println("Delivery Type not recognized, defaulting to 7+ day");
+                        deliveryType = "7+ day";
+                    }
+
+                    ArrayList <String> extraInformationLst = new ArrayList<>();
+                    extraInformationLst.add("fragile");
+                    extraInformationLst.add("hazardous");
+                    System.out.println("Is there any extra information that we should know (fragile, hazardous)? If not, enter to continue");
+                    extraInfo = kboard.nextLine().toLowerCase();
+                    if (extraInfo.equals('\n')){
+                        extraInfo = "n/a";
+                    }
+                    else if (!extraInformationLst.contains(extraInfo)){
+                        System.out.println("Extra Information not recognized, please enter valid extra info input (fragile, hazardous): ");
+                        while (!extraInformationLst.contains(extraInfo) && !extraInfo.equals('\n')){ // loops until valid input, or new line
+                            System.out.println("Extra Information not recognized, please enter valid extra info input (fragile, hazardous): ");
+                            extraInfo = kboard.nextLine().toLowerCase();
+                        }
+                        if (extraInfo.equals('\n')){
+                            extraInfo = "n/a";
+                        }
+                    }
+
+                    System.out.println("Enter 'city state' where you are shipping from: ");
+                    locate = kboard.nextLine().toLowerCase();
+
+                    Date wrongDate = new Date();
+                    startedDelivery = wrongDate.toString();
+
                     break;
                 case 2:
                     System.out.println("Enter Recipient Info:");
@@ -388,13 +445,16 @@ public class CommandLineInterface {
 
 
 
-        // TODO : PackageTable.addPackage();
+        // TODO : PackageTable.addPackage(); -- DONE?
 
         Random rand = new Random();
 
         packID = rand.nextInt(49999) + 50000; // needs to be a random num not in the DB, will act as the password - 5 digits
+        transactionID = rand.nextInt(49999) + 50000;
 
         String query = String.format("SELECT * FROM packages WHERE packageID = %d;", packID);
+
+        String transactionQuery = String.format("SELECT * FROM packages WHERE transactionID = %d", transactionID);
 
         try {
             /**
@@ -418,18 +478,29 @@ public class CommandLineInterface {
                     user,
                     password2);
 
-            Statement stmt =  conn.createStatement(); // null???
+            Statement stmt =  conn.createStatement();
 
-            ResultSet rs = stmt.executeQuery(query);
+            ResultSet rs = stmt.executeQuery(query); // packageID query
 
             while (rs.next()){ // checks if the table is empty, if not enters here
                 packID = rand.nextInt(49999) + 50000;
-                query = String.format("SELECT * FROM customer WHERE customerID = %d;", packID);
+                query = String.format("SELECT * FROM packages WHERE packageID = %d;", packID);
                 rs = stmt.executeQuery(query);
             }
 
+
+            ResultSet rs2 = stmt.executeQuery(transactionQuery); // transactionIF query
+            while (rs2.next()){ // checks if the table is empty, if not enters here
+                transactionID = rand.nextInt(49999) + 50000;
+                transactionQuery = String.format("SELECT * FROM packages WHERE transactionID = %d;", transactionID);
+                rs2 = stmt.executeQuery(transactionQuery);
+            }
+
             // add package type
-            //PackageTable.addPackage(conn, p);
+            packageTable.addPackage(conn, packageType, weight, deliveryType, packID, location, startedDelivery, extraInfo, deliveryType, transactionID);
+
+            System.out.println("New package Registered. Welcome!");
+            System.out.println("Your package is: '" + packID);
 
         } catch (SQLException | ClassNotFoundException e) {
             //You should handle this better
