@@ -13,14 +13,11 @@ public class CommandLineInterface {
     private Scanner kboard;
     private UIState state;
     private User user;
-    private PackageTable packageTable;
     private H2Main demo = new H2Main();
     private String location = "./h2demo/h2demo";
     private String use = "me";
     private String password = "password";
     private Connection connect;
-    private TransactionTable transactionTable;
-    private MakesTransactionTable makesTransactionTable;
 
 
 
@@ -126,6 +123,10 @@ public class CommandLineInterface {
                 if (option.equalsIgnoreCase("HOME")) {
                     return UIState.CUSTOMER_HOME;
                 }
+                else if(option.equalsIgnoreCase("ALL")) {
+                    displayAllPackageInfo();
+                    return state;
+                }
                 else {
                     displayPackageInfo(Integer.parseInt(option));
                     return state;
@@ -133,6 +134,10 @@ public class CommandLineInterface {
             case TRANSACTION_LIST:
                 if (option.equalsIgnoreCase("HOME")) {
                     return UIState.CUSTOMER_HOME;
+                }
+                else if(option.equalsIgnoreCase("ALL")) {
+                    displayAllTransactionInfo();
+                    return state;
                 }
                 else {
                     displayTransactionInfo(Integer.parseInt(option));
@@ -158,6 +163,25 @@ public class CommandLineInterface {
 
         return state;
     }
+
+    private void displayAllTransactionInfo() {
+        ArrayList<Integer> transactions = H2Main.getTransactionIds(Integer.parseInt(user.getUserId()));
+        for (int id : transactions) {
+            System.out.println();
+            displayTransactionInfo(id);
+            System.out.println();
+        }
+    }
+
+    private void displayAllPackageInfo() {
+        ArrayList<Integer> packages = H2Main.getPackageIds(Integer.parseInt(user.getUserId()));
+        for(int p : packages){
+            System.out.println();
+            displayPackageInfo(p);
+            System.out.println();
+        }
+    }
+
 
     /**
      * Runs a loop of scanning packages until the user exits.
@@ -262,6 +286,7 @@ public class CommandLineInterface {
                 for (int id: packages) {
                     options.add(Integer.toString(id));
                 }
+                options.add("ALL");
                 options.add("HOME");
                 break;
             case TRANSACTION_LIST:
@@ -269,6 +294,7 @@ public class CommandLineInterface {
                 for (int id : transactions) {
                     options.add(Integer.toString(id));
                 }
+                options.add("ALL");
                 options.add("HOME");
                 break;
             case ADMIN:
