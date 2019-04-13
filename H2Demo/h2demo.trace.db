@@ -152,7 +152,31 @@ org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (
 	at UI.CommandLineInterface.executeCommand(CommandLineInterface.java:67)
 	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:35)
 	at UI.CommandLineInterface.main(CommandLineInterface.java:16)
-2019-04-12 19:45:29 jdbc[23]: null
+2019-04-12 13:51:58 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "POSTALWORKER" not found; SQL statement:
+SELECT * FROM postalWorker WHERE workerId = 78532 [42102-199]
+2019-04-12 13:52:32 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKER" not found; SQL statement:
+SELECT * FROM worker WHERE workerId = 78532 [42102-199]
+2019-04-12 14:05:40 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE PACKAGES SET LOCATION = NEW DANILO[*]\; ALABAMA WHERE PACKAGEID = 42440 "; SQL statement:
+UPDATE packages SET location = New Danilo\; Alabama WHERE packageID = 42440 [42000-199]
+2019-04-12 14:06:11 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE PACKAGES SET LOCATION = NEW DANILO[*]; ALABAMA WHERE PACKAGEID = 42440 "; SQL statement:
+UPDATE packages SET location = New Danilo; Alabama WHERE packageID = 42440 [42000-199]
+2019-04-12 14:07:37 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE PACKAGES SET LOCATION = NEW DANILO[*], ALABAMA WHERE PACKAGEID = 42440 "; SQL statement:
+UPDATE packages SET location = New Danilo, Alabama WHERE packageID = 42440 [42000-199]
+2019-04-12 14:08:41 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE PACKAGES SET LOCATION = NEW DANILO[*], ALABAMA WHERE PACKAGEID =42440 "; SQL statement:
+UPDATE packages SET location = New Danilo, Alabama WHERE packageID =42440 [42000-199]
+2019-04-12 14:12:07 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PACAKGES" not found; SQL statement:
+SELECT * FROM PACAKGES WHERE PACKAGEID = 86732 [42102-199]
+2019-04-12 14:13:52 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "LOGOUT[*] "; SQL statement:
+logout [42000-199]
+2019-04-12 14:16:16 jdbc[25]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -163,17 +187,17 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.enterAdminStatement(H2Main.java:248)
+	at UI.CommandLineInterface.enterSqlStatements(CommandLineInterface.java:551)
+	at UI.CommandLineInterface.executeCommand(CommandLineInterface.java:116)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:39)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
 	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+2019-04-12 14:16:16 jdbc[25]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -184,17 +208,17 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.enterAdminStatement(H2Main.java:248)
+	at UI.CommandLineInterface.enterSqlStatements(CommandLineInterface.java:551)
+	at UI.CommandLineInterface.executeCommand(CommandLineInterface.java:116)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:39)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
 	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+2019-04-12 14:16:16 jdbc[25]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -205,17 +229,17 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.enterAdminStatement(H2Main.java:248)
+	at UI.CommandLineInterface.enterSqlStatements(CommandLineInterface.java:551)
+	at UI.CommandLineInterface.executeCommand(CommandLineInterface.java:116)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:39)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
 	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+2019-04-12 14:16:16 jdbc[25]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -226,17 +250,17 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.enterAdminStatement(H2Main.java:248)
+	at UI.CommandLineInterface.enterSqlStatements(CommandLineInterface.java:551)
+	at UI.CommandLineInterface.executeCommand(CommandLineInterface.java:116)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:39)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
 	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+2019-04-12 14:16:16 jdbc[25]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -247,17 +271,17 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.enterAdminStatement(H2Main.java:248)
+	at UI.CommandLineInterface.enterSqlStatements(CommandLineInterface.java:551)
+	at UI.CommandLineInterface.executeCommand(CommandLineInterface.java:116)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:39)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
 	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+2019-04-12 14:16:16 jdbc[25]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -268,17 +292,17 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.enterAdminStatement(H2Main.java:248)
+	at UI.CommandLineInterface.enterSqlStatements(CommandLineInterface.java:551)
+	at UI.CommandLineInterface.executeCommand(CommandLineInterface.java:116)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:39)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
 	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+2019-04-12 14:16:16 jdbc[25]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -289,17 +313,17 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.enterAdminStatement(H2Main.java:248)
+	at UI.CommandLineInterface.enterSqlStatements(CommandLineInterface.java:551)
+	at UI.CommandLineInterface.executeCommand(CommandLineInterface.java:116)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:39)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
 	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+2019-04-12 14:16:16 jdbc[25]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -310,17 +334,17 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.enterAdminStatement(H2Main.java:248)
+	at UI.CommandLineInterface.enterSqlStatements(CommandLineInterface.java:551)
+	at UI.CommandLineInterface.executeCommand(CommandLineInterface.java:116)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:39)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
 	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+2019-04-12 14:16:16 jdbc[25]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -331,17 +355,17 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.enterAdminStatement(H2Main.java:248)
+	at UI.CommandLineInterface.enterSqlStatements(CommandLineInterface.java:551)
+	at UI.CommandLineInterface.executeCommand(CommandLineInterface.java:116)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:39)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
 	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+2019-04-12 14:16:16 jdbc[25]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -352,17 +376,17 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.enterAdminStatement(H2Main.java:248)
+	at UI.CommandLineInterface.enterSqlStatements(CommandLineInterface.java:551)
+	at UI.CommandLineInterface.executeCommand(CommandLineInterface.java:116)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:39)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
 	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+2019-04-12 14:33:01 jdbc[10]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -373,17 +397,16 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.getPackageIds(H2Main.java:162)
+	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:193)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:34)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
-	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+	... 14 more
+2019-04-12 14:33:01 jdbc[10]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -394,17 +417,16 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.getPackageIds(H2Main.java:162)
+	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:193)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:34)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
-	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+	... 14 more
+2019-04-12 14:33:01 jdbc[10]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -415,17 +437,16 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.getPackageIds(H2Main.java:162)
+	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:193)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:34)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
-	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+	... 14 more
+2019-04-12 14:33:01 jdbc[10]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -436,17 +457,16 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.getPackageIds(H2Main.java:162)
+	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:193)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:34)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
-	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+	... 14 more
+2019-04-12 14:33:01 jdbc[10]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -457,17 +477,16 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.getPackageIds(H2Main.java:162)
+	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:193)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:34)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
-	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
+	... 14 more
+2019-04-12 14:33:01 jdbc[10]: null
 org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.get(DbException.java:205)
 	at org.h2.message.DbException.get(DbException.java:181)
@@ -478,55 +497,21 @@ org.h2.message.DbException: The connection was not closed by the application and
 	at org.h2.Driver.connect(Driver.java:69)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
 	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
+	at SQL.H2Main.createConnection(H2Main.java:38)
+	at SQL.H2Main.getPackageIds(H2Main.java:162)
+	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:193)
+	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:34)
+	at UI.CommandLineInterface.main(CommandLineInterface.java:20)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
-	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
-org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
-	at org.h2.message.DbException.get(DbException.java:205)
-	at org.h2.message.DbException.get(DbException.java:181)
-	at org.h2.message.DbException.get(DbException.java:170)
-	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:242)
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:182)
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
-	at org.h2.Driver.connect(Driver.java:69)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
-Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
-	... 15 more
-2019-04-12 19:45:29 jdbc[23]: null
-org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-199]
-	at org.h2.message.DbException.get(DbException.java:205)
-	at org.h2.message.DbException.get(DbException.java:181)
-	at org.h2.message.DbException.get(DbException.java:170)
-	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:242)
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:182)
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
-	at org.h2.Driver.connect(Driver.java:69)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
-	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
-	at SQL.H2Main.createConnection(H2Main.java:45)
-	at SQL.H2Main.<init>(H2Main.java:24)
-	at SQL.H2Main.getTransactionIds(H2Main.java:174)
-	at UI.CommandLineInterface.getStateOptions(CommandLineInterface.java:231)
-	at UI.CommandLineInterface.runCLI(CommandLineInterface.java:50)
-	at UI.CommandLineInterface.main(CommandLineInterface.java:29)
-Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-199]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:617)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
-	... 15 more
+	... 14 more
+2019-04-12 18:40:21 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKERS" not found; SQL statement:
+SELECT workerId FROM workers WHERE name = '@'; [42102-199]
+2019-04-12 18:41:09 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "WORKERS" not found; SQL statement:
+SELECT workerId FROM workers WHERE name = 'n@c'; [42102-199]
+2019-04-12 19:10:25 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PACKAGETRANSPORATION" not found; SQL statement:
+SELECT * FROM packageTransporation WHERE packageId = 26459 [42102-199]
