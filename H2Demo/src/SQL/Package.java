@@ -126,6 +126,6 @@ public class Package {
         weight = (double) Math.round(weight * 100)/100;
         return "PackageID: " + packageID + "\nTransactionID: " + transactionID + "\n\nType: " + packageType +
                 " Weight: " + weight + "lbs.\nExtra Info: " + extraInfo + "\n\nStarted Delivery: " + startedDelivery
-                + "\nDelivery Time: " + deliverTime + "\nLast Checked In At: " + location;
+                + "\nDelivery Time: " + deliverTime + "\n%Last Checked In At: " + location;
     }
 }

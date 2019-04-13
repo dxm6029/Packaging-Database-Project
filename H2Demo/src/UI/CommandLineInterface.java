@@ -7,9 +7,6 @@ import java.util.Date;
 import SQL.*;
 import SQL.Package;
 
-import javax.swing.plaf.nimbus.State;
-
-
 public class CommandLineInterface {
     private Scanner kboard;
     private UIState state;
@@ -32,8 +29,7 @@ public class CommandLineInterface {
         this.state = UIState.UNKNOWN_USER_HOME;
         this.user = new User();
         demo.createConnection(location, use, password);
-        connect = demo.getConnection(); // should get connection for entire file
-        //packageTable = new PackageTable();
+        connect = demo.getConnection();
     }
 
     public Connection getConnection() {
@@ -530,7 +526,10 @@ public class CommandLineInterface {
         else {
             int transportId = PackageTransportationTable.getTransportId(packageId, connect);
 
-            System.out.println(p.toString());
+            String[] packageInfo = p.toString().split("%");
+            String trackingHistory = PackageLocationTable.getTrackingHistory(packageId, connect);
+            String info = String.join("\n", packageInfo[0], trackingHistory, packageInfo[1]);
+            System.out.println(info);
             if (transportId == -1) {
                 if (p.getDeliveryTime().equals("null")) {
                     System.out.println("This package is in a warehouse at it's last check in location.");
@@ -541,11 +540,11 @@ public class CommandLineInterface {
             }
             else {
                 String company = TransportationTable.getTransportCompany(transportId, connect);
-                System.out.println("This package is out for delivery on vehicle: " + transportId +
+                System.out.println("This package is currently in transit on transport: " + transportId +
                         " from company " + company);
             }
         }
-        //TODO Finish this shit
+
         System.out.print("\nPress Enter to continue.");
         kboard.nextLine();
     }
@@ -794,7 +793,7 @@ public class CommandLineInterface {
                     deliveryTypes.add("overnight");
                     deliveryTypes.add("3-5 day");
                     deliveryTypes.add("7+ day");
-                    System.out.println("Delivery Type (1-day, overnight, 3-5 day, 7+ day)");
+                    System.out.print("Delivery Type (1-day, overnight, 3-5 day, 7+ day): ");
                     deliveryType = kboard.nextLine().toLowerCase();
                     while (!deliveryTypes.contains(deliveryType)){
                         System.out.println("Delivery Type not recognized, please try again (1-day, overnight, 3-5 day, 7+ day)");
@@ -802,20 +801,20 @@ public class CommandLineInterface {
                     }
 
                     double price = getPrice(packageType, weight, deliveryType);
-                    System.out.println("Price for package: " + price);
+                    System.out.print("Price for package: " + price);
 
                     ArrayList <String> extraInformationLst = new ArrayList<>();
                     extraInformationLst.add("fragile");
                     extraInformationLst.add("hazardous");
-                    System.out.println("Is there any extra information that we should know (fragile, hazardous)? If not, enter to continue");
+                    System.out.print("Is there any extra information that we should know (fragile, hazardous)? If not, enter to continue: ");
                     extraInfo = kboard.nextLine().toLowerCase();
                     if (extraInfo.equals("")){
                         extraInfo = "n/a";
                     }
                     else if (!extraInformationLst.contains(extraInfo)){
-                        System.out.println("Extra Information not recognized, please enter valid extra info input (fragile, hazardous): ");
+                        System.out.print("Extra Information not recognized, please enter valid extra info input (fragile, hazardous): ");
                         while (!extraInformationLst.contains(extraInfo) && !extraInfo.equals("")){ // loops until valid input, or new line
-                            System.out.println("Extra Information not recognized, please enter valid extra info input (fragile, hazardous): ");
+                            System.out.print("Extra Information not recognized, please enter valid extra info input (fragile, hazardous): ");
                             extraInfo = kboard.nextLine().toLowerCase();
                         }
                         if (extraInfo.equals('\n')){
@@ -823,15 +822,15 @@ public class CommandLineInterface {
                         }
                     }
 
-                    System.out.println("Enter 'city; state' where you are shipping from: ");
+                    System.out.print("Enter 'city; state' where you are shipping from: ");
                     locate = kboard.nextLine();
                     while (locate.contains(",")){
-                        System.out.println("Please remove comma :)");
+                        System.out.print("Please remove comma :)");
                         locate = kboard.nextLine();
                     }
 
-                    Date wrongDate = new Date();
-                    startedDelivery = wrongDate.toString();
+                    Date date = new Date();
+                    startedDelivery = date.toString();
 
                     break;
                 case 2:
@@ -1014,6 +1013,9 @@ public class CommandLineInterface {
             TransactionTable.addTransaction(conn, transactionID, firstName, lastName, streetNum, streetName, aptNum, city, state, country, zip);
 
             MakesTransactionTable.addMakeTransaction(conn, Integer.parseInt(this.user.getUserId()), transactionID, payID);
+
+            int transportId = TransportationTable.pickTransport(rand.nextInt(9), conn);
+            PackageTransportationTable.addPackageTransportation(conn, packID, transportId);
 
             System.out.println("New Package Registered. Welcome!");
             System.out.println("Your package ID is: " + packID);

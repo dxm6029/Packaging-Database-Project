@@ -1,15 +1,22 @@
 package SQL;
 
-public class PackageLocation {
+import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Date;
+
+public class PackageLocation implements Comparable<PackageLocation>{
 
     int packageID;
     String location;
-    String deliveryTime;
+    String timestamp;
 
-    public PackageLocation(int packageID, String location, String deliveryTime){
+    public PackageLocation(int packageID, String location, String timestamp){
         this.packageID = packageID;
         this.location = location;
-        this.deliveryTime = deliveryTime;
+        this.timestamp = timestamp;
     }
 
     @Override
@@ -17,7 +24,7 @@ public class PackageLocation {
         return "PackageLocation{" +
                 "packageID=" + packageID +
                 ", location='" + location + '\'' +
-                ", deliveryTime='" + deliveryTime + '\'' +
+                ", timestamp='" + timestamp + '\'' +
                 '}';
     }
 
@@ -29,12 +36,12 @@ public class PackageLocation {
         this.location = location;
     }
 
-    public String getDeliveryTime() {
-        return deliveryTime;
+    public String getTimestamp() {
+        return timestamp;
     }
 
-    public void setDeliveryTime(String deliveryTime) {
-        this.deliveryTime = deliveryTime;
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
     }
 
     public int getPackageID() {
@@ -43,5 +50,20 @@ public class PackageLocation {
 
     public void setPackageID(int packageID) {
         this.packageID = packageID;
+    }
+
+    @Override
+    public int compareTo(PackageLocation other) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("EEE MMM d HH:mm:ss zzz yyyy");
+        try {
+            Date thisDate = dateFormat.parse(timestamp);
+            Date otherDate = dateFormat.parse(other.getTimestamp());
+
+            return thisDate.compareTo(otherDate);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        return -100;
     }
 }
