@@ -314,7 +314,12 @@ public class CommandLineInterface {
                     ResultSet r = stmt.executeQuery(getPaymID);
                     r.next();
                     int paymentID = r.getInt(1);
-                    System.out.println("PaymentID: " + paymentID);
+                    System.out.println("PaymentID: " + paymentID + '\n');
+                    String getPack = String.format("SELECT packageType, weight, deliveryType FROM packages WHERE transactionID = %d", transactionId);
+                    r = stmt.executeQuery(getPack);
+                    r.next();
+                    double price = getPrice(r.getString(1), r.getDouble(2), r.getString(3));
+                    System.out.println("The prepaid price is: " + price);
 
                 } catch (SQLException e) {
                     e.printStackTrace();
@@ -335,7 +340,13 @@ public class CommandLineInterface {
                     System.out.println("Card Holder Name: " + r.getString(2));
                     System.out.println("Card Number: " + r.getString(3));
                     System.out.println("CVV: " + r.getString(4));
-                    System.out.println("Expiration Date: " + r.getString(5));
+                    System.out.println("Expiration Date: " + r.getString(5) + '\n');
+                    String getPack = String.format("SELECT packageType, weight, deliveryType FROM packages WHERE transactionID = %d", transactionId);
+                    r = stmt.executeQuery(getPack);
+                    r.next();
+                    double price = getPrice(r.getString(1), r.getDouble(2), r.getString(3));
+                    System.out.println("The credit amount owed is: " + price);
+
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
@@ -353,6 +364,23 @@ public class CommandLineInterface {
                     System.out.println("PaymentID: " + paymentID);
                     System.out.println("Bill Date: " + r.getString(2));
                     System.out.println("Total Number of Packages: " + r.getInt(3));
+
+                    String getPack = String.format("SELECT packageType, weight, deliveryType FROM packages WHERE transactionID = %d", transactionId);
+                    r = stmt.executeQuery(getPack);
+                    r.next();
+                    double price = getPrice(r.getString(1), r.getDouble(2), r.getString(3));
+                    System.out.println("The contract transaction price for this package is: " + price);
+
+                    String getTotal = String.format("SELECT packageType, weight, deliveryType FROM packages WHERE transactionID IN (SELECT transactionID FROM makesTransaction WHERE paymentID = %d)", paymentID);
+                    r = stmt.executeQuery(getTotal);
+
+                    // go through resulting table adding all the prices
+                    double total = 0;
+                    while (r.next()){
+                        total += getPrice(r.getString(1), r.getDouble(2), r.getString(3));
+                    }
+
+                    System.out.println("The total bill of all of packages on contract: " + total);
 
                 } catch (SQLException e) {
                     e.printStackTrace();
