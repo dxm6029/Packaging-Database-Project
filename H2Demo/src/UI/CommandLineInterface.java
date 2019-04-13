@@ -319,6 +319,7 @@ public class CommandLineInterface {
                     r = stmt.executeQuery(getPack);
                     r.next();
                     double price = getPrice(r.getString(1), r.getDouble(2), r.getString(3));
+                    price = (double) Math.round(price * 100)/100;
                     System.out.println("The prepaid price is: " + price);
 
                 } catch (SQLException e) {
@@ -345,6 +346,7 @@ public class CommandLineInterface {
                     r = stmt.executeQuery(getPack);
                     r.next();
                     double price = getPrice(r.getString(1), r.getDouble(2), r.getString(3));
+                    price = (double) Math.round(price * 100)/100;
                     System.out.println("The credit amount owed is: " + price);
 
                 } catch (SQLException e) {
@@ -369,6 +371,7 @@ public class CommandLineInterface {
                     r = stmt.executeQuery(getPack);
                     r.next();
                     double price = getPrice(r.getString(1), r.getDouble(2), r.getString(3));
+                    price = (double) Math.round(price * 100)/100;
                     System.out.println("The contract transaction price for this package is: " + price);
 
                     String getTotal = String.format("SELECT packageType, weight, deliveryType FROM packages WHERE transactionID IN (SELECT transactionID FROM makesTransaction WHERE paymentID = %d)", paymentID);
@@ -380,6 +383,7 @@ public class CommandLineInterface {
                         total += getPrice(r.getString(1), r.getDouble(2), r.getString(3));
                     }
 
+                    total = (double) Math.round(total * 100)/100;
                     System.out.println("The total bill of all of packages on contract: " + total);
 
                 } catch (SQLException e) {
