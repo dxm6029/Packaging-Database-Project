@@ -93,7 +93,7 @@ public class PackageTransportationTable {
      * Adds a single Customer to the database
      *
      */
-    public static void addPackageTransportation(Connection conn,int packageID, int transportID){
+    public static void addPackageTransportation(Connection conn, int packageID, int transportID){
 
         /**
          * SQL insert statement

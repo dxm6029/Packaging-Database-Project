@@ -113,7 +113,7 @@ public class H2Main {
 			PackageTransportationTable.createPackageTransportationTable(demo.getConnection());
 			PackageTransportationTable.populatePackageTransportationFromCSV(
 					demo.getConnection(), "H2Demo/csv/PackageTransportation.csv");
-			//TODO: add initialization for all other tables
+			PackageLocationTable.createPackageLocationTable(conn);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

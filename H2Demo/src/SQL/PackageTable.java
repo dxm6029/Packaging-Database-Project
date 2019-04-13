@@ -4,11 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.*;
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
 /**
  * Class to make and manipulate the package table
@@ -323,8 +320,8 @@ public class PackageTable {
                 ResultSet result = stmt.executeQuery(statement);
 
                 if (result.next()) {
-                    ZonedDateTime now = LocalDate.now(ZoneId.of("America/Montreal"))
-                            .atStartOfDay(ZoneId.of("America/Montreal"));
+                    Date date = new Date();
+                    String now = date.toString();
 
                     statement = "UPDATE packages SET deliveryTime = '" + now + "' WHERE packageID = " + packageID;
                     stmt.execute(statement);
@@ -360,9 +357,17 @@ public class PackageTable {
             Statement stmt = conn.createStatement();
 
             if (PackageTransportationTable.checkOutForTransport(packageID, conn)) {
+                String oldLoc = "";
+
                 ResultSet result = stmt.executeQuery(statement);
                 if (result.next()) {
                     loc = result.getString(1);
+                }
+
+                statement = "SELECT location FROM packages WHERE packageId = " + packageID;
+                result = stmt.executeQuery(statement);
+                if (result.next()) {
+                    oldLoc = result.getString(1);
                 }
 
                 statement = "UPDATE packages SET location = '" + loc +
@@ -370,17 +375,20 @@ public class PackageTable {
                 stmt.execute(statement);
                 System.out.println("Package with ID: " + packageID + " checked in at " + loc);
 
+                Date date = new Date();
+                PackageLocationTable.addPackageLocation(conn, packageID, loc, date.toString());
+
                 PackageTransportationTable.removeFromTransport(packageID, conn);
             }
             else {
                 statement = "SELECT location, deliveryTime FROM packages WHERE packageId = " + packageID;
                 ResultSet result = stmt.executeQuery(statement);
                 if (result.next()) {
-                    String lcoation = result.getString(1);
+                    String location = result.getString(1);
                     String deliveryTime = result.getString(2);
 
                     if (result.getString(2).equals("null")) {
-                        System.out.println("Package is not currently in transport. It is located at: " + lcoation);
+                        System.out.println("Package is not currently in transport. It is located at: " + location);
                     }
                     else {
                         System.out.println("Package has already been delivered. Package delivered at: " + deliveryTime);
@@ -408,7 +416,8 @@ public class PackageTable {
                 ResultSet result = stmt.executeQuery(statement);
 
                 if (result.next()) {
-                    String location = result.getString(1);
+                    String[] locations = result.getString(1).split("%");
+                    String location = locations[locations.length - 1];
                     String deliveryTime = result.getString(2);
 
                     if (!deliveryTime.equals("null")) {
