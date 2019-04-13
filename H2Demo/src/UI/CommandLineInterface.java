@@ -576,7 +576,7 @@ public class CommandLineInterface {
                     deliveryTypes.add("overnight");
                     deliveryTypes.add("3-5 day");
                     deliveryTypes.add("7+ day");
-                    System.out.print("Delivery Type (1-day, overnight, 3-5 day, 7+ day)": );
+                    System.out.print("Delivery Type (1-day, overnight, 3-5 day, 7+ day): ");
                     deliveryType = kboard.nextLine().toLowerCase();
                     while (!deliveryTypes.contains(deliveryType)){
                         System.out.println("Delivery Type not recognized, please try again (1-day, overnight, 3-5 day, 7+ day)");
