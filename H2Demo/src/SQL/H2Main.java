@@ -117,7 +117,6 @@ public class H2Main {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		//TODO: prompt for queries
 	}
 
 	public static boolean getPassword(String username, String pass, UIState state){
@@ -249,6 +248,11 @@ public class H2Main {
 
 
 	public static void enterAdminStatement(String statement) {
+		if (statement.length() == 0) {
+			System.out.println("Statement was empty.");
+			return;
+		}
+
 		H2Main demo = new H2Main();
 		String location = "./h2demo/h2demo";
 		String user = "me";
@@ -292,7 +296,7 @@ public class H2Main {
 				System.out.println("Successfully executed Statement: " + statement);
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Invalid SQL Statement: " + statement + "\nError Message: '" + e.toString() + "'");
 		}
 	}
 }
