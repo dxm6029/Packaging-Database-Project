@@ -570,57 +570,45 @@ public class CommandLineInterface {
                     stepNum = nextStep(stepNum);
                     break;
                 case 3:
-                    System.out.print("Choose Payment Option (Contract, Credit, Prepaid): ");
+                    System.out.print("Choose Payment Option (Contract, Credit Card, Prepaid): ");
                     paymentType = kboard.nextLine();
 
-                    if (paymentType.equalsIgnoreCase("Credit")) {
+                    if (paymentType.equalsIgnoreCase("Credit Card")) {
                         boolean multiTry = false;
                         while((expYear < Calendar.getInstance().get(Calendar.YEAR)) ||
                                 (expYear == Calendar.getInstance().get(Calendar.YEAR) && expMonth <= Calendar.getInstance().get(Calendar.MONTH))) {
-                            if(multiTry){
+                            if (multiTry) {
                                 System.out.println("ENTER VALID CREDIT CARD PLEASE!");
+                                kboard.nextLine();
                             }
                             System.out.print("Enter Card Holder Name: ");
                             cardholderName = kboard.nextLine();
 
                             System.out.print("Card Number(XXXX-XXXX-XXXX-XXXX): ");
-                            while (!kboard.hasNextLine()) {
+                            cardNumber = kboard.nextLine();
+                            while (!cardNumber.matches("\\d{4}-\\d{4}-\\d{4}-\\d{4}")) {
+                                System.out.print("Invalid input. Please enter in format XXXX-XXXX-XXXX-XXXX: ");
                                 cardNumber = kboard.nextLine();
-                                if (!cardNumber.matches("\\d{4}-\\d{4}-\\d{4}-\\d{4}")) {
-                                    System.out.print("Invalid input. Please enter in format XXXX-XXXX-XXXX-XXXX: ");
-                                } else {
-                                    break;
-                                }
                             }
 
                             System.out.print("Expiration Month Number: ");
-                            while (!kboard.hasNextLine()) {
+                            expMonth = kboard.nextInt();
+                            while (expMonth > 12 || expMonth < 1) {
+                                System.out.print("Invalid input. Please enter in range 1-12: ");
                                 expMonth = kboard.nextInt();
-                                if (expMonth > 12 || expMonth <= 0) {
-                                    System.out.print("Invalid input. Please enter in range 1-12: ");
-                                } else {
-                                    break;
-                                }
                             }
 
                             System.out.print("Expiration Year Number: ");
-                            while (!kboard.hasNextLine()) {
+                            expYear = kboard.nextInt();
+                            while (expYear < 0) {
+                                System.out.print("Invalid input. Please enter valid year: ");
                                 expYear = kboard.nextInt();
-                                if (expYear < 0000) {
-                                    System.out.print("Invalid input. Please enter valid year: ");
-                                } else {
-                                    break;
-                                }
                             }
-
                             System.out.print("CVV: ");
-                            while (!kboard.hasNextLine()) {
+                            cvv = kboard.nextInt();
+                            while (cvv < 100 || cvv >= 1000) {
+                                System.out.print("Invalid input. Please enter valid CVV: ");
                                 cvv = kboard.nextInt();
-                                if (cvv < 100 || cvv >= 1000) {
-                                    System.out.print("Invalid input. Please enter valid CVV: ");
-                                } else {
-                                    break;
-                                }
                             }
                             multiTry = true;
                         }
@@ -712,14 +700,14 @@ public class CommandLineInterface {
                 else if(paymentType.equalsIgnoreCase("Prepaid")){
                     PrepaidTable.addPrepaid(conn, payID, 1);
                 }
-                else if(paymentType.equalsIgnoreCase("CreditCard")){
+                else if(paymentType.equalsIgnoreCase("Credit Card")){
                     CreditCardTable.addCredit(conn, payID, cardholderName, cardNumber, cvv, expMonth + "/" + expYear);
                 }
             }
 
 
             // add package type
-            PackageTable.addPackage(conn, packageType, weight, deliveryType, packID, locate, startedDelivery, extraInfo, deliveryType, transactionID);
+            PackageTable.addPackage(conn, packageType, weight, deliveryType, packID, locate, startedDelivery, extraInfo, null, transactionID);
 
             TransactionTable.addTransaction(conn, transactionID, firstName, lastName, streetNum, streetName, aptNum, city, state, country, zip);
 

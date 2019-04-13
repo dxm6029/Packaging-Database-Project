@@ -99,7 +99,7 @@ public class PrepaidTable {
             /**
              * create and execute the query
              */
-            System.out.println(query);
+            //System.out.println(query);
             Statement stmt = conn.createStatement();
             stmt.execute(query);
         } catch (SQLException e) {
