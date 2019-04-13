@@ -81,7 +81,7 @@ public class ContractTable {
             String q = "DROP TABLE IF EXISTS contract";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS contract(paymentID int primary key, billDate varchar(10), totalPackageNum int, paid double )";
+            String query = "CREATE TABLE IF NOT EXISTS contract(paymentID int primary key, billDate varchar(10), totalPackageNum int, paid float(2) )";
 
             /**
              * Create a query and execute
@@ -102,7 +102,7 @@ public class ContractTable {
          * SQL insert statement
          */
         String query = String.format("INSERT INTO contract "
-                        + "VALUES(%d,\'%s\',%d, %d);",
+                        + "VALUES(%d,\'%s\',%d, %f);",
                 packageID, billDate, totalPackageNum, paid );
         try {
             /**
@@ -133,7 +133,7 @@ public class ContractTable {
          * the order of the data in reference
          * to the columns to ad dit to
          */
-        sb.append("INSERT INTO contract (paymentID, billDate, totalPackageNum) VALUES");
+        sb.append("INSERT INTO contract (paymentID, billDate, totalPackageNum, paid) VALUES");
 
         /**
          * For each person append a (id, first_name, last_name, MI) tuple
@@ -144,8 +144,8 @@ public class ContractTable {
          */
         for(int i = 0; i < contracts.size(); i++){
             Contract p = contracts.get(i);
-            sb.append(String.format("(%d,\'%s\',%d)",
-                    p.getPaymentID(), p.getBillDate(), p.getTotalPackageNum()));
+            sb.append(String.format("(%d,\'%s\',%d, %f)",
+                    p.getPaymentID(), p.getBillDate(), p.getTotalPackageNum(), p.getPaid()));
             if( i != contracts.size()-1){
                 sb.append(",");
             }
@@ -246,7 +246,7 @@ public class ContractTable {
             ResultSet result = stmt.executeQuery(query);
 
             while(result.next()){
-                System.out.printf("customer %d,%s,%d,%d\n",
+                System.out.printf("customer %d,%s,%d,%f\n",
                         result.getInt(1),
                         result.getString(2),
                         result.getInt(3),

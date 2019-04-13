@@ -128,6 +128,10 @@ public class CommandLineInterface {
                     displayAllPackageInfo();
                     return state;
                 }
+                else if(option.equalsIgnoreCase("LIST CONTRACT PACKAGES")){
+                    listContractPackages();
+                    return state;
+                }
                 else {
                     displayPackageInfo(Integer.parseInt(option));
                     return state;
@@ -142,6 +146,10 @@ public class CommandLineInterface {
                 }
                 else if(option.equalsIgnoreCase("PAY CONTRACT")){
                     getPayment();
+                    return state;
+                }
+                else if(option.equalsIgnoreCase("LIST CONTRACT PACKAGES")){
+                    listContractTransactions();
                     return state;
                 }
                 else {
@@ -168,6 +176,46 @@ public class CommandLineInterface {
 
         return state;
     }
+    private void listContractPackages() {
+        int customerID = Integer.parseInt(user.getUserId());
+        try {
+            Statement stmt = connect.createStatement();
+            String getPayID = String.format("(SELECT paymentID FROM contract) INTERSECT (SELECT paymentID FROM makesTransaction WHERE customerID = %d)", customerID);
+            ResultSet r = stmt.executeQuery(getPayID);
+            r.next();
+            int paymentID = r.getInt(1);
+            String getpackID = String.format("SELECT packageID FROM packages WHERE transactionID IN (SELECT transactionID FROM makesTransaction WHERE paymentID = %d)", paymentID);
+            r = stmt.executeQuery(getpackID);
+            while(r.next()) {
+                System.out.println();
+                displayPackageInfo(r.getInt(1));
+                System.out.println();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+    private void listContractTransactions() {
+        int customerID = Integer.parseInt(user.getUserId());
+        try {
+            Statement stmt = connect.createStatement();
+            String getPayID = String.format("(SELECT paymentID FROM contract) INTERSECT (SELECT paymentID FROM makesTransaction WHERE customerID = %d)", customerID);
+            ResultSet r = stmt.executeQuery(getPayID);
+            r.next();
+            int paymentID = r.getInt(1);
+            String getTransID = String.format("SELECT transactionID FROM makesTransaction WHERE paymentID = %d", paymentID);
+            r = stmt.executeQuery(getTransID);
+            while(r.next()) {
+                System.out.println();
+                displayTransactionInfo(r.getInt(1));
+                System.out.println();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
 
     private void getPayment() {
         boolean multiTry = false;
@@ -187,6 +235,10 @@ public class CommandLineInterface {
             ResultSet r = stmt.executeQuery(getPayID);
             r.next();
             int paymentID = r.getInt(1);
+            String getPaidAmount = String.format("SELECT paid FROM contract WHERE paymentID = %d", paymentID);
+            r = stmt.executeQuery(getPaidAmount);
+            r.next();
+            double paid = r.getDouble(1);
             String getTotal = String.format("SELECT packageType, weight, deliveryType FROM packages WHERE transactionID IN (SELECT transactionID FROM makesTransaction WHERE paymentID = %d)", paymentID);
             r = stmt.executeQuery(getTotal);
 
@@ -194,28 +246,28 @@ public class CommandLineInterface {
             while (r.next()) {
                 total += getPrice(r.getString(1), r.getDouble(2), r.getString(3));
             }
-
+            //System.out.println(total + " " + paid);
+            total -= paid;
             total = (double) Math.round(total * 100) / 100;
-        } catch (SQLException e){
+        } catch (SQLException e) {
 
         }
-        if (total == 0){
+        if (total <= 0) {
+            //System.out.println("Yes");
             System.out.println("No Payment Needed");
             return;
-        }
-        else {
+        } else {
             System.out.println("Total Account Balance: " + total);
         }
 
-        while((expYear < Calendar.getInstance().get(Calendar.YEAR)) ||
+        while ((expYear < Calendar.getInstance().get(Calendar.YEAR)) ||
                 (expYear == Calendar.getInstance().get(Calendar.YEAR) && expMonth <= Calendar.getInstance().get(Calendar.MONTH))) {
             if (multiTry) {
                 System.out.println("ENTER VALID CREDIT CARD PLEASE!");
-                kboard.nextLine();
             }
             System.out.print("Enter Card Holder Name: ");
             cardholderName = kboard.nextLine();
-            while(cardholderName.length() == 0){
+            while (cardholderName.length() == 0) {
                 System.out.print("Invalid Input. Please enter a name: ");
                 cardholderName = kboard.nextLine();
             }
@@ -247,26 +299,56 @@ public class CommandLineInterface {
                 System.out.print("Invalid input. Please enter valid CVV(XXX): ");
                 cvv = kboard.nextLine();
             }
-
-            System.out.println("Amount to be Paid: ");
-            paymentAmount = kboard.nextDouble();
-
-            while(paymentAmount > total){
-                System.out.println("Invalid Amount. New amount to be Paid: ");
-                paymentAmount = kboard.nextDouble();
-            }
-
-            String amountPaid = String.format("UPDATE contract SET paid = %d", paymentAmount);
-            try {
-                Statement stmt = connect.createStatement();
-                stmt.executeUpdate(amountPaid);
-
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-
             multiTry = true;
         }
+        System.out.print("Amount to be Paid: ");
+        paymentAmount = kboard.nextDouble();
+
+        while (paymentAmount > total) {
+            System.out.print("Invalid Amount. New amount to be Paid: ");
+            paymentAmount = kboard.nextDouble();
+        }
+
+        String amountPaid = String.format("UPDATE contract SET paid = paid + %f", paymentAmount);
+        try {
+            Statement stmt = connect.createStatement();
+            stmt.executeUpdate(amountPaid);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        kboard.nextLine();
+        //show new balance
+        total = 0;
+        try {
+            Statement stmt = connect.createStatement();
+            String getPayID = String.format("(SELECT paymentID FROM contract) INTERSECT (SELECT paymentID FROM makesTransaction WHERE customerID = %d)", customerID);
+            ResultSet r = stmt.executeQuery(getPayID);
+            r.next();
+            int paymentID = r.getInt(1);
+            String getPaidAmount = String.format("SELECT paid FROM contract WHERE paymentID = %d", paymentID);
+            r = stmt.executeQuery(getPaidAmount);
+            r.next();
+            double paid = r.getDouble(1);
+            String getTotal = String.format("SELECT packageType, weight, deliveryType FROM packages WHERE transactionID IN (SELECT transactionID FROM makesTransaction WHERE paymentID = %d)", paymentID);
+            r = stmt.executeQuery(getTotal);
+
+            // go through resulting table adding all the prices
+            while (r.next()) {
+                total += getPrice(r.getString(1), r.getDouble(2), r.getString(3));
+            }
+            total -= paid;
+            total = (double) Math.round(total * 100) / 100;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("OH NO");
+        }
+        if (total <= 0) {
+            System.out.println("No More Payment Needed");
+        } else {
+            System.out.println("New Total Account Balance: " + total);
+        }
+
     }
 
     private void displayAllTransactionInfo() {
@@ -392,6 +474,9 @@ public class CommandLineInterface {
                     options.add(Integer.toString(id));
                 }
                 options.add("ALL");
+                if(hasContract()) {
+                    options.add("LIST CONTRACT PACKAGES");
+                }
                 options.add("HOME");
                 break;
             case TRANSACTION_LIST:
@@ -401,6 +486,7 @@ public class CommandLineInterface {
                 }
                 options.add("ALL");
                 if(hasContract()){
+                    options.add("LIST CONTRACT PACKAGES");
                     options.add("PAY CONTRACT");
                 }
                 options.add("HOME");
@@ -541,7 +627,7 @@ public class CommandLineInterface {
                     r.next();
                     double price = getPrice(r.getString(1), r.getDouble(2), r.getString(3));
                     price = (double) Math.round(price * 100)/100;
-                    System.out.println("The contract transaction price for this package is: $" + price);
+                    System.out.println("The price for this package is: $" + price);
 
                     String getTotal = String.format("SELECT packageType, weight, deliveryType FROM packages WHERE transactionID IN (SELECT transactionID FROM makesTransaction WHERE paymentID = %d)", paymentID);
                     r = stmt.executeQuery(getTotal);
@@ -557,11 +643,13 @@ public class CommandLineInterface {
                     resultSet.next();
 
                     double sub = resultSet.getDouble(1);
+                    total = (double) Math.round(total * 100)/100;
+                    System.out.println("Total Accumulated Costs of Contract Packages: $" + total);
                     total -= sub;
 
                     total = (double) Math.round(total * 100)/100;
 
-                    System.out.println("The total bill of all of packages on contract: $" + total);
+                    System.out.println("Current Contract Balance: $" + total);
 
                 } catch (SQLException e) {
                     e.printStackTrace();
