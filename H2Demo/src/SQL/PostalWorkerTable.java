@@ -289,4 +289,26 @@ public class PostalWorkerTable {
 
         return fName + " " + lName;
     }
+
+    public static int getWorkerNum(int workerId, Connection conn) {
+        int count = 0;
+
+        try {
+            String query = "SELECT workerId FROM WORKERS";
+            Statement stmt = conn.createStatement();
+            ResultSet result = stmt.executeQuery(query);
+
+            while (result.next()) {
+                if (result.getInt(1) == workerId) {
+                    return count;
+                }
+
+                count++;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return count;
+    }
 }

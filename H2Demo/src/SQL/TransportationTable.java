@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Class to make and manipulate the person table
@@ -287,5 +288,32 @@ public class TransportationTable {
         }
 
         return password;
+    }
+
+    public static int pickTransport(int workerNum, Connection conn) {
+        int truck;
+        ArrayList<Integer> transportOptions = new ArrayList<>();
+        String query = "SELECT transportId FROM TRANSPORTATION";
+
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet result = stmt.executeQuery(query);
+            int count = 0;
+
+            while (result.next()) {
+                if (count / 2 == workerNum) {
+                    transportOptions.add(result.getInt(1));
+                }
+
+                count++;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        Random rand = new Random();
+        int random = rand.nextInt(1);
+
+        return transportOptions.get(1);
     }
 }

@@ -312,21 +312,30 @@ public class PackageTable {
         return packageIds;
     }
 
-    public static void setPackageDelivered(int packageID, Connection conn) {
+    public static void setPackageDelivered(int packageID, int driverId, Connection conn) {
         try {
             Statement stmt = conn.createStatement();
             String statement;
 
             if (PackageTransportationTable.checkOutForTransport(packageID, conn)) {
-                ZonedDateTime now = LocalDate.now(ZoneId.of("America/Montreal"))
-                        .atStartOfDay(ZoneId.of("America/Montreal"));
+                statement = "SELECT * FROM PACKAGETRANSPORTATION WHERE packageId = " + packageID + " AND " +
+                        "driverId = " + driverId;
+                ResultSet result = stmt.executeQuery(statement);
 
-                statement = "UPDATE packages SET deliveryTime = '" + now + "' WHERE packageID = " + packageID;
-                stmt.execute(statement);
+                if (result.next()) {
+                    ZonedDateTime now = LocalDate.now(ZoneId.of("America/Montreal"))
+                            .atStartOfDay(ZoneId.of("America/Montreal"));
 
-                System.out.println("Package was delivered at: " + now);
+                    statement = "UPDATE packages SET deliveryTime = '" + now + "' WHERE packageID = " + packageID;
+                    stmt.execute(statement);
 
-                PackageTransportationTable.removeFromTransport(packageID, conn);
+                    System.out.println("Package was delivered at: " + now);
+
+                    PackageTransportationTable.removeFromTransport(packageID, conn);
+                }
+                else {
+                    System.out.println("This package is not in your transport inventory.");
+                }
             } else {
                 statement = "SELECT * FROM packages WHERE packageId = " + packageID;
                 ResultSet result = stmt.executeQuery(statement);
@@ -386,7 +395,57 @@ public class PackageTable {
         }
     }
 
-    public static void scanPackageOut(int packageId, Connection conn) {
-        return;
+    public static void scanPackageOut(int packageId, int workerId, Connection conn) {
+        int workerNum = PostalWorkerTable.getWorkerNum(workerId, conn);
+        int transportId = TransportationTable.pickTransport(workerNum, conn);
+
+        try {
+            String statement;
+            Statement stmt = conn.createStatement();
+
+            if (!PackageTransportationTable.checkOutForTransport(packageId, conn)) {
+                statement = "SELECT location, deliveryTime FROM PACKAGES WHERE packageId = " + packageId;
+                ResultSet result = stmt.executeQuery(statement);
+
+                if (result.next()) {
+                    String location = result.getString(1);
+                    String deliveryTime = result.getString(2);
+
+                    if (!deliveryTime.equals("null")) {
+                        System.out.println("Package: " + packageId + " hsa already been delivered. " +
+                                "It was delivered on " + deliveryTime);
+                    }
+                    else {
+                        statement = "SELECT location FROM WORKERS WHERE workerId = " + workerId;
+                        result = stmt.executeQuery(statement);
+                        if (result.next()) {
+                            String workerLocation = result.getString(1);
+
+                            if (workerLocation.equals(location)) {
+                                PackageTransportationTable.addPackageTransportation(conn, packageId, transportId);
+                                System.out.println("Package: " + packageId + " is now out for delivery on Transport: "
+                                        + transportId);
+                            } else {
+                                System.out.println("Package: " + packageId + " is not located at: " + workerLocation +
+                                        ". It is located at " + location);
+                            }
+                        }
+                    }
+                }
+                else {
+                    System.out.println("Package with ID: " + packageId + " does not exist.");
+                }
+            }
+            else {
+                statement = "SELECT transportId FROM PACKAGETRANSPORTATION WHERE packageId = " + packageId;
+                ResultSet result = stmt.executeQuery(statement);
+
+                if (result.next()) {
+                    System.out.println("Package: " + packageId + " is already on Transport: " + transportId);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }

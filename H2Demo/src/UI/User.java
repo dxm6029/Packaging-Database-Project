@@ -57,7 +57,7 @@ public class User {
                 System.out.println("Welcome Database Admin!");
                 loggedIn = true;
             }
-            else if (H2Main.getPassword(userName, userId)) {
+            else if (H2Main.getPassword(userName, userId, expected)) {
                 if (expected == UIState.CUSTOMER_HOME) {
                     System.out.println("Welcome to Four Squared, " + H2Main.getCustomerName(userId));
                 } else if (expected == UIState.WORKER_HOME) {

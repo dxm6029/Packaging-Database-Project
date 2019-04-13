@@ -118,6 +118,7 @@ public class CommandLineInterface {
                         scanPackagesIn();
                         return state;
                     case "SCANOUT":
+                        scanPackagesOut();
                         return state;
                 }
                 break;
@@ -164,7 +165,7 @@ public class CommandLineInterface {
     private void scanPackagesIn() {
         int packageId;
 
-        System.out.println("Scanning Packages");
+        System.out.println("Scanning Packages In");
 
         while (true) {
             System.out.print("Enter PackageID (Or -1 to cancel): ");
@@ -185,7 +186,26 @@ public class CommandLineInterface {
     }
 
     private void scanPackagesOut() {
-        return;
+        int packageId;
+
+        System.out.println("Scanning Packages Out");
+
+        while (true) {
+            System.out.print("Enter PackageID (Or -1 to cancel): ");
+            packageId = inputNumber();
+            if (packageId == -1) {
+                break;
+            }
+
+            PackageTable.scanPackageOut(packageId, Integer.parseInt(user.getUserId()), connect);
+
+            System.out.print("Enter 'Y' to scan another package or anything else to stop: ");
+            if (!kboard.nextLine().equalsIgnoreCase("Y")) {
+                break;
+            }
+
+            System.out.println("Scanning another package");
+        }
     }
 
 

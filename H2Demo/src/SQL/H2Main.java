@@ -1,5 +1,7 @@
 package SQL;
 
+import UI.UIState;
+
 import java.sql.*;
 import java.util.ArrayList;
 
@@ -118,7 +120,7 @@ public class H2Main {
 		//TODO: prompt for queries
 	}
 
-	public static boolean getPassword(String username, String pass){
+	public static boolean getPassword(String username, String pass, UIState state){
 		H2Main demo = new H2Main();
 		String location = "./h2demo/h2demo";
 		String user = "me";
@@ -127,9 +129,16 @@ public class H2Main {
 		//Create the database connections, basically makes the database
 		demo.createConnection(location, user, password);
 
-		return CustomerTable.getPassword(username, demo.getConnection()).equals(pass) ||
-				PostalWorkerTable.getPassword(username, demo.getConnection()).equals(pass) ||
-				TransportationTable.getPassword(username, demo.getConnection()).equals(pass);
+		switch (state) {
+			case WORKER_HOME:
+				return PostalWorkerTable.getPassword(username, demo.getConnection()).equals(pass);
+			case CUSTOMER_HOME:
+				return CustomerTable.getPassword(username, demo.getConnection()).equals(pass);
+			case DRIVER_HOME:
+				return TransportationTable.getPassword(username, demo.getConnection()).equals(pass);
+		}
+
+		return false;
 	}
 
 	public static String getCustomerName(String customerID){
@@ -206,14 +215,14 @@ public class H2Main {
 		return PackageTable.getPackageInfo(packageId, demo.getConnection());
 	}
 
-	public static void setDelivered(int packageId, int workerId){
+	public static void setDelivered(int packageId, int driverId){
 		H2Main demo = new H2Main();
 		String location = "./h2demo/h2demo";
 		String user = "me";
 		String password = "password";
 
 		demo.createConnection(location, user, password);
-		PackageTable.setPackageDelivered(packageId, demo.getConnection());
+		PackageTable.setPackageDelivered(packageId, driverId, demo.getConnection());
 	}
 
 	public static void scanPackageIn(int packageId, int workerId) {
