@@ -315,9 +315,16 @@ public class PackageTable {
             String statement;
 
             if (PackageTransportationTable.checkOutForTransport(packageID, conn)) {
-                statement = "SELECT * FROM PACKAGETRANSPORTATION WHERE packageId = " + packageID + " AND " +
-                        "driverId = " + driverId;
+                statement = "SELECT transportId FROM transportation WHERE driverId = " + driverId;
                 ResultSet result = stmt.executeQuery(statement);
+                int transportId = -1;
+                if (result.next()) {
+                    transportId = result.getInt(1);
+                }
+
+                statement = "SELECT * FROM PACKAGETRANSPORTATION WHERE packageId = " + packageID + " AND " +
+                        "transportId = " + transportId;
+                result = stmt.executeQuery(statement);
 
                 if (result.next()) {
                     Date date = new Date();

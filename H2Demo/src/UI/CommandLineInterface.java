@@ -29,8 +29,7 @@ public class CommandLineInterface {
         this.state = UIState.UNKNOWN_USER_HOME;
         this.user = new User();
         demo.createConnection(location, use, password);
-        connect = demo.getConnection(); // should get connection for entire file
-        //packageTable = new PackageTable();
+        connect = demo.getConnection();
     }
 
     public Connection getConnection() {
