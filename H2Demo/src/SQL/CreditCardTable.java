@@ -72,7 +72,7 @@ public class CreditCardTable {
             String q = "DROP TABLE IF EXISTS credit";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS credit(paymentID INT PRIMARY KEY, cardholderName VARCHAR(50), cardNum VARCHAR(20), cvv INT, expirationDate VARCHAR(20))";
+            String query = "CREATE TABLE IF NOT EXISTS credit(paymentID INT PRIMARY KEY, cardholderName VARCHAR(50), cardNum VARCHAR(20), cvv VARCHAR(4), expirationDate VARCHAR(20))";
 
             /**
              * Create a query and execute
@@ -89,14 +89,14 @@ public class CreditCardTable {
      * Adds a single card to the database
      *
      */
-    public static void addCredit(Connection conn, int paymentID, String cardholderName, String cardNum, int cvv,
+    public static void addCredit(Connection conn, int paymentID, String cardholderName, String cardNum, String cvv,
                                    String expirationDate){
 
         /**
          * SQL insert statement
          */
         String query = String.format("INSERT INTO credit "
-                        + "VALUES(%d, \'%s\', \'%s\', %d, \'%s\');",
+                        + "VALUES(%d, \'%s\', \'%s\', \'%s\', \'%s\');",
                 paymentID, cardholderName, cardNum, cvv, expirationDate);
         try {
             /**
@@ -138,7 +138,7 @@ public class CreditCardTable {
          */
         for(int i = 0; i < cards.size(); i++){
             CreditCard c = cards.get(i);
-            sb.append(String.format("(%d, \'%s\', \'%s\', %d, \'%s\')",
+            sb.append(String.format("(%d, \'%s\', \'%s\', \'%s\', \'%s\')",
                     c.getPaymentID(), c.getCardholderName(), c.getCardNum(), c.getCvv(), c.getExpirationDate()));
             if( i != cards.size()-1){
                 sb.append(",");
@@ -240,7 +240,7 @@ public class CreditCardTable {
             ResultSet result = stmt.executeQuery(query);
 
             while(result.next()){
-                System.out.printf("credit %d, %s, %s, %d, %s\n",
+                System.out.printf("credit %d, %s, %s, %s, %s\n",
                         result.getInt(1),
                         result.getString(2),
                         result.getString(3),

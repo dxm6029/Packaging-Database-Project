@@ -438,7 +438,7 @@ public class CommandLineInterface {
         String cardNumber = "";
         int expMonth = -1;
         int expYear = -1;
-        int cvv = -1;
+        String cvv = "";
         int payID = 0;
 
 
@@ -583,6 +583,10 @@ public class CommandLineInterface {
                             }
                             System.out.print("Enter Card Holder Name: ");
                             cardholderName = kboard.nextLine();
+                            while(cardholderName.length() == 0){
+                                System.out.print("Invalid Input. Please enter a name: ");
+                                cardholderName = kboard.nextLine();
+                            }
 
                             System.out.print("Card Number(XXXX-XXXX-XXXX-XXXX): ");
                             cardNumber = kboard.nextLine();
@@ -604,11 +608,12 @@ public class CommandLineInterface {
                                 System.out.print("Invalid input. Please enter valid year: ");
                                 expYear = kboard.nextInt();
                             }
+                            kboard.nextLine();
                             System.out.print("CVV: ");
-                            cvv = kboard.nextInt();
-                            while (cvv < 100 || cvv >= 1000) {
-                                System.out.print("Invalid input. Please enter valid CVV: ");
-                                cvv = kboard.nextInt();
+                            cvv = kboard.nextLine();
+                            while (cvv.length() != 3) {
+                                System.out.print("Invalid input. Please enter valid CVV(XXX): ");
+                                cvv = kboard.nextLine();
                             }
                             multiTry = true;
                         }
@@ -714,7 +719,7 @@ public class CommandLineInterface {
             MakesTransactionTable.addMakeTransaction(conn, Integer.parseInt(this.user.getUserId()), transactionID, payID);
 
             System.out.println("New Package Registered. Welcome!");
-            System.out.println("Your package ID is: '" + packID);
+            System.out.println("Your package ID is: " + packID);
 
         } catch (SQLException | ClassNotFoundException e) {
             //You should handle this better
