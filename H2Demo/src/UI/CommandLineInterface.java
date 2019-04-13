@@ -7,7 +7,8 @@ import java.util.Date;
 import SQL.*;
 import SQL.Package;
 
-import javax.xml.transform.Result;
+import javax.swing.plaf.nimbus.State;
+
 
 public class CommandLineInterface {
     private Scanner kboard;
@@ -139,6 +140,10 @@ public class CommandLineInterface {
                     displayAllTransactionInfo();
                     return state;
                 }
+                else if(option.equalsIgnoreCase("PAY CONTRACT")){
+                    getPayment();
+                    return state;
+                }
                 else {
                     displayTransactionInfo(Integer.parseInt(option));
                     return state;
@@ -162,6 +167,106 @@ public class CommandLineInterface {
         }
 
         return state;
+    }
+
+    private void getPayment() {
+        boolean multiTry = false;
+        int expYear = 0;
+        int expMonth = 0;
+        String cardholderName;
+        String cardNumber;
+        String cvv;
+        Double paymentAmount;
+        double total = 0;
+
+        int customerID = Integer.parseInt(user.getUserId());
+
+        try {
+            Statement stmt = connect.createStatement();
+            String getPayID = String.format("(SELECT paymentID FROM contract) INTERSECT (SELECT paymentID FROM makesTransaction WHERE customerID = %d)", customerID);
+            ResultSet r = stmt.executeQuery(getPayID);
+            r.next();
+            int paymentID = r.getInt(1);
+            String getTotal = String.format("SELECT packageType, weight, deliveryType FROM packages WHERE transactionID IN (SELECT transactionID FROM makesTransaction WHERE paymentID = %d)", paymentID);
+            r = stmt.executeQuery(getTotal);
+
+            // go through resulting table adding all the prices
+            while (r.next()) {
+                total += getPrice(r.getString(1), r.getDouble(2), r.getString(3));
+            }
+
+            total = (double) Math.round(total * 100) / 100;
+        } catch (SQLException e){
+
+        }
+        if (total == 0){
+            System.out.println("No Payment Needed");
+            return;
+        }
+        else {
+            System.out.println("Total Account Balance: " + total);
+        }
+
+        while((expYear < Calendar.getInstance().get(Calendar.YEAR)) ||
+                (expYear == Calendar.getInstance().get(Calendar.YEAR) && expMonth <= Calendar.getInstance().get(Calendar.MONTH))) {
+            if (multiTry) {
+                System.out.println("ENTER VALID CREDIT CARD PLEASE!");
+                kboard.nextLine();
+            }
+            System.out.print("Enter Card Holder Name: ");
+            cardholderName = kboard.nextLine();
+            while(cardholderName.length() == 0){
+                System.out.print("Invalid Input. Please enter a name: ");
+                cardholderName = kboard.nextLine();
+            }
+
+            System.out.print("Card Number(XXXX-XXXX-XXXX-XXXX): ");
+            cardNumber = kboard.nextLine();
+            while (!cardNumber.matches("\\d{4}-\\d{4}-\\d{4}-\\d{4}")) {
+                System.out.print("Invalid input. Please enter in format XXXX-XXXX-XXXX-XXXX: ");
+                cardNumber = kboard.nextLine();
+            }
+
+            System.out.print("Expiration Month Number: ");
+            expMonth = kboard.nextInt();
+            while (expMonth > 12 || expMonth < 1) {
+                System.out.print("Invalid input. Please enter in range 1-12: ");
+                expMonth = kboard.nextInt();
+            }
+
+            System.out.print("Expiration Year Number: ");
+            expYear = kboard.nextInt();
+            while (expYear < 0) {
+                System.out.print("Invalid input. Please enter valid year: ");
+                expYear = kboard.nextInt();
+            }
+            kboard.nextLine();
+            System.out.print("CVV: ");
+            cvv = kboard.nextLine();
+            while (cvv.length() != 3) {
+                System.out.print("Invalid input. Please enter valid CVV(XXX): ");
+                cvv = kboard.nextLine();
+            }
+
+            System.out.println("Amount to be Paid: ");
+            paymentAmount = kboard.nextDouble();
+
+            while(paymentAmount > total){
+                System.out.println("Invalid Amount. New amount to be Paid: ");
+                paymentAmount = kboard.nextDouble();
+            }
+
+            String amountPaid = String.format("UPDATE contract SET paid = %d", paymentAmount);
+            try {
+                Statement stmt = connect.createStatement();
+                stmt.executeUpdate(amountPaid);
+
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            multiTry = true;
+        }
     }
 
     private void displayAllTransactionInfo() {
@@ -295,6 +400,9 @@ public class CommandLineInterface {
                     options.add(Integer.toString(id));
                 }
                 options.add("ALL");
+                if(hasContract()){
+                    options.add("PAY CONTRACT");
+                }
                 options.add("HOME");
                 break;
             case ADMIN:
@@ -307,6 +415,21 @@ public class CommandLineInterface {
         }
 
         return options;
+    }
+
+    private boolean hasContract(){
+        int customerID = Integer.parseInt(user.getUserId());
+        String getPaymID = String.format("SELECT * FROM contract WHERE paymentID IN (SELECT paymentID FROM makesTransaction WHERE customerID = %d)", customerID);
+        try {
+            Statement stmt = connect.createStatement();
+            ResultSet r = stmt.executeQuery(getPaymID);
+            if(r.next()){
+                return true;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     /**
@@ -393,7 +516,7 @@ public class CommandLineInterface {
                     r.next();
                     double price = getPrice(r.getString(1), r.getDouble(2), r.getString(3));
                     price = (double) Math.round(price * 100)/100;
-                    System.out.println("The credit amount owed is: " + price);
+                    System.out.println("The credit amount owed is: $" + price);
 
                 } catch (SQLException e) {
                     e.printStackTrace();
@@ -418,7 +541,7 @@ public class CommandLineInterface {
                     r.next();
                     double price = getPrice(r.getString(1), r.getDouble(2), r.getString(3));
                     price = (double) Math.round(price * 100)/100;
-                    System.out.println("The contract transaction price for this package is: " + price);
+                    System.out.println("The contract transaction price for this package is: $" + price);
 
                     String getTotal = String.format("SELECT packageType, weight, deliveryType FROM packages WHERE transactionID IN (SELECT transactionID FROM makesTransaction WHERE paymentID = %d)", paymentID);
                     r = stmt.executeQuery(getTotal);
@@ -429,8 +552,16 @@ public class CommandLineInterface {
                         total += getPrice(r.getString(1), r.getDouble(2), r.getString(3));
                     }
 
+                    String getPaid = String.format("SELECT paid FROM contract WHERE paymentID = %d", paymentID);
+                    ResultSet resultSet = stmt.executeQuery(getPaid);
+                    resultSet.next();
+
+                    double sub = resultSet.getDouble(1);
+                    total -= sub;
+
                     total = (double) Math.round(total * 100)/100;
-                    System.out.println("The total bill of all of packages on contract: " + total);
+
+                    System.out.println("The total bill of all of packages on contract: $" + total);
 
                 } catch (SQLException e) {
                     e.printStackTrace();
@@ -778,7 +909,7 @@ public class CommandLineInterface {
                 if(paymentType.equalsIgnoreCase("Contract")){
                     int month = rand.nextInt(12) + 1;
                     String billDate = month + "/1";
-                    ContractTable.addContract(conn, payID, billDate, 1);
+                    ContractTable.addContract(conn, payID, billDate, 1, 0);
                 }
                 else if(paymentType.equalsIgnoreCase("Prepaid")){
                     PrepaidTable.addPrepaid(conn, payID, 1);

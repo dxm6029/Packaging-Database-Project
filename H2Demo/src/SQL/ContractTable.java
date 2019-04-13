@@ -41,7 +41,12 @@ public class ContractTable {
             String line;
             br.readLine();
             while((line = br.readLine()) != null){
-                String[] split = line.split(",");
+                String[] split = new String[4];
+                String[] data = line.split(",");
+                for(int i = 0; i < 3; i++){
+                    split[i] = data[i];
+                }
+                split[3] = "0";
                 contracts.add(new Contract(split));
             }
             br.close();
@@ -76,7 +81,7 @@ public class ContractTable {
             String q = "DROP TABLE IF EXISTS contract";
             Statement stmtt = conn.createStatement();
             stmtt.execute(q);
-            String query = "CREATE TABLE IF NOT EXISTS contract(paymentID int primary key, billDate varchar(10), totalPackageNum int)";
+            String query = "CREATE TABLE IF NOT EXISTS contract(paymentID int primary key, billDate varchar(10), totalPackageNum int, paid double )";
 
             /**
              * Create a query and execute
@@ -91,14 +96,14 @@ public class ContractTable {
      * Adds a single Customer to the database
      *
      */
-    public static void addContract(Connection conn, int packageID, String billDate, int totalPackageNum){
+    public static void addContract(Connection conn, int packageID, String billDate, int totalPackageNum, double paid){
 
         /**
          * SQL insert statement
          */
         String query = String.format("INSERT INTO contract "
-                        + "VALUES(%d,\'%s\',%d);",
-                packageID, billDate, totalPackageNum );
+                        + "VALUES(%d,\'%s\',%d, %d);",
+                packageID, billDate, totalPackageNum, paid );
         try {
             /**
              * create and execute the query
@@ -241,10 +246,11 @@ public class ContractTable {
             ResultSet result = stmt.executeQuery(query);
 
             while(result.next()){
-                System.out.printf("customer %d,%s,%d\n",
+                System.out.printf("customer %d,%s,%d,%d\n",
                         result.getInt(1),
                         result.getString(2),
-                        result.getInt(3));
+                        result.getInt(3),
+                        result.getDouble(4));
             }
         } catch (SQLException e) {
             e.printStackTrace();
