@@ -1,7 +1,5 @@
 package SQL;
 
-import java.util.ArrayList;
-
 public class Package {
 
     String packageType;

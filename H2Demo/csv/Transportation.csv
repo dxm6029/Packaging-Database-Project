@@ -1,7 +1,7 @@
 transportID,company,driverID
 33456,Fed Ex,59951
 35293,Fed Ex,25318
-18471,Unites States Postal Service,92039
+18471,United States Postal Service,92039
 77602,Fed Ex,64233
 18980,UPS,31796
 22673,Fed Ex,47340
@@ -9,11 +9,11 @@ transportID,company,driverID
 31862,Fed Ex,16614
 39204,Fed Ex,26955
 46416,DHL,17644
-55957,Unites States Postal Service,68737
+55957,United States Postal Service,68737
 73757,UPS,56978
 50136,UPS,73451
-78073,Unites States Postal Service,56634
-76175,Unites States Postal Service,90286
+78073,United States Postal Service,56634
+76175,United States Postal Service,90286
 90439,Fed Ex,15802
 59103,UPS,13885
 73140,UPS,48954
