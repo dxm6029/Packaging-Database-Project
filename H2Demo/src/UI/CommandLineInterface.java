@@ -704,6 +704,7 @@ public class CommandLineInterface {
      * Asks for user input in order to add a package
      */
     private void addPackage() {
+        int origStep = 1;
         int stepNum = 1;
 
         // Package Info
@@ -739,6 +740,7 @@ public class CommandLineInterface {
 
 
         while (stepNum < 4) {
+            menuloop:
             switch (stepNum) {
                 case 0:
                     return;
@@ -759,23 +761,6 @@ public class CommandLineInterface {
                         }
                     }
                     kboard.nextLine(); // Need to consume newline before continuing
-
-                    System.out.println("Package Weight Entered");
-                    System.out.print("Type 'Q' to quit, 'R' to redo, 'B' to go back, or anything else to continue: ");
-                    String option = kboard.nextLine();
-
-                    switch (option.toUpperCase()) {
-                        case "Q":
-                            return;
-                        case "R":
-                            break;
-                        case "B":
-                            stepNum = stepNum - 1;
-                            break;
-                        default:
-                            stepNum = stepNum + 1;
-                    }
-
                     ArrayList<String> packageTypes = new ArrayList<>();
                     packageTypes.add("extra small");
                     packageTypes.add("small");
@@ -840,8 +825,11 @@ public class CommandLineInterface {
                     Date date = new Date();
                     startedDelivery = date.toString();
 
+                    stepNum = nextStep(stepNum);
+
                     break;
                 case 2:
+
                     System.out.println("Enter Recipient Info:");
                     System.out.print("First Name: ");
                     firstName = kboard.nextLine();
@@ -907,7 +895,9 @@ public class CommandLineInterface {
                     }
 
                     System.out.println("Recipient Info Entered");
+
                     stepNum = nextStep(stepNum);
+
                     break;
                 case 3:
                     System.out.print("Choose Payment Option (Contract, Credit Card, Prepaid): ");
@@ -918,7 +908,6 @@ public class CommandLineInterface {
                         System.out.print("Invalid Input. Choose Payment Option (Contract, Credit Card, Prepaid): ");
                         paymentType = kboard.nextLine();
                     }
-
                     if (paymentType.equalsIgnoreCase("Credit Card")) {
                         boolean multiTry = false;
                         while((expYear < Calendar.getInstance().get(Calendar.YEAR)) ||
@@ -991,7 +980,9 @@ public class CommandLineInterface {
                     }
                     System.out.println("Payment Info Entered");
                     System.out.println("WARNING: Continuing will complete the add package process.");
+
                     stepNum = nextStep(stepNum);
+
             }
         }
 
