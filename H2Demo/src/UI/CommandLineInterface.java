@@ -744,17 +744,20 @@ public class CommandLineInterface {
                     return;
                 case 1:
                     System.out.print("Enter Package Weight: ");
-
-                    while (!kboard.hasNextDouble()) {
+                    while (weight <= 0) {
                         try {
-                            kboard.nextDouble();
+                            weight = kboard.nextDouble();
+                            if(weight > 0){
+                                break;
+                            }
+                            System.out.print("Invalid Input. Please enter a positive number: ");
+                            kboard.nextLine();
                         }
                         catch (InputMismatchException e) {
-                            System.out.println("Invalid Input. Please enter a number.");
+                            System.out.print("Invalid Input. Please enter a positive number: ");
                             kboard.nextLine();
                         }
                     }
-                    weight = kboard.nextDouble();
                     kboard.nextLine(); // Need to consume newline before continuing
 
                     System.out.println("Package Weight Entered");
@@ -781,11 +784,11 @@ public class CommandLineInterface {
                     packageTypes.add("extra large");
                     packageTypes.add("post card");
                     packageTypes.add("envelope");
-                    System.out.println("Package type (Extra Small, Small, Medium, Large, Extra Large, Post Card, Envelope)");
+                    System.out.print("Package type (Extra Small, Small, Medium, Large, Extra Large, Post Card, Envelope): ");
                     packageType = kboard.nextLine().toLowerCase(); // maintain consistency
                     while (!packageTypes.contains(packageType)){
-                        System.out.println("Package type not recognized, please try again (Extra Small, Small, Medium, Large, Extra Large, Post Card, Envelope)");
-                        packageType = kboard.nextLine().toLowerCase();;
+                        System.out.print("Package type not recognized, please try again (Extra Small, Small, Medium, Large, Extra Large, Post Card, Envelope): ");
+                        packageType = kboard.nextLine().toLowerCase();
                     }
 
                     ArrayList<String> deliveryTypes = new ArrayList<>();
@@ -796,12 +799,12 @@ public class CommandLineInterface {
                     System.out.print("Delivery Type (1-day, overnight, 3-5 day, 7+ day): ");
                     deliveryType = kboard.nextLine().toLowerCase();
                     while (!deliveryTypes.contains(deliveryType)){
-                        System.out.println("Delivery Type not recognized, please try again (1-day, overnight, 3-5 day, 7+ day)");
+                        System.out.print("Delivery Type not recognized, please try again (1-day, overnight, 3-5 day, 7+ day)");
                         deliveryType = kboard.nextLine().toLowerCase();
                     }
 
                     double price = getPrice(packageType, weight, deliveryType);
-                    System.out.print("Price for package: " + price);
+                    System.out.println("Price for package: " + price);
 
                     ArrayList <String> extraInformationLst = new ArrayList<>();
                     extraInformationLst.add("fragile");
@@ -824,8 +827,13 @@ public class CommandLineInterface {
 
                     System.out.print("Enter 'city; state' where you are shipping from: ");
                     locate = kboard.nextLine();
-                    while (locate.contains(",")){
-                        System.out.print("Please remove comma :)");
+                    while (locate.equals("") || locate.contains(",")){
+                        if(locate.contains(",")){
+                            System.out.print("Please remove comma :)");
+                        }
+                        else {
+                            System.out.print("Invalid Input. Enter 'city; state' where you are shipping from: ");
+                        }
                         locate = kboard.nextLine();
                     }
 
@@ -837,30 +845,66 @@ public class CommandLineInterface {
                     System.out.println("Enter Recipient Info:");
                     System.out.print("First Name: ");
                     firstName = kboard.nextLine();
+                    while(firstName.equals("")){
+                        System.out.print("Invalid Input. First Name: ");
+                        firstName = kboard.nextLine();
+                    }
 
                     System.out.print("Last Name: ");
                     lastName = kboard.nextLine();
+                    while(lastName.equals("")){
+                        System.out.print("Invalid Input. Last Name: ");
+                        lastName = kboard.nextLine();
+                    }
 
                     System.out.print("Street Number: ");
                     streetNum = kboard.nextLine();
+                    while(streetNum.equals("")){
+                        System.out.print("Invalid Input. Street Number: ");
+                        streetNum = kboard.nextLine();
+                    }
 
                     System.out.print("Street Name: ");
                     streetName = kboard.nextLine();
+                    while(streetName.equals("")){
+                        System.out.print("Invalid Input. Street Name: ");
+                        streetName = kboard.nextLine();
+                    }
 
                     System.out.print("Apt. Number: ");
                     aptNum = kboard.nextLine();
+                    while(aptNum.equals("")){
+                        System.out.print("Invalid Input. Apt. Number: ");
+                        aptNum = kboard.nextLine();
+                    }
 
                     System.out.print("City: ");
                     city = kboard.nextLine();
+                    while(city.equals("")){
+                        System.out.print("Invalid Input. City: ");
+                        city = kboard.nextLine();
+                    }
 
                     System.out.print("State: ");
                     state = kboard.nextLine();
+                    while(state.equals("")){
+                        System.out.print("Invalid Input. State: ");
+                        state = kboard.nextLine();
+                    }
 
                     System.out.print("Country: ");
                     country = kboard.nextLine();
+                    while(country.equals("")){
+                        System.out.print("Invalid Input. Country: ");
+                        country = kboard.nextLine();
+                    }
 
                     System.out.print("Zip Code: ");
                     zip = kboard.nextLine();
+                    while(zip.equals("")){
+                        System.out.print("Invalid Input. Zip Code: ");
+                        zip = kboard.nextLine();
+                    }
 
                     System.out.println("Recipient Info Entered");
                     stepNum = nextStep(stepNum);
@@ -868,6 +912,12 @@ public class CommandLineInterface {
                 case 3:
                     System.out.print("Choose Payment Option (Contract, Credit Card, Prepaid): ");
                     paymentType = kboard.nextLine();
+                    while(!(paymentType.equalsIgnoreCase("Contract") ||
+                        paymentType.equalsIgnoreCase("Credit Card") ||
+                        paymentType.equalsIgnoreCase("Prepaid"))){
+                        System.out.print("Invalid Input. Choose Payment Option (Contract, Credit Card, Prepaid): ");
+                        paymentType = kboard.nextLine();
+                    }
 
                     if (paymentType.equalsIgnoreCase("Credit Card")) {
                         boolean multiTry = false;
@@ -875,7 +925,6 @@ public class CommandLineInterface {
                                 (expYear == Calendar.getInstance().get(Calendar.YEAR) && expMonth <= Calendar.getInstance().get(Calendar.MONTH))) {
                             if (multiTry) {
                                 System.out.println("ENTER VALID CREDIT CARD PLEASE!");
-                                kboard.nextLine();
                             }
                             System.out.print("Enter Card Holder Name: ");
                             cardholderName = kboard.nextLine();
@@ -892,19 +941,39 @@ public class CommandLineInterface {
                             }
 
                             System.out.print("Expiration Month Number: ");
-                            expMonth = kboard.nextInt();
                             while (expMonth > 12 || expMonth < 1) {
-                                System.out.print("Invalid input. Please enter in range 1-12: ");
-                                expMonth = kboard.nextInt();
-                            }
-
-                            System.out.print("Expiration Year Number: ");
-                            expYear = kboard.nextInt();
-                            while (expYear < 0) {
-                                System.out.print("Invalid input. Please enter valid year: ");
-                                expYear = kboard.nextInt();
+                                try {
+                                    expMonth = kboard.nextInt();
+                                    if(! (expMonth > 12 || expMonth < 1)){
+                                        break;
+                                    }
+                                    System.out.print("Invalid input. Please enter in range 1-12: ");
+                                    kboard.nextLine();
+                                }
+                                catch (InputMismatchException e) {
+                                    System.out.print("Invalid input. Please enter in range 1-12: ");
+                                    kboard.nextLine();
+                                }
                             }
                             kboard.nextLine();
+
+                            System.out.print("Expiration Year Number: ");
+                            while (expYear < 0) {
+                                try {
+                                    expYear = kboard.nextInt();
+                                    kboard.nextLine();
+                                    if( expYear >= 0){
+                                        break;
+                                    }
+                                    System.out.print("Invalid input. Please enter valid year: ");
+                                    kboard.nextLine();
+                                }
+                                catch (InputMismatchException e) {
+                                    System.out.print("Invalid input. Please enter valid year: ");
+                                    kboard.nextLine();
+                                }
+                            }
+
                             System.out.print("CVV: ");
                             cvv = kboard.nextLine();
                             while (cvv.length() != 3) {
