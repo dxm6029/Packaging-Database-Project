@@ -358,12 +358,15 @@ public class CommandLineInterface {
             System.out.print("Invalid Amount. New amount to be Paid: ");
             paymentAmount = kboard.nextDouble();
         }
-
-        String amountPaid = String.format("UPDATE contract SET paid = paid + %f", paymentAmount);
         try {
             Statement stmt = connect.createStatement();
+            String getPayID = String.format("(SELECT paymentID FROM contract) INTERSECT (SELECT paymentID FROM makesTransaction WHERE customerID = %d)", customerID);
+            ResultSet r = stmt.executeQuery(getPayID);
+            r.next();
+            int paymentID = r.getInt(1);
+            String amountPaid = String.format("UPDATE contract SET paid = paid + %f WHERE paymentID = %d", paymentAmount, paymentID);
+            stmt = connect.createStatement();
             stmt.executeUpdate(amountPaid);
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
