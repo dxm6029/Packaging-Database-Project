@@ -193,7 +193,33 @@ public class CommandLineInterface {
             result = stmt.executeQuery(query);
 
             while (result.next()) {
-                System.out.println("You have sent " + result.getInt(2) + " packages of type " +
+                System.out.println("You have sent " + result.getInt(2) + " package(s) of type " +
+                        result.getString(1));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void showTransactionHistory() {
+        int customerId = Integer.parseInt(user.getUserId());
+        try {
+            Statement stmt = connect.createStatement();
+            String query = "SELECT COUNT(*) FROM (SELECT * FROM MAKESTRANSACTION WHERE CUSTOMERID = "
+                    + customerId + ")";
+
+            ResultSet result = stmt.executeQuery(query);
+
+            if (result.next()) {
+                System.out.println("You have made " + result.getInt(1) + " transaction(s).");
+            }
+
+            query = "SELECT type, COUNT(type) FROM (SELECT * FROM MAKESTRANSACTION) NATURAL JOIN (SELECT" +
+                    " * FROM PAYMENT)" + " GROUP BY customerId, type HAVING customerId = " + customerId;
+            result = stmt.executeQuery(query);
+
+            while (result.next()) {
+                System.out.println("You have made " + result.getInt(2) + " transaction(s) using payment type: " +
                         result.getString(1));
             }
         } catch (SQLException e) {
@@ -1110,6 +1136,7 @@ public class CommandLineInterface {
                 System.out.println("Welcome to Four Squared!");
                 break;
             case TRANSACTION_LIST:
+                showTransactionHistory();
                 System.out.println("Here are the IDs from your previous transactions.\n" +
                         "Enter an ID to see transaction details.");
                 break;
