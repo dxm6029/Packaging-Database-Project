@@ -174,6 +174,32 @@ public class CommandLineInterface {
 
         return state;
     }
+
+    private void showAccountHistory() {
+        int customerId = Integer.parseInt(user.getUserId());
+        try {
+            Statement stmt = connect.createStatement();
+            String query = "SELECT COUNT(*) FROM (SELECT * FROM MAKESTRANSACTION WHERE CUSTOMERID = "
+                    + customerId + ")";
+
+            ResultSet result = stmt.executeQuery(query);
+
+            if (result.next()) {
+                System.out.println("You have sent " + result.getInt(1) + " package(s).");
+            }
+
+            query = "SELECT packageType, COUNT(packageType) FROM (SELECT * FROM MAKESTRANSACTION) NATURAL JOIN (SELECT" +
+                    " * FROM PACKAGES)" + " GROUP BY customerId, packageType HAVING customerId = " + customerId;
+            result = stmt.executeQuery(query);
+
+            while (result.next()) {
+                System.out.println("You have sent " + result.getInt(2) + " packages of type " +
+                        result.getString(1));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
     private void listContractPackages() {
         int customerID = Integer.parseInt(user.getUserId());
         try {
@@ -742,7 +768,6 @@ public class CommandLineInterface {
 
 
         while (stepNum < 4) {
-            menuloop:
             switch (stepNum) {
                 case 0:
                     return;
@@ -1089,6 +1114,7 @@ public class CommandLineInterface {
                         "Enter an ID to see transaction details.");
                 break;
             case PACKAGES_LIST:
+                showAccountHistory();
                 System.out.println("Here are the IDs for your packages.\n" +
                         "Enter an ID see the package details.");
         }

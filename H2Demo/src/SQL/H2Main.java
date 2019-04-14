@@ -264,7 +264,7 @@ public class H2Main {
 			String statementType = statement.split(" ")[0];
 			Statement stmt = demo.getConnection().createStatement();
 
-			if (statementType.equals("SELECT")) {
+			if (statementType.equalsIgnoreCase("SELECT")) {
 				ResultSet result = stmt.executeQuery(statement);
 				ResultSetMetaData rsmd = result.getMetaData();
 				int columnCount = rsmd.getColumnCount();
