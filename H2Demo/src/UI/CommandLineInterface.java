@@ -54,6 +54,8 @@ public class CommandLineInterface {
             }
             else if (option.equalsIgnoreCase("QUIT")) {
                 System.out.println("Goodbye");
+                demo.closeConnection();
+                System.exit(0);
             }
             else {
                 System.out.println("Invalid command. Please enter a new one.");
@@ -1002,25 +1004,7 @@ public class CommandLineInterface {
             /**
              * create and execute the query
              */
-
-            Connection conn;
-
-            String location = "./h2demo/h2demo";
-            String user = "me";
-            String password2 = "password";
-
-            //This needs to be on the front of your location
-            String url = "jdbc:h2:" + location  + ";AUTO_SERVER=TRUE";
-
-            //This tells it to use the h2 driver
-            Class.forName("org.h2.Driver");
-
-            //creates the connection
-            conn = DriverManager.getConnection(url,
-                    user,
-                    password2);
-
-            Statement stmt =  conn.createStatement();
+            Statement stmt =  connect.createStatement();
 
             ResultSet rs = stmt.executeQuery(query); // packageID query
 
@@ -1052,35 +1036,35 @@ public class CommandLineInterface {
                     payQuery = String.format("SELECT * FROM makesTransaction WHERE paymentID = %d;", payID);
                     rs3 = stmt.executeQuery(payQuery);
                 }
-                PaymentTable.addPayment(conn, payID, paymentType);
+                PaymentTable.addPayment(connect, payID, paymentType);
                 if(paymentType.equalsIgnoreCase("Contract")){
                     int month = rand.nextInt(12) + 1;
                     String billDate = month + "/1";
-                    ContractTable.addContract(conn, payID, billDate, 1, 0);
+                    ContractTable.addContract(connect, payID, billDate, 1, 0);
                 }
                 else if(paymentType.equalsIgnoreCase("Prepaid")){
-                    PrepaidTable.addPrepaid(conn, payID, 1);
+                    PrepaidTable.addPrepaid(connect, payID, 1);
                 }
                 else if(paymentType.equalsIgnoreCase("Credit Card")){
-                    CreditCardTable.addCredit(conn, payID, cardholderName, cardNumber, cvv, expMonth + "/" + expYear);
+                    CreditCardTable.addCredit(connect, payID, cardholderName, cardNumber, cvv, expMonth + "/" + expYear);
                 }
             }
 
 
             // add package type
-            PackageTable.addPackage(conn, packageType, weight, deliveryType, packID, locate, startedDelivery, extraInfo, null, transactionID);
+            PackageTable.addPackage(connect, packageType, weight, deliveryType, packID, locate, startedDelivery, extraInfo, null, transactionID);
 
-            TransactionTable.addTransaction(conn, transactionID, firstName, lastName, streetNum, streetName, aptNum, city, state, country, zip);
+            TransactionTable.addTransaction(connect, transactionID, firstName, lastName, streetNum, streetName, aptNum, city, state, country, zip);
 
-            MakesTransactionTable.addMakeTransaction(conn, Integer.parseInt(this.user.getUserId()), transactionID, payID);
+            MakesTransactionTable.addMakeTransaction(connect, Integer.parseInt(this.user.getUserId()), transactionID, payID);
 
-            int transportId = TransportationTable.pickTransport(rand.nextInt(9), conn);
-            PackageTransportationTable.addPackageTransportation(conn, packID, transportId);
+            int transportId = TransportationTable.pickTransport(rand.nextInt(9), connect);
+            PackageTransportationTable.addPackageTransportation(connect, packID, transportId);
 
             System.out.println("New Package Registered. Welcome!");
             System.out.println("Your package ID is: " + packID);
 
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (Exception e) {
             //You should handle this better
             e.printStackTrace();
         }
