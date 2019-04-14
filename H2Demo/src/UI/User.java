@@ -187,6 +187,7 @@ public class User {
             }
 
             cT.addCustomer(conn, firstName, lastName, password, email, Integer.parseInt(streetNum), streetName, aptNum, city, state, country, zip);
+            conn.close();
         } catch (SQLException | ClassNotFoundException e) {
             //You should handle this better
             e.printStackTrace();
