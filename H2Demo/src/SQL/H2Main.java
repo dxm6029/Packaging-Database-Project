@@ -30,7 +30,7 @@ public class H2Main {
 		try {
 			
 			//This needs to be on the front of your location
-			String url = "jdbc:h2:" + location;
+			String url = "jdbc:h2:" + location + ";AUTO_SERVER=TRUE";
 			
 			//This tells it to use the h2 driver
 			Class.forName("org.h2.Driver");
